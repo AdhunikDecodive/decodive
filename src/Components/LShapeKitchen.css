@@ -1,0 +1,95 @@
+
+.svg{
+    background-image: url('../assets/Images/Background3.webp');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+
+.svg2{
+    background-image: url('../assets/Images/Furniture/funiture.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+
+.svg3{
+    background-image: url('../assets/Images/HomeDecor/hd.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+
+.svg4{
+    background-image: url('../assets/Images/WardRobes/Wardrobes.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+
+.svg10{
+    background-image: url('../assets/Images/TvUnit/TvUnit.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+.svg6{
+    background-image: url('../assets/Images/BarCounter/Bar.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+.svg7{
+    background-image: url('../assets/Images/Furniture/furniture2.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+.svg8{
+    background-image: url('../assets/Images/HomeDecor/hd2.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+}
+
+.svg11{
+    background-image: url('../assets/Images/PoojaRoom/pr.svg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position-x: right;
+background-position-y: top;
+
+
+}
+
+
+img
+{
+    object-fit: fit;
+}

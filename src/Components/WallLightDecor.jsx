@@ -1,0 +1,277 @@
+
+
+
+import Footer from "./Footer"
+import "./LShapeKitchen.css"
+
+import ModalNew from './ModalNew';
+import { useState } from "react";
+import PhoneCallButton from "./PhoneCallButton";
+
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from '@cloudinary/react';
+import { Helmet } from "react-helmet-async";
+
+
+
+
+function WallLightDecor() {
+
+    const PcardData = [
+        {
+            id: 1,
+            imageUrl:
+            'HomeDecor/Wall_Light/7_a0xzy3',
+            title: '',
+            description:
+                'A vibrant mosaic wall sconce',
+        },
+        {
+            id: 2,
+            imageUrl:
+            'HomeDecor/Wall_Light/8_os8oeb',
+            title: '',
+            description:
+                'Flora wall light',
+        },
+        {
+            id: 3,
+            imageUrl:
+            'HomeDecor/Wall_Light/9_gabskw',
+            title: '',
+            description:
+                'A globe sconce with a wood frame',
+        },
+        {
+            id: 4,
+            imageUrl:
+            'HomeDecor/Wall_Light/10_nrxjai',
+            title: '',
+            description:
+                'Modern metal wall sconce with two white glass globes.',
+        },
+        {
+            id: 5,
+            imageUrl:
+            'HomeDecor/Wall_Light/11_ljgxnu',
+            title: '',
+            description:
+                'Copper sconces with white glass shades',
+        },
+        {
+            id: 6,
+            imageUrl:
+            'HomeDecor/Wall_Light/12_yb1bgy',
+            title: '',
+            description:
+                'White ceramic wall sconce',
+        },
+        {
+            id: 7,
+            imageUrl:
+            'HomeDecor/Wall_Light/13_l5el84',
+            title: '',
+            description:
+                'Mosaic glass wall sconce',
+        },
+
+        // Add more card objects as needed
+    ];
+    const P2cardData = [
+        {
+            id: 1,
+            imageUrl:
+            'HomeDecor/Wall_Light/16_rri89t',
+            title: '',
+            description:
+                'Elegant yellow round wall lamp',
+        },
+        {
+            id: 2,
+            imageUrl:
+            'HomeDecor/Wall_Light/17_gxbgcx',
+            title: '',
+            description:
+                'Stylish Nordic LED wall lamp',
+        },
+        {
+            id: 3,
+            imageUrl:
+            'HomeDecor/Wall_Light/18_i0cyyc',
+            title: '',
+            description:
+                'Gold sconces with cascading crystals',
+        },
+        {
+            id: 4,
+            imageUrl:
+            'HomeDecor/Wall_Light/19_ymupwm',
+            title: '',
+            description:
+                'A gold wall sconce with a clear, curved glass shade',
+        },
+        {
+            id: 5,
+            imageUrl:
+            'HomeDecor/Wall_Light/2_l11apq',
+            title: '',
+            description:
+                'Brass wall sconces with two white glass globes',
+        },
+        {
+            id: 6,
+            imageUrl:
+            'HomeDecor/Wall_Light/20_qcvhqq',
+            title: '',
+            description:
+                'Modern LED rectangular wall sconce with metal frame and acrylic shade',
+        },
+        {
+            id: 7,
+            imageUrl:
+            'HomeDecor/Wall_Light/5_ppnhwy',
+            title: '',
+            description:
+                'A clear glass brass wall sconce',
+        },
+    ];
+
+    const [openModal, setOpenModal] = useState(false);
+
+    const toggleModal = () => {
+        setOpenModal(!openModal);
+      };
+      const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
+
+    return (
+        <>
+
+<Helmet>
+  <title>Wall-Light Decor</title>
+
+ 
+  <link rel="canonical" href="https://adhunikdecodive.com/WallLightDecor" data-react-helmet="true"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+</Helmet>
+
+
+
+<ModalNew  isOpen={openModal} onClose={toggleModal}  />
+    
+            <div className="w-full bg-white p-5 svg3 "  >
+
+                <div className="row justify-around flex">
+                    <div className="w-[80%] flex">
+                        <p className="text-5xl font-semibold p-9">
+                        Wall Light  Designs
+</p>
+                    </div>
+                </div>
+
+                <div className="row justify-around flex">
+                    <div className="w-[80%] flex">
+                        <div className="border border-r-8 h-[50%] my-auto w-[10px] border-orange-600"></div>
+                        <p className="text-1xl w-[75%] font-semibold p-9  rounded-lg mb-2">
+                        Adorn your walls with the luminous touch of adhunik deco dive exquisite wall sconces and lamps.  These versatile fixtures transcend mere functionality, transforming your space into a haven of sophisticated style.  Whether your taste leans towards the timeless elegance of classic sconces or the crisp lines of modern minimalism, adhunik deco dive boasts a diverse collection to seamlessly integrate with your existing décor.  Beyond simply casting light, these wall accents weave a tapestry of warmth and invitation, drawing the eye to your treasured artwork or architectural details.  Embark on a journey through our expansive collection and discover the perfect wall lamps to elevate the ambiance and visual depth of every room in your home.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div className=" w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+                    {PcardData.map((card) => (
+                        <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
+                            <div className="relative h-80">
+                            <AdvancedImage
+              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+               alt={card.description}
+              decoding="async"
+              className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+              style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+            />
+                            </div>
+                            <div className="p-6">
+                                <h2 className="text-base font-medium text-blue-gray-900 mb-2">{card.title}</h2>
+                                <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">{card.description}</p>
+                                <div className="flex justify-between">
+                                        <PhoneCallButton />
+                                     <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease text-[14px]"> Get Free Quote</span>
+</button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+                    <div className="  max-w-md w-full mx-auto my-auto h-[50vh]  text-white  bg-gradient-to-r from-[#41303e]  to-[#815379] bg-[ ,] shadow-md rounded-xl overflow-hidden">
+
+                        <div className="pt-14">
+
+                            <div className="text-center p-5">
+                                <h1 className="text-base font-light text-blue-gray-900 mb-2"> Kitchen Designs With</h1>
+                                <p className="text-2xl font-bold  leading-normal mb-4">High Quality Materials</p>
+                                <p>Starting <br /> <span className=" text-3xl">₹50,000</span></p>
+                            </div>
+
+                            <div className="flex justify-center">
+                            <button  onClick={toggleModal} className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+<span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
+<span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-[110deg]   ease"></span>
+<span className="relative text-white">Get Free Consultation</span>
+</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {P2cardData.map((card) => (
+                        <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
+                            <div className="relative h-80">
+                            <AdvancedImage
+              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+               alt={card.description}
+              decoding="async"
+              className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+              style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+            />
+                            </div>
+                            <div className="p-6">
+                                <h2 className="text-base font-medium text-blue-gray-900 mb-2">{card.title}</h2>
+                                <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">{card.description}</p>
+                                <div className="flex justify-between">
+                                        <PhoneCallButton />
+                                     <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease text-[14px]"> Get Free Quote</span>
+</button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+
+
+
+                </div>
+
+
+            </div>
+
+            <Footer />
+        </>
+    )
+}
+
+export default WallLightDecor

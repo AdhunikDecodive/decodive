@@ -1,0 +1,144 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "/contact",
+            "dest": "/"
+        },
+        {
+            "src": "/KitchenCategory",
+            "dest": "/"
+        },
+        {
+            "src": "/LShapeKitchen",
+            "dest": "/"
+        },
+        {
+            "src": "/UShapeKitchen",
+            "dest": "/"
+        },
+        {
+            "src": "/PShapeKitchen",
+            "dest": "/"
+        },
+        {
+            "src": "/IshapeKitchen",
+            "dest": "/"
+        },
+        {
+            "src": "/SshapeKitchen",
+            "dest": "/"
+        },
+        {
+            "src": "/Wardrobe",
+            "dest": "/"
+        },
+        {
+            "src": "/Door1Wardrobe",
+            "dest": "/"
+        },
+        {
+            "src": "/Door2Wardrobe",
+            "dest": "/"
+        },
+        {
+            "src": "/SlidingDoorWardrobe",
+            "dest": "/"
+        },
+        {
+            "src": "/WalkDoorWardrobe",
+            "dest": "/"
+        },
+        {
+            "src": "/Furniture",
+            "dest": "/"
+        },
+        {
+            "src": "/DomesticFurniture",
+            "dest": "/"
+        },
+        {
+            "src": "/CommercialFurniture",
+            "dest": "/"
+        },
+        {
+            "src": "/HomeDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/MirrorsDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/WallDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/VasesDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/ClocksDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/WallPaintingDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/LampsDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/CeilingLightsDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/WallLightDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/LampsDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/OutDoorLightDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/RoomLightDecor",
+            "dest": "/"
+        },
+        {
+            "src": "/OthersCategory",
+            "dest": "/"
+        },
+        {
+            "src": "/TVUnitPanels",
+            "dest": "/"
+        },
+        {
+            "src": "/PoojaRoom",
+            "dest": "/"
+        },
+        {
+            "src": "/ThankYouPage",
+            "dest": "/"
+        },
+        {
+            "src": "/BarCounter",
+            "dest": "/"
+        },
+        {
+            "src": "/AboutUs",
+            "dest": "/"
+        },
+        {
+            "src": "*",
+            "dest": "/"
+        }
+    ]
+}
