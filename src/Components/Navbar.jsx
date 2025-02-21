@@ -127,7 +127,7 @@ function Navbar() {
 
                        
 
-<AdvancedImage  alt="Adhunik DecoDive" cldImg={cld.image('Images/AdhunikSvg_uw3v7o')} className="w-40"  width='100%'
+<AdvancedImage  alt="Adhunik DecoDive" cldImg={cld.image('landingPage/ylzbgsu0sw6qgh5yj544')} className="w-40"  width='100%'
                      height='100%'  effect="blur"/>
                             </Link>
                            

@@ -43,7 +43,7 @@ const kitchenCategories = [
 ];
 
 const wardrobeCategories = [
-  { name: 'Wardrobe', imgSrc: 'WardRobe/8_sfbh73' },
+  { name: 'Wardrobe', imgSrc: 'landingPage/nnpixsron965x7qgsrsy' },
   { name: '1-Door Wardrobe', imgSrc: 'WardRobe/3_qnzv0m' },
   { name: '2-Door Wardrobe', imgSrc: 'WardRobe/7_ivqmog' },
   { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/9_u45uvt' },
@@ -60,11 +60,11 @@ const lightingCategories = [
   { name: 'Lighting', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Ceiling Lights', imgSrc: 'HomeDecor/Wall_Light/19_ymupwm' },
   { name: 'Wall Lights', imgSrc: 'HomeDecor/Ceiling_Light/13_d14wqe' },
-  { name: 'Outdoor Lights', imgSrc: 'HomeDecor/OutdoorLight/5_wth6ea' },
+  { name: 'Outdoor Lights', imgSrc: 'landingPage/trc0hvgzaaq4gnbfbcde' },
   { name: 'Room Lights', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Lamps', imgSrc: 'HomeDecor/Wall_Light/20_qcvhqq' },
   { name: 'Lighting', imgSrc: 'HomeDecor/Ceiling_Light/17_nnfcow' },
-  { name: 'Ceiling Lights', imgSrc: 'HomeDecor/OutdoorLight/3_wt1aml' },
+  { name: 'Ceiling Lights', imgSrc: 'landingPage/bhxzfd5szxwtg6fdskyw' },
 ];
 
 const decorCategories = [
@@ -77,7 +77,7 @@ const decorCategories = [
   { name: 'All Decors', imgSrc: 'HomeDecor/WallD/4_t5ayax' },
   { name: 'Wall Decors', imgSrc: 'HomeDecor/V/21_chxhty' },
   { name: 'Mirrors', imgSrc: 'HomeDecor/Clocks/13_qnfczx' },
-  { name: 'Wall Decors', imgSrc: 'HomeDecor/Wall_Painting/16_nyg8r3' },
+  { name: 'Wall Decors', imgSrc: 'landingPage/ygpwkcrwzccgni6mofiq' },
   { name: 'Vases', imgSrc: 'HomeDecor/mrr/5_qmqgz4' },
   { name: 'Clocks', imgSrc: 'HomeDecor/WallD/5_jzcfnw' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
@@ -247,8 +247,9 @@ function LandingPage() {
               <AdvancedVideo
                 muted
                 autoPlay
+                poster="https://res.cloudinary.com/dwhmfz63n/image/upload/v1718091688/Images/Home_decor_1_zjkojz.svg"
                 loop preload="auto" playsInline
-                cldVid={cld.video('Videos/hp_jntt1i').quality('auto')}
+                cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto')}
                 alt=" High-definition video of a modern kitchen interior captured by a camera " className="     object-cover  w-screen h-screen  "
               />
 
@@ -661,7 +662,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage alt="make your interior style and space optimization using professional designers" cldImg={cld.image('Images/meeting_yeqqkz')} />
+                  <AdvancedImage alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
 
                 
 
@@ -754,7 +755,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" w-auto">
                     <div className=" w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage className="    " cldImg={cld.image('Images/mdk_imd6b1')} fetchpriority="high" decoding="async"
+                      <AdvancedImage className="    " cldImg={cld.image('landingPage/mkcwo034pfiodziddr6z')} fetchpriority="high" decoding="async"
 
                         effect="blur" alt="Modular Kitchen Designs" />
 
@@ -872,7 +873,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage cldImg={cld.image('Images/f_yov5sa')} alt="pink and grey sofa and wooden table with glass Furniture " />
+                      <AdvancedImage cldImg={cld.image('landingPage/ckhkwnh3brr4o0k0b1iv')} alt="pink and grey sofa and wooden table with glass Furniture " />
 
                     </div>
                   </div>
@@ -946,7 +947,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage cldImg={cld.image('Images/hd_u5o0ci')} alt="Home Decor " />
+                      <AdvancedImage cldImg={cld.image('landingPage/dse47cfgiznpkyjfqcu8')} alt="Home Decor " />
 
                     </div>
                   </div>
