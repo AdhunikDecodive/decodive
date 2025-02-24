@@ -21,7 +21,7 @@ import PopUp from "./PopUp";
 import ModalNew from "./ModalNew";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -370,7 +370,82 @@ function KitchenCategory() {
 
   const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
 
-
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Top Modular Kitchen Designs in Gurugram | L-Shape, U-Shape & More – Adhunik Decodive",
+    "description": "Discover top modular kitchen designs in Gurugram with Adhunik Decodive. Explore L-shape, U-shape, Parallel, Island, and Straight kitchen layouts designed for luxury and efficiency. Get a free consultation today!",
+    "url": "https://adhunikdecodive.com/KitchenCategory",
+    "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/all_category/2_bl3cxj?_a=DAJAUVWIZAA0",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "L-Shape Kitchen Design",
+            "description": "Efficient and space-saving L-shaped modular kitchens, perfect for small to medium spaces.",
+            "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/LsKitchen/3_z9eejg?_a=DAJAUVWIZAA0",
+            "url": "https://adhunikdecodive.com/LShapeKitchen"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "U-Shape Kitchen Design",
+            "description": "U-shaped modular kitchens offering abundant storage and a smooth workflow for serious cooks.",
+            "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/UsKitchen/6_gprga6?_a=DAJAUVWIZAA0",
+            "url": "https://adhunikdecodive.com/UShapeKitchen"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Parallel Kitchen Design",
+            "description": "Parallel modular kitchens designed for efficient use of space and seamless functionality.",
+            "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/PsKitchen/8_xeibjp?_a=DAJAUVWIZAA0",
+            "url": "https://adhunikdecodive.com/PshapeKitchen"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Island Kitchen Design",
+            "description": "Island modular kitchens, perfect for entertaining and creating a central hub in your home.",
+            "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/IsKitchen/13_11zon_bracki?_a=DAJAUVWIZAA0",
+            "url": "https://adhunikdecodive.com/IshapeKitchen"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Straight Kitchen Design",
+            "description": "Sleek and efficient straight-wall modular kitchens for compact spaces.",
+            "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/SsKitchen/10_x0dvfn?_a=DAJAUVWIZAA0",
+            "url": "https://adhunikdecodive.com/SshapeKitchen"
+          }
+        }
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Adhunik Decodive",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/landingPage/ylzbgsu0sw6qgh5yj544?_a=DAJAUVWIZAA0"
+      }
+    }
+  };
 
 
 
@@ -378,14 +453,37 @@ function KitchenCategory() {
   return (
     <>
     
-<HelmetProvider>
+
      <Helmet>
-  <title>All Kitchen Category</title>
 
-  <meta name="description" content="At Adhunik DecoDive, we specialize in transforming All Kitchens Types into personalized havens with innovative design in modern, modular, rustic, and luxury styles." data-react-helmet="true"/>
 
-  <link rel="canonical" href="https://adhunikdecodive.com/KitchenCategory" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ 
+<title>Top Modular Kitchen Designs in Gurugram | L-Shape, U-Shape & More – Adhunik Decodive</title>
+
+<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover top modular kitchen designs in Gurugram with Adhunik Decodive. Explore L-shape, U-shape, Parallel, Island, and Straight kitchen layouts designed for luxury and efficiency. Get a free consultation today!" />
+
+<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+<link rel="canonical" href="https://adhunikdecodive.com/KitchenCategory" data-react-helmet="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+<meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+
+<meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Modular Kitchen Designs in Gurugram | L-Shape, U-Shape, Parallel & More – Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="modular kitchen designs, L-shape kitchen, U-shape kitchen, parallel kitchen, island kitchen, straight kitchen, best modular kitchen in Gurugram, modern kitchen layouts, custom kitchen designs, kitchen renovation Gurugram, Adhunik Decodive kitchen interiors" />
+<meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+<meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+<meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+
+<meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your kitchen with Adhunik Decodive's modular kitchen designs in Gurugram. From L-shape and U-shape to Parallel, Island, and Straight layouts, we craft modern, space-efficient, and stylish kitchens tailored to your needs. Book a free consultation today!" />
+
+<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/modular-kitchen"></meta>
+<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Modular Kitchen Experts" />
+<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Modular Kitchen Designs in Gurugram | L-Shape, U-Shape & More – Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore the latest modular kitchen designs in Gurugram by Adhunik Decodive. From space-saving L-shape and U-shape kitchens to stylish Island and Parallel layouts, we offer customized solutions for modern homes. Get your dream kitchen today!" />
+<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+
+
 
 </Helmet>
 
@@ -846,7 +944,7 @@ function KitchenCategory() {
 
 
       <Footer />
-    </HelmetProvider>
+    
     </>
   );
 }

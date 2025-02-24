@@ -99,7 +99,7 @@ const furnitureCategories = [
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
+import { AdvancedImage, AdvancedVideo, lazyload } from '@cloudinary/react';
 import PopUp from "./PopUp";
 import { Helmet } from "react-helmet-async";
 
@@ -192,7 +192,7 @@ function LandingPage() {
     'Others/BarCounter/28_j2djr6',
     // Add more image identifiers as needed
   ];
-  
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -240,54 +240,54 @@ function LandingPage() {
     ]
   };
   return (
-    
+
     <>
 
 
 
       <PopUp />
 
-    
-   
-    
-    
+
+
+
+
       <Helmet>
-      
-     
-      <title>Top Luxury Interior Designers in Gurugram | Adhunik Decodive</title>
 
-<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!"/>
 
-       
-          
+        <title>Top Luxury Interior Designers in Gurugram | Adhunik Decodive</title>
 
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!" />
+
+
+
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         <link rel="canonical" href="https://adhunikdecodive.com/" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index,follow"></meta>
-        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive"/>
-     <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior designers in Gurugram, best home interior designers Gurugram, office interiors Gurugram, luxury interiors Gurugram, commercial interior designers Gurugram, interior design company in Gurugram, top interior decorators in Gurugram, home renovation Gurugram, modern interiors Gurugram, custom interior solutions Gurugram, interior designers in Gurgaon, best interior design services Gurgaon"/>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior designers in Gurugram, best home interior designers Gurugram, office interiors Gurugram, luxury interiors Gurugram, commercial interior designers Gurugram, interior design company in Gurugram, top interior decorators in Gurugram, home renovation Gurugram, modern interiors Gurugram, custom interior solutions Gurugram, interior designers in Gurgaon, best interior design services Gurgaon" />
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-      <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
         <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
-        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!"/>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!" />
 
-<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/"></meta>
-<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts"/>
-<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Luxury Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive"/>
-<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!"/>
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Luxury Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!" />
 
 
-<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 
 
 
 
       </Helmet>
 
-     
+
 
       <div className="main w-full font-['Rejouice-Headline'] ">
 
@@ -311,11 +311,19 @@ function LandingPage() {
               <AdvancedVideo
                 muted
                 autoPlay
-                poster="https://res.cloudinary.com/dwhmfz63n/image/upload/v1718091688/Images/Home_decor_1_zjkojz.svg"
-                loop preload="auto" playsInline
+                poster="https://res.cloudinary.com/dwhmfz63n/image/upload/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
+                loop
+                preload="none"
+                  playsInline
+                  cldPoster="auto"
                 cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto')}
+                width={1920}
+                height={1080}
+                plugins={[lazyload()]}
                 alt=" High-definition video of a modern kitchen interior captured by a camera " className="     object-cover  w-screen h-screen  "
               />
+
+    
 
 
 
@@ -341,16 +349,21 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld.image(category.imgSrc)}
-                              height={70}
-                              width={70}
-                              className="object-cover h-12 w-12"
-                              alt={category.name}
-                              fetchpriority="high"
-                              decoding="async"
-                              effect="blur"
-                            />
+                          <AdvancedImage
+  cldImg={cld
+    .image(category.imgSrc)
+    .resize('w_48,h_48,c_fill') // Resize image to 48x48
+    .quality('auto')
+    .format('auto') // Serve WebP/AVIF if supported
+  }
+  height={48} 
+  width={48} 
+  className="object-cover h-12 w-12"
+  alt={category.name}
+  fetchpriority="high"
+  decoding="async"
+/>
+
                           </div>
                         )}
                       </div>
@@ -365,16 +378,21 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld.image(category.imgSrc)}
-                              height={70}
-                              width={70}
-                              className="object-cover h-12 w-12"
-                              alt={category.name}
-                              fetchpriority="high"
-                              decoding="async"
-                              effect="blur"
-                            />
+                          <AdvancedImage
+  cldImg={cld
+    .image(category.imgSrc)
+    .resize('w_48,h_48,c_fill') // Resize to match displayed size
+    .quality('auto') // Optimizes compression
+    .format('auto') // Uses WebP/AVIF when supported
+  }
+  height={48} 
+  width={48} 
+  className="object-cover h-12 w-12"
+  alt={category.name}
+  fetchpriority="high"
+  decoding="async"
+/>
+
                           </div>
                         )}
                       </div>
@@ -389,16 +407,21 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld.image(category.imgSrc)}
-                              height={70}
-                              width={70}
-                              className="object-cover h-12 w-12"
-                              alt={category.name}
-                              fetchpriority="high"
-                              decoding="async"
-                              effect="blur"
-                            />
+                          <AdvancedImage
+  cldImg={cld
+    .image(category.imgSrc)
+    .resize('w_48,h_48,c_fill') // Resize to match displayed size
+    .quality('auto') // Optimizes compression
+    .format('auto') // Uses WebP/AVIF when supported
+  }
+  height={48} 
+  width={48} 
+  className="object-cover h-12 w-12"
+  alt={category.name}
+  fetchpriority="high"
+  decoding="async"
+/>
+
                           </div>
                         )}
                       </div>
@@ -413,16 +436,21 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld.image(category.imgSrc)}
-                              height={70}
-                              width={70}
-                              className="object-cover h-12 w-12"
-                              alt={category.name}
-                              fetchpriority="high"
-                              decoding="async"
-                              effect="blur"
-                            />
+                          <AdvancedImage
+  cldImg={cld
+    .image(category.imgSrc)
+    .resize('w_48,h_48,c_fill') // Resize to match displayed size
+    .quality('auto') // Optimizes compression
+    .format('auto') // Uses WebP/AVIF when supported
+  }
+  height={48} 
+  width={48} 
+  className="object-cover h-12 w-12"
+  alt={category.name}
+  fetchpriority="high"
+  decoding="async"
+/>
+
                           </div>
                         )}
                       </div>
@@ -437,16 +465,21 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld.image(category.imgSrc)}
-                              height={70}
-                              width={70}
-                              className="object-cover h-12 w-12"
-                              alt={category.name}
-                              fetchpriority="high"
-                              decoding="async"
-                              effect="blur"
-                            />
+                          <AdvancedImage
+  cldImg={cld
+    .image(category.imgSrc)
+    .resize('w_48,h_48,c_fill') // Resize to match displayed size
+    .quality('auto') // Optimizes compression
+    .format('auto') // Uses WebP/AVIF when supported
+  }
+  height={48} 
+  width={48} 
+  className="object-cover h-12 w-12"
+  alt={category.name}
+  fetchpriority="high"
+  decoding="async"
+/>
+
                           </div>
                         )}
                       </div>
@@ -592,7 +625,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       <AdvancedImage fetchpriority="high" decoding="async"
                         effect="blur" width={50}
                         height={50} className=" h-11 w-11 mb-2" alt="Design inside imac using paint" cldImg={cld.image('Images/designk_ghb9u1')} />
-                        
+
                       <h2 className=" text-center text-[3vw] lg:text-3xl  text-white">
                         Design
                       </h2>
@@ -728,7 +761,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
 
                   <AdvancedImage alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
 
-                
+
 
                 </div>
                 <div className="p-6 text-center">
@@ -748,7 +781,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                     </h2>
                   </div>
                 </div>
-              
+
               </div>
             </div>
 
@@ -758,7 +791,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
                   <AdvancedImage alt="Revitalize your interior kitchen space." cldImg={cld.image('Images/meeting2_qa5a1w')} />
 
-                
+
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
@@ -785,8 +818,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
             <div className="w-full p-9">
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-               
-                  <AdvancedImage   alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
+
+                  <AdvancedImage alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
 
                 </div>
                 <div className="p-6 text-center">
@@ -865,7 +898,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="./KitchenCategory"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-                 Kitchen Category
+                Kitchen Category
               </Link>
             </div>
           </div>
@@ -955,7 +988,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/Furniture"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                     Furniture
+                      Furniture
                     </Link>
                   </div>
                 </div>
@@ -979,7 +1012,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/Furniture"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-               Furniture
+                Furniture
               </Link>
             </div>
           </div>
@@ -1000,7 +1033,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/HomeDecor"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-               Home Decor
+                Home Decor
               </Link>
             </div>
           </div>
@@ -1028,7 +1061,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/HomeDecor"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                     Home Decor
+                      Home Decor
                     </Link>
                   </div>
                 </div>
@@ -1088,14 +1121,14 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/OthersCategory"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-              Other Category
+                Other Category
               </Link>
             </div>
           </div>
         </div>
       </div>
 
-  
+
       <Footer />
     </>
   );
