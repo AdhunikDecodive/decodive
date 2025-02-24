@@ -101,7 +101,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
 import PopUp from "./PopUp";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -192,38 +192,102 @@ function LandingPage() {
     'Others/BarCounter/28_j2djr6',
     // Add more image identifiers as needed
   ];
-
+  
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Adhunik DecoDive",
+    "image": "https://adhunikdecodive.com/logo.jpg",
+    "description": "Top luxury interior designers in Gurugram, Haryana, specializing in bespoke home and office interiors. Rated 5.0 by 7 Google reviews.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "603, Reach My Tower, Sector 70",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "postalCode": "122001",
+      "addressCountry": "India"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "28.3909507",
+      "longitude": "77.0294258"
+    },
+    "telephone": "+91-9289126052",
+    "url": "https://adhunikdecodive.com/",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "7"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61560707765598",
+      "https://www.instagram.com/adhunikdecodive/",
+      "https://www.linkedin.com/in/adhunik-decodive-032347337/"
+    ]
+  };
   return (
     
     <>
 
-  
+
 
       <PopUp />
 
     
-      <HelmetProvider>
-
+   
     
     
       <Helmet>
       
-        <title> 
-        Best Interior Design Company in Gurugram | Home Decoration
-         </title>
+     
+      <title>Top Luxury Interior Designers in Gurugram | Adhunik Decodive</title>
 
-        <meta 
-        name="description"
-         content="Adhunik DecoDive : Shop Furniture Online in India. Explore a wide range of ⭐Sofa Sets ⭐Study Tables ⭐Dining Tables at the best prices. ✔Guaranteed Quality." 
-         data-react-helmet="true"
-          />
+<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!"/>
+
+       
+          
 
         <link rel="canonical" href="https://adhunikdecodive.com/" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index,follow"></meta>
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive"/>
+     <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior designers in Gurugram, best home interior designers Gurugram, office interiors Gurugram, luxury interiors Gurugram, commercial interior designers Gurugram, interior design company in Gurugram, top interior decorators in Gurugram, home renovation Gurugram, modern interiors Gurugram, custom interior solutions Gurugram, interior designers in Gurgaon, best interior design services Gurgaon"/>
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+      <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!"/>
+
+<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/"></meta>
+<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts"/>
+<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Luxury Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive"/>
+<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!"/>
+
+
+<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+
+
+
 
       </Helmet>
 
-      </HelmetProvider>
+     
 
       <div className="main w-full font-['Rejouice-Headline'] ">
 

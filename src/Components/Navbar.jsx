@@ -383,7 +383,7 @@ function Navbar() {
 
                     {/* Mobile menu button */}
                     <div className="md:hidden flex items-center">
-                        <button className="mobile-menu-button" onClick={toggleMobileMenu}>
+                        <button className="mobile-menu-button" aria-label="Open mobile menu" onClick={toggleMobileMenu}>
                             {isMobileMenuOpen ? (
                                 // Close icon
                                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
