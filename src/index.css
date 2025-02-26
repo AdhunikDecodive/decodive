@@ -10,14 +10,15 @@
 
  * {
 
-   font-family: 'woodpecker';
+   font-family: 'woodpecker', sans-serif;
 }
 
 
 @font-face {
    font-family: 'woodpecker';
-   src: url('./assets/Fonts/WoodPecker.ttf');
-   /* Add additional src formats if needed */
+   /* src: url('./assets/Fonts/WoodPecker.ttf'); */
+   src: url('./assets/Fonts/WoodPecker.ttf') format('truetype');
+   font-display: swap;
  }
 
  .mobile-menu {

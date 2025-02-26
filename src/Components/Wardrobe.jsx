@@ -330,14 +330,34 @@ function Wardrobe() {
     return (
         <>
 
-<HelmetProvider>
+
+
+
 <Helmet>
-  <title>All Wardrobe Category</title>
 
-  <meta name="description" content="At Adhunik DecoDive we transform all wardrobe types into personalized havens with innovative designs in modern, modular, rustic, and luxury styles." data-react-helmet="true"/>
+<title>Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive</title>
 
-  <link rel="canonical" href="https://adhunikdecodive.com/Wardrobe" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wardrobe designs in Gurugram with Adhunik Decodive. Explore 1-door, 2-door, sliding, and walk-in wardrobes customized for style and efficiency. Get a free consultation today!" />
+
+<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+<link rel="canonical" href="https://adhunikdecodive.com/Wardrobe" data-react-helmet="true" />
+<meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+<meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+
+<meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wardrobe designs, 1-door wardrobe, 2-door wardrobe, sliding wardrobe, walk-in wardrobe, best wardrobes in Gurugram, modern wardrobe layouts, custom wardrobe designs, wardrobe renovation Gurugram, Adhunik Decodive interiors" />
+<meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+<meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+<meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+
+<meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your home with Adhunik Decodive's best wardrobe designs in Gurugram. Choose from stylish 1-door, 2-door, sliding, and walk-in wardrobes tailored for modern homes. Book a free consultation today!" />
+
+<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/wardrobe-category"></meta>
+<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Experts" />
+<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore space-efficient and stylish wardrobe designs in Gurugram by Adhunik Decodive. From 1-door and 2-door to sliding and walk-in wardrobes, we craft modern storage solutions. Get a free consultation today!" />
+{/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
 
 </Helmet>
 
@@ -720,8 +740,8 @@ Unveil Our Latest Design Collection!  "  className="   relative   h-[86vh]  md:h
                 </Tabs>
             </div>
             <Footer />
-            </HelmetProvider>
-        </>
+            </>
+        
     )
 }
 

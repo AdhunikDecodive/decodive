@@ -83,6 +83,7 @@ function SshapeKitchen() {
 
         // Add more card objects as needed
     ];
+
     const P2cardData = [
         {
             id: 1,
@@ -152,12 +153,31 @@ function SshapeKitchen() {
         <>
 
            
+
 <Helmet>
-  <title>Straight Kitchen Designs</title>
 
+<title>Best Straight Modular Kitchen Designs in Gurugram | Adhunik Decodive</title>
 
-  <link rel="canonical" href="https://adhunikdecodive.com/SshapeKitchen" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best Straight modular kitchen designs in Gurugram with Adhunik Decodive. Stylish, space-efficient, and customized kitchen solutions for modern homes. Get a free consultation today!" />
+
+<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+<meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+<meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+
+<meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Straight Modular Kitchen Designs in Gurugram | Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="Straight kitchen, modular kitchen designs, best modular kitchen in Gurugram, modern kitchen layouts, custom kitchen designs, kitchen renovation Gurugram, space-saving kitchens, Adhunik Decodive kitchen interiors" />
+<meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+<meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+<meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+
+<meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your kitchen with Adhunik Decodive's best Straight modular kitchen designs in Gurugram. Crafted for efficiency, style, and modern aesthetics. Book a free consultation today!" />
+
+<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/straight-kitchen"></meta>
+<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Modular Kitchen Experts" />
+<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Best Straight Modular Kitchen Designs in Gurugram | Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore space-efficient and stylish Straight modular kitchen designs in Gurugram by Adhunik Decodive. Perfect for modern homes. Get a free consultation today!" />
+{/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
 
 </Helmet>
 
