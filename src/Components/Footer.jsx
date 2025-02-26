@@ -33,7 +33,7 @@ function Footer() {
         <>
 
 
-            <footer className="bg-[#F3F3F3] text-center h-auto w-auto font-['Rejouice-Headline']   lg:text-left "
+            <footer loading="lazy" className="bg-[#F3F3F3] text-center h-auto w-auto font-['Rejouice-Headline']   lg:text-left "
                 style={styles}>
 
                 <div className="mx-6 pt-8 pb-1 text-center md:text-left">

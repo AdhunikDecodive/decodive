@@ -99,7 +99,7 @@ const furnitureCategories = [
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage, AdvancedVideo, lazyload } from '@cloudinary/react';
+import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
 import PopUp from "./PopUp";
 import { Helmet } from "react-helmet-async";
 
@@ -311,16 +311,15 @@ function LandingPage() {
               <AdvancedVideo
                 muted
                 autoPlay
-                poster="https://res.cloudinary.com/dwhmfz63n/image/upload/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
+                poster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
                 loop
-                preload="none"
                   playsInline
                   cldPoster="auto"
-                cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto')}
+                cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
                 width={1920}
                 height={1080}
-                plugins={[lazyload()]}
-                alt=" High-definition video of a modern kitchen interior captured by a camera " className="     object-cover  w-screen h-screen  "
+               
+                alt=" High-definition video of a modern kitchen interior captured by a camera " className=" object-cover  w-screen h-screen  "
               />
 
     
@@ -352,12 +351,12 @@ function LandingPage() {
                           <AdvancedImage
   cldImg={cld
     .image(category.imgSrc)
-    .resize('w_48,h_48,c_fill') // Resize image to 48x48
-    .quality('auto')
+    .quality('auto:best')
     .format('auto') // Serve WebP/AVIF if supported
   }
   height={48} 
   width={48} 
+  loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
   fetchpriority="high"
@@ -380,13 +379,13 @@ function LandingPage() {
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
                           <AdvancedImage
   cldImg={cld
-    .image(category.imgSrc)
-    .resize('w_48,h_48,c_fill') // Resize to match displayed size
-    .quality('auto') // Optimizes compression
+    .image(category.imgSrc) // Resize to match displayed size
+    .quality('auto:best') // Optimizes compression
     .format('auto') // Uses WebP/AVIF when supported
   }
   height={48} 
   width={48} 
+  loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
   fetchpriority="high"
@@ -410,12 +409,13 @@ function LandingPage() {
                           <AdvancedImage
   cldImg={cld
     .image(category.imgSrc)
-    .resize('w_48,h_48,c_fill') // Resize to match displayed size
-    .quality('auto') // Optimizes compression
+     // Resize to match displayed size
+    .quality('auto:best') // Optimizes compression
     .format('auto') // Uses WebP/AVIF when supported
   }
   height={48} 
   width={48} 
+  loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
   fetchpriority="high"
@@ -439,12 +439,13 @@ function LandingPage() {
                           <AdvancedImage
   cldImg={cld
     .image(category.imgSrc)
-    .resize('w_48,h_48,c_fill') // Resize to match displayed size
-    .quality('auto') // Optimizes compression
+     // Resize to match displayed size
+    .quality('auto:best') // Optimizes compression
     .format('auto') // Uses WebP/AVIF when supported
   }
   height={48} 
   width={48} 
+  loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
   fetchpriority="high"
@@ -468,12 +469,13 @@ function LandingPage() {
                           <AdvancedImage
   cldImg={cld
     .image(category.imgSrc)
-    .resize('w_48,h_48,c_fill') // Resize to match displayed size
-    .quality('auto') // Optimizes compression
+     // Resize to match displayed size
+    .quality('auto:best') // Optimizes compression
     .format('auto') // Uses WebP/AVIF when supported
   }
   height={48} 
   width={48} 
+  loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
   fetchpriority="high"
@@ -516,7 +518,7 @@ function LandingPage() {
                   <div className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw] flex-shrink-0 mr-4">
 
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70}
+                      effect="blur" width={70} loading="lazy"
                       height={70} className="  w-full h-full object-cover text-black " alt="DURABILITY
 Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   </div>
@@ -530,7 +532,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 <div className="  w-full lg:w-10/12 h-full flex items-center justify-center lg:justify-start">
                   <div className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw] flex-shrink-0 mr-4 lg:ml-7">
 
-                    <AdvancedImage fetchpriority="high" decoding="async"
+                    <AdvancedImage loading="lazy" fetchpriority="high" decoding="async"
                       effect="blur" width={70}
                       height={70} className="  w-full h-full object-cover" alt="MODERN INTERIOR" cldImg={cld.image('Images/modern_t76wou')} />
 
@@ -587,10 +589,12 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       height='100%'
                       className=" w-full  object-cover object-left"
                       effect="blur"
+                      loading="lazy"
                       alt={`Image ${index + 1}`}
                       cldImg={cld.image(id)}
                     />
                   </SwiperSlide>
+
                 ))}
               </Swiper>
             </div>
@@ -611,7 +615,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 }}
               >
 
-                {/* <AdvancedImage cldImg={cld.image('Images/1_tuzlzk')} /> */}
+              
                 <div className="hidden md:flex row flex gap-10 relative content-end top-[89%] left-[15%] ">
                   <div className="w-6/12 h-10">
                     <div
@@ -623,7 +627,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                     >
 
                       <AdvancedImage fetchpriority="high" decoding="async"
-                        effect="blur" width={50}
+                        effect="blur" width={50} loading="lazy"
                         height={50} className=" h-11 w-11 mb-2" alt="Design inside imac using paint" cldImg={cld.image('Images/designk_ghb9u1')} />
 
                       <h2 className=" text-center text-[3vw] lg:text-3xl  text-white">
@@ -642,7 +646,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                     >
 
                       <AdvancedImage fetchpriority="high" decoding="async"
-                        effect="blur" width={50}
+                        effect="blur" width={50} loading="lazy"
                         height={50} className=" h-11 w-11 mb-2" alt="Build product and step up" cldImg={cld.image('Images/build_nz2i8p')} />
 
                       <h2 className="  text-center text-[3vw] lg:text-3xl  text-white">
@@ -668,7 +672,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className="flex-col md:flex-row flex justify-center items-center">
 
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70}
+                      effect="blur" width={70} loading="lazy"
                       height={70} className="h-12 w-12 " alt="Quality Design of home" cldImg={cld.image('Images/interior_vymssy')} />
 
                     <div className="  md:pl-5">
@@ -686,8 +690,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   {/* Feature 2 */}
                   <div className="flex-col md:flex-row flex justify-center items-center">
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70}
-                      height={70} className="h-12 w-12 " alt="Team of Experts , skilled designers bring expertise to every project" cldImg={cld.image('Images/design_xotkss')} />
+                      effect="blur" width={70} loading="lazy"
+                      height={70} className="h-12 w-12 " alt="Team of Experts , skilled designers bring expertise to every project" cldImg={cld.image('Images/design_xotkss_ssaaef')} />
 
 
                     <div className=" md:pl-5">
@@ -705,7 +709,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   {/* Feature 3 */}
                   <div className="flex-col md:flex-row flex justify-center  items-center">
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70}
+                      effect="blur" width={70} loading="lazy"
                       height={70} className="h-12 w-12 " alt="Expect clear communication" cldImg={cld.image('Images/com_uonsax')} />
                     <div className="md:pl-5 ">
                       <h2 className="text-xl lg:text-2xl font-semibold text-center md:text-start">
@@ -722,7 +726,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   {/* Feature 4 */}
                   <div className="flex-col md:flex-row flex justify-center  items-center">
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70}
+                      effect="blur" width={70} loading="lazy"
                       height={70} className="h-12 w-12 " alt="On-time Delivery" cldImg={cld.image('Images/delivery_euogle')} />
                     <div className=" md:pl-5">
                       <h2 className="text-xl lg:text-2xl font-semibold text-center md:text-start">
@@ -759,18 +763,19 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
+                  <AdvancedImage width={500}  loading="lazy"
+  height={500} alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
 
 
 
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    Show your style and space optimization.
+                    Show your style and space optimization
                   </h3>
                   <p className="block text-base antialiased font-light leading-relaxed text-inherit">
                     Dream big for your space! Share your inspiration, goals, and
-                    budget, and let us help you design a space you'll adore.
+                    budget, and let us help you design a space you will adore.
                   </p>
                 </div>
 
@@ -789,13 +794,14 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
             <div className="w-full p-9">
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-                  <AdvancedImage alt="Revitalize your interior kitchen space." cldImg={cld.image('Images/meeting2_qa5a1w')} />
+                  <AdvancedImage  width={500} loading="lazy"
+  height={500}  alt="Revitalize your interior kitchen space." cldImg={cld.image('Images/meeting2_qa5a1w')} />
 
 
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    Revitalize your space.
+                    Revitalize your space
                   </h3>
                   <p className="block text-base antialiased font-light leading-relaxed text-inherit">
                     Your dedicated designer will collaborate with you
@@ -819,7 +825,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
+                  <AdvancedImage  width={500} loading="lazy"
+  height={500}  alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
 
                 </div>
                 <div className="p-6 text-center">
@@ -852,8 +859,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" w-auto">
                     <div className=" w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage className="    " cldImg={cld.image('landingPage/mkcwo034pfiodziddr6z')} fetchpriority="high" decoding="async"
-
+                      <AdvancedImage loading="lazy" className="" cldImg={cld.image('landingPage/mkcwo034pfiodziddr6z')} fetchpriority="high" decoding="async"
+ width={800} 
+ height={500} 
                         effect="blur" alt="Modular Kitchen Designs" />
 
                     </div>
@@ -871,7 +879,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="./KitchenCategory"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                      Kitchen Category
+                      &#10147;
                     </Link>
                   </div>
                 </div>
@@ -898,7 +906,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="./KitchenCategory"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-                Kitchen Category
+               &#10147;
               </Link>
             </div>
           </div>
@@ -923,7 +931,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/Wardrobe"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-                Wardrobe Designs
+               &#10147;
               </Link>
             </div>
           </div>
@@ -934,7 +942,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage cldImg={cld.image('Images/wr_qfshhd')} alt="Wardrobe Designs" />
+                      <AdvancedImage loading="lazy" cldImg={cld.image('Images/wr_qfshhd')}  width={500} 
+  height={500}   alt="Wardrobe Designs" />
 
                     </div>
                   </div>
@@ -952,7 +961,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/Wardrobe"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                      Wardrobe Designs
+                     &#10147;
                     </Link>
                   </div>
                 </div>
@@ -970,7 +979,19 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage cldImg={cld.image('landingPage/ckhkwnh3brr4o0k0b1iv')} alt="pink and grey sofa and wooden table with glass Furniture " />
+                    <AdvancedImage
+  cldImg={cld
+    .image('landingPage/ckhkwnh3brr4o0k0b1iv')
+     // Resize image to 500x300px
+    .quality('auto:best')
+    .format('auto') // Uses WebP/AVIF if supported
+  }
+  width={500} 
+  height={300} 
+  loading="lazy"
+  className="object-cover"
+  alt="pink and grey sofa and wooden table with glass Furniture"
+/>
 
                     </div>
                   </div>
@@ -988,7 +1009,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/Furniture"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                      Furniture
+                      &#10147;
                     </Link>
                   </div>
                 </div>
@@ -1012,7 +1033,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/Furniture"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-                Furniture
+                &#10147;
               </Link>
             </div>
           </div>
@@ -1033,7 +1054,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/HomeDecor"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-                Home Decor
+               &#10147;
               </Link>
             </div>
           </div>
@@ -1044,7 +1065,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage cldImg={cld.image('landingPage/dse47cfgiznpkyjfqcu8')} alt="Home Decor " />
+                      <AdvancedImage loading="lazy" cldImg={cld.image('landingPage/dse47cfgiznpkyjfqcu8')} width={500} 
+  height={500}  alt="Home Decor " />
 
                     </div>
                   </div>
@@ -1061,7 +1083,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/HomeDecor"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                      Home Decor
+                      &#10147;
                     </Link>
                   </div>
                 </div>
@@ -1078,7 +1100,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage cldImg={cld.image('Others/TV/2_k9vhdt')} alt="TV Unit Panels" />
+                      <AdvancedImage  loading="lazy" cldImg={cld.image('Others/TV/2_k9vhdt')}  width={500} 
+  height={500}  alt="TV Unit Panels" />
 
 
                     </div>
@@ -1096,7 +1119,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/OthersCategory"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                      TV Units
+                     &#10147;
                     </Link>
                   </div>
                 </div>
@@ -1121,7 +1144,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 to="/OthersCategory"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-                Other Category
+                &#10147;
               </Link>
             </div>
           </div>

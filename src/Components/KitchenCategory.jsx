@@ -494,6 +494,7 @@ function KitchenCategory() {
 
 
           <div className="row flex relative ">
+
             {/* <video
                             muted
                             autoPlay
@@ -510,6 +511,8 @@ function KitchenCategory() {
               cldVid={cld.video('Videos/kt_o3m1q9').quality('auto')}
               alt="interior l-shape category for design with oven and appliances" className="   relative   h-[86vh]  md:h-[45vh] w-full object-cover rounded-lg "
             />
+
+            
             <div className="w-full  h-full p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row  md:text-center  items-center mx-auto  absolute">
 
               <p className=" h-full  text-gray-700 text-4xl flex-col flex my-auto justify-center items-center">
