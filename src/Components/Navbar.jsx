@@ -128,7 +128,12 @@ function Navbar() {
                        
 
 <AdvancedImage  alt="Adhunik DecoDive" cldImg={cld.image('landingPage/ylzbgsu0sw6qgh5yj544')} className="w-40"  width='100%'
-                     height='100%'  effect="blur"/>
+  quality="auto"
+  format="auto"
+  loading="lazy"    sizes="(max-width: 768px) 100vw, 400px"   
+           height={300}              effect="blur"/>
+
+
                             </Link>
                            
                         </div>
@@ -136,7 +141,7 @@ function Navbar() {
 
                     </div>
 
-                    <div className="hidden md:flex items-center space-x-1">
+                    <div className="hidden lg:flex items-center space-x-1">
 
                         <ul className="flex   md:text-[11px] lg:text-[15px] flex-col font-medium p-4 md:p-0 mt-4 border  rounded-lg  md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   ">
                             <li>
@@ -368,12 +373,15 @@ function Navbar() {
 
 
                             <li>
+
                                 <Link
                                     to="/contact"
                                     className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Contact us
                                 </Link>
+
+
                             </li>
 
                             
@@ -382,7 +390,7 @@ function Navbar() {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden flex items-center">
+                    <div className="lg:hidden flex items-center">
                         <button className="mobile-menu-button" aria-label="Open mobile menu" onClick={toggleMobileMenu}>
                             {isMobileMenuOpen ? (
                                 // Close icon
@@ -408,7 +416,7 @@ function Navbar() {
     
 
 
-            <div className={`mobile-menu md:hidden ${isMobileMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}`}>
+            <div className={`mobile-menu lg:hidden ${isMobileMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}`}>
                 {links.map((link, index) => (
                     <div key={index} className=" mx-7  mb-2">
                         {link.dropdownItems ? (

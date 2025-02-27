@@ -303,6 +303,7 @@ function LandingPage() {
               </h2>
             </div>
 
+
             <div
               style={{ clipPath: "circle(100% at 50% 50%)" }}
               className="  z-[3] vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden"
@@ -311,23 +312,18 @@ function LandingPage() {
               <AdvancedVideo
                 muted
                 autoPlay
-                poster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
-                loop
+               loop
                   playsInline
-                  cldPoster="auto"
-                cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
+                  cldPoster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
+                 cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
                 width={1920}
                 height={1080}
                
                 alt=" High-definition video of a modern kitchen interior captured by a camera " className=" object-cover  w-screen h-screen  "
               />
 
-    
-
-
-
-
             </div>
+
 
             <div className="marqueesContainer w-full h-screen relative overflow-hidden">
               <div className="heading absolute top-[7%] left-1/2 -translate-x-1/2">
@@ -349,11 +345,13 @@ function LandingPage() {
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
                           <AdvancedImage
+                          
   cldImg={cld
     .image(category.imgSrc)
     .quality('auto:best')
-    .format('auto') // Serve WebP/AVIF if supported
+     // Serve WebP/AVIF if supported
   }
+   sizes="50px"
   height={48} 
   width={48} 
   loading="lazy"
@@ -381,10 +379,11 @@ function LandingPage() {
   cldImg={cld
     .image(category.imgSrc) // Resize to match displayed size
     .quality('auto:best') // Optimizes compression
-    .format('auto') // Uses WebP/AVIF when supported
+     // Uses WebP/AVIF when supported
   }
   height={48} 
   width={48} 
+   sizes="50px"
   loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
@@ -411,8 +410,9 @@ function LandingPage() {
     .image(category.imgSrc)
      // Resize to match displayed size
     .quality('auto:best') // Optimizes compression
-    .format('auto') // Uses WebP/AVIF when supported
+     // Uses WebP/AVIF when supported
   }
+   sizes="50px"
   height={48} 
   width={48} 
   loading="lazy"
@@ -441,10 +441,11 @@ function LandingPage() {
     .image(category.imgSrc)
      // Resize to match displayed size
     .quality('auto:best') // Optimizes compression
-    .format('auto') // Uses WebP/AVIF when supported
+     // Uses WebP/AVIF when supported
   }
-  height={48} 
-  width={48} 
+   sizes="50px"
+  height={40} 
+  width={40} 
   loading="lazy"
   className="object-cover h-12 w-12"
   alt={category.name}
@@ -471,7 +472,7 @@ function LandingPage() {
     .image(category.imgSrc)
      // Resize to match displayed size
     .quality('auto:best') // Optimizes compression
-    .format('auto') // Uses WebP/AVIF when supported
+     // Uses WebP/AVIF when supported
   }
   height={48} 
   width={48} 
@@ -518,9 +519,10 @@ function LandingPage() {
                   <div className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw] flex-shrink-0 mr-4">
 
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70} loading="lazy"
-                      height={70} className="  w-full h-full object-cover text-black " alt="DURABILITY
+                      effect="blur"  sizes="50px" width={50} loading="lazy"
+                      height={50} className="  w-full h-full object-cover text-black " alt="DURABILITY
 Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
+
                   </div>
                   <div className="text-center lg:text-left">
                     <h2 className="text-2xl font-semibold">DURABILITY</h2>
@@ -984,7 +986,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
     .image('landingPage/ckhkwnh3brr4o0k0b1iv')
      // Resize image to 500x300px
     .quality('auto:best')
-    .format('auto') // Uses WebP/AVIF if supported
+     // Uses WebP/AVIF if supported
   }
   width={500} 
   height={300} 

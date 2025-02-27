@@ -1,12 +1,11 @@
 import "./Footer.css"
 
 import { Link } from "react-router-dom";
-import footerimage from '../assets/Images/Footer/footer2_.webp';
-import { Button, Tooltip } from "flowbite-react";
+import {  Tooltip } from "flowbite-react";
 
 
 const styles = {
-    backgroundImage: `url(${footerimage})`,
+    backgroundImage: "url('https://res.cloudinary.com/dwhmfz63n/image/upload/v1740637220/Images/footer2__amymnq.webp')",
     backgroundSize: 'cover',
     backgroundPosition: 'top',
     filter: 'brightness(1)'
@@ -29,11 +28,12 @@ function Footer() {
     const handlePhoneCall = () => {
         window.location.href = `tel:${phoneNumber}`;
     };
+
     return (
+
         <>
 
-
-            <footer loading="lazy" className="bg-[#F3F3F3] text-center h-auto w-auto font-['Rejouice-Headline']   lg:text-left "
+ <footer  className="bg-[#F3F3F3] text-center h-auto w-auto font-['Rejouice-Headline']   lg:text-left "
                 style={styles}>
 
                 <div className="mx-6 pt-8 pb-1 text-center md:text-left">

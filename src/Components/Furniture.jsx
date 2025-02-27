@@ -211,16 +211,35 @@ function Furniture() {
   return (
     <>
 
-<HelmetProvider>
+
+
+
+
 <Helmet>
-  <title>All Furniture Categories</title>
 
-  <meta name="description" content="At Adhunik DecoDive, we specialize in transforming all furniture categories with innovative designs and bespoke solutions for your personalized haven." data-react-helmet="true"/>
+        <title>Top Domestic & Commercial Furniture in Gurugram | Adhunik Decodive</title>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of domestic and commercial furniture. From concept to installation, we create bespoke, functional, and stylish furniture solutions. Free consultation!" />
 
-  <link rel="canonical" href="https://adhunikdecodive.com/Furniture" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <link rel="canonical" href="https://adhunikdecodive.com/Furniture" data-react-helmet="true" />
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Domestic & Commercial Furniture in Gurugram | Stylish & Functional – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="domestic furniture, commercial furniture, best furniture in Gurugram, modern furniture solutions, custom furniture Gurugram, office furniture Gurugram, home furniture Gurugram, luxury furniture solutions, Adhunik Decodive furniture, stylish furniture Gurugram" />
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top provider of domestic and commercial furniture. From concept to installation, we create bespoke, functional, and stylish furniture solutions. Free consultation!" />
 
-</Helmet>
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/furniture"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Furniture Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Domestic & Commercial Furniture in Gurugram | Stylish & Functional – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top provider of domestic and commercial furniture. From concept to installation, we create bespoke, functional, and stylish furniture solutions. Free consultation!" />
+
+        {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
+
+      </Helmet>
 
   <PopUp/>
 <ModalNew  isOpen={openModal} onClose={toggleModal}  />
@@ -473,8 +492,8 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[45vh
         </Tabs>
     </div>
     <Footer />
-</HelmetProvider>
 </>
+
   )
 }
 

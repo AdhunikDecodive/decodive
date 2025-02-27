@@ -142,14 +142,34 @@ function SlidingDoorWardrobe() {
 
     return (
         <>
-         <Helmet>
-  <title> Sliding-Door Wardrobe</title>
+
+     
 
 
-  <link rel="canonical" href="https://adhunikdecodive.com/SlidingDoorWardrobe" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<Helmet>
 
-</Helmet>
+        <title>Top Sliding Door Wardrobe Designs in Gurugram | Adhunik Decodive</title>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of sliding door wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
+
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <link rel="canonical" href="https://adhunikdecodive.com/SlidingDoorWardrobe" data-react-helmet="true" />
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Sliding Door Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="sliding door wardrobe designs, best wardrobe designs Gurugram, modern wardrobes Gurugram, custom sliding wardrobes Gurugram, space-saving wardrobe solutions, wardrobe interior designers Gurugram, wardrobe renovation Gurugram, luxury wardrobe designs Gurugram, Adhunik Decodive wardrobes, stylish wardrobes Gurugram" />
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top provider of sliding door wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/sliding-door-wardrobe"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Design Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Sliding Door Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top provider of sliding door wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
+
+        {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
+
+      </Helmet>
 
 <ModalNew  isOpen={openModal} onClose={toggleModal}  />
     
