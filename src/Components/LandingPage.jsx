@@ -30,7 +30,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const kitchenCategories = [
   { name: 'Kitchens', imgSrc: 'Kitchen/all_category/2_bl3cxj' },
-  { name: 'Straight Kitchens', imgSrc: 'Kitchen/all_category/4_ylybrr' },
+  { name: 'Straight Kitchens', imgSrc: 'landingPage/2_gimriq' },
   { name: 'L-Shape Kitchen', imgSrc: 'Kitchen/all_category/6_bcp1bw' },
   { name: 'U-Shape Kitchen', imgSrc: 'Kitchen/LsKitchen/1_a8rmpg' },
   { name: 'Parallel Kitchen', imgSrc: 'Kitchen/LsKitchen/3_z9eejg' },
@@ -45,7 +45,7 @@ const kitchenCategories = [
 const wardrobeCategories = [
   { name: 'Wardrobe', imgSrc: 'landingPage/nnpixsron965x7qgsrsy' },
   { name: '1-Door Wardrobe', imgSrc: 'WardRobe/3_qnzv0m' },
-  { name: '2-Door Wardrobe', imgSrc: 'WardRobe/7_ivqmog' },
+  { name: '2-Door Wardrobe', imgSrc: 'landingPage/3_unschw' },
   { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/9_u45uvt' },
   { name: 'Walk-in-Closet Wardrobe', imgSrc: 'WardRobe/11_vtroxl' },
   { name: 'Wardrobe', imgSrc: 'WardRobe/1DW/1_z6mffw' },
@@ -56,7 +56,7 @@ const wardrobeCategories = [
 
 const lightingCategories = [
   { name: 'Lamps And Lightings', imgSrc: 'HomeDecor/Ceiling_Light/3_dgj8x9' },
-  { name: 'Lamps', imgSrc: 'HomeDecor/OutdoorLight/2_cth23n' },
+  { name: 'Lamps', imgSrc: 'landingPage/1_ethd8y' },
   { name: 'Lighting', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Ceiling Lights', imgSrc: 'HomeDecor/Wall_Light/19_ymupwm' },
   { name: 'Wall Lights', imgSrc: 'HomeDecor/Ceiling_Light/13_d14wqe' },
@@ -70,7 +70,8 @@ const lightingCategories = [
 const decorCategories = [
   { name: 'All Decors', imgSrc: 'HomeDecor/mrr/21_jhvm8s' },
   { name: 'Mirrors', imgSrc: 'HomeDecor/WallD/17_f5c53m' },
-  { name: 'Wall Decors', imgSrc: 'HomeDecor/V/12_ioia6a' },
+
+  { name: 'Wall Decors', imgSrc: 'landingPage/6_srgoqe' },
   { name: 'Vases', imgSrc: 'HomeDecor/Clocks/10_ots5ia' },
   { name: 'Clocks', imgSrc: 'HomeDecor/Wall_Painting/18_dpibm5' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/mrr/18_unhqk1' },
