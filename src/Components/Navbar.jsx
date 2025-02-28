@@ -60,9 +60,8 @@ function Navbar() {
             text: 'Wardrobe',
             dropdownItems: [
                 { to: '/Wardrobe', text: 'All Wardrobe Categories' },
-                { to: '/Door1Wardrobe', text: '1-Door Wardrobe' },
-                { to: '/Door2Wardrobe', text: '2-Door Wardrobe' },
-                { to: '/SlidingDoorWardrobe', text: 'Sliding Door Wardrobe' },
+                { to: '/ShutterDoorWardrobe', text: 'Shutter  Wardrobe' },
+                { to: '/SlidingDoorWardrobe', text: 'Sliding  Wardrobe' },
                 { to: '/WalkDoorWardrobe', text: 'Walk in Wardrobe' },
 
             ],
@@ -216,19 +215,15 @@ function Navbar() {
                                             All Wardrobe Categories
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/Door1Wardrobe">
+                                
+                                    <Link to="/ShutterDoorWardrobe">
                                         <Dropdown.Item>
-                                            1-Door Wardrobe
-                                        </Dropdown.Item>
-                                    </Link>
-                                    <Link to="/Door2Wardrobe">
-                                        <Dropdown.Item>
-                                            2-Door Wardrobe
+                                            Shutter  Wardrobe
                                         </Dropdown.Item>
                                     </Link>
                                     <Link to="/SlidingDoorWardrobe">
                                         <Dropdown.Item>
-                                            Sliding Door Wardrobe
+                                            Sliding  Wardrobe
                                         </Dropdown.Item>
                                     </Link>
                                     <Link to="/WalkDoorWardrobe">
@@ -366,6 +361,11 @@ function Navbar() {
         <Link to="/BarCounter">
             <Dropdown.Item >
                 Bar Counter
+            </Dropdown.Item>
+        </Link>
+        <Link to="/VastuTips">
+            <Dropdown.Item >
+            Vastu Tips
             </Dropdown.Item>
         </Link>
     </Dropdown>

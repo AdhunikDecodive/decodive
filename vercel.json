@@ -1,5 +1,6 @@
 {
     "routes": [
+        
         {
             "src": "/",
             "dest": "/"
@@ -37,11 +38,11 @@
             "dest": "/"
         },
         {
-            "src": "/Door1Wardrobe",
+            "src": "VastuTips",
             "dest": "/"
         },
         {
-            "src": "/Door2Wardrobe",
+            "src": "/ShutterDoorWardrobe",
             "dest": "/"
         },
         {

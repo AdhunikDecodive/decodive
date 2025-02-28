@@ -51,7 +51,7 @@ function SlidingDoorWardrobe() {
             'WardRobe/SDW/10_fnqni2',
             title: '',
             description:
-                'A sleek lacquered finish light gray sliding door wardrobe with minimalist handles offers clutter-free storage.',
+                'A sleek lacquered finish light gray sliding  wardrobe with minimalist handles offers clutter-free storage.',
         },
         {
             id: 5,
@@ -95,7 +95,7 @@ function SlidingDoorWardrobe() {
             'WardRobe/SDW/16_wknork',
             title: '',
             description:
-                'Coffee brown contemporary sliding door wardrobe with glossy laminate finish combines style and functionality.',
+                'Coffee brown contemporary sliding  wardrobe with glossy laminate finish combines style and functionality.',
         },
         {
             id: 3,
@@ -148,24 +148,24 @@ function SlidingDoorWardrobe() {
 
 <Helmet>
 
-        <title>Top Sliding Door Wardrobe Designs in Gurugram | Adhunik Decodive</title>
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of sliding door wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
+        <title>Top Sliding  Wardrobe Designs in Gurugram | Adhunik Decodive</title>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of sliding  wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         <link rel="canonical" href="https://adhunikdecodive.com/SlidingDoorWardrobe" data-react-helmet="true" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Sliding Door Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="sliding door wardrobe designs, best wardrobe designs Gurugram, modern wardrobes Gurugram, custom sliding wardrobes Gurugram, space-saving wardrobe solutions, wardrobe interior designers Gurugram, wardrobe renovation Gurugram, luxury wardrobe designs Gurugram, Adhunik Decodive wardrobes, stylish wardrobes Gurugram" />
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Sliding  Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="sliding  wardrobe designs, best wardrobe designs Gurugram, modern wardrobes Gurugram, custom sliding wardrobes Gurugram, space-saving wardrobe solutions, wardrobe interior designers Gurugram, wardrobe renovation Gurugram, luxury wardrobe designs Gurugram, Adhunik Decodive wardrobes, stylish wardrobes Gurugram" />
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
         <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
-        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top provider of sliding door wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top provider of sliding  wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
         <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/sliding-door-wardrobe"></meta>
         <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Design Experts" />
-        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Sliding Door Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top provider of sliding door wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Sliding  Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top provider of sliding  wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
 
         {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
 
@@ -189,7 +189,7 @@ function SlidingDoorWardrobe() {
           <div className="w-[80%] flex">
             <div className="border border-r-4 md:border-r-8 h-[50%] my-auto w-[10px]  border-orange-600"></div>
             <p className="text-1xl md:w-[70%] font-semibold md:p-9  p-2 text-justify   rounded-lg mb-2">
-            Revamp your bedroom effortlessly with our sleek sliding door wardrobe designs. To maximize the space and elevate your décor, these sleek storage solutions redefine the way you organize your wardrobe. Crafted with a range of premium finishes, including glass and mirrored panels, our wardrobes seamlessly blend form and function, allowing you to create a personalized, clutter-free haven. Customize your unit with adjustable shelves, drawers, and compartments to suit your unique needs. Say goodbye to the frustration of a cluttered closet and hello to a harmonious, visually stunning bedroom.
+            Revamp your bedroom effortlessly with our sleek sliding  wardrobe designs. To maximize the space and elevate your décor, these sleek storage solutions redefine the way you organize your wardrobe. Crafted with a range of premium finishes, including glass and mirrored panels, our wardrobes seamlessly blend form and function, allowing you to create a personalized, clutter-free haven. Customize your unit with adjustable shelves, drawers, and compartments to suit your unique needs. Say goodbye to the frustration of a cluttered closet and hello to a harmonious, visually stunning bedroom.
             </p>
           </div>
         </div>

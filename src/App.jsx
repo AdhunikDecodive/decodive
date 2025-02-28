@@ -12,8 +12,8 @@ import PshapeKitchen from "./Components/PshapeKitchen";
 import IshapeKitchen from "./Components/IshapeKitchen";
 import SshapeKitchen from "./Components/SshapeKitchen";
 import Wardrobe from "./Components/Wardrobe";
-import Door1Wardrobe from "./Components/Door1Wardrobe";
-import Door2Wardrobe from "./Components/Door2Wardrobe";
+import VastuTips from "./Components/VastuTips";
+import ShutterDoorWardrobe from "./Components/ShutterDoorWardrobe";
 import SlidingDoorWardrobe from "./Components/SlidingDoorWardrobe";
 import WalkDoorWardrobe from "./Components/WalkDoorWardrobe";
 import Furniture from "./Components/Furniture";
@@ -90,8 +90,8 @@ function App() {
         <Route path="/ishapekitchen" element={<IshapeKitchen />} />
         <Route path="/sshapekitchen" element={<SshapeKitchen />} />
         <Route path="/wardrobe" element={<Wardrobe />} />
-        <Route path="/door1wardrobe" element={<Door1Wardrobe />} />
-        <Route path="/door2wardrobe" element={<Door2Wardrobe />} />
+        <Route path="/VastuTips" element={<VastuTips />} />
+        <Route path="/ShutterDoorWardrobe" element={<ShutterDoorWardrobe />} />
         <Route path="/slidingdoorwardrobe" element={<SlidingDoorWardrobe />} />
         <Route path="/walkdoorwardrobe" element={<WalkDoorWardrobe />} />
         <Route path="/furniture" element={<Furniture />} />
@@ -118,7 +118,9 @@ function App() {
         <Route path="*" element={<Error404 />} />
 
         <Route path="/blogs" element={<MultipleBlogsPage />} />
+        
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
+
 
       </Routes>
     </>

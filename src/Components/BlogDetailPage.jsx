@@ -3,8 +3,9 @@
 import { useParams } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
 
 
 const blogs = [
@@ -161,11 +162,11 @@ const blogs = [
                 <h2 className=" mt-2  font-bold">The Core Elements of Minimalism: A Guide to Tranquility</h2>
 
                 <h2 className=" font-bold mt-2">
-                    1. Sliding Door Wardrobes
+                    1. Sliding  Wardrobes
                 </h2>
                 <p className=" mt-2">
                     Sleek and Space-Saving
-                    Sliding door wardrobes are perfect for modern Indian homes, especially those with limited space. They eliminate the need for additional clearance space for doors to open, making the room appear larger and more streamlined. Our sliding door wardrobes come in a variety of finishes, from glossy lacquer to textured wood, catering to different tastes and decor styles.
+                    Sliding  wardrobes are perfect for modern Indian homes, especially those with limited space. They eliminate the need for additional clearance space for doors to open, making the room appear larger and more streamlined. Our sliding  wardrobes come in a variety of finishes, from glossy lacquer to textured wood, catering to different tastes and decor styles.
 
 
                 </p>
@@ -534,19 +535,40 @@ const BlogDetailPage = () => {
 
     return (
         <>
+
+        <Helmet>
         
+                <title>Latest Interior Design Trends & Tips | Adhunik Decodive Blog</title>
+        
+                <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+        
+                <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+                <link rel="canonical" href="https://adhunikdecodive.com/blogs" data-react-helmet="true" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+                <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+                <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
+                <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior design blog, home decor ideas, furniture trends, modern interiors, space-saving solutions, luxury interior tips, Adhunik Decodive blog, home improvement ideas, office decor tips, contemporary design insights" />
+                <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+                <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+                <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+                <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+                <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+        
+                <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/blog"></meta>
+                <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Blog" />
+                <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
+                <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+        
+                {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
+        
+              </Helmet>
+
 
             <div
                 className="fixed top-0 left-0 h-1 bg-[#FE2700]"
                 style={{ width: `${scrollProgress}%` }}
             />
-
-
-
-
-
-
-
 
             <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
                 <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
@@ -560,15 +582,13 @@ const BlogDetailPage = () => {
                         <figure>
 
                             <AdvancedImage
-
                                 decoding="async"
                                 loading="lazy"
                                 effect="blur"
                                 className="  w-full  "
                                 alt={blog.title}
                                 cldImg={cld.image(blog.imgSrc)}
-
-                            ></AdvancedImage>
+                                ></AdvancedImage>
 
                         </figure>
 

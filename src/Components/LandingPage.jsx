@@ -317,13 +317,14 @@ function LandingPage() {
                 autoPlay
                loop
                   playsInline
-                  poster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
+                  poster="/landingpage.webp"
                   cldPoster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
                  cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
                 width={1920}
                 height={1080}
+               alt=" High-definition video of a modern kitchen interior captured by a camera " 
+               className=" object-cover  w-screen h-screen  "
                
-                alt=" High-definition video of a modern kitchen interior captured by a camera " className=" object-cover  w-screen h-screen  "
               />
 
             </div>

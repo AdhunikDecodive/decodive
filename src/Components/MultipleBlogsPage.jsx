@@ -1,9 +1,10 @@
 // src/components/MultipleBlogsPage.js
-import React from "react";
+
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
+import { Helmet } from "react-helmet-async";
 
 const blogs = [
   {
@@ -94,19 +95,49 @@ const blogs = [
 ];
 
 const MultipleBlogsPage = () => {
+
   const cld = new Cloudinary({ cloud: { cloudName: "dwhmfz63n" } });
 
   return (
     <>
 
+<Helmet>
+
+        <title>Latest Interior Design Trends & Tips | Adhunik Decodive Blog</title>
+
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <link rel="canonical" href="https://adhunikdecodive.com/blogs" data-react-helmet="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior design blog, home decor ideas, furniture trends, modern interiors, space-saving solutions, luxury interior tips, Adhunik Decodive blog, home improvement ideas, office decor tips, contemporary design insights" />
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/blog"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Blog" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+
+        {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
+
+      </Helmet>
  
     <div className="container-fluid p-3 md:mt-9  ">
       <div className="flex flex-wrap  justify-center  items-center w-full h-full ">
         {blogs.map((blog) => (
         
+
           <div key={blog.id} className=" md:w-[70%] h-full  lg:flex m-4">
         <div className="row flex flex-wrap">
            <div className=" w-12/12 lg:w-6/12">
+
           <AdvancedImage
                     decoding="async"
                     loading="lazy"
@@ -114,8 +145,12 @@ const MultipleBlogsPage = () => {
                     className="  h-full w-full  object-cover object-center "
                     alt={blog.title}
                     cldImg={cld.image(blog.image)}
-                ></AdvancedImage>
+                    >
+
+                </AdvancedImage>
+
           </div>
+
           <div className=" w-12/12 lg:w-6/12  px-5 py-5">
           <div className="mb-8">
                 <p className="text-sm text-gray-600 flex items-center">

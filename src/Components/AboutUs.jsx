@@ -14,7 +14,7 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 const slideData = [
   {
@@ -24,6 +24,7 @@ const slideData = [
     testimonial:
       "Amazing! They totally listened to what I wanted for my living room and came up with a design that's both creative and works perfectly for me. They were super careful about all the little details and made sure the final product was exactly what I pictured.",
   },
+
   {
     name: "Ambrish Arora",
     image: "AboutUs/avatar_ltfwos",
@@ -97,7 +98,7 @@ function AboutUs() {
 
   return (
     <>
-    <HelmetProvider>
+    
 
  
       <Helmet>
@@ -264,8 +265,8 @@ function AboutUs() {
 
           <div className="row h-full w-full px-5 py-5 bg-[#F3F4F6] ">
             <h1 className=" text-center capitalize text-3xl mb-3 text-gray-500">
-              {" "}
-              Customer reviews{" "}
+              
+              Customer reviews
             </h1>
             <Swiper
               slidesPerView={3}
@@ -387,8 +388,8 @@ function AboutUs() {
             <div className="w-full h-full">
               <div className="row justify-center flex flex-col mt-4 items-center text-[#141414] py-4">
                 <h1 className=" text-center capitalize text-3xl  text-gray-500">
-                  {" "}
-               OUR   LATEST BLOGS{" "}
+                  
+               OUR   LATEST BLOGS
                 </h1>
             
               </div>
@@ -397,6 +398,8 @@ function AboutUs() {
   {blogs.map((blog) => (
     <Link to={`/blogs/${blog.id}`} key={blog.id}>
       <div className="h-full w-full rounded-xl overflow-hidden shadow-lg">
+
+      
         <AdvancedImage
           decoding="async"
           loading="lazy"
@@ -457,8 +460,8 @@ function AboutUs() {
       
       </div>
       <Footer />
-      </HelmetProvider>
-    </>
+      </>
+    
   );
 }
 

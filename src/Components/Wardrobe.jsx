@@ -8,7 +8,7 @@ import PhoneCallButton from "./PhoneCallButton";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 // import { Power2, Power4 } from 'gsap';
 
@@ -49,26 +49,27 @@ function Wardrobe() {
     const AllcardData = [
         {
             id: 1,
-            imageUrl: 'WardRobe/1DW/1_z6mffw',
-            title: "1-Door Wardrobe",
+            imageUrl: 'WardRobe/WIW/4_a2wzb4',
+            title: " Walk in Wardrobe ",
             description:
-                "Compact single-door wardrobe with mirror front and side shelf. Ideal for small rooms, contemporary style.",
-                link: "/Door1Wardrobe",
+                "Compact Walk in Wardrobe with mirror front and side shelf. Ideal for small rooms, contemporary style.",
+                link: "/WalkDoorWardrobe",
                 unique: true,
-        },
+        }
+        ,
         {
             id: 2,
             imageUrl: 'WardRobe/2DW/11_enjzqn',
-            title: "2-Door Wardrobe",
+            title: "Shutter Wardrobe",
             description:
                 "A clean and contemporary double-door wardrobes design with a neutral gray color and black handles",
-                link: "/Door2Wardrobe",
+                link: "/ShutterDoorWardrobe",
                 unique: true,
         },
         {
             id: 3,
             imageUrl: 'WardRobe/SDW/4_xeqbnl',
-            title: "Sliding Door Wardrobe",
+            title: "Sliding  Wardrobe",
             description:
                 "Contemporary wardrobe with three sliding doors with a white laminate finish for a sleek and modern design",
                 link: "/SlidingDoorWardrobe",
@@ -83,82 +84,25 @@ function Wardrobe() {
         },
         {
             id: 5,
-            imageUrl: 'WardRobe/1DW/15_b9gexm',
-            title: "1-Door Wardrobe",
+            imageUrl: 'WardRobe/SDW/8_wrsurk',
+            title: "Sliding Wardrobe",
             description:
-                "The single-door wardrobe with clean, white finish with a full-length mirror space-saving storage solution.",
-                link: "/Door1Wardrobe",
+                "The Sliding Wardrobe with clean, white finish with a full-length mirror space-saving storage solution.",
+                link: "/SlidingDoorWardrobe",
                 unique:true,
         },
         {
             id: 6,
             imageUrl: 'WardRobe/2DW/12_nlhxz5',
-            title: "2-Door Wardrobe",
+            title: "Shutter  Wardrobe ",
             description:
-                "Simple double door wardrobes with yellow and gray colored wood and silver handles.",
-                link: "/Door2Wardrobe",
+                "Simple Shutter  Wardrobe with yellow and gray colored wood and silver handles.",
+                link: "/ShutterDoorWardrobe",
         },
         // Add more card objects as needed
     ];
 
-    const LcardData = [
-        {
-            id: 1,
-            imageUrl:
-                'WardRobe/1DW/1_z6mffw',
-            title: "",
-            description:
-                "Habitat Camden single-door wardrobe made from a gray painted finish acacia wood. providing ample hanging and storage space.",
-                unique:true,
-                
-        },
-        {
-            id: 2,
-            imageUrl:
-                'WardRobe/1DW/2_sizvmd',
-            title: "",
-            description:
-                "Single-door wardrobes, offering hanging rods and shelves for clothes storage behind a single, often wood-constructed door with a black handle.",
-                unique:true,
-        },
-        {
-            id: 3,
-            imageUrl:
-                'WardRobe/1DW/20_jgkoql',
-            title: "",
-            description:
-                " Single-door wooden wardrobe with an integrated dressing table  for storing personal items like jewelry, cosmetics, or other accessories. ",
-                unique:true,
-        },
-        {
-            id: 4,
-            imageUrl:
-                'WardRobe/1DW/4_nhn4qc',
-            title: "",
-            description:
-                "Wooden single-door wardrobe with painted finish and front mirror, adding functionality and space illusion.",
-        },
-        {
-            id: 5,
-            imageUrl:
-                'WardRobe/1DW/18_vqgn3j',
-            title: "",
-            description:
-                " Compact, single-door wooden wardrobe ideal for general storage for a touch of classic charm. ",
-                unique:true,
-        },
-        {
-            id: 6,
-            imageUrl:
-                'WardRobe/1DW/19_tdtjsf',
-            title: "",
-            description:
-                "Single-door wardrobe space-saving wooden unit with a hanging rod and drawers for streamline look",
-                unique:true,
-            
-        },
-        // Add more card objects as needed
-    ];
+   
 
     const UcardData = [
         {
@@ -176,7 +120,7 @@ function Wardrobe() {
                  'WardRobe/2DW/2_ng4fq6',
             title: "",
             description:
-                "White double door wardrobes with stripes and concealed closures for a clean, modern look that complements the bedroom's style",
+                "White Shutter wardrobes with stripes and concealed closures for a clean, modern look that complements the bedroom's style",
                 unique:true,
         },
         {
@@ -185,7 +129,7 @@ function Wardrobe() {
             'WardRobe/2DW/3_prc8lp',
             title: "",
             description:
-                "Stylish gray two-door wardrobe with matte finish. Additional corner storage for versatility. Elevate your bedroom with practicality and sophistication",
+                "Stylish gray Shutter wardrobe with matte finish. Additional corner storage for versatility. Elevate your bedroom with practicality and sophistication",
                 unique:true,
         },
         {
@@ -203,7 +147,7 @@ function Wardrobe() {
             'WardRobe/2DW/5_vlpb5h',
             title: "",
             description:
-                "The two-door wardrobe  with a minimalist design with a wooden frame and a horizontal panel configuration.",
+                "The Shutter wardrobe  with a minimalist design with a wooden frame and a horizontal panel configuration.",
         },
         {
             id: 6,
@@ -211,7 +155,7 @@ function Wardrobe() {
             'WardRobe/2DW/6_ffvxs1',
             title: "",
             description:
-                "Modern two-door wardrobe with a mirrored front offers stylish storage for clothes and belongings.",
+                "Modern Shutter wardrobe with a mirrored front offers stylish storage for clothes and belongings.",
         },
         // Add more card objects as needed
     ];
@@ -223,7 +167,7 @@ function Wardrobe() {
             'WardRobe/SDW/1_au0nwo',
             title: "",
             description:
-                "Sliding door wardrobes with two cherry red doors for smooth access to the interior and maintaining a clean and contemporary aesthetic",
+                "Sliding  wardrobes with two cherry red doors for smooth access to the interior and maintaining a clean and contemporary aesthetic",
                 unique:true,
                 
         },
@@ -265,7 +209,7 @@ function Wardrobe() {
             'WardRobe/SDW/6_h7y5hp',
             title: "",
             description:
-                " Sliding wardrobe design with a two-door, floor-to-ceiling panel configuration with a lacquered glass finish. And a black, metal trim.",
+                " Sliding wardrobe design with a Shutter, floor-to-ceiling panel configuration with a lacquered glass finish. And a black, metal trim.",
         },
         // Add more card objects as needed
     ];
@@ -345,7 +289,7 @@ function Wardrobe() {
 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
-<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wardrobe designs, 1-door wardrobe, 2-door wardrobe, sliding wardrobe, walk-in wardrobe, best wardrobes in Gurugram, modern wardrobe layouts, custom wardrobe designs, wardrobe renovation Gurugram, Adhunik Decodive interiors" />
+<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wardrobe designs, Shutter Wardrobe, sliding wardrobe, walk-in wardrobe, best wardrobes in Gurugram, modern wardrobe layouts, custom wardrobe designs, wardrobe renovation Gurugram, Adhunik Decodive interiors" />
 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
@@ -431,7 +375,7 @@ Unveil Our Latest Design Collection!  "  className="   relative   h-[86vh]  md:h
                     <div className="w-full h-full md:p-9  text-justify md:text-center">
                         <p className="text-4xl text-center mt-2 md:mt-0">Wardrobe Designs</p>
                         <p className="text-gray-600 mt-3">
-                            Tired of boring storage solutions that stifle your style? Your wardrobe deserves to be an extension of you, a haven for favorite outfits that spark joy with every opening. We totally understand – leaving no decision in your way can be hard. That's exactly why our Adhunik DecoDive team has created and carefully selected the perfect space and personality-fit collection! Need classic organization? Our Single & Double Door wardrobes are perfect for any size room. Live in a compact space? Maximize every inch with our smooth-gliding Sliding Wardrobes. Craving the ultimate storage dream? Walk-In Wardrobes are your answer. But wait, there's more! Unleash your inner designer with our Modular Wardrobes. Imagine customizing shelves, drawers, and compartments to create the dream closet you've always wanted – functionality and style never looked so good!
+                            Tired of boring storage solutions that stifle your style? Your wardrobe deserves to be an extension of you, a haven for favorite outfits that spark joy with every opening. We totally understand – leaving no decision in your way can be hard. That's exactly why our Adhunik DecoDive team has created and carefully selected the perfect space and personality-fit collection! Need classic organization? Our Single & Shutter wardrobes are perfect for any size room. Live in a compact space? Maximize every inch with our smooth-gliding Sliding Wardrobes. Craving the ultimate storage dream? Walk-In Wardrobes are your answer. But wait, there's more! Unleash your inner designer with our Modular Wardrobes. Imagine customizing shelves, drawers, and compartments to create the dream closet you've always wanted – functionality and style never looked so good!
                         </p>
 
                     </div>
@@ -503,65 +447,7 @@ Unveil Our Latest Design Collection!  "  className="   relative   h-[86vh]  md:h
                         </div>
                     </Tabs.Item>
 
-                    <Tabs.Item
-                        title={
-                            <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-                                 <AdvancedImage
-              cldImg={cld.image('WardRobe/1DW/18_vqgn3j')}
-                height={70}
-                width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="  1-Door Wardrobe"
-                decoding="async"
-                effect="blur"
-              
-              />
-                               
-                                1-Door Wardrobe
-                            </div>
-
-                        }
-                    >
-                        <div className=" w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-                            {LcardData.map((card) => (
-                                <div
-                                    key={card.id}
-                                    className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                                >
-                                    <div className="relative h-80 overflow-hidden">
-                                    <Link to='/Door1Wardrobe'>
-                                    <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
-                alt={card.description}
-                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-              /> 
-                                    </Link>
-                                    </div>
-                                    <div className="p-6">
-                                        <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                                            {card.title}
-                                        </h2>
-                                        <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                                            {card.description}
-                                        </p>
-                                        <div className="flex justify-between">
-                                                <PhoneCallButton />
-                                                   <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                    </Tabs.Item>
-
+                   
                     <Tabs.Item
                         title={
                             <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
@@ -570,14 +456,14 @@ Unveil Our Latest Design Collection!  "  className="   relative   h-[86vh]  md:h
               cldImg={cld.image('WardRobe/2DW/2_ng4fq6')}
                 height={70}
                 width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="2-Door Wardrobe"
+                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Shutter Wardrobe"
                 decoding="async"
                 effect="blur"
               
               />
               
                                 
-                                2-Door Wardrobe
+                                Shutter Wardrobe
                             </div>
                         }
                     >
@@ -588,7 +474,7 @@ Unveil Our Latest Design Collection!  "  className="   relative   h-[86vh]  md:h
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/Door2Wardrobe'>
+                                    <Link to='/ShutterDoorWardrobe'>
                                     <AdvancedImage
                 cldImg={cld.image(card.imageUrl)}
                 alt={card.description}

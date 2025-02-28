@@ -85,7 +85,7 @@ function KitchenCategory() {
     },
     {
       id: 4,
-      imageUrl: 'Kitchen/all_category/4_ylybrr',
+      imageUrl: 'Kitchen/SsKitchen/s10_rwlkau',
       title: "Straight kitchen",
       description:
         "Straight-laminate kitchen for timeless elegance.Warm cherry cabinets bring richness, while off-white countertops offer a bright balance",
