@@ -30,7 +30,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const kitchenCategories = [
   { name: 'Kitchens', imgSrc: 'Kitchen/all_category/2_bl3cxj' },
-  { name: 'Straight Kitchens', imgSrc: 'landingPage/2_gimriq' },
+  { name: 'Island Kitchen', imgSrc: 'Kitchen/LsKitchen/12_cc9sti' },
   { name: 'L-Shape Kitchen', imgSrc: 'Kitchen/all_category/6_bcp1bw' },
   { name: 'U-Shape Kitchen', imgSrc: 'Kitchen/LsKitchen/1_a8rmpg' },
   { name: 'Parallel Kitchen', imgSrc: 'Kitchen/LsKitchen/3_z9eejg' },
@@ -45,7 +45,7 @@ const kitchenCategories = [
 const wardrobeCategories = [
   { name: 'Wardrobe', imgSrc: 'landingPage/nnpixsron965x7qgsrsy' },
   { name: '1-Door Wardrobe', imgSrc: 'WardRobe/3_qnzv0m' },
-  { name: '2-Door Wardrobe', imgSrc: 'landingPage/3_unschw' },
+  { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/1DW/4_nhn4qc' },
   { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/9_u45uvt' },
   { name: 'Walk-in-Closet Wardrobe', imgSrc: 'WardRobe/11_vtroxl' },
   { name: 'Wardrobe', imgSrc: 'WardRobe/1DW/1_z6mffw' },
@@ -55,8 +55,10 @@ const wardrobeCategories = [
 ];
 
 const lightingCategories = [
+  
   { name: 'Lamps And Lightings', imgSrc: 'HomeDecor/Ceiling_Light/3_dgj8x9' },
-  { name: 'Lamps', imgSrc: 'landingPage/1_ethd8y' },
+  
+  { name: 'Ceiling Lights', imgSrc: 'landingPage/bhxzfd5szxwtg6fdskyw' },
   { name: 'Lighting', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Ceiling Lights', imgSrc: 'HomeDecor/Wall_Light/19_ymupwm' },
   { name: 'Wall Lights', imgSrc: 'HomeDecor/Ceiling_Light/13_d14wqe' },
@@ -72,7 +74,7 @@ const decorCategories = [
   { name: 'Mirrors', imgSrc: 'HomeDecor/WallD/17_f5c53m' },
 
   { name: 'Wall Decors', imgSrc: 'landingPage/6_srgoqe' },
-  { name: 'Vases', imgSrc: 'HomeDecor/Clocks/10_ots5ia' },
+  { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
   { name: 'Clocks', imgSrc: 'HomeDecor/Wall_Painting/18_dpibm5' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/mrr/18_unhqk1' },
   { name: 'All Decors', imgSrc: 'HomeDecor/WallD/4_t5ayax' },
@@ -86,7 +88,7 @@ const decorCategories = [
 
 const furnitureCategories = [
   { name: 'TV units Designs', imgSrc: 'Others/TV/18_nrfdzt' },
-  { name: 'Bar Counter', imgSrc: 'Others/BarCounter/10_uoq6ay' },
+  { name: 'Commercial Furniture', imgSrc: 'Furniture/CF/15_zrilzh' },
   { name: 'Pooja Room Designs', imgSrc: 'Others/PoojaRoom/13_x6vgns' },
   { name: 'Domestic Furniture', imgSrc: 'Furniture/DF/14_sgloqa' },
   { name: 'Commercial Furniture', imgSrc: 'Furniture/CF/4_kdfjtu' },
@@ -315,6 +317,7 @@ function LandingPage() {
                 autoPlay
                loop
                   playsInline
+                  poster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
                   cldPoster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
                  cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
                 width={1920}
@@ -378,9 +381,8 @@ function LandingPage() {
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
                           <AdvancedImage
   cldImg={cld
-    .image(category.imgSrc) // Resize to match displayed size
-    .quality('auto:best') // Optimizes compression
-     // Uses WebP/AVIF when supported
+    .image(category.imgSrc) 
+    .quality('auto:best') 
   }
   height={48} 
   width={48} 
