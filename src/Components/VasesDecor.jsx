@@ -149,14 +149,35 @@ function VasesDecor() {
     return (
         <>
 
+
+
 <Helmet>
-  <title>Vases Decor</title>
 
+<title>Top Vases Designs in Gurugram | Adhunik Decodive</title>
 
-  <link rel="canonical" href="https://adhunikdecodive.com/VasesDecor" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best vase designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern vases to enhance your home decor. Free consultation!" />
+
+<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+<link rel="canonical" href="https://adhunikdecodive.com/VasesDecor" data-react-helmet="true"/>
+<meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+<meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+<meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Vases Designs in Gurugram | Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="vases designs, best vases in Gurugram, stylish home decor, decorative vases, modern vases designs, custom vases Gurugram, home decor accessories, Adhunik Decodive vases, artistic interior vases Gurugram" />
+<meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+<meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+<meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+<meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best vase designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern vases to enhance your home decor. Free consultation!" />
+
+<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/vases-designs"></meta>
+<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Home Decor Experts" />
+<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Vases Designs in Gurugram | Adhunik Decodive" />
+<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Discover the best vase designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern vases to enhance your home decor. Free consultation!" />
+
+{/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
 
 </Helmet>
+
 
 <ModalNew  isOpen={openModal} onClose={toggleModal}  />
       

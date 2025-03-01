@@ -242,6 +242,14 @@ function LandingPage() {
       "https://www.linkedin.com/in/adhunik-decodive-032347337/"
     ]
   };
+
+
+  const styles = {
+    backgroundImage: "url('https://res.cloudinary.com/dwhmfz63n/image/upload/v1740637220/Images/footer2__amymnq.webp')",
+    backgroundSize:  "fill",
+    backgroundPosition: 'top',
+    filter: 'brightness(1)'
+};
   return (
 
     <>
@@ -295,7 +303,7 @@ function LandingPage() {
       <div className="main w-full font-['Rejouice-Headline'] ">
 
 
-        <div className="home  section w-full h-screen relative ">
+        <div className="home  section w-full h-screen relative  " style={styles}>
           <div className="w-full sticky top-0 left-0">
             <div className="btmtext absolute bottom-[7%] z-[4] w-52 left-[3%]">
               <h2>

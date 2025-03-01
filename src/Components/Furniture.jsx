@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import { Tabs } from "flowbite-react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 
 import PhoneCallButton from "./PhoneCallButton";

@@ -34,7 +34,7 @@ function Footer() {
         <>
 
  <footer  className="bg-[#F3F3F3] text-center h-auto w-auto font-['Rejouice-Headline']   lg:text-left "
-                style={styles}>
+                style={styles} >
 
                 <div className="mx-6 pt-8 pb-1 text-center md:text-left">
                     <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">

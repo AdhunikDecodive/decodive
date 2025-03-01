@@ -9,7 +9,7 @@ import PhoneCallButton from "./PhoneCallButton";
 
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 
 
