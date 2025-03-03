@@ -128,6 +128,7 @@ const MultipleBlogsPage = () => {
         {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
 
       </Helmet>
+      
  
     <div className="container-fluid p-3 md:mt-9  ">
       <div className="flex flex-wrap  justify-center  items-center w-full h-full ">

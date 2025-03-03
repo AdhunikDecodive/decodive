@@ -70,10 +70,11 @@ const lightingCategories = [
 ];
 
 const decorCategories = [
+  
   { name: 'All Decors', imgSrc: 'HomeDecor/mrr/21_jhvm8s' },
   { name: 'Mirrors', imgSrc: 'HomeDecor/WallD/17_f5c53m' },
 
-  { name: 'Wall Decors', imgSrc: 'landingPage/6_srgoqe' },
+  { name: 'Clocks', imgSrc: 'HomeDecor/WallD/5_jzcfnw' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
   { name: 'Clocks', imgSrc: 'HomeDecor/Wall_Painting/18_dpibm5' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/mrr/18_unhqk1' },
@@ -244,12 +245,7 @@ function LandingPage() {
   };
 
 
-  const styles = {
-    backgroundImage: "url('https://res.cloudinary.com/dwhmfz63n/image/upload/v1740637220/Images/footer2__amymnq.webp')",
-    backgroundSize:  "fill",
-    backgroundPosition: 'top',
-    filter: 'brightness(1)'
-};
+ 
   return (
 
     <>
@@ -303,7 +299,7 @@ function LandingPage() {
       <div className="main w-full font-['Rejouice-Headline'] ">
 
 
-        <div className="home  section w-full h-screen relative  " style={styles}>
+        <div className="home  section w-full h-screen relative  " >
           <div className="w-full sticky top-0 left-0">
             <div className="btmtext absolute bottom-[7%] z-[4] w-52 left-[3%]">
               <h2>

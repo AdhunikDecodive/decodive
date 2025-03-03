@@ -2,8 +2,6 @@
 
 import Footer from "./Footer"
 import "./LShapeKitchen.css"
-
-
 import PhoneCallButton from "./PhoneCallButton";
 import { useState } from "react";
 import ModalNew from "./ModalNew";
@@ -111,7 +109,7 @@ function WallPaintingDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Wall_Painting/16_nyg8r3',
+            'HomeDecor/Wall_Painting/5_r1girb',
             title: '',
             description:
                 'Vibrant Mandala & Botanical Wall Art',
@@ -148,16 +146,33 @@ function WallPaintingDecor() {
         <>
 
 
-
-
 <Helmet>
-  <title>Wall-Painting Decor</title>
 
+        <title>Top Wall Painting Designs in Gurugram | Adhunik Decodive</title>
 
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wall painting designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern wall paintings to enhance your home decor. Free consultation!" />
+
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        
   <link rel="canonical" href="https://adhunikdecodive.com/WallPaintingDecor" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Wall Painting Designs in Gurugram | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wall painting designs, best wall paintings in Gurugram, stylish home decor, decorative wall art, modern wall paintings, custom paintings Gurugram, home decor accessories, Adhunik Decodive wall art, artistic interior paintings Gurugram" />
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best wall painting designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern wall paintings to enhance your home decor. Free consultation!" />
 
-</Helmet>
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/wall-painting-designs"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Home Decor Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Wall Painting Designs in Gurugram | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Discover the best wall painting designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern wall paintings to enhance your home decor. Free consultation!" />
+
+        {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
+
+      </Helmet>
 
 <ModalNew  isOpen={openModal} onClose={toggleModal}  />
     

@@ -9,7 +9,7 @@ import { useState } from "react";
 
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -148,18 +148,36 @@ function TVUnitPanels() {
         <>
 
 
-<HelmetProvider>
+
 
 
 <Helmet>
-  <title>TV-Unit Panels</title>
 
-  <meta name="description" content="Adhunik Deco Dive specializes in transforming TV unit panels, offering bespoke solutions that enhance your entertainment area with style and functionality." data-react-helmet="true"/>
+        <title>Top TV Unit & Panel Designs in Gurugram | Adhunik Decodive</title>
 
-  <link rel="canonical" href="https://adhunikdecodive.com/TVUnitPanels" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best TV unit and panel designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient TV unit solutions for your home. Free consultation!" />
 
-</Helmet>
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <link rel="canonical" href="https://adhunikdecodive.com/TVUnitPanels" data-react-helmet="true"/>
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top TV Unit & Panel Designs in Gurugram | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="TV unit designs, best TV panels in Gurugram, stylish TV cabinets, modern TV unit designs, custom TV panels Gurugram, space-saving TV units, Adhunik Decodive interiors, luxury TV unit solutions Gurugram" />
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best TV unit and panel designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient TV unit solutions for your home. Free consultation!" />
+
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/tv-unit-designs"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top TV Unit & Panel Designs in Gurugram | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Discover the best TV unit and panel designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient TV unit solutions for your home. Free consultation!" />
+
+       
+      </Helmet>
+
+
 
 <ModalNew  isOpen={openModal} onClose={toggleModal}  />
     
@@ -281,8 +299,8 @@ function TVUnitPanels() {
 
             <Footer />
 
-</HelmetProvider>
-        </>
+</>
+        
     )
 }
 

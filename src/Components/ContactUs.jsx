@@ -148,19 +148,38 @@ function ContactUs() {
   return (
     <>
 
-<HelmetProvider>
+
 
    <ToastContainer />
 
-   <Helmet>
-  <title>Contact Us</title>
+  
 
-  <meta name="description" content="For any inquiries or to get in touch with us, reach out to Adhunik DecoDive, We're here to assist you in creating your ideal living space." data-react-helmet="true"/>
+<Helmet>
 
-  <link rel="canonical" href="https://adhunikdecodive.com/contact" data-react-helmet="true"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Contact Us | Adhunik Decodive</title>
 
-</Helmet>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
+
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <link rel="canonical" href="https://adhunikdecodive.com/contact" data-react-helmet="true"/>
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Contact Us | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="contact Adhunik Decodive, interior design inquiries, design consultation, customer support, home decor services, best interior designers Gurugram, get in touch Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
+
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/contact-us"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Contact Us | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
+
+      </Helmet>
+
+
 
       <div className="w-full  ">
         <div className=" w-full p-7   items-center justify-center ">
@@ -435,8 +454,8 @@ function ContactUs() {
     
       <Footer />
 
-</HelmetProvider>
-    </>
+</>
+    
   );
 }
 

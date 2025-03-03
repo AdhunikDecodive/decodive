@@ -141,7 +141,7 @@ function Footer() {
                             <div className="row ">
 
                                 <div className="w-full h-full">
-                                    <div className="row flex  md:justify-left md:justify-start justify-center gap-4 cursor-pointer">
+                                    <div className="row flex  flex-wrap  md:justify-left md:justify-start justify-center gap-4 cursor-pointer">
 
                                         <Tooltip content="x" style="light" placement="bottom">
                                             <a href="https://x.com/Adhunikdecodive" className="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden   group transition-all duration-300"
@@ -192,7 +192,6 @@ function Footer() {
                                         </Tooltip>
 
 
-                                        <div className="flex gap-2">
                                             <Tooltip content="facebook" style="light" placement="bottom">
                                                 <a href="https://www.facebook.com/profile.php?id=61560707765598" className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full   group transition-all duration-300"
                                                  aria-label="Visit our profile on facebook (formerly facebook)"
@@ -213,8 +212,21 @@ function Footer() {
                       <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#FF3000] z-0 transition-all duration-500 group-hover:top-0"></div>
                       </a>
                                             </Tooltip>
+                                  
+                                            <Tooltip content="linkedin" style="light" placement="bottom">
+                                            <a href="https://www.linkedin.com/in/adhunik-decodive-032347337/" className="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full   group transition-all duration-300">
+                  <svg className="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+                  <path d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z" fill=""></path>
+                </svg>
+                <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#006699] z-0 transition-all duration-500 group-hover:top-0"></div>
+                </a>
 
-                                        </div>
+                </Tooltip>
+
+                                 
+                                            
+
+                                        
 
                                     </div>
                                 </div>
@@ -228,7 +240,7 @@ function Footer() {
 
 
                 <div className="bg-black/5 p-6 text-center">
-                    <span>© 2024 Copyright:</span>
+                    <span>© 2025 Copyright:</span>
                     <Link className="font-semibold" to="/"> Adhunik DecoDive</Link>
                 </div>
             </footer>
