@@ -187,15 +187,19 @@ function VastuTips() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
               {/* Main Content */}
               <div className="lg:col-span-2">
+
                 <div className="blogSection pr-6 lg:pr-0">
+
                   <h1 className="text-3xl font-bold mb-6">
                     Harnessing the Power of Harmony : A Guide to Vastu Shastra by Adhunik Decodive
                   </h1>
+
                   <p className="mb-4">
                     At Adhunik Decodive, we understand that the spaces we in habit can greatly influence our well-being. That’s why we embrace Vastu Shastra, an ancient Indian science of architecture that teaches us how to create environments that nurture and support us. By thought fully aligning our living and working spaces with the five natural elements— earth, sky, fire, water, and air—we can foster harmony and promote health, prosperity, and happiness in our lives. Your comfort and well-being are at the heart of what we do.
                   </p>
 
-                  {/* Table of Content */}
+
+
                   <section className="p-6 bg-gray-100 rounded-lg shadow-md">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Benefits of Vastu Shastra :</h2>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700">
@@ -214,46 +218,130 @@ function VastuTips() {
                     </ul>
                   </section>
 
-                  {/* Blog Images & Content */}
-                  <img id="p0" src="https://images.pexels.com/photos/1743227/pexels-photo-1743227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={800} height={450} alt="Vastu Interior Design for Living Room" className="w-full mb-4" />
+
+
+                  <img id="p0" src="https://res.cloudinary.com/dwhmfz63n/image/upload/f_auto,q_auto/v1/Blogs/ftzlyasmu4m9nxpnntot" width={800} height={450} alt="Vastu Interior Design for Living Room" className="w-full mb-4 mt-4 border-2  rounded-lg border-yellow-300" />
 
 
 
                   <section className="p-6 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Practical Applications of Vastu Shastra :</h2>
-      <ul className="list-disc pl-5 space-y-2 text-gray-700">
-        <li>
-          <span className="font-extrabold">Home Design :</span> Optimize the placement of rooms, furniture, and decor to create a balanced and positive living space.
-        </li>
-        <li>
-          <span className="font-extrabold">Office Design :</span> Enhance productivity, creativity, and employee morale by designing offices that adhere to Vastu principles.
-        </li>
-        <li>
-          <span className="font-extrabold">Commercial Spaces :</span> Attract customers and boost sales by creating inviting and prosperous commercial spaces.
-        </li>
-      </ul>
-    </section>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Practical Applications of Vastu Shastra :</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li>
+                        <span className="font-extrabold">Home Design :</span> Optimize the placement of rooms, furniture, and decor to create a balanced and positive living space.
+                      </li>
+                      <li>
+                        <span className="font-extrabold">Office Design :</span> Enhance productivity, creativity, and employee morale by designing offices that adhere to Vastu principles.
+                      </li>
+                      <li>
+                        <span className="font-extrabold">Commercial Spaces :</span> Attract customers and boost sales by creating inviting and prosperous commercial spaces.
+                      </li>
+                    </ul>
+                  </section>
 
                   <img id="p1" src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={800} height={450} alt="Vastu Interior Design for Bedroom" className="w-full my-6" />
+
+                  <p className=" p-3 text-gray-700">
+                    Whether you are building a new home or renovating an existing one, incorporating Vastu Shastra principles can transform your space into a haven of peace and prosperity.
+                  </p>
+
                   <section className="p-6 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Vastu Tips for Living Room</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Vastu Tips for Living Room</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li><span className="font-extrabold">Optimal Placement : </span> Place the living room in the east or north for morning sunlight and positive vibrations.</li>
+                      <li><span className="font-extrabold">Entrance Door : </span> The door should be in the north or east.</li>
+                      <li><span className="font-extrabold">Furniture Shape : </span> Use square or rectangle-shaped furniture and avoid a heavy chandelier at the center.</li>
+                      <li><span className="font-extrabold">Furniture Placement : </span> Southern and western corners are suitable for furniture placement.</li>
+                      <li><span className="font-extrabold">Electronics : </span> Keep the telephone in the southeast and other electrical appliances (except TV) in the southeast.</li>
+                      <li><span className="font-extrabold">Sofa Arrangement : </span> Sofa placement is ideal in the south, avoiding L-shaped sofas.</li>
+                      <li><span className="font-extrabold">TV Placement : </span> TV can be placed in the east or north.</li>
+                      <li><span className="font-extrabold">Storage : </span> Showcase cum almirah can be in the southeast corner.</li>
+                      <li><span className="font-extrabold">Decor Items : </span> Stuffed animals should be in the southwest corner.</li>
+                      <li><span className="font-extrabold">Cooling Appliances : </span> Cooler or AC should be in the west or north.</li>
+                      <li><span className="font-semibold">Seating Arrangement :</span> The head of the house and spouse should sit in the southwest facing east or northeast.</li>
+                      <li><span className="font-semibold">Guest Seating :</span> Guests should be seated in the northwest or southeast facing southern or western directions.</li>
+                      <li><span className="font-semibold">Wall Decor :</span> Display pictures of water bodies in the north to the east for good fortune.</li>
+                      <li><span className="font-semibold">Wall Colors & Table Shapes :</span> Choose light colours for walls and opt for square, rectangle, and round shapes for the centre table.</li>
+                      <li><span className="font-semibold">Open Space :</span> Ensure more open space in the northern and eastern corners.</li>
+
+                    </ul>
+                  </section>
+
+                  <section className="p-6 bg-gray-100 rounded-lg shadow-md mt-6">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Vastu Tips for Kitchen</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li><span className="font-semibold">Ideal Locations:</span> Southeast or northwest.</li>
+                      <li><span className="font-semibold">Avoid:</span> Northeast, mid-north, mid-west, southwest, mid-south, and center of the house.</li>
+                      <li><span className="font-semibold">Cooking Platform:</span> Should not touch the eastern or northern wall.</li>
+                      <li><span className="font-semibold">Cooking Direction:</span> Face east while cooking.</li>
+                      <li><span className="font-semibold">Visibility:</span> The stove should not be visible from the outside.</li>
+                      <li><span className="font-semibold">Hob and Sink Distance:</span> Maintain maximum distance between the cooking hob and sink.</li>
+                      <li><span className="font-semibold">Sink Placement:</span> Kitchen sink should be in the northeast and dishwasher in the northwest.</li>
+                      <li><span className="font-semibold">Drinking Water:</span> Should be in the northeast.</li>
+                      <li><span className="font-semibold">Windows:</span> Big windows on the eastern/northern side and smaller ones on the western/southern wall.</li>
+                      <li><span className="font-semibold">Water Flow:</span> The slope of the water flow should be from southwest towards northeast.</li>
+                      <li><span className="font-semibold">Cylinder Placement:</span> Place the cylinder in the southeast and the refrigerator in the southwest.</li>
+                      <li><span className="font-semibold">Exhaust Fans:</span> Fit on the eastern walls in the southeast.</li>
+                      <li><span className="font-semibold">Microwave Placement:</span> Should be in the southeast.</li>
+                      <li><span className="font-semibold">Cabinets:</span> Use northeast side cabinets for light storage.</li>
+                      <li><span className="font-semibold">Storage Units:</span> Opt for elaborate built-in storage units for a clean look.</li>
+                    </ul>
+                  </section>
+
+                  <section className="p-6 bg-gray-100 rounded-lg shadow-md mt-6">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Vastu Tips for Bedroom</h2>
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      <li><span className="font-semibold">Master Bedroom:</span> Should be in the southwest for heaviness and ideal for the head of the house.</li>
+                      <li><span className="font-semibold">Sleeping Direction:</span> Ensure the occupant sleeps with the head pointing towards the south.</li>
+                      <li><span className="font-semibold">Room Suitability:</span> Southwest is not suitable for children, guests, or servant rooms.</li>
+                      <li><span className="font-semibold">Ideal Head Position:</span> Sleep with head towards south, east, or west, never in the north.</li>
+                      <li><span className="font-semibold">Avoid Beam Overhead:</span> Avoid any beam crossing over the bed.</li>
+                      <li><span className="font-semibold">Bed Placement:</span> Bed should be on the south wall, or if not, keep it at least 4 feet away from the walls.</li>
+                      <li><span className="font-semibold">Storage Placement:</span> Heavy almirah should be on the south/west walls.</li>
+                      <li><span className="font-semibold">Bookshelf Location:</span> Place a bookshelf in the west or southwest corner.</li>
+                      <li><span className="font-semibold">Bed Material:</span> Use wood for bed construction, avoid wrought iron.</li>
+                      <li><span className="font-semibold">Room Shape:</span> Square or rectangle-shaped bedrooms are ideal.</li>
+                      <li><span className="font-semibold">Door Functionality:</span> Bedroom door should open at least ninety degrees.</li>
+                      <li><span className="font-semibold">Electronic Gadgets:</span> Keep electronic gadgets away from the bed.</li>
+                      <li><span className="font-semibold">Mirror Placement:</span> No mirror in front of the bed.</li>
+                      <li><span className="font-semibold">Bed Shape:</span> Regular-shaped bed is recommended.</li>
+                      <li><span className="font-semibold">Clutter-Free Space:</span> Avoid clutter under the bed.</li>
+                    </ul>
+                  </section>
+
+                  <section className="p-6 bg-gray-100 rounded-lg shadow-md mt-6">
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Vastu Tips for Kid's Room</h2>
       <ul className="list-disc pl-5 space-y-2 text-gray-700">
-        <li><span className="font-extrabold">Optimal Placement : </span> Place the living room in the east or north for morning sunlight and positive vibrations.</li>
-        <li><span className="font-extrabold">Entrance Door : </span> The door should be in the north or east.</li>
-        <li><span className="font-extrabold">Furniture Shape : </span> Use square or rectangle-shaped furniture and avoid a heavy chandelier at the center.</li>
-        <li><span className="font-extrabold">Furniture Placement : </span> Southern and western corners are suitable for furniture placement.</li>
-        <li><span className="font-extrabold">Electronics : </span> Keep the telephone in the southeast and other electrical appliances (except TV) in the southeast.</li>
-        <li><span className="font-extrabold">Sofa Arrangement : </span> Sofa placement is ideal in the south, avoiding L-shaped sofas.</li>
-        <li><span className="font-extrabold">TV Placement : </span> TV can be placed in the east or north.</li>
-        <li><span className="font-extrabold">Storage : </span> Showcase cum almirah can be in the southeast corner.</li>
-        <li><span className="font-extrabold">Decor Items : </span> Stuffed animals should be in the southwest corner.</li>
-        <li><span className="font-extrabold">Cooling Appliances : </span> Cooler or AC should be in the west or north.</li>
+        <li><span className="font-semibold">Room Location:</span> Children’s room should be in the northwest or west.</li>
+        <li><span className="font-semibold">Bed Placement:</span> Their bed can be placed in the south, west, or northwest corner.</li>
+        <li><span className="font-semibold">Furniture Safety:</span> Avoid any sharp-edged furniture in their room.</li>
+        <li><span className="font-semibold">Study Table Position:</span> The study table should face east or north.</li>
+        <li><span className="font-semibold">Wall Colors:</span> Colours should be light and soothing.</li>
+        <li><span className="font-semibold">Decor & Ambience:</span> Display images of nature and positivity.</li>
+        <li><span className="font-semibold">Clutter-Free Space:</span> Keep the room clutter-free.</li>
+        <li><span className="font-semibold">Bed Placement:</span> The bed should not be under a beam.</li>
+        <li><span className="font-semibold">Bed Shape:</span> Choose a regular-shaped bed.</li>
+        <li><span className="font-semibold">Ventilation & Lighting:</span> Ensure proper lighting and ventilation.</li>
       </ul>
-    </section>
+</section>
+
+<section className="p-6 bg-gray-100 rounded-lg shadow-md mt-6">
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Vastu Tips for Colours</h2>
+      <ul className="list-disc pl-5 space-y-2 text-gray-700">
+        <li><span className="font-semibold">Living Room:</span> Use light colours like white, yellow, blue, or green for a peaceful living room in the southwest.</li>
+        <li><span className="font-semibold">Kitchen:</span> Soft pink and orange are suitable kitchen colours, avoiding black and red.</li>
+        <li><span className="font-semibold">Bedroom:</span> Light colours like pink, cream, or off-white are recommended for bedrooms in the southwest.</li>
+        <li><span className="font-semibold">Kid’s Room:</span> Opt for soft pastel shades to create a cheerful environment.</li>
+        <li><span className="font-semibold">Washrooms:</span> Light colours are preferable for a fresh and clean ambience.</li>
+        <li><span className="font-semibold">Office Interiors:</span> Choose light colours to promote a vibrant and positive atmosphere.</li>
+      </ul>
+</section>
+
+
                 </div>
               </div>
 
-              {/* Sidebar */}
+
               <div>
                 <div className="bg-white p-6 rounded-lg shadow-lg">
                   <h5 className="text-xl font-semibold text-primary mb-4">Get In Touch</h5>
