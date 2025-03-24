@@ -113,8 +113,6 @@ function LandingPage() {
 
   const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
 
-
-
   useGSAP(() => {
 
     // gsap code here...
@@ -157,6 +155,7 @@ function LandingPage() {
       },
       "b"
     );
+
     tl.to(
       ".rgt",
       {
@@ -170,11 +169,13 @@ function LandingPage() {
 
 
   useEffect(() => {
+
     const locomotiveScroll = new LocomotiveScroll({
       el: document.querySelector('.scroll-container'),
       smooth: true, // Enable smooth scrolling
       smoothMobile: false, // Disable smooth scrolling on mobile devices for better performance
       scrollSpeed: 50,
+
     });
 
     // Clean up function to destroy Locomotive Scroll when the component unmounts
@@ -264,10 +265,7 @@ function LandingPage() {
         <title>Top Luxury Interior Designers in Gurugram | Adhunik Decodive</title>
 
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!" />
-
-
-
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+ <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         <link rel="canonical" href="https://adhunikdecodive.com/" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
@@ -503,6 +501,42 @@ function LandingPage() {
             </div>
           </div>
         </div>
+
+
+        <div className="h-full flex flex-col md:flex-row text-center p-5  m-4">
+          <div className="md:w-[40%]  w-auto">
+            <div className="flex items-center justify-center  h-full ">
+              <div>
+                <div className="   ">
+                  <div className=" w-auto">
+                 
+
+                      <AdvancedImage loading="lazy" className=" h-96 w-full" src="https://res.cloudinary.com/dwhmfz63n/image/upload/v1742812142/e2ob3hxm14wwavci7c8n.png" fetchpriority="high" decoding="async"
+ width={800} 
+ height={500} 
+                        effect="blur" alt="Modular Kitchen Designs" />
+
+                    
+
+                 
+                  </div>
+           
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:w-[60%] w-auto h-full p-2 m-2 md:p-5 md:m-5 text-center">
+            <h2 className=" text-[6vw]  md:text-4xl mb-3 hidden md:block">
+              India Business Awards 2025 
+            </h2>
+            <p className=" text-justify md:text-center">
+            Adhunik Decodive is honored to receive the India Business Awards 2025, recognizing our excellence in interior design and innovation. This prestigious award reaffirms our commitment to creating exceptional, functional, and luxurious spaces for our clients. We extend our gratitude to our team, partners, and customers for their continuous support in our journey towards design excellence.
+            </p>
+         
+          </div>
+        </div>
+
 
         <div className="w-full  h-full ">
           <div className="w-full h-full row flex flex-col md:flex-row mx-auto my-auto">
