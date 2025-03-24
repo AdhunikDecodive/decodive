@@ -444,7 +444,7 @@ function AboutUs() {
                 >
                   <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-[#E4E7EB] group-hover:translate-x-0 group-hover:translate-y-0"></span>
                   <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
-                  <span className="relative">View All Posts</span>
+                  <span className="relative">View All Blogs</span>
                 </Link>
               </div>
 

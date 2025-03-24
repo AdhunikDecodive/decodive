@@ -116,7 +116,7 @@ function Navbar() {
 
     return (
 
-        <nav className="bg-gray-100">
+        <nav className="bg-gray-100 border-b-[1px]">
             <div className=" mx-2 px-4">
                 <div className="flex justify-between">
 
@@ -422,12 +422,12 @@ function Navbar() {
                         {link.dropdownItems ? (
                             <div>
                                 <div
-                                    className="flex items-center justify-between "
+                                    className="flex border-b-2 items-center justify-between "
                                     onClick={() => toggleDropdown(index)}
                                 >
                                     <Link
                                         to={link.to}
-                                        className="block py-2 px-4 text-sm hover:bg-gray-200"
+                                        className="block py-2 px-4 text-sm  hover:bg-gray-200"
                                         onClick={(e) => {
                                             if (openDropdown === index) {
                                                 toggleDropdown(index);
@@ -436,7 +436,9 @@ function Navbar() {
                                     >
                                         {link.text}
                                     </Link>
-                                    <div className="transition-transform duration-300 transform">
+
+                                    <div className="transition-transform duration-300 transform ">
+
                                         <svg
                                             className={`w-4 h-4 ml-2 ${openDropdown === index ? 'rotate-180' : ''}`}
                                             fill="none"
@@ -451,10 +453,11 @@ function Navbar() {
                                                 d="M19 9l-7 7-7-7"
                                             />
                                         </svg>
+
                                     </div>
                                 </div>
                                 {openDropdown === index && (
-                                    <div className="ml-2">
+                                    <div className="ml-2 ">
                                         {link.dropdownItems.map((dropdownItem, i) => (
                                             <Link
                                                 key={i}
@@ -474,7 +477,7 @@ function Navbar() {
                         ) : (
                             <Link
                                 to={link.to}
-                                className="block py-2 px-4 text-sm hover:bg-gray-200"
+                                className="block border-b-2 py-2 px-4 text-sm hover:bg-gray-200"
                                 onClick={closeMobileMenu}
                             >
                                 {link.text}

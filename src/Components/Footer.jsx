@@ -13,10 +13,9 @@ const styles = {
 function Footer() {
 
     const handleMapClick = () => {
-        // Replace with the actual latitude and longitude of the location
-
-        const latitude = "28.407386810274993";
-        const longitude = "76.99749184662686";
+       
+        const latitude = "28.391126929662153";
+        const longitude = "77.03012071904469";
         const mapUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
 
         // Open the map URL in a new tab

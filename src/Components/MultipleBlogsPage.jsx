@@ -136,7 +136,7 @@ const MultipleBlogsPage = () => {
         
 
           <div key={blog.id} className=" md:w-[70%] h-full  lg:flex m-4">
-        <div className="row flex flex-wrap">
+        <Link to={`/blogs/${blog.id}`} className="row flex flex-wrap">
            <div className=" w-12/12 lg:w-6/12">
 
           <AdvancedImage
@@ -160,9 +160,9 @@ const MultipleBlogsPage = () => {
                 <div className="text-gray-900 font-bold text-xl mb-2">
                   {blog.title}
                 </div>
-                <Link to={`/blogs/${blog.id}`}>
+              
                 <p className="text-gray-700 text-justify">{blog.description}</p>
-                </Link>
+               
               </div>
 
               <span className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 lowercase"
@@ -196,7 +196,7 @@ const MultipleBlogsPage = () => {
           </div>
        
 
-        </div>
+        </Link>
        
             
           </div>
