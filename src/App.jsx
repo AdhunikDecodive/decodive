@@ -118,7 +118,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
 
         <Route path="/blogs" element={<MultipleBlogsPage />} />
-        
+
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
 
 

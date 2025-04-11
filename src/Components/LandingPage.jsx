@@ -55,9 +55,9 @@ const wardrobeCategories = [
 ];
 
 const lightingCategories = [
-  
+
   { name: 'Lamps And Lightings', imgSrc: 'HomeDecor/Ceiling_Light/3_dgj8x9' },
-  
+
   { name: 'Ceiling Lights', imgSrc: 'landingPage/bhxzfd5szxwtg6fdskyw' },
   { name: 'Lighting', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Ceiling Lights', imgSrc: 'HomeDecor/Wall_Light/19_ymupwm' },
@@ -70,7 +70,7 @@ const lightingCategories = [
 ];
 
 const decorCategories = [
-  
+
   { name: 'All Decors', imgSrc: 'HomeDecor/mrr/21_jhvm8s' },
   { name: 'Mirrors', imgSrc: 'HomeDecor/WallD/17_f5c53m' },
 
@@ -115,7 +115,7 @@ function LandingPage() {
 
   useGSAP(() => {
 
-    // gsap code here...
+    
     gsap.set(".slidesm", {
       scale: 5,
     });
@@ -172,17 +172,16 @@ function LandingPage() {
 
     const locomotiveScroll = new LocomotiveScroll({
       el: document.querySelector('.scroll-container'),
-      smooth: true, // Enable smooth scrolling
-      smoothMobile: false, // Disable smooth scrolling on mobile devices for better performance
+      smooth: true,  
+      smoothMobile: false,  
       scrollSpeed: 50,
 
     });
 
-    // Clean up function to destroy Locomotive Scroll when the component unmounts
-    return () => {
+     return () => {
       locomotiveScroll.destroy();
     };
-  }, []); // Empty dependency array ensures the effect runs only once
+  }, []);  
 
 
   const imageIds = [
@@ -195,7 +194,7 @@ function LandingPage() {
     'HomeDecor/Lamps/12_qomfy8',
     'Others/PoojaRoom/13_x6vgns',
     'Others/BarCounter/28_j2djr6',
-    // Add more image identifiers as needed
+     
   ];
 
   const jsonLd = {
@@ -246,7 +245,7 @@ function LandingPage() {
   };
 
 
- 
+
   return (
 
     <>
@@ -255,23 +254,18 @@ function LandingPage() {
 
       <PopUp />
 
-
-
-
-
       <Helmet>
 
+        <title>Best Luxury Interior Designers in Gurugram (Gurgaon) - Adhunik Decodive </title>
 
-        <title>Top Luxury Interior Designers in Gurugram | Adhunik Decodive</title>
-
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!" />
- <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true"  name="description" content="Looking for top interior designers in Gurgaon? Adhunik Decodive crafts luxurious, functional interiors tailored to your style. Discover modern elegance today." />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         <link rel="canonical" href="https://adhunikdecodive.com/" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Interior Designers in Gurugram | Premium Home & Office Interiors – Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior designers in Gurugram, best home interior designers Gurugram, office interiors Gurugram, luxury interiors Gurugram, commercial interior designers Gurugram, interior design company in Gurugram, top interior decorators in Gurugram, home renovation Gurugram, modern interiors Gurugram, custom interior solutions Gurugram, interior designers in Gurgaon, best interior design services Gurgaon" />
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Luxury Interior Designers in Gurgaon - Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior designers in gurugram ,interior designers in gurgaon, best home interior designers Gurugram, office interiors Gurugram, luxury interiors Gurugram, commercial interior designers Gurugram, interior design company in Gurugram, top interior decorators in Gurugram, home renovation Gurugram, modern interiors Gurugram, custom interior solutions Gurugram, interior designers in Gurgaon, best interior design services Gurgaon" />
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
@@ -317,16 +311,16 @@ function LandingPage() {
               <AdvancedVideo
                 muted
                 autoPlay
-               loop
-                  playsInline
-                  poster="/landingpage.webp"
-                  cldPoster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
-                 cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
+                loop
+                playsInline
+                poster="/landingpage.webp"
+                cldPoster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
+                cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
                 width={1920}
                 height={1080}
-               alt=" High-definition video of a modern kitchen interior captured by a camera " 
-               className=" object-cover  w-screen h-screen  "
-               
+                alt=" High-definition video of a modern kitchen interior captured by a camera "
+                className=" object-cover  w-screen h-screen  "
+
               />
 
             </div>
@@ -335,7 +329,8 @@ function LandingPage() {
             <div className="marqueesContainer w-full h-screen relative overflow-hidden">
               <div className="heading absolute top-[7%] left-1/2 -translate-x-1/2">
                 <h2 className="text-xl font-regular w-60 text-center">
-                  Bringing your Dreams to New Horizon.
+                Best Interior Designers in Gurgaon
+
                 </h2>
               </div>
 
@@ -351,22 +346,22 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                          <AdvancedImage
-                          
-  cldImg={cld
-    .image(category.imgSrc)
-    .quality('auto:best')
-     // Serve WebP/AVIF if supported
-  }
-   sizes="50px"
-  height={48} 
-  width={48} 
-  loading="lazy"
-  className="object-cover h-12 w-12"
-  alt={category.name}
-  fetchpriority="high"
-  decoding="async"
-/>
+                            <AdvancedImage
+
+                              cldImg={cld
+                                .image(category.imgSrc)
+                                .quality('auto:best')
+                                // Serve WebP/AVIF if supported
+                              }
+                              sizes="50px"
+                              height={48}
+                              width={48}
+                              loading="lazy"
+                              className="object-cover h-12 w-12"
+                              alt={category.name}
+                              fetchpriority="high"
+                              decoding="async"
+                            />
 
                           </div>
                         )}
@@ -382,20 +377,20 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                          <AdvancedImage
-  cldImg={cld
-    .image(category.imgSrc) 
-    .quality('auto:best') 
-  }
-  height={48} 
-  width={48} 
-   sizes="50px"
-  loading="lazy"
-  className="object-cover h-12 w-12"
-  alt={category.name}
-  fetchpriority="high"
-  decoding="async"
-/>
+                            <AdvancedImage
+                              cldImg={cld
+                                .image(category.imgSrc)
+                                .quality('auto:best')
+                              }
+                              height={48}
+                              width={48}
+                              sizes="50px"
+                              loading="lazy"
+                              className="object-cover h-12 w-12"
+                              alt={category.name}
+                              fetchpriority="high"
+                              decoding="async"
+                            />
 
                           </div>
                         )}
@@ -411,22 +406,22 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                          <AdvancedImage
-  cldImg={cld
-    .image(category.imgSrc)
-     // Resize to match displayed size
-    .quality('auto:best') // Optimizes compression
-     // Uses WebP/AVIF when supported
-  }
-   sizes="50px"
-  height={48} 
-  width={48} 
-  loading="lazy"
-  className="object-cover h-12 w-12"
-  alt={category.name}
-  fetchpriority="high"
-  decoding="async"
-/>
+                            <AdvancedImage
+                              cldImg={cld
+                                .image(category.imgSrc)
+                                // Resize to match displayed size
+                                .quality('auto:best') // Optimizes compression
+                                // Uses WebP/AVIF when supported
+                              }
+                              sizes="50px"
+                              height={48}
+                              width={48}
+                              loading="lazy"
+                              className="object-cover h-12 w-12"
+                              alt={category.name}
+                              fetchpriority="high"
+                              decoding="async"
+                            />
 
                           </div>
                         )}
@@ -442,22 +437,22 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                          <AdvancedImage
-  cldImg={cld
-    .image(category.imgSrc)
-     // Resize to match displayed size
-    .quality('auto:best') // Optimizes compression
-     // Uses WebP/AVIF when supported
-  }
-   sizes="50px"
-  height={40} 
-  width={40} 
-  loading="lazy"
-  className="object-cover h-12 w-12"
-  alt={category.name}
-  fetchpriority="high"
-  decoding="async"
-/>
+                            <AdvancedImage
+                              cldImg={cld
+                                .image(category.imgSrc)
+                                // Resize to match displayed size
+                                .quality('auto:best') // Optimizes compression
+                                // Uses WebP/AVIF when supported
+                              }
+                              sizes="50px"
+                              height={40}
+                              width={40}
+                              loading="lazy"
+                              className="object-cover h-12 w-12"
+                              alt={category.name}
+                              fetchpriority="high"
+                              decoding="async"
+                            />
 
                           </div>
                         )}
@@ -473,21 +468,21 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                          <AdvancedImage
-  cldImg={cld
-    .image(category.imgSrc)
-     // Resize to match displayed size
-    .quality('auto:best') // Optimizes compression
-     // Uses WebP/AVIF when supported
-  }
-  height={48} 
-  width={48} 
-  loading="lazy"
-  className="object-cover h-12 w-12"
-  alt={category.name}
-  fetchpriority="high"
-  decoding="async"
-/>
+                            <AdvancedImage
+                              cldImg={cld
+                                .image(category.imgSrc)
+                                // Resize to match displayed size
+                                .quality('auto:best') // Optimizes compression
+                                // Uses WebP/AVIF when supported
+                              }
+                              height={48}
+                              width={48}
+                              loading="lazy"
+                              className="object-cover h-12 w-12"
+                              alt={category.name}
+                              fetchpriority="high"
+                              decoding="async"
+                            />
 
                           </div>
                         )}
@@ -503,37 +498,40 @@ function LandingPage() {
         </div>
 
 
-        <div className="h-full flex flex-col md:flex-row text-center p-5  m-4">
+        <div className="h-full flex flex-col px-5 gap-6  justify-evenly items-center md:flex-row text-center p-5  m-4">
+
           <div className="md:w-[40%]  w-auto">
             <div className="flex items-center justify-center  h-full ">
               <div>
                 <div className="   ">
                   <div className=" w-auto">
-                 
 
-                      <AdvancedImage loading="lazy" className=" h-96 w-full" src="https://res.cloudinary.com/dwhmfz63n/image/upload/v1742812142/e2ob3hxm14wwavci7c8n.png" fetchpriority="high" decoding="async"
- width={800} 
- height={500} 
-                        effect="blur" alt="Modular Kitchen Designs" />
 
-                    
+                    <AdvancedImage loading="lazy" className=" h-auto w-auto border-2 rounded-2xl " src="https://res.cloudinary.com/ddkyx2jhh/image/upload/c_limit,w_1200/f_auto/q_auto/v1743500674/indiaawards_k0es0f?_a=BAVAZGDX0" fetchpriority="high" decoding="async"
+                      width={800}
+                      height={500}
+                      effect="blur" alt="Modular Kitchen Designs" />
 
-                 
+
+
+
                   </div>
-           
+
                 </div>
+
+
               </div>
             </div>
           </div>
 
-          <div className="md:w-[60%] w-auto h-full p-2 m-2 md:p-5 md:m-5 text-center">
-            <h2 className=" text-[6vw]  md:text-4xl mb-3 hidden md:block">
-              India Business Awards 2025 
+          <div className="md:w-[40%] w-auto h-full p-2 m-2 md:p-5 md:m-5 text-center">
+            <h2 className=" text-[6vw]  md:text-4xl mb-3  ">
+              India Business Awards 2025
             </h2>
             <p className=" text-justify md:text-center">
-            Adhunik Decodive is honored to receive the India Business Awards 2025, recognizing our excellence in interior design and innovation. This prestigious award reaffirms our commitment to creating exceptional, functional, and luxurious spaces for our clients. We extend our gratitude to our team, partners, and customers for their continuous support in our journey towards design excellence.
+              Adhunik Decodive is honored to receive the India Business Awards 2025, recognizing our excellence in interior design and innovation. This prestigious award reaffirms our commitment to creating exceptional, functional, and luxurious spaces for our clients. We extend our gratitude to our team, partners, and customers for their continuous support in our journey towards design excellence.
             </p>
-         
+
           </div>
         </div>
 
@@ -552,16 +550,20 @@ function LandingPage() {
               <h1 className="font-semibold text-5xl text-center mb-9">
                 Explore The <span className="text-[#9f9f9f]">Art</span> of Decor
               </h1>
-              <h2 className=" mx-auto text-1xl  text-justify w-[90%]">
-                From the heart of your home to bespoke wardrobes and curated furniture selections, We offers a holistic approach to interior design. Our extensive experience encompasses a wide range of aesthetics, from timeless elegance to contemporary minimalism, ensuring your vision is brought to life with meticulous attention…
-              </h2>
+              <p className=" mx-auto text-1xl  text-justify w-[90%]">
+              At Adhunik Decodive, our legacy is built on transforming spaces into breathtaking realities. With over 10 years of experience and a portfolio boasting 500+ delighted clients, our commitment to excellence shines through every project.
+<br />
+Our team of top interior designers in Gurgaon are passionate professionals dedicated to delivering extraordinary results within your budget. Whether it's a stylish business environment or a warm, inviting home, we bring an unmatched level of creativity and precision to every design.
+<br />
+Beyond traditional layout planning, our expertise spans urban planning, comprehensive space design, and innovative architecture. At Adhunik Decodive, we believe that every space should not only look stunning but also feel inviting and function seamlessly—enhancing the lifestyle of those who experience it.            <br />
+Our vision at Adhunik Decodive is to be a leading interior designers  in Gurgaon and beyond. We strive for the highest standards in quality, creativity, beautiful designs, and practical functionality in every project we undertake.   </p>
               <div className="flex flex-col lg:flex-row justify-center mt-4">
                 {/* Item 1 */}
                 <div className="w-full lg:w-6/12 h-full flex items-center justify-center lg:justify-start mb-8 lg:mb-0">
                   <div className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw] flex-shrink-0 mr-4">
 
                     <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur"  sizes="50px" width={50} loading="lazy"
+                      effect="blur" sizes="50px" width={50} loading="lazy"
                       height={50} className="  w-full h-full object-cover text-black " alt="DURABILITY
 Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
 
@@ -659,7 +661,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 }}
               >
 
-              
+
                 <div className="hidden md:flex row flex gap-10 relative content-end top-[89%] left-[15%] ">
                   <div className="w-6/12 h-10">
                     <div
@@ -807,8 +809,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage width={500}  loading="lazy"
-  height={500} alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
+                  <AdvancedImage width={500} loading="lazy"
+                    height={500} alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
 
 
 
@@ -838,8 +840,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
             <div className="w-full p-9">
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-                  <AdvancedImage  width={500} loading="lazy"
-  height={500}  alt="Revitalize your interior kitchen space." cldImg={cld.image('Images/meeting2_qa5a1w')} />
+                  <AdvancedImage width={500} loading="lazy"
+                    height={500} alt="Revitalize your interior kitchen space." cldImg={cld.image('Images/meeting2_qa5a1w')} />
 
 
                 </div>
@@ -869,8 +871,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage  width={500} loading="lazy"
-  height={500}  alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
+                  <AdvancedImage width={500} loading="lazy"
+                    height={500} alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
 
                 </div>
                 <div className="p-6 text-center">
@@ -895,6 +897,13 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
           </div>
         </div>
 
+<section className=" w-full h-full flex justify-center items-center py-5">
+<h2  className=" text-4xl text-center  font-extrabold  w-96  ">Best Interior Design Services  in Gurgaon
+</h2>
+</section>
+
+
+
         <div className="h-full flex flex-col md:flex-row text-center p-5 bg-[#F4F4F4] m-4">
           <div className="md:w-[40%]  w-auto">
             <div className="flex items-center justify-center  h-full ">
@@ -904,8 +913,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                     <div className=" w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
                       <AdvancedImage loading="lazy" className="" cldImg={cld.image('landingPage/mkcwo034pfiodziddr6z')} fetchpriority="high" decoding="async"
- width={800} 
- height={500} 
+                        width={800}
+                        height={500}
                         effect="blur" alt="Modular Kitchen Designs" />
 
                     </div>
@@ -936,21 +945,14 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               Modular Kitchen Designs
             </h2>
             <p className=" text-justify md:text-center">
-              Discover the perfect heart for your perfect home, a place where
-              laughter and delicious food weave their magic Our modular kitchens
-              transform your culinary dreams into reality with a curated
-              selection of styles, from minimalist havens to elaborate
-              masterpieces. Each design is crafted for beauty and functionality,
-              with innovative features and space-saving solutions to make
-              cooking a joy. Plus personalize your own style to perfectly fit
-              for your needs…
+            Discover the perfect heart for your dream home in Gurgaon, where laughter, delicious food, and memories come alive. At Adhunik Decodive, our luxury modular kitchens transform your culinary dreams into reality with a curated selection of styles—from minimalist havens to elaborate masterpieces. Our modular kitchen designs in Gurgaon are crafted for beauty and functionality, featuring innovative, space-saving solutions that make cooking a joy. Personalize your custom modular kitchen to perfectly fit your unique needs, and experience the best in modern kitchen design. As one of the top interior designers in Gurugram, we bring premium quality, creative flair, and unparalleled workmanship to every project.
             </p>
             <div className="show_m mt-5">
               <Link
                 to="./KitchenCategory"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-               &#10147;
+                &#10147;
               </Link>
             </div>
           </div>
@@ -962,20 +964,16 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               Wardrobe Designs
             </h2>
             <p className=" text-justify md:text-center">
-              Feeling overwhelmed by a bulging closet? Step into a world of
-              serenity with our exquisite wardrobe collection. Each design
-              seamlessly blends functionality and elegance, offering a
-              harmonious marriage of style and storage. Imagine effortless
-              mornings with everything perfectly organized, sparking joy every
-              time you open the door. Say hello to the end of chaos and embrace
-              stylish harmony.
+            Feeling overwhelmed by a cluttered closet in your Gurgaon home? Step into a world of calm with Adhunik Decodive’s premium wardrobe designs. Our exquisite wardrobe collection blends smart storage with timeless style, bringing both functionality and elegance into your space.
+
+Imagine effortless mornings with everything neatly organized—sparking joy each time you open the doors. Say goodbye to the mess and hello to stylish, space-saving wardrobes designed to fit your lifestyle. Whether you’re in Gurgaon or Gurugram, discover the perfect blend of luxury and practicality with one of the top interior designers in the region.
             </p>
             <div className="show_m mt-5">
               <Link
                 to="/Wardrobe"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-               &#10147;
+                &#10147;
               </Link>
             </div>
           </div>
@@ -986,8 +984,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage loading="lazy" cldImg={cld.image('Images/wr_qfshhd')}  width={500} 
-  height={500}   alt="Wardrobe Designs" />
+                      <AdvancedImage loading="lazy" cldImg={cld.image('Images/wr_qfshhd')} width={500}
+                        height={500} alt="Wardrobe Designs" />
 
                     </div>
                   </div>
@@ -1005,7 +1003,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/Wardrobe"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                     &#10147;
+                      &#10147;
                     </Link>
                   </div>
                 </div>
@@ -1023,19 +1021,19 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                    <AdvancedImage
-  cldImg={cld
-    .image('landingPage/ckhkwnh3brr4o0k0b1iv')
-     // Resize image to 500x300px
-    .quality('auto:best')
-     // Uses WebP/AVIF if supported
-  }
-  width={500} 
-  height={300} 
-  loading="lazy"
-  className="object-cover"
-  alt="pink and grey sofa and wooden table with glass Furniture"
-/>
+                      <AdvancedImage
+                        cldImg={cld
+                          .image('landingPage/ckhkwnh3brr4o0k0b1iv')
+                          // Resize image to 500x300px
+                          .quality('auto:best')
+                          // Uses WebP/AVIF if supported
+                        }
+                        width={500}
+                        height={300}
+                        loading="lazy"
+                        className="object-cover"
+                        alt="pink and grey sofa and wooden table with glass Furniture"
+                      />
 
                     </div>
                   </div>
@@ -1065,12 +1063,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               Furniture
             </h2>
             <p className=" text-justify md:text-center">
-              Enhance your workday environment with our curated selection of
-              stylish and functional home office furniture. Explore our range of
-              stylish and functional furniture that you'll love to craft your
-              productivity oasis. Imagine ergonomic chairs, spacious desks, and
-              sleek storage solutions – all designed to boost your focus and
-              fuel your success.
+            Enhance your work-from-home experience in Gurgaon with Adhunik Decodive’s curated range of stylish and functional home office furniture. Discover ergonomic chairs, spacious desks, and smart storage solutions—each piece thoughtfully designed to boost your productivity and comfort.
+
+Whether you're creating a cozy corner or a full home office setup, our furniture combines modern aesthetics with everyday functionality. Build your perfect workspace with one of the top interior designers in Gurgaon and turn your home into a productivity powerhouse.
             </p>
             <div className="show_m mt-5">
               <Link
@@ -1087,18 +1082,16 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
           <div className="md:w-[60%] w-auto h-full p-2 m-2 md:p-5 md:m-5 text-center">
             <h2 className=" text-[6vw]  md:text-4xl mb-3 hidden md:block">Home Decor </h2>
             <p className=" text-justify md:text-center">
-              Unleash the chic potential of your home with Adhunik DecoDive.
-              Our curated collections of furniture, lighting, and décor embody
-              the essence of modern design. From sleek lines to pops of color,
-              discover pieces that spark joy and elevate your space. Craft a
-              home that reflects your unique personality <br /> – effortlessly.
+            Gurgaon home with Adhunik Decodive, Our handpicked collections of modern furniture, stylish lighting, and elegant décor capture the essence of contemporary design. From clean lines to bold accents, discover pieces that spark joy and elevate your interiors.
+
+Whether you're updating a room or transforming your entire space, our designs help you create a home that reflects your unique personality—effortlessly. Trust one of the top interior designers in Gurgaon to bring beauty, comfort, and style into every corner of your home.
             </p>
             <div className="show_m mt-5">
               <Link
                 to="/HomeDecor"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
-               &#10147;
+                &#10147;
               </Link>
             </div>
           </div>
@@ -1109,8 +1102,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage loading="lazy" cldImg={cld.image('landingPage/dse47cfgiznpkyjfqcu8')} width={500} 
-  height={500}  alt="Home Decor " />
+                      <AdvancedImage loading="lazy" cldImg={cld.image('landingPage/dse47cfgiznpkyjfqcu8')} width={500}
+                        height={500} alt="Home Decor " />
 
                     </div>
                   </div>
@@ -1144,8 +1137,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage  loading="lazy" cldImg={cld.image('Others/TV/2_k9vhdt')}  width={500} 
-  height={500}  alt="TV Unit Panels" />
+                      <AdvancedImage loading="lazy" cldImg={cld.image('Others/TV/2_k9vhdt')} width={500}
+                        height={500} alt="TV Unit Panels" />
 
 
                     </div>
@@ -1163,7 +1156,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       to="/OthersCategory"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
-                     &#10147;
+                      &#10147;
                     </Link>
                   </div>
                 </div>
@@ -1174,14 +1167,11 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
             <h2 className="text-[6vw]  md:text-4xl mb-3  hidden md:block"> TV Unit Panels</h2>
             <p className=" text-justify md:text-center">
 
-              Level up your living room's ambiance. Our TV unit panels aren't
-              just furniture – they're a statement piece that sets the tone for
-              your entire space.Whether you prefer a sleek modern look, a cozy
-              rustic vibe, or something entirely unique, our diverse range of
-              finishes and configurations allows you to tailor your TV zone to
-              reflect your individual design vision. Let your living room speak
-              volumes about your style and personality with our stunning TV unit
-              options.
+            Level up your living rooms ambiance with Adhunik Decodive stunning TV unit panels in Gurgaon. More than just furniture, our TV units are statement pieces that set the tone for your entire space.
+
+Whether you love a sleek modern look, a warm rustic feel, or something uniquely yours, our wide range of finishes and customizable configurations let you design a TV area that reflects your personal style.
+
+Make your living room speak volumes about your taste with one of the top interior designers in Gurgaon — where every detail is crafted for beauty, function, and flair.
             </p>
             <div className="show_m mt-5">
               <Link
