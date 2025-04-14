@@ -1,7 +1,4 @@
 
-
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 
 import PhoneCallButton from "./PhoneCallButton";
@@ -306,7 +303,7 @@ Furniture
 
             </div>
 
-            <Footer />
+       
             </>
         
     )

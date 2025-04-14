@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+
 import { Tabs } from "flowbite-react";
 import PhoneCallButton from "./PhoneCallButton";
 import gsap from "gsap";
@@ -536,7 +536,7 @@ function HomeDecor() {
 
                 </Tabs>
             </div>
-            <Footer />
+        
         </>
 
     )

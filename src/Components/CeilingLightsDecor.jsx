@@ -1,6 +1,4 @@
 
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 import PhoneCallButton from "./PhoneCallButton";
 import ModalNew from './ModalNew';
@@ -289,7 +287,7 @@ function CeilingLightsDecor() {
 
             </div>
 
-            <Footer />
+            
             </>
 
     

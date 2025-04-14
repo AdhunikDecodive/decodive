@@ -1,6 +1,4 @@
 
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 
 
@@ -305,7 +303,7 @@ function MirrorsDecor() {
 
             </div>
 
-            <Footer />
+        
         </>
     )
 }

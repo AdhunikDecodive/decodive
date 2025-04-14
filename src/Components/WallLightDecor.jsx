@@ -1,7 +1,4 @@
 
-
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 
 import ModalNew from './ModalNew';
@@ -288,7 +285,7 @@ function WallLightDecor() {
 
             </div>
 
-            <Footer />
+           
         </>
     )
 }

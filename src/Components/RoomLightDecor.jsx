@@ -1,4 +1,3 @@
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 
 import PhoneCallButton from "./PhoneCallButton";
@@ -292,7 +291,7 @@ function RoomLightDecor() {
 
             </div>
 
-            <Footer />
+      
         </>
     )
 }

@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 
 import { useState } from 'react'
@@ -295,7 +295,7 @@ function SshapeKitchen() {
 
             </div>
 
-            <Footer />
+           
         </>
     )
 }

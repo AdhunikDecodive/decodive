@@ -1,7 +1,7 @@
 // src/components/MultipleBlogsPage.js
 
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import { Helmet } from "react-helmet-async";
@@ -204,7 +204,7 @@ const MultipleBlogsPage = () => {
         ))}
       </div>
     </div>
-    <Footer/>
+   
     </>
   );
 };

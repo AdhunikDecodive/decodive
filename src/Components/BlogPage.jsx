@@ -1,5 +1,4 @@
 
-import Footer from './Footer';
 
 const cardData = [
   {
@@ -112,7 +111,7 @@ function BlogPage() {
       
   
 
-      <Footer />
+ 
     </>
   );
 }

@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 import { Helmet } from "react-helmet-async";
 
@@ -293,7 +293,7 @@ function WalkDoorWardrobe() {
 
             </div>
 
-            <Footer />
+          
         </>
     )
 }

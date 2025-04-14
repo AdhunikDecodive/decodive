@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 
 
@@ -380,7 +380,7 @@ function VastuTips() {
 
       </div>
 
-      <Footer />
+    
 
     </>
 

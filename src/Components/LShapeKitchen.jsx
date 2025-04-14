@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+
 import "./LShapeKitchen.css";
 
 import PhoneCallButton from "./PhoneCallButton";
@@ -332,7 +332,7 @@ function LShapeKitchen() {
         </div>
       </div>
 
-      <Footer />
+    
     </>
   );
 }

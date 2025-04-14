@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import { Tabs } from "flowbite-react";
 
 
@@ -625,7 +624,7 @@ Unveil Our Latest Design Collection!  "  className="   relative   h-[86vh]  md:h
 
                 </Tabs>
             </div>
-            <Footer />
+            
             </>
         
     )

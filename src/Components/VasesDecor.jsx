@@ -1,5 +1,4 @@
 
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 
 
@@ -296,7 +295,7 @@ function VasesDecor() {
 
             </div>
 
-            <Footer />
+           
         </>
     )
 }

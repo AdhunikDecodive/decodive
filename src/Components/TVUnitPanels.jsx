@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 
 
@@ -297,7 +297,7 @@ function TVUnitPanels() {
 
             </div>
 
-            <Footer />
+          
 
 </>
         

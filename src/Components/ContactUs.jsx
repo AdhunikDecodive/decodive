@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+
 import  { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
@@ -449,10 +449,7 @@ function ContactUs() {
         </div>
       </div>
 
-      
-    
-    
-      <Footer />
+   
 
 </>
     

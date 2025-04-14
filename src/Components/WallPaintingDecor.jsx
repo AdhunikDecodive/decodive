@@ -1,6 +1,3 @@
-
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 import PhoneCallButton from "./PhoneCallButton";
 import { useState } from "react";
@@ -291,7 +288,7 @@ function WallPaintingDecor() {
 
             </div>
 
-            <Footer />
+         
         </>
     )
 }

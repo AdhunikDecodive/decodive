@@ -76,7 +76,7 @@ function App() {
       <ScrollToTop />
 
       <Headroom>
-        <Navbar />
+        <Navbar/>
       </Headroom>
 
       <WatsapButton phoneNumber="9289126052" />
@@ -116,9 +116,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/blogpage" element={<BlogPage />} />
         <Route path="*" element={<Error404 />} />
-
         <Route path="/blogs" element={<MultipleBlogsPage />} />
-
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
 
 

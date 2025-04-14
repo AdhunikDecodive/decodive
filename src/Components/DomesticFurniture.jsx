@@ -1,6 +1,6 @@
 
 
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 
 import ModalNew from './ModalNew';
@@ -295,7 +295,7 @@ function DomesticFurniture() {
 
             </div>
 
-            <Footer />
+    
 
 </>
     

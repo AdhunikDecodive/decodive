@@ -5,12 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power2, Power4 } from "gsap";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay ,Pagination,  FreeMode } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Footer from "./Footer";
 
 import t2 from "../assets/Images/HomePage/t1.png";
 
@@ -244,7 +243,58 @@ function LandingPage() {
     ]
   };
 
-
+  const slideData = [
+    {
+      name: "Shabnam Gupta",
+      image: "AboutUs/avatar_ltfwos",
+      position: "Mumbai",
+      testimonial:
+        "Adhunik Decodive completely transformed my living room into a luxurious, inviting space. They understood my design vision and paid close attention to every detail. Their creativity and professionalism made the entire experience seamless. Highly recommended for anyone looking for high-end interior design in India!",
+    },
+    {
+      name: "Ambrish Arora",
+      image: "AboutUs/avatar_ltfwos",
+      position: "Chennai",
+      testimonial:
+        "We hired Adhunik Decodive to remodel our outdated kitchen, and the results were stunning! The design team was punctual, professional, and made the entire renovation process enjoyable. Their knowledge of luxury interior design really stands out. Perfect blend of function and style.",
+    },
+    {
+      name: "Tanya Gyani",
+      image: "AboutUs/woman_gphihr",
+      position: "New Delhi",
+      testimonial:
+        "Our home now looks like a feature from a design magazine, thanks to Adhunik Decodive. The space feels fresh, modern, and super cozy. There were a couple of hiccups in communication, but the end result exceeded expectations. Truly one of the best interior design teams in Delhi NCR.",
+    },
+    {
+      name: "Priya Rastogi",
+      image: "AboutUs/woman_gphihr",
+      position: "Agra",
+      testimonial:
+        "We got stunning custom furniture for our home and ergonomic office chairs that fit perfectly into our workspace. Adhunik Decodive listened to our style and budget needs, delivering beautiful, functional pieces. Their team made interior styling feel easy and exciting. Great experience!",
+    },
+    {
+      name: "Akari Studio",
+      image: "AboutUs/avatar_ltfwos",
+      position: "Shimla",
+      testimonial:
+        "I discovered Adhunik Decodive’s decor collection and fell in love instantly. Every home decor piece—from throw pillows to art—feels handpicked for elegance and warmth. It’s amazing how these small details changed the entire vibe of our living space.",
+    },
+    {
+      name: "Manit Rastogi",
+      image: "AboutUs/avatar_ltfwos",
+      position: "Varanasi",
+      testimonial:
+        "Our kitchen renovation by Adhunik Decodive was simply amazing! The layout, design, and materials were thoughtfully planned. Their recommendations made a big difference in the final look and feel. We now have a luxurious, functional kitchen that adds real value to our home.",
+    },
+    {
+      name: "Rhea Malhotra",
+      image: "AboutUs/woman_gphihr",
+      position: "Gurgaon",
+      testimonial:
+        "Working with Adhunik Decodive was the best decision we made for our Gurgaon home. Their expert interior designers turned our house into a modern luxury space that reflects our lifestyle perfectly. From custom furniture to the smallest decor accents, every element was curated with care. If you're searching for the best luxury interior designers in Gurgaon, look no further.",
+    },
+  ];
+  
 
   return (
 
@@ -256,7 +306,7 @@ function LandingPage() {
 
       <Helmet>
 
-        <title>Best Luxury Interior Designers in Gurugram (Gurgaon) - Adhunik Decodive </title>
+        <title>Adhunik Decodive : Best Luxury Interior Designers in Gurugram & Delhi NCR</title>
 
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true"  name="description" content="Looking for top interior designers in Gurgaon? Adhunik Decodive crafts luxurious, functional interiors tailored to your style. Discover modern elegance today." />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
@@ -278,7 +328,6 @@ function LandingPage() {
         <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top interior design company for luxury home & office interiors. From concept to installation, we deliver bespoke, functional spaces. Free consultation!" />
 
 
-
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 
 
@@ -289,8 +338,6 @@ function LandingPage() {
 
 
       <div className="main w-full font-['Rejouice-Headline'] ">
-
-
         <div className="home  section w-full h-screen relative  " >
           <div className="w-full sticky top-0 left-0">
             <div className="btmtext absolute bottom-[7%] z-[4] w-52 left-[3%]">
@@ -1183,10 +1230,104 @@ Make your living room speak volumes about your taste with one of the top interio
             </div>
           </div>
         </div>
+
+        <div className="row h-full w-full px-5 py-5 bg-[#F3F4F6] ">
+         
+            <div className=" py-4 inline-flex items-center justify-center w-full mx-auto md:mt-0  my-7 md:mb-0">
+                    <hr className="w-[90%] h-px my-8 bg-gray-300 border-0 " />
+                    <h2 className="absolute px-2 md:px-3  text-gray-700 -translate-x-1/2 bg-[#F3F4F6] left-1/2  text-center text-[20px]  md:text-4xl text-1xl capitalize font-semibold ">                  Testimonials
+                    </h2>
+                  </div>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              freeMode={true}
+              autoplay={{
+                delay: 3500,
+                speed: 2800,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                888: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[FreeMode, Pagination, Autoplay]}
+              className="mySwiper z-0"
+            >
+              {slideData.map((slide, index) => (
+                <SwiperSlide key={index} className="p-4 rounded-lg">
+                  <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
+                    <div className="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                      <div className="row h-14 w-14">
+                        <AdvancedImage
+                          decoding="async"
+                          loading="lazy"
+                          effect="blur"
+                          className=" w-full h-full object-cover object-center"
+                          alt={slide.name}
+                          cldImg={cld.image(slide.image)}
+                        />
+                      </div>
+                      <div className="flex w-full flex-col gap-0.5">
+                        <div className="flex items-center justify-between">
+                          <h5 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            {slide.name}
+                          </h5>
+                          {/* Rating icons can be added dynamically */}
+                          <div className="flex items-center gap-0 5 text-[#FBBF2C]">
+                            {[...Array(5)].map((_, i) => (
+                              <svg
+                                key={i}
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="w-5 h-5"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                  clipRule="evenodd"
+                                ></path>
+                              </svg>
+                            ))}
+                          </div>
+                        </div>
+                        <p className="text-start block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                          {slide.position}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-0 mb-6">
+                      <p className="block font-sans text-base text-justify antialiased font-light leading-relaxed text-inherit">
+                        {slide.testimonial}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+
+
       </div>
 
 
-      <Footer />
+    
+
     </>
   );
 }

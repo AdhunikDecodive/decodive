@@ -1,5 +1,5 @@
 
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 
 import PhoneCallButton from "./PhoneCallButton";
@@ -285,7 +285,7 @@ function OutDoorLightDecor() {
 
             </div>
 
-            <Footer />
+         
         </>
     )
 }

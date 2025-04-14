@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+
 import "./LShapeKitchen.css";
 
 import PhoneCallButton from "./PhoneCallButton";
@@ -299,7 +299,7 @@ function TVUnitPanels() {
         </div>
       </div>
 
-      <Footer />
+     
     </>
   );
 }

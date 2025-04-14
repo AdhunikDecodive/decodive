@@ -1,7 +1,7 @@
 
 
 
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 
 
@@ -295,7 +295,7 @@ function WallDecor() {
 
             </div>
 
-            <Footer />
+          
         </>
     )
 }

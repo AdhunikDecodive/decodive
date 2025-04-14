@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import  { useEffect, useState } from "react";
-import Footer from "./Footer";
+
 import { Helmet } from "react-helmet-async";
 
 
@@ -666,7 +666,7 @@ const BlogDetailPage = () => {
                 </div>
             </aside>
 
-            <Footer />
+         
 
 
         </>

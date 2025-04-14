@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+
 import { Tabs } from "flowbite-react";
 import { Helmet } from "react-helmet-async";
 
@@ -491,7 +491,7 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[45vh
 
         </Tabs>
     </div>
-    <Footer />
+
 </>
 
   )

@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+
 import "./LShapeKitchen.css"
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
@@ -325,7 +325,7 @@ function UshapeKitchen() {
 
             </div>
 
-            <Footer />
+            
         </>
     )
 }

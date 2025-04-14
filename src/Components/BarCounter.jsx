@@ -1,7 +1,4 @@
 
-
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 
 
@@ -296,7 +293,8 @@ function BarCounter() {
 
             </div>
 
-            <Footer />
+           
+           
 
 </>
         

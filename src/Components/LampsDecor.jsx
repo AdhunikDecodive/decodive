@@ -1,6 +1,4 @@
 
-
-import Footer from "./Footer"
 import "./LShapeKitchen.css"
 import ModalNew from './ModalNew';
 import { useState } from "react";
@@ -293,7 +291,7 @@ function LampsDecor() {
 
             </div>
 
-            <Footer />
+       
         </>
     )
 }

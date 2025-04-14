@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+
 import { Tabs } from "flowbite-react";
 
 
@@ -636,7 +636,7 @@ function OthersCategory() {
 
                 </Tabs>
             </div>
-            <Footer />
+        
         </>
     )
 }

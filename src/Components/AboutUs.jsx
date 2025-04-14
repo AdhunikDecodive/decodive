@@ -10,7 +10,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import "./AboutUs.css";
-import Footer from "./Footer";
+
 import { Link } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
@@ -459,7 +459,7 @@ function AboutUs() {
 
       
       </div>
-      <Footer />
+     
       </>
     
   );

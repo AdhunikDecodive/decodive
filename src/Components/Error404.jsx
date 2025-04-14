@@ -1,10 +1,9 @@
-import React from 'react'
 
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 
 import { Link } from "react-router-dom";
-import Footer from './Footer';
+
 
 
 function Error404() {
@@ -42,7 +41,7 @@ Back to Homepage
 
   </div>
 </div>
-<Footer/>
+
     </>
   )
 }
