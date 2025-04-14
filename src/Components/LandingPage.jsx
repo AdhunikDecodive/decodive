@@ -5,8 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power2, Power4 } from "gsap";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay ,Pagination,  FreeMode } from "swiper/modules";
+import { Autoplay, Pagination, FreeMode } from "swiper/modules";
 
+import { FaPlay } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -21,7 +22,7 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 
 import { EffectCreative } from "swiper/modules";
-import { useEffect } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -114,7 +115,7 @@ function LandingPage() {
 
   useGSAP(() => {
 
-    
+
     gsap.set(".slidesm", {
       scale: 5,
     });
@@ -171,16 +172,16 @@ function LandingPage() {
 
     const locomotiveScroll = new LocomotiveScroll({
       el: document.querySelector('.scroll-container'),
-      smooth: true,  
-      smoothMobile: false,  
+      smooth: true,
+      smoothMobile: false,
       scrollSpeed: 50,
 
     });
 
-     return () => {
+    return () => {
       locomotiveScroll.destroy();
     };
-  }, []);  
+  }, []);
 
 
   const imageIds = [
@@ -193,7 +194,7 @@ function LandingPage() {
     'HomeDecor/Lamps/12_qomfy8',
     'Others/PoojaRoom/13_x6vgns',
     'Others/BarCounter/28_j2djr6',
-     
+
   ];
 
   const jsonLd = {
@@ -294,7 +295,7 @@ function LandingPage() {
         "Working with Adhunik Decodive was the best decision we made for our Gurgaon home. Their expert interior designers turned our house into a modern luxury space that reflects our lifestyle perfectly. From custom furniture to the smallest decor accents, every element was curated with care. If you're searching for the best luxury interior designers in Gurgaon, look no further.",
     },
   ];
-  
+
   const blogPosts = [
     {
       id: 5,
@@ -329,7 +330,151 @@ function LandingPage() {
       link: "https://adhunikdecodive.com/blogs/4"
     }
   ];
+
+  const accordionData = useMemo(() => [
+    {
+      title: " What is the ideal budget for hiring top home and office interior designers in Gurgaon?",
+      content:
+        "A good budget for hiring an interior designer in Gurgaon depends on several key factors, including the designer’s expertise, reputation, project complexity, and the size and scope of the space being redesigned. Whether it's a home or office project, prices can vary widely based on customization levels, materials used, and design aesthetics.On average, interior design costs in Gurgaon typically range between ₹400 to ₹1,500 per square foot. Basic interior work for smaller spaces may fall toward the lower end of the spectrum, while premium or luxury designs with high-end materials and intricate detailing may lean toward the higher range. It’s recommended to consult with top interior designers in Gurgaon to get a tailored quote based on your specific needs, style preferences, and space dimensions.",
+    },
+    {
+      title: " What types of home and office interior design projects do your expert designers in Gurgaon specialize in? ",
+      content:
+        <>
+          <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-8 text-center">
+      Interior Design Services We Offer in Gurgaon
+    </h2>
+    <p className="text-lg mb-6 text-center">
+      You can feel free to contact us for the following interior design services, 
+      executed by our highly experienced interior designers in Gurgaon.
+    </p>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+     
+      <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+        <h3 className="text-xl font-semibold mb-4">🏠 Residential</h3>
+        <p className="text-gray-600">
+          Interior design and decoration for apartments, villas, bungalows, and independent houses.
+          End-to-end solutions for modular kitchens, wardrobes, living spaces, and more.
+        </p>
+      </div>
+
+     
+      <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+        <h3 className="text-xl font-semibold mb-4">🏢 Commercial</h3>
+        <p className="text-gray-600">
+          Office interiors, retail stores, showrooms, cafés, restaurants, hotels, clinics, and hospitals—
+          customized for branding and functionality.
+        </p>
+      </div>
+
+      
+      <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+        <h3 className="text-xl font-semibold mb-4">🏨 Hospitality</h3>
+        <p className="text-gray-600">
+          Complete design services for lodges, resorts, guest houses, and boutique stays—
+          blending luxury with guest experience.
+        </p>
+      </div>
+
+    
+      <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+        <h3 className="text-xl font-semibold mb-4">🎓 Institutional</h3>
+        <p className="text-gray-600">
+          Interiors for schools, colleges, universities, libraries, museums, and historical societies—
+          merging tradition with modern-day design functionality.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        </>,
+    },
+    {
+      title: " Do you design interiors based on the latest interior design trends in Gurgaon & Delhi NCR? ",
+      content: <>
+       <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+    
+    
+    <p className="text-lg mb-6 text-center">
+      Yes, we absolutely design interiors based on the latest trends in Gurgaon & Delhi NCR.
+    </p>
+    
+    <p className="text-gray-600">
+      At Adhunik Decodive, staying updated with current interior design trends is not just a preference — it’s part of our design philosophy. We blend <strong>modern aesthetics with timeless elegance</strong>, creating interiors that are both stylish and deeply personal.
+    </p>
+
+    <p className="text-gray-600">
+      Our expert team thoughtfully incorporates trending elements—whether it’s minimalist layouts, sustainable materials, or smart technology—<strong>without overwhelming the space</strong>. Every project is tailored to reflect your unique personality, lifestyle, and long-term vision.
+    </p>
+
+    <p className="text-gray-600">
+      We focus on creating residential and commercial spaces that are not only trend-forward today but continue to feel fresh, functional, and loved for years to come.
+    </p>
+  </div>
+</section>
+
+
+      </>,
+    },
+    {
+      title: "Is it possible to design my own home or office without the help of an interior designer?",
+      content:
+       <>
+        <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
   
+    
+    <p className="text-lg mb-6 text-center">
+      It is entirely possible to design your own space without hiring an interior designer.
+    </p>
+    
+    <p className="text-gray-600">
+      However, it’s important to recognize that creating a well-designed home or office requires considerable time, effort, and a set of specialized skills. While you may have a vision for your space, interior design goes beyond just style—it includes functionality, space planning, and the careful selection of materials.
+    </p>
+
+    <p className="text-gray-600">
+      Hiring an interior designer offers several benefits:
+    </p>
+
+    <ul className="list-disc pl-6 text-gray-600">
+      <li><strong>Avoiding costly mistakes:</strong> An experienced designer helps prevent common design errors that could lead to extra costs.</li>
+      <li><strong>Saving time and money:</strong> With their expertise and industry connections, designers streamline the design process, making it more efficient and cost-effective.</li>
+      <li><strong>Ensuring the best implementation of your vision:</strong> Interior designers bring your vision to life, ensuring every detail is executed to perfection.</li>
+    </ul>
+  </div>
+</section>
+
+       </>,
+    },
+   
+  ], []);
+
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const refs = useRef([]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      refs.current = refs.current.slice(0, accordionData.length);
+    }
+  }, [accordionData]);
+
+  const handleClick = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const [showModal, setShowModal] = React.useState(false);
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
 
     <>
@@ -342,7 +487,7 @@ function LandingPage() {
 
         <title>Adhunik Decodive : Best Luxury Interior Designers in Gurugram & Delhi NCR</title>
 
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true"  name="description" content="Looking for top interior designers in Gurgaon? Adhunik Decodive crafts luxurious, functional interiors tailored to your style. Discover modern elegance today." />
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" name="description" content="Looking for top interior designers in Gurgaon? Adhunik Decodive crafts luxurious, functional interiors tailored to your style. Discover modern elegance today." />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         <link rel="canonical" href="https://adhunikdecodive.com/" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -410,7 +555,7 @@ function LandingPage() {
             <div className="marqueesContainer w-full h-screen relative overflow-hidden">
               <div className="heading absolute top-[7%] left-1/2 -translate-x-1/2">
                 <h2 className="text-xl font-regular w-60 text-center">
-                Best Interior Designers in Gurgaon
+                  Best Interior Designers in Gurgaon
 
                 </h2>
               </div>
@@ -632,12 +777,12 @@ function LandingPage() {
                 Explore The <span className="text-[#9f9f9f]">Art</span> of Decor
               </h1>
               <p className=" mx-auto text-1xl  text-justify w-[90%]">
-              At Adhunik Decodive, our legacy is built on transforming spaces into breathtaking realities. With over 10 years of experience and a portfolio boasting 500+ delighted clients, our commitment to excellence shines through every project.
-<br />
-Our team of top interior designers in Gurgaon are passionate professionals dedicated to delivering extraordinary results within your budget. Whether it's a stylish business environment or a warm, inviting home, we bring an unmatched level of creativity and precision to every design.
-<br />
-Beyond traditional layout planning, our expertise spans urban planning, comprehensive space design, and innovative architecture. At Adhunik Decodive, we believe that every space should not only look stunning but also feel inviting and function seamlessly—enhancing the lifestyle of those who experience it.            <br />
-Our vision at Adhunik Decodive is to be a leading interior designers  in Gurgaon and beyond. We strive for the highest standards in quality, creativity, beautiful designs, and practical functionality in every project we undertake.   </p>
+                At Adhunik Decodive, our legacy is built on transforming spaces into breathtaking realities. With over 10 years of experience and a portfolio boasting 500+ delighted clients, our commitment to excellence shines through every project.
+                <br />
+                Our team of top interior designers in Gurgaon are passionate professionals dedicated to delivering extraordinary results within your budget. Whether it's a stylish business environment or a warm, inviting home, we bring an unmatched level of creativity and precision to every design.
+                <br />
+                Beyond traditional layout planning, our expertise spans urban planning, comprehensive space design, and innovative architecture. At Adhunik Decodive, we believe that every space should not only look stunning but also feel inviting and function seamlessly—enhancing the lifestyle of those who experience it.            <br />
+                Our vision at Adhunik Decodive is to be a leading interior designers  in Gurgaon and beyond. We strive for the highest standards in quality, creativity, beautiful designs, and practical functionality in every project we undertake.   </p>
               <div className="flex flex-col lg:flex-row justify-center mt-4">
                 {/* Item 1 */}
                 <div className="w-full lg:w-6/12 h-full flex items-center justify-center lg:justify-start mb-8 lg:mb-0">
@@ -978,10 +1123,10 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
           </div>
         </div>
 
-<section className=" w-full h-full flex justify-center items-center py-5">
-<h2  className=" text-4xl text-center  font-extrabold  w-96  ">Best Interior Design Services  in Gurgaon
-</h2>
-</section>
+        <section className=" w-full h-full flex justify-center items-center py-5">
+          <h2 className=" text-4xl text-center  font-extrabold  w-96  ">Best Interior Design Services  in Gurgaon
+          </h2>
+        </section>
 
 
 
@@ -1026,7 +1171,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               Modular Kitchen Designs
             </h2>
             <p className=" text-justify md:text-center">
-            Discover the perfect heart for your dream home in Gurgaon, where laughter, delicious food, and memories come alive. At Adhunik Decodive, our luxury modular kitchens transform your culinary dreams into reality with a curated selection of styles—from minimalist havens to elaborate masterpieces. Our modular kitchen designs in Gurgaon are crafted for beauty and functionality, featuring innovative, space-saving solutions that make cooking a joy. Personalize your custom modular kitchen to perfectly fit your unique needs, and experience the best in modern kitchen design. As one of the top interior designers in Gurugram, we bring premium quality, creative flair, and unparalleled workmanship to every project.
+              Discover the perfect heart for your dream home in Gurgaon, where laughter, delicious food, and memories come alive. At Adhunik Decodive, our luxury modular kitchens transform your culinary dreams into reality with a curated selection of styles—from minimalist havens to elaborate masterpieces. Our modular kitchen designs in Gurgaon are crafted for beauty and functionality, featuring innovative, space-saving solutions that make cooking a joy. Personalize your custom modular kitchen to perfectly fit your unique needs, and experience the best in modern kitchen design. As one of the top interior designers in Gurugram, we bring premium quality, creative flair, and unparalleled workmanship to every project.
             </p>
             <div className="show_m mt-5">
               <Link
@@ -1045,9 +1190,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               Wardrobe Designs
             </h2>
             <p className=" text-justify md:text-center">
-            Feeling overwhelmed by a cluttered closet in your Gurgaon home? Step into a world of calm with Adhunik Decodive’s premium wardrobe designs. Our exquisite wardrobe collection blends smart storage with timeless style, bringing both functionality and elegance into your space.
+              Feeling overwhelmed by a cluttered closet in your Gurgaon home? Step into a world of calm with Adhunik Decodive’s premium wardrobe designs. Our exquisite wardrobe collection blends smart storage with timeless style, bringing both functionality and elegance into your space.
 
-Imagine effortless mornings with everything neatly organized—sparking joy each time you open the doors. Say goodbye to the mess and hello to stylish, space-saving wardrobes designed to fit your lifestyle. Whether you’re in Gurgaon or Gurugram, discover the perfect blend of luxury and practicality with one of the top interior designers in the region.
+              Imagine effortless mornings with everything neatly organized—sparking joy each time you open the doors. Say goodbye to the mess and hello to stylish, space-saving wardrobes designed to fit your lifestyle. Whether you’re in Gurgaon or Gurugram, discover the perfect blend of luxury and practicality with one of the top interior designers in the region.
             </p>
             <div className="show_m mt-5">
               <Link
@@ -1144,9 +1289,9 @@ Imagine effortless mornings with everything neatly organized—sparking joy each
               Furniture
             </h2>
             <p className=" text-justify md:text-center">
-            Enhance your work-from-home experience in Gurgaon with Adhunik Decodive’s curated range of stylish and functional home office furniture. Discover ergonomic chairs, spacious desks, and smart storage solutions—each piece thoughtfully designed to boost your productivity and comfort.
+              Enhance your work-from-home experience in Gurgaon with Adhunik Decodive’s curated range of stylish and functional home office furniture. Discover ergonomic chairs, spacious desks, and smart storage solutions—each piece thoughtfully designed to boost your productivity and comfort.
 
-Whether you're creating a cozy corner or a full home office setup, our furniture combines modern aesthetics with everyday functionality. Build your perfect workspace with one of the top interior designers in Gurgaon and turn your home into a productivity powerhouse.
+              Whether you're creating a cozy corner or a full home office setup, our furniture combines modern aesthetics with everyday functionality. Build your perfect workspace with one of the top interior designers in Gurgaon and turn your home into a productivity powerhouse.
             </p>
             <div className="show_m mt-5">
               <Link
@@ -1163,9 +1308,9 @@ Whether you're creating a cozy corner or a full home office setup, our furniture
           <div className="md:w-[60%] w-auto h-full p-2 m-2 md:p-5 md:m-5 text-center">
             <h2 className=" text-[6vw]  md:text-4xl mb-3 hidden md:block">Home Decor </h2>
             <p className=" text-justify md:text-center">
-            Gurgaon home with Adhunik Decodive, Our handpicked collections of modern furniture, stylish lighting, and elegant décor capture the essence of contemporary design. From clean lines to bold accents, discover pieces that spark joy and elevate your interiors.
+              Gurgaon home with Adhunik Decodive, Our handpicked collections of modern furniture, stylish lighting, and elegant décor capture the essence of contemporary design. From clean lines to bold accents, discover pieces that spark joy and elevate your interiors.
 
-Whether you're updating a room or transforming your entire space, our designs help you create a home that reflects your unique personality—effortlessly. Trust one of the top interior designers in Gurgaon to bring beauty, comfort, and style into every corner of your home.
+              Whether you're updating a room or transforming your entire space, our designs help you create a home that reflects your unique personality—effortlessly. Trust one of the top interior designers in Gurgaon to bring beauty, comfort, and style into every corner of your home.
             </p>
             <div className="show_m mt-5">
               <Link
@@ -1248,11 +1393,11 @@ Whether you're updating a room or transforming your entire space, our designs he
             <h2 className="text-[6vw]  md:text-4xl mb-3  hidden md:block"> TV Unit Panels</h2>
             <p className=" text-justify md:text-center">
 
-            Level up your living rooms ambiance with Adhunik Decodive stunning TV unit panels in Gurgaon. More than just furniture, our TV units are statement pieces that set the tone for your entire space.
+              Level up your living rooms ambiance with Adhunik Decodive stunning TV unit panels in Gurgaon. More than just furniture, our TV units are statement pieces that set the tone for your entire space.
 
-Whether you love a sleek modern look, a warm rustic feel, or something uniquely yours, our wide range of finishes and customizable configurations let you design a TV area that reflects your personal style.
+              Whether you love a sleek modern look, a warm rustic feel, or something uniquely yours, our wide range of finishes and customizable configurations let you design a TV area that reflects your personal style.
 
-Make your living room speak volumes about your taste with one of the top interior designers in Gurgaon — where every detail is crafted for beauty, function, and flair.
+              Make your living room speak volumes about your taste with one of the top interior designers in Gurgaon — where every detail is crafted for beauty, function, and flair.
             </p>
             <div className="show_m mt-5">
               <Link
@@ -1266,133 +1411,223 @@ Make your living room speak volumes about your taste with one of the top interio
         </div>
 
         <div className="row h-full w-full px-5 py-5 bg-[#F3F4F6] ">
-         
-            <div className=" py-4 inline-flex items-center justify-center w-full mx-auto md:mt-0  my-7 md:mb-0">
-                    <hr className="w-[90%] h-px my-8 bg-gray-300 border-0 " />
-                    <h2 className="absolute px-2 md:px-3  text-gray-700 -translate-x-1/2 bg-[#F3F4F6] left-1/2  text-center text-[20px]  md:text-4xl text-1xl capitalize font-semibold ">                  Testimonials
-                    </h2>
-                  </div>
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={30}
-              freeMode={true}
-              autoplay={{
-                delay: 3500,
-                speed: 2800,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                888: {
-                  slidesPerView: 2,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 50,
-                },
-              }}
-              modules={[FreeMode, Pagination, Autoplay]}
-              className="mySwiper z-0"
-            >
-              {slideData.map((slide, index) => (
-                <SwiperSlide key={index} className="p-4 rounded-lg">
-                  <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
-                    <div className="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
-                      <div className="row h-14 w-14">
-                        <AdvancedImage
-                          decoding="async"
-                          loading="lazy"
-                          effect="blur"
-                          className=" w-full h-full object-cover object-center"
-                          alt={slide.name}
-                          cldImg={cld.image(slide.image)}
-                        />
-                      </div>
-                      <div className="flex w-full flex-col gap-0.5">
-                        <div className="flex items-center justify-between">
-                          <h5 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                            {slide.name}
-                          </h5>
-                          {/* Rating icons can be added dynamically */}
-                          <div className="flex items-center gap-0 5 text-[#FBBF2C]">
-                            {[...Array(5)].map((_, i) => (
-                              <svg
-                                key={i}
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                className="w-5 h-5"
-                              >
-                                <path
-                                  fillRule="evenodd"
-                                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                                  clipRule="evenodd"
-                                ></path>
-                              </svg>
-                            ))}
-                          </div>
-                        </div>
-                        <p className="text-start block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
-                          {slide.position}
-                        </p>
-                      </div>
+
+          <div className=" py-4 inline-flex items-center justify-center w-full mx-auto md:mt-0  my-7 md:mb-0">
+            <hr className="w-[90%] h-px my-8 bg-gray-300 border-0 " />
+            <h2 className="absolute px-2 md:px-3  text-gray-700 -translate-x-1/2 bg-[#F3F4F6] left-1/2  text-center text-[20px]  md:text-4xl text-1xl capitalize font-semibold ">                  Testimonials
+            </h2>
+          </div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            autoplay={{
+              delay: 3500,
+              speed: 2800,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              888: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[FreeMode, Pagination, Autoplay]}
+            className="mySwiper z-0"
+          >
+            {slideData.map((slide, index) => (
+              <SwiperSlide key={index} className="p-4 rounded-lg">
+                <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
+                  <div className="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <div className="row h-14 w-14">
+                      <AdvancedImage
+                        decoding="async"
+                        loading="lazy"
+                        effect="blur"
+                        className=" w-full h-full object-cover object-center"
+                        alt={slide.name}
+                        cldImg={cld.image(slide.image)}
+                      />
                     </div>
-                    <div className="p-0 mb-6">
-                      <p className="block font-sans text-base text-justify antialiased font-light leading-relaxed text-inherit">
-                        {slide.testimonial}
+                    <div className="flex w-full flex-col gap-0.5">
+                      <div className="flex items-center justify-between">
+                        <h5 className="block  text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                          {slide.name}
+                        </h5>
+                        {/* Rating icons can be added dynamically */}
+                        <div className="flex items-center gap-0 5 text-[#FBBF2C]">
+                          {[...Array(5)].map((_, i) => (
+                            <svg
+                              key={i}
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              className="w-5 h-5"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clipRule="evenodd"
+                              ></path>
+                            </svg>
+                          ))}
+                        </div>
+                      </div>
+                      <p className="text-start block  text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                        {slide.position}
                       </p>
                     </div>
                   </div>
-                </SwiperSlide>
+                  <div className="p-0 mb-6">
+                    <p className="block  text-base text-justify antialiased font-light leading-relaxed text-inherit">
+                      {slide.testimonial}
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+
+        <aside aria-label="Related Blogs" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+          <div className="px-4 mx-auto max-w-screen-xl">
+            <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related Blogs</h2>
+            <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+              {blogPosts.map((post) => (
+                <article key={post.id} className="max-w-xs">
+                  <div>
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="mb-5 rounded-lg w-full h-56 object-cover"
+                    />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                    {post.title}
+                  </h3>
+                  <p className="mb-4 text-gray-500 dark:text-gray-400">{post.description}</p>
+                  <a
+                    href={post.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+                  >
+                    {post.date}
+                  </a>
+                </article>
               ))}
-            </Swiper>
+            </div>
+          </div>
+        </aside>
+
+        <div className="row">
+
+
+          <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="grid md:grid-cols-1 gap-4 md:gap-8 xl:gap-20 md:items-center pb-16">
+
+
+              <div>
+                <h2 className="mt-3 text-5xl  text-center  font-bold text-gray-800 dark:text-neutral-400"> FAQ's
+
+                </h2>
+                <div className="container mx-auto mt-8 mb-10">
+                  {accordionData.map((item, index) => (
+                    <div
+                      className="border-[#F6F6F8] mb-4 rounded border"
+                      key={index}
+                    >
+                      <div
+                        className=" font-medium text-[14px] accordion-header bg-[#F6F6F8] cursor-pointer px-4 py-2 flex justify-between items-center"
+                        onClick={() => handleClick(index)}
+                      >
+                        {item.title}
+                        <span className={`arrow ${activeIndex === index ? 'down' : 'right'}`}>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="size-6"
+                          >
+                            {activeIndex === index ? (
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
+                            ) : (
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+                            )}
+                          </svg>
+                        </span>
+                      </div>
+                      <div
+                        ref={(el) => (refs.current[index] = el)}
+                        className={` font-medium text-[13px] text-justify accordion-content overflow-hidden transition-all duration-300 ${activeIndex === index ? 'max-h-screen' : 'max-h-0'
+                          }`}
+                        style={{
+                          height: activeIndex === index ? `${refs.current[index]?.scrollHeight}px` : '0px',
+                        }}
+                      >
+                        <div className="px-4 pb-4 pt-2">{item.content}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+
+              </div>
+
+
+              {showModal ? (
+                <>
+                  <div
+                    className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none "
+                    onClick={closeModal}
+                  >
+                    <div
+                      className="relative  my-6    container-fluid "
+                      onClick={(e) => e.stopPropagation()}
+                    >
+
+                      <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+
+                        <div className="relative  flex-auto">
+
+                          <iframe className="responsive-iframe" width="860" height="515" src="https://www.youtube.com/embed/jtizPl_Y744?si=oWwFcUq_IwXZgvjD" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                </>
+              ) : null}
+
+
+            </div>
+
           </div>
 
-
-          <aside aria-label="Related Blogs" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
-      <div className="px-4 mx-auto max-w-screen-xl">
-        <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related Blogs</h2>
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          {blogPosts.map((post) => (
-            <article key={post.id} className="max-w-xs">
-              <div>
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="mb-5 rounded-lg w-full h-56 object-cover"
-                />
-              </div>
-              <h3 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                {post.title}
-              </h3>
-              <p className="mb-4 text-gray-500 dark:text-gray-400">{post.description}</p>
-              <a
-                href={post.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
-              >
-                {post.date}
-              </a>
-            </article>
-          ))}
         </div>
-      </div>
-    </aside>
 
 
 
       </div>
 
 
-    
+
 
     </>
   );
