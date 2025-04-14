@@ -295,7 +295,41 @@ function LandingPage() {
     },
   ];
   
-
+  const blogPosts = [
+    {
+      id: 5,
+      title: "Minimalist Interior Design in Every Style",
+      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/AboutUs/ab6_omdoa9?_a=DAJAUVWIZAA0",
+      description: "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and...",
+      date: "December 2024",
+      link: "https://adhunikdecodive.com/blogs/5"
+    },
+    {
+      id: 2,
+      title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
+      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/ssd?_a=DAJAUVWIZAA0",
+      description: "Spice things up with Adhunik DecoDive's 2024 trends! We are talking smart storage, multifunctional...",
+      date: "January 2025",
+      link: "https://adhunikdecodive.com/blogs/2"
+    },
+    {
+      id: 3,
+      title: "Stunning Wardrobe Design Ideas for Indian Homes",
+      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/sd?_a=DAJAUVWIZAA0",
+      description: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with...",
+      date: "January 2025",
+      link: "https://adhunikdecodive.com/blogs/3"
+    },
+    {
+      id: 4,
+      title: "Bar Counter Design Ideas to Replicate in Your Home In 2024",
+      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/home_bar_rmncdx?_a=DAJAUVWIZAA0",
+      description: "Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs...",
+      date: "February 2025",
+      link: "https://adhunikdecodive.com/blogs/4"
+    }
+  ];
+  
   return (
 
     <>
@@ -1320,6 +1354,38 @@ Make your living room speak volumes about your taste with one of the top interio
               ))}
             </Swiper>
           </div>
+
+
+          <aside aria-label="Related Blogs" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+      <div className="px-4 mx-auto max-w-screen-xl">
+        <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related Blogs</h2>
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          {blogPosts.map((post) => (
+            <article key={post.id} className="max-w-xs">
+              <div>
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="mb-5 rounded-lg w-full h-56 object-cover"
+                />
+              </div>
+              <h3 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                {post.title}
+              </h3>
+              <p className="mb-4 text-gray-500 dark:text-gray-400">{post.description}</p>
+              <a
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+              >
+                {post.date}
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </aside>
 
 
 

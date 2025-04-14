@@ -1,5 +1,3 @@
-// src/components/BlogDetailPage.js
-
 import { Link, useParams } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
@@ -607,9 +605,9 @@ const BlogDetailPage = () => {
                 </div>
             </main>
 
-            <aside aria-label="Related articles" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+            <aside aria-label="Related Blogs" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
                 <div className="px-4 mx-auto max-w-screen-xl">
-                    <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related articles</h2>
+                    <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related Blogs</h2>
                     <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                         <article className="max-w-xs">
                             <div >
