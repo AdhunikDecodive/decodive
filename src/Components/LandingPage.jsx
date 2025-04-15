@@ -451,7 +451,179 @@ function LandingPage() {
 
        </>,
     },
+    {
+      title: "What is the pricing structure and payment process for your interior design services?",
+      content:
+       <>
+       <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
    
+
+    <p className="text-lg mb-6 text-center">
+      Our fees are flexible and tailored to the size and nature of each project.
+    </p>
+
+    <p className="text-gray-600">
+      We offer clear and affordable rates to ensure that you can make the best decision for your business or home. Before any work begins, we provide a comprehensive estimate that outlines the total cost of the project, along with a transparent breakdown of the payment schedule throughout the implementation process.
+    </p>
+
+    <p className="text-gray-600">
+      This allows you to plan and manage your budget with confidence, knowing exactly what to expect at each stage.
+    </p>
+  </div>
+</section>
+
+       </>,
+    },
+    {
+      title: "What is the typical turnaround time for your interior design projects?",
+      content:
+       <>
+      <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+   
+
+    <p className="text-lg mb-6 text-center">
+      The turnaround time for each interior design project depends on its type, scale, and specific requirements.
+    </p>
+
+    <p className="text-gray-600">
+      During the initial consultation, we assess the project scope and provide an estimated timeline for completion. We also keep you updated on any potential changes or delays throughout the process, ensuring full transparency from start to finish.
+    </p>
+  </div>
+</section>
+
+
+       </>,
+    },
+   
+    {
+      title: "Do you assist with sourcing furniture and home décor for interior design projects?",
+      content:
+       <>
+  <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+   
+
+    <p className="text-lg mb-6 text-center">
+      Absolutely! We go beyond just design—we help you bring your space to life with the perfect furniture and decor.
+    </p>
+
+    <p className="text-gray-600">
+      We have strong relationships with trusted local artisans, high-quality furniture makers, and décor suppliers. Our team ensures that every piece complements your interior vision while maintaining the highest standards of quality.
+    </p>
+
+    <p className="text-gray-600">
+      Additionally, we operate a spacious 9,000 sq. ft. fabrication unit where we custom-build exclusive furniture and decor tailored specifically for your space, ensuring every element fits your style and needs perfectly.
+    </p>
+  </div>
+</section>
+
+
+
+       </>,
+    },
+   
+
+    {
+      title: "How do I get started with an interior design project with your team?",
+      content:
+       <>
+ <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+     
+
+    <p className="text-lg mb-6 text-center">
+      Getting started is easy! Schedule a <a href="/contact" className="font-semibold text-blue-600">FREE CONSULTATION</a> with our expert interior designers.
+    </p>
+
+    <p className="text-gray-600">
+      During this initial session, we’ll discuss your project goals, design preferences, budget, and any questions you may have. From there, our team will guide you through the entire process—ensuring a smooth, creative, and personalized interior design experience from concept to completion.
+    </p>
+  </div>
+</section>
+
+
+       </>,
+    },
+   
+
+    {
+      title: "What should I consider when choosing an interior design firm in Gurgaon?",
+      content:
+       <>
+<section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+    
+
+    <p className="text-lg mb-6 text-center">
+      Choosing an interior designer can be as simple or detailed as you prefer. Here are some key factors to guide your decision :
+    </p>
+
+    <ul className="list-disc pl-6 space-y-2 text-gray-600">
+      <li><strong>Experience & Expertise :</strong> Ensure the designer has a proven track record in handling similar projects.</li>
+      <li><strong>Budget :</strong> Confirm that their pricing aligns with your financial plan and expectations.</li>
+      <li><strong>Design Style & Tone :</strong> Their style should resonate with your personal taste and project goals.</li>
+      <li><strong>Portfolio :</strong> Review past work to evaluate the quality and consistency of their designs.</li>
+      <li><strong>Client Reviews :</strong> Read online testimonials and feedback to assess their reliability and professionalism.</li>
+    </ul>
+
+    <p className="mt-6 text-gray-600">
+      Taking these factors into account will help you confidently select the right interior designer for your space in Gurgaon.
+    </p>
+  </div>
+</section>
+
+
+
+       </>,
+    },
+   
+
+    {
+      title: "What is the checklist before hiring an interior design company in Gurgaon?",
+      content:
+       <>
+<section className="py-12 bg-white text-gray-800">
+  <div className="max-w-6xl mx-auto px-4">
+   
+
+    <p className="text-lg mb-6 text-center">
+      Consider the following essential factors before choosing an interior design company in Gurgaon :
+    </p>
+
+    <ul className="list-disc pl-6 space-y-3 text-gray-600">
+      <li>
+        <strong>Portfolio :</strong> Review their past projects and ensure they align with your design taste and style preferences.
+      </li>
+      <li>
+        <strong>Experience :</strong> Choose a firm with proven expertise in luxury interiors or specialized requirements like home offices, spa bathrooms, or modular kitchens.
+      </li>
+      <li>
+        <strong>Reputation :</strong> Read client reviews, ratings, and testimonials online to gauge their credibility and client satisfaction.
+      </li>
+      <li>
+        <strong>Fees & Payment Structure :</strong> Be upfront about your budget. Understand their pricing, and clarify payment milestones and contract terms.
+      </li>
+      <li>
+        <strong>Communication :</strong> Ensure the design team actively listens, understands your vision, and maintains clear, timely communication throughout the project.
+      </li>
+    </ul>
+
+    <p className="mt-6 text-gray-600">
+      Following this checklist will help you find a trustworthy and skilled interior design partner who can bring your dream space to life.
+    </p>
+  </div>
+</section>
+
+
+       </>,
+    },
+   
+
+
+
+
   ], []);
 
 
