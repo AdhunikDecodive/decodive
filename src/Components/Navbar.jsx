@@ -42,6 +42,19 @@ function Navbar() {
     const links = [
         { to: '/', text: 'Home' },
         { to: '/AboutUs', text: 'About Us' },
+
+
+        {
+            to: '#',
+            text: 'Home Appliances',
+            dropdownItems: [
+                { to: '/Nero-Chimney', text: 'Nero Chimney' },
+                { to: '/KitchenCategory', text: 'Fabia Chimney' },
+            
+
+            ],
+        },
+
         {
             to: '#',
             text: 'Kitchen',
@@ -55,6 +68,8 @@ function Navbar() {
 
             ],
         },
+
+
         {
             to: '#',
             text: 'Wardrobe',
@@ -160,6 +175,27 @@ function Navbar() {
                                 </Link>
                             </li>
 
+
+                            <li>
+                                <Dropdown
+                                    label="Home Appliances"
+                                    inline
+                                >
+                                    <Link to="/Nero-Chimney">
+                                        <Dropdown.Item>
+                                        Nero Chimney
+                                        </Dropdown.Item>
+                                    </Link>
+                                    <Link to="/KitchenCategory">
+                                        <Dropdown.Item>
+                                      Fabia Chimney
+                                        </Dropdown.Item>
+                                    </Link>
+                                
+                                </Dropdown>
+                            </li>
+
+
                             <li>
                                 <Dropdown
                                     label="Kitchen"
@@ -198,6 +234,9 @@ function Navbar() {
                                 </Dropdown>
                             </li>
 
+
+
+                       
 
 
 

@@ -51,6 +51,7 @@ import BlogDetailPage from "./Components/BlogDetailPage";
 
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
+import NeroChimney from "./Components/NeroChimney";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -118,6 +119,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
         <Route path="/blogs" element={<MultipleBlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
+        <Route path="/Nero-Chimney" element={<NeroChimney />} />
 
 
       </Routes>

@@ -337,6 +337,7 @@ function LandingPage() {
       content:
         "A good budget for hiring an interior designer in Gurgaon depends on several key factors, including the designer’s expertise, reputation, project complexity, and the size and scope of the space being redesigned. Whether it's a home or office project, prices can vary widely based on customization levels, materials used, and design aesthetics.On average, interior design costs in Gurgaon typically range between ₹400 to ₹1,500 per square foot. Basic interior work for smaller spaces may fall toward the lower end of the spectrum, while premium or luxury designs with high-end materials and intricate detailing may lean toward the higher range. It’s recommended to consult with top interior designers in Gurgaon to get a tailored quote based on your specific needs, style preferences, and space dimensions.",
     },
+
     {
       title: " What types of home and office interior design projects do your expert designers in Gurgaon specialize in? ",
       content:
@@ -393,6 +394,7 @@ function LandingPage() {
 
         </>,
     },
+
     {
       title: " Do you design interiors based on the latest interior design trends in Gurgaon & Delhi NCR? ",
       content: <>
@@ -421,6 +423,7 @@ function LandingPage() {
 
       </>,
     },
+
     {
       title: "Is it possible to design my own home or office without the help of an interior designer?",
       content:
@@ -451,6 +454,7 @@ function LandingPage() {
 
        </>,
     },
+
     {
       title: "What is the pricing structure and payment process for your interior design services?",
       content:
@@ -475,6 +479,7 @@ function LandingPage() {
 
        </>,
     },
+    
     {
       title: "What is the typical turnaround time for your interior design projects?",
       content:
