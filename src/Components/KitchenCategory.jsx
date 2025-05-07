@@ -56,7 +56,6 @@ function KitchenCategory() {
   };
 
 
-
   const allCardData = [
     {
       id: 1,
@@ -442,7 +441,7 @@ function KitchenCategory() {
       "name": "Adhunik Decodive",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/landingPage/ylzbgsu0sw6qgh5yj544?_a=DAJAUVWIZAA0"
+        "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
       }
     }
   };
@@ -493,32 +492,21 @@ function KitchenCategory() {
         <div className="h-full w-full ">
 
 
-          <div className="row flex relative ">
+          <div className="row flex relative">
 
-            {/* <video
-                            muted
-                            autoPlay
-                            loop preload="auto" playsInline
-                            src={video}
-                            className=" relative   h-[86vh]  md:h-[45vh] w-full object-cover rounded-lg"
-                        ></video> */}
+         
 
 
-            <AdvancedVideo
-              muted
-              autoPlay
-              loop preload="auto" playsInline
-              cldVid={cld.video('Videos/kt_o3m1q9').quality('auto')}
-              alt="interior l-shape category for design with oven and appliances" className="   relative   h-[86vh]  md:h-[45vh] w-full object-cover rounded-lg "
+            <img
+              src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746610731/Kitchen_categories_dmvq28.webp"
+              alt="interior l-shape category for design with oven and appliances" className="   relative   h-[86vh]  md:h-[45vh] w-full object-cover  object-center rounded-lg "
             />
 
             
             <div className="w-full  h-full p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row  md:text-center  items-center mx-auto  absolute">
 
               <p className=" h-full  text-gray-700 text-4xl flex-col flex my-auto justify-center items-center">
-                Step into Your Ideal Kitchen
-                <br />
-                <span className=" text-[22px]">Explore Our Designs Today!</span>
+               
               </p>
 
               <div className="w-fit border-cyan-500 border-[1px] rounded-lg text-center p-5 bg-[#fffffb]">

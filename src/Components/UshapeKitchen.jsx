@@ -168,7 +168,7 @@ function UshapeKitchen() {
           "name": "Adhunik Decodive",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/landingPage/ylzbgsu0sw6qgh5yj544?_a=DAJAUVWIZAA0"
+            "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
           }
         }
       };

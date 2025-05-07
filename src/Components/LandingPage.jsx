@@ -42,8 +42,9 @@ const kitchenCategories = [
   { name: 'Island Kitchen', imgSrc: 'Kitchen/LsKitchen/12_cc9sti' },
 ];
 
+
 const wardrobeCategories = [
-  { name: 'Wardrobe', imgSrc: 'landingPage/nnpixsron965x7qgsrsy' },
+  { name: 'Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/nnpixsron965x7qgsrsy_nrtivx.webp' },
   { name: '1-Door Wardrobe', imgSrc: 'WardRobe/3_qnzv0m' },
   { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/1DW/4_nhn4qc' },
   { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/9_u45uvt' },
@@ -54,6 +55,7 @@ const wardrobeCategories = [
   { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/1DW/4_nhn4qc' },
 ];
 
+
 const lightingCategories = [
 
   { name: 'Lamps And Lightings', imgSrc: 'HomeDecor/Ceiling_Light/3_dgj8x9' },
@@ -62,18 +64,18 @@ const lightingCategories = [
   { name: 'Lighting', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Ceiling Lights', imgSrc: 'HomeDecor/Wall_Light/19_ymupwm' },
   { name: 'Wall Lights', imgSrc: 'HomeDecor/Ceiling_Light/13_d14wqe' },
-  { name: 'Outdoor Lights', imgSrc: 'landingPage/trc0hvgzaaq4gnbfbcde' },
+  { name: 'Outdoor Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/trc0hvgzaaq4gnbfbcde_jcjthe.webp' },
   { name: 'Room Lights', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
   { name: 'Lamps', imgSrc: 'HomeDecor/Wall_Light/20_qcvhqq' },
   { name: 'Lighting', imgSrc: 'HomeDecor/Ceiling_Light/17_nnfcow' },
   { name: 'Ceiling Lights', imgSrc: 'landingPage/bhxzfd5szxwtg6fdskyw' },
 ];
 
+
 const decorCategories = [
 
   { name: 'All Decors', imgSrc: 'HomeDecor/mrr/21_jhvm8s' },
   { name: 'Mirrors', imgSrc: 'HomeDecor/WallD/17_f5c53m' },
-
   { name: 'Clocks', imgSrc: 'HomeDecor/WallD/5_jzcfnw' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
   { name: 'Clocks', imgSrc: 'HomeDecor/Wall_Painting/18_dpibm5' },
@@ -81,11 +83,12 @@ const decorCategories = [
   { name: 'All Decors', imgSrc: 'HomeDecor/WallD/4_t5ayax' },
   { name: 'Wall Decors', imgSrc: 'HomeDecor/V/21_chxhty' },
   { name: 'Mirrors', imgSrc: 'HomeDecor/Clocks/13_qnfczx' },
-  { name: 'Wall Decors', imgSrc: 'landingPage/ygpwkcrwzccgni6mofiq' },
+  { name: 'Wall Decors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ygpwkcrwzccgni6mofiq_btpcsk.webp' },
   { name: 'Vases', imgSrc: 'HomeDecor/mrr/5_qmqgz4' },
   { name: 'Clocks', imgSrc: 'HomeDecor/WallD/5_jzcfnw' },
   { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
 ];
+
 
 const furnitureCategories = [
   { name: 'TV units Designs', imgSrc: 'Others/TV/18_nrfdzt' },
@@ -99,6 +102,7 @@ const furnitureCategories = [
   { name: 'Domestic Furniture', imgSrc: 'Furniture/DF/16_iev7yy' },
   { name: 'Commercial Furniture', imgSrc: 'Furniture/CF/15_zrilzh' },
 ];
+
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -658,14 +662,16 @@ function LandingPage() {
 
 
 
-      <PopUp />
+      <PopUp/>
 
       <Helmet>
 
         <title>Adhunik Decodive : Best Luxury Interior Designers in Gurugram & Delhi NCR</title>
 
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" name="description" content="Looking for top interior designers in Gurgaon? Adhunik Decodive crafts luxurious, functional interiors tailored to your style. Discover modern elegance today." />
+
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        
         <link rel="canonical" href="https://adhunikdecodive.com/" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
@@ -711,18 +717,11 @@ function LandingPage() {
               className="  z-[3] vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden"
             >
 
-              <AdvancedVideo
-                muted
-                autoPlay
-                loop
-                playsInline
-                poster="/landingpage.webp"
-                cldPoster="https://res.cloudinary.com/dwhmfz63n/image/upload/q_50/v1740047319/landingPage/mkcwo034pfiodziddr6z.webp"
-                cldVid={cld.video('Videos/aufauoxihn6ezjn1eipm').quality('auto:best')}
-                width={1920}
-                height={1080}
+              <img
+             
+              src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746610732/landing_page_zesa55.webp"
                 alt=" High-definition video of a modern kitchen interior captured by a camera "
-                className=" object-cover  w-screen h-screen  "
+                className="   object-cover object-center  w-screen h-screen  "
 
               />
 
@@ -780,18 +779,16 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld
-                                .image(category.imgSrc)
-                                .quality('auto:best')
-                              }
-                              height={48}
-                              width={48}
-                              sizes="50px"
+                          
+                            <img
+                             
+                             src={category.imgSrc}
+                                                   
+                           
                               loading="lazy"
                               className="object-cover h-12 w-12"
                               alt={category.name}
-                              fetchpriority="high"
+                              
                               decoding="async"
                             />
 
@@ -809,20 +806,12 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld
-                                .image(category.imgSrc)
-                                // Resize to match displayed size
-                                .quality('auto:best') // Optimizes compression
-                                // Uses WebP/AVIF when supported
-                              }
-                              sizes="50px"
-                              height={48}
-                              width={48}
-                              loading="lazy"
+                          <img
+        src={category.imgSrc}
+         loading="lazy"
                               className="object-cover h-12 w-12"
                               alt={category.name}
-                              fetchpriority="high"
+                              
                               decoding="async"
                             />
 
@@ -840,20 +829,12 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld
-                                .image(category.imgSrc)
-                                // Resize to match displayed size
-                                .quality('auto:best') // Optimizes compression
-                                // Uses WebP/AVIF when supported
-                              }
-                              sizes="50px"
-                              height={40}
-                              width={40}
-                              loading="lazy"
+                          <img
+        src={category.imgSrc}
+         loading="lazy"
                               className="object-cover h-12 w-12"
                               alt={category.name}
-                              fetchpriority="high"
+                              
                               decoding="async"
                             />
 
@@ -928,9 +909,9 @@ function LandingPage() {
           </div>
 
           <div className="md:w-[40%] w-auto h-full p-2 m-2 md:p-5 md:m-5 text-center">
-            <h2 className=" text-[6vw]  md:text-4xl mb-3  ">
-              India Business Awards 2025
-            </h2>
+            <h1 className=" text-[6vw]  md:text-4xl mb-3  ">
+            India Business Awards 2025 | Adhunik Decodive
+            </h1>
             <p className=" text-justify md:text-center">
               Adhunik Decodive is honored to receive the India Business Awards 2025, recognizing our excellence in interior design and innovation. This prestigious award reaffirms our commitment to creating exceptional, functional, and luxurious spaces for our clients. We extend our gratitude to our team, partners, and customers for their continuous support in our journey towards design excellence.
             </p>
@@ -950,9 +931,9 @@ function LandingPage() {
                 filter: "brightness(1)",
               }}
             >
-              <h1 className="font-semibold text-5xl text-center mb-9">
+              <h2 className="font-semibold text-5xl text-center mb-9">
                 Explore The <span className="text-[#9f9f9f]">Art</span> of Decor
-              </h1>
+              </h2>
               <p className=" mx-auto text-1xl  text-justify w-[90%]">
                 At Adhunik Decodive, our legacy is built on transforming spaces into breathtaking realities. With over 10 years of experience and a portfolio boasting 500+ delighted clients, our commitment to excellence shines through every project.
                 <br />
@@ -1212,8 +1193,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage width={500} loading="lazy"
-                    height={500} alt="make your interior style and space optimization using professional designers" cldImg={cld.image('landingPage/myh1ynmcgsmxmde8nwqy')} />
+                  <img  loading="lazy"
+                     alt="make your interior style and space optimization using professional designers"   src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/myh1ynmcgsmxmde8nwqy_ttfmha.webp" />
 
 
 
@@ -1315,10 +1296,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" w-auto">
                     <div className=" w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage loading="lazy" className="" cldImg={cld.image('landingPage/mkcwo034pfiodziddr6z')} fetchpriority="high" decoding="async"
-                        width={800}
-                        height={500}
-                        effect="blur" alt="Modular Kitchen Designs" />
+                      <img loading="lazy" className=""   decoding="async"
+                        src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616038/mkcwo034pfiodziddr6z_orlgsq.webp"
+                         alt="Modular Kitchen Designs" />
 
                     </div>
                   </div>
@@ -1424,15 +1404,8 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage
-                        cldImg={cld
-                          .image('landingPage/ckhkwnh3brr4o0k0b1iv')
-                          // Resize image to 500x300px
-                          .quality('auto:best')
-                          // Uses WebP/AVIF if supported
-                        }
-                        width={500}
-                        height={300}
+                      <img
+                      src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616038/ckhkwnh3brr4o0k0b1iv_du6iqu.webp"
                         loading="lazy"
                         className="object-cover"
                         alt="pink and grey sofa and wooden table with glass Furniture"
@@ -1505,8 +1478,7 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage loading="lazy" cldImg={cld.image('landingPage/dse47cfgiznpkyjfqcu8')} width={500}
-                        height={500} alt="Home Decor " />
+                      <img loading="lazy"  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616038/dse47cfgiznpkyjfqcu8_fljods.webp" alt="Home Decor " />
 
                     </div>
                   </div>

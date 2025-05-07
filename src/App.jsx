@@ -55,9 +55,8 @@ import NeroChimney from "./Components/NeroChimney";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
+
 function App() {
-
-
 
 
   useEffect(() => {
@@ -81,6 +80,7 @@ function App() {
       </Headroom>
 
       <WatsapButton phoneNumber="9289126052" />
+
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/contact" element={<ContactUs />} />

@@ -141,11 +141,11 @@ function Navbar() {
 
                        
 
-<AdvancedImage  alt="Adhunik DecoDive" cldImg={cld.image('landingPage/ylzbgsu0sw6qgh5yj544')} className="w-40"  width='100%'
-  quality="auto"
-  format="auto"
+<img  alt="Adhunik DecoDive"   className="w-40"  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
+
+   
   loading="lazy"    sizes="(max-width: 768px) 100vw, 400px"   
-           height={300}              effect="blur"/>
+         />
 
 
                             </Link>
