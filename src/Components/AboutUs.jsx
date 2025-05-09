@@ -34,7 +34,7 @@ const slideData = [
   },
   {
     name: "Tanya Gyani",
-    image: "AboutUs/woman_gphihr",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/woman_gphihr_q3qguw.webp",
     position: "New Delhi",
     testimonial:
       "An amazing job done by DecoDive. It feels modern and super inviting now. There were a couple of times during the project where communication wasn't perfect, but overall, we're really happy with how everything turned out.",
@@ -48,7 +48,7 @@ const slideData = [
   },
   {
     name: "Priya Rastogi",
-    image: "AboutUs/woman_gphihr",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/woman_gphihr_q3qguw.webp",
     position: "Agra",
     testimonial:
       "Stylish furniture for home and ergonomic chairs that made our office a haven, even after long hours.  The whole experience was great - they listened to our needs and budget, finding perfect pieces for every space.  Highly recommend!",
@@ -127,23 +127,22 @@ function AboutUs() {
               <div className=" w-full  lg:w-6/12 h-full flex  ">
                 <div className="w-full md:w-6/12 flex flex-col   h-full ">
                   <div className="w-12/12 h-full bg-red-900">
-                    <AdvancedImage
+                    <img
                       decoding="async"
                       loading="lazy"
-                      effect="blur"
+                     
                       className=" w-full h-full object-cover object-center"
                       alt="red leather modern chair in a beautiful space with a gold-plated lamp and black door "
-                      cldImg={cld.image("AboutUs/ab5_dds6xk")}
+                    src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab5_dds6xk_mkconn.webp"
                     />
                   </div>
                   <div className="w-12/12 h-full bg-yellow-900">
-                    <AdvancedImage
+                    <img
                       decoding="async"
                       loading="lazy"
-                      effect="blur"
                       className="   w-full h-full object-cover object-center"
                       alt="Yellow modern chair in a beautiful space with a gold-plated lamp and black door"
-                      cldImg={cld.image("AboutUs/ab6_omdoa9")}
+                     src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp"
                     />
                   </div>
                 </div>
@@ -302,13 +301,13 @@ function AboutUs() {
                   <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                     <div className="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
                       <div className="row h-14 w-14">
-                        <AdvancedImage
+                        <img
                           decoding="async"
                           loading="lazy"
-                          effect="blur"
+                         
                           className=" w-full h-full object-cover object-center"
                           alt={slide.name}
-                          cldImg={cld.image(slide.image)}
+                          src={slide.image}
                         />
                       </div>
                       <div className="flex w-full flex-col gap-0.5">
@@ -353,13 +352,13 @@ function AboutUs() {
 
           <div className="row">
             <div className="row flex relative  overflow-hidden">
-              <AdvancedImage
+              <img
                 decoding="async"
                 loading="lazy"
-                effect="blur"
+               src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746783433/footer4_mmwpiy_ttovln.webp"
                 className="  relative object-fill h-[50vh] md:h-auto w-full"
                 alt="Yellow leather sofa with glass lamp decoration "
-                cldImg={cld.image("AboutUs/footer4_mmwpiy")}
+                
               />
 
               <div className="w-full  h-full  md:p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row  md:text-center  items-center md:mx-auto  absolute  ">

@@ -29,78 +29,78 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const kitchenCategories = [
-  { name: 'Kitchens', imgSrc: 'Kitchen/all_category/2_bl3cxj' },
-  { name: 'Island Kitchen', imgSrc: 'Kitchen/LsKitchen/12_cc9sti' },
-  { name: 'L-Shape Kitchen', imgSrc: 'Kitchen/all_category/6_bcp1bw' },
-  { name: 'U-Shape Kitchen', imgSrc: 'Kitchen/LsKitchen/1_a8rmpg' },
-  { name: 'Parallel Kitchen', imgSrc: 'Kitchen/LsKitchen/3_z9eejg' },
-  { name: 'Island Kitchen', imgSrc: 'Kitchen/LsKitchen/4_qbnmsq' },
-  { name: 'Straight Kitchens', imgSrc: 'Kitchen/LsKitchen/5_t7kwot' },
-  { name: 'L-Shape Kitchen', imgSrc: 'Kitchen/LsKitchen/6_pkw7mo' },
-  { name: 'U-Shape Kitchen', imgSrc: 'Kitchen/LsKitchen/8_ohp7fb' },
-  { name: 'Parallel Kitchen', imgSrc: 'Kitchen/LsKitchen/9_kvomih' },
-  { name: 'Island Kitchen', imgSrc: 'Kitchen/LsKitchen/12_cc9sti' },
+  { name: 'Kitchens', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786015/2_bl3cxj_sz6tvo.webp' },
+  { name: 'Island Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786223/12_cc9sti_o2fy4a.webp' },
+  { name: 'L-Shape Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786022/6_bcp1bw_gi2khr.webp' },
+  { name: 'U-Shape Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786194/1_a8rmpg_bqiwyd.webp' },
+  { name: 'Parallel Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786199/3_z9eejg_rhhask.webp' },
+  { name: 'Island Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786202/4_qbnmsq_ou9rof.webp' },
+  { name: 'Straight Kitchens', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786204/5_t7kwot_i6vyb9.webp' },
+  { name: 'L-Shape Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786207/6_pkw7mo_il4qpv.webp' },
+  { name: 'U-Shape Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786212/8_ohp7fb_bdvpnc.webp' },
+  { name: 'Parallel Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786214/9_kvomih_gi692x.webp' },
+  { name: 'Island Kitchen', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786223/12_cc9sti_o2fy4a.webp' },
 ];
 
 
 const wardrobeCategories = [
   { name: 'Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/nnpixsron965x7qgsrsy_nrtivx.webp' },
-  { name: '1-Door Wardrobe', imgSrc: 'WardRobe/3_qnzv0m' },
-  { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/1DW/4_nhn4qc' },
-  { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/9_u45uvt' },
-  { name: 'Walk-in-Closet Wardrobe', imgSrc: 'WardRobe/11_vtroxl' },
-  { name: 'Wardrobe', imgSrc: 'WardRobe/1DW/1_z6mffw' },
-  { name: '1-Door Wardrobe', imgSrc: 'WardRobe/1DW/2_sizvmd' },
-  { name: '2-Door Wardrobe', imgSrc: 'WardRobe/1DW/3_x61xru' },
-  { name: 'Sliding Wardrobe', imgSrc: 'WardRobe/1DW/4_nhn4qc' },
+  { name: '1-Door Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788541/22_itwnc3_ojvjeb.webp' },
+  { name: 'Sliding Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788482/20_ynxzl7_h545mk.webp' },
+  { name: 'Sliding Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788478/19_uhtobz_ygevi4.webp' },
+  { name: 'Walk-in-Closet Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788474/18_gx25rn_yuzyzi.webp' },
+  { name: 'Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788453/16_y6ttql_kehesh.webp' },
+  { name: '1-Door Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788450/15_n8tldp_mjxl9v.webp' },
+  { name: '2-Door Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788443/13_pdrznd_bukmze.webp' },
+  { name: 'Sliding Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788426/8_hxhlwq_unvxvc.webp' },
 ];
 
 
 const lightingCategories = [
 
-  { name: 'Lamps And Lightings', imgSrc: 'HomeDecor/Ceiling_Light/3_dgj8x9' },
+  { name: 'Lamps And Lightings', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784756/3_dgj8x9_s1g4gj.webp' },
 
-  { name: 'Ceiling Lights', imgSrc: 'landingPage/bhxzfd5szxwtg6fdskyw' },
-  { name: 'Lighting', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
-  { name: 'Ceiling Lights', imgSrc: 'HomeDecor/Wall_Light/19_ymupwm' },
-  { name: 'Wall Lights', imgSrc: 'HomeDecor/Ceiling_Light/13_d14wqe' },
+  { name: 'Ceiling Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616038/bhxzfd5szxwtg6fdskyw_p9uqrv.webp' },
+  { name: 'Lighting', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785285/12_iynrag_cezwz0.webp' },
+  { name: 'Ceiling Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785421/19_ymupwm_fycjwx.webp' },
+  { name: 'Wall Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784769/13_d14wqe_avysz4.webp' },
   { name: 'Outdoor Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/trc0hvgzaaq4gnbfbcde_jcjthe.webp' },
-  { name: 'Room Lights', imgSrc: 'HomeDecor/RoomLights/12_iynrag' },
-  { name: 'Lamps', imgSrc: 'HomeDecor/Wall_Light/20_qcvhqq' },
-  { name: 'Lighting', imgSrc: 'HomeDecor/Ceiling_Light/17_nnfcow' },
-  { name: 'Ceiling Lights', imgSrc: 'landingPage/bhxzfd5szxwtg6fdskyw' },
+  { name: 'Room Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785285/12_iynrag_cezwz0.webp' },
+  { name: 'Lamps', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785423/20_qcvhqq_zumimo.webp' },
+  { name: 'Lighting', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784776/17_nnfcow_nnkafu.webp' },
+  { name: 'Ceiling Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616038/bhxzfd5szxwtg6fdskyw_p9uqrv.webp' },
 ];
 
 
 const decorCategories = [
 
-  { name: 'All Decors', imgSrc: 'HomeDecor/mrr/21_jhvm8s' },
-  { name: 'Mirrors', imgSrc: 'HomeDecor/WallD/17_f5c53m' },
-  { name: 'Clocks', imgSrc: 'HomeDecor/WallD/5_jzcfnw' },
-  { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
-  { name: 'Clocks', imgSrc: 'HomeDecor/Wall_Painting/18_dpibm5' },
-  { name: 'Wall Paintings', imgSrc: 'HomeDecor/mrr/18_unhqk1' },
-  { name: 'All Decors', imgSrc: 'HomeDecor/WallD/4_t5ayax' },
-  { name: 'Wall Decors', imgSrc: 'HomeDecor/V/21_chxhty' },
-  { name: 'Mirrors', imgSrc: 'HomeDecor/Clocks/13_qnfczx' },
+  { name: 'All Decors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785067/21_jhvm8s_rhsr7m.webp' },
+  { name: 'Mirrors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785571/17_f5c53m_w4j235.webp' },
+  { name: 'Clocks', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785544/5_jzcfnw_yl4hdk.webp' },
+  { name: 'Wall Paintings', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785303/1_c7dty2_sqrlik.webp' },
+  { name: 'Clocks', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785461/18_dpibm5_utu44j.webp' },
+  { name: 'Wall Paintings', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785061/18_unhqk1_e4xmrp.webp' },
+  { name: 'All Decors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785542/4_t5ayax_zyr6ib.webp' },
+  { name: 'Wall Decors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785351/21_chxhty_r43p2r.webp' },
+  { name: 'Mirrors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784862/13_qnfczx_gklebd.webp' },
   { name: 'Wall Decors', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ygpwkcrwzccgni6mofiq_btpcsk.webp' },
-  { name: 'Vases', imgSrc: 'HomeDecor/mrr/5_qmqgz4' },
-  { name: 'Clocks', imgSrc: 'HomeDecor/WallD/5_jzcfnw' },
-  { name: 'Wall Paintings', imgSrc: 'HomeDecor/V/1_c7dty2' },
+  { name: 'Vases', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785039/5_qmqgz4_codah9.webp' },
+  { name: 'Clocks', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785544/5_jzcfnw_yl4hdk.webp' },
+  { name: 'Wall Paintings', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785303/1_c7dty2_sqrlik.webp' },
 ];
 
 
 const furnitureCategories = [
-  { name: 'TV units Designs', imgSrc: 'Others/TV/18_nrfdzt' },
-  { name: 'Commercial Furniture', imgSrc: 'Furniture/CF/15_zrilzh' },
-  { name: 'Pooja Room Designs', imgSrc: 'Others/PoojaRoom/13_x6vgns' },
-  { name: 'Domestic Furniture', imgSrc: 'Furniture/DF/14_sgloqa' },
-  { name: 'Commercial Furniture', imgSrc: 'Furniture/CF/4_kdfjtu' },
-  { name: 'Bar Counter', imgSrc: 'Others/BarCounter/26_onevwv' },
-  { name: 'TV Panels Designs', imgSrc: 'Others/TV/12_fayle0' },
-  { name: 'Pooja Room Designs', imgSrc: 'Others/PoojaRoom/17_z1yl7f' },
-  { name: 'Domestic Furniture', imgSrc: 'Furniture/DF/16_iev7yy' },
-  { name: 'Commercial Furniture', imgSrc: 'Furniture/CF/15_zrilzh' },
+  { name: 'TV units Designs', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786928/18_nrfdzt_mwidyc.webp' },
+  { name: 'Commercial Furniture', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784275/15_zrilzh_ooc8tp.webp' },
+  { name: 'Pooja Room Designs', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786761/13_x6vgns_dbzra8.webp' },
+  { name: 'Domestic Furniture', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784333/14_sgloqa_sjq5mx.webp' },
+  { name: 'Commercial Furniture', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784265/4_kdfjtu_nczros.webp' },
+  { name: 'Bar Counter', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786657/26_onevwv_o5b644.webp' },
+  { name: 'TV Panels Designs', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786894/12_fayle0_yst2dd.webp' },
+  { name: 'Pooja Room Designs', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786772/17_z1yl7f_ndkzrn.webp' },
+  { name: 'Domestic Furniture', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784337/16_iev7yy_lrtpb8.webp' },
+  { name: 'Commercial Furniture', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784275/15_zrilzh_ooc8tp.webp' },
 ];
 
 
@@ -189,15 +189,15 @@ function LandingPage() {
 
 
   const imageIds = [
-    'Images/4_z536dw',
-    'Kitchen/LsKitchen/12_cc9sti',
-    'HomeDecor/V/21_chxhty',
-    'HomeDecor/RoomLights/10_ahmy1m',
-    'HomeDecor/OutdoorLight/13_uqhjvu',
-    'HomeDecor/mrr/16_rcttg8',
-    'HomeDecor/Lamps/12_qomfy8',
-    'Others/PoojaRoom/13_x6vgns',
-    'Others/BarCounter/28_j2djr6',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785923/4_z536dw_obynie.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786223/12_cc9sti_o2fy4a.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785351/21_chxhty_r43p2r.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785280/10_ahmy1m_f7vu8i.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785119/13_uqhjvu_tfyzfx.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785058/16_rcttg8_wjq5nx.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784924/12_qomfy8_kbtadr.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786761/13_x6vgns_dbzra8.webp',
+    'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786663/28_j2djr6_eep95x.webp',
 
   ];
 
@@ -251,49 +251,49 @@ function LandingPage() {
   const slideData = [
     {
       name: "Shabnam Gupta",
-      image: "AboutUs/avatar_ltfwos",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
       position: "Mumbai",
       testimonial:
         "Adhunik Decodive completely transformed my living room into a luxurious, inviting space. They understood my design vision and paid close attention to every detail. Their creativity and professionalism made the entire experience seamless. Highly recommended for anyone looking for high-end interior design in India!",
     },
     {
       name: "Ambrish Arora",
-      image: "AboutUs/avatar_ltfwos",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
       position: "Chennai",
       testimonial:
         "We hired Adhunik Decodive to remodel our outdated kitchen, and the results were stunning! The design team was punctual, professional, and made the entire renovation process enjoyable. Their knowledge of luxury interior design really stands out. Perfect blend of function and style.",
     },
     {
       name: "Tanya Gyani",
-      image: "AboutUs/woman_gphihr",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/woman_gphihr_q3qguw.webp",
       position: "New Delhi",
       testimonial:
         "Our home now looks like a feature from a design magazine, thanks to Adhunik Decodive. The space feels fresh, modern, and super cozy. There were a couple of hiccups in communication, but the end result exceeded expectations. Truly one of the best interior design teams in Delhi NCR.",
     },
     {
       name: "Priya Rastogi",
-      image: "AboutUs/woman_gphihr",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/woman_gphihr_q3qguw.webp",
       position: "Agra",
       testimonial:
         "We got stunning custom furniture for our home and ergonomic office chairs that fit perfectly into our workspace. Adhunik Decodive listened to our style and budget needs, delivering beautiful, functional pieces. Their team made interior styling feel easy and exciting. Great experience!",
     },
     {
       name: "Akari Studio",
-      image: "AboutUs/avatar_ltfwos",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
       position: "Shimla",
       testimonial:
         "I discovered Adhunik Decodive’s decor collection and fell in love instantly. Every home decor piece—from throw pillows to art—feels handpicked for elegance and warmth. It’s amazing how these small details changed the entire vibe of our living space.",
     },
     {
       name: "Manit Rastogi",
-      image: "AboutUs/avatar_ltfwos",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
       position: "Varanasi",
       testimonial:
         "Our kitchen renovation by Adhunik Decodive was simply amazing! The layout, design, and materials were thoughtfully planned. Their recommendations made a big difference in the final look and feel. We now have a luxurious, functional kitchen that adds real value to our home.",
     },
     {
       name: "Rhea Malhotra",
-      image: "AboutUs/woman_gphihr",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/woman_gphihr_q3qguw.webp",
       position: "Gurgaon",
       testimonial:
         "Working with Adhunik Decodive was the best decision we made for our Gurgaon home. Their expert interior designers turned our house into a modern luxury space that reflects our lifestyle perfectly. From custom furniture to the smallest decor accents, every element was curated with care. If you're searching for the best luxury interior designers in Gurgaon, look no further.",
@@ -304,7 +304,7 @@ function LandingPage() {
     {
       id: 5,
       title: "Minimalist Interior Design in Every Style",
-      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/AboutUs/ab6_omdoa9?_a=DAJAUVWIZAA0",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
       description: "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and...",
       date: "December 2024",
       link: "https://adhunikdecodive.com/blogs/5"
@@ -312,7 +312,7 @@ function LandingPage() {
     {
       id: 2,
       title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
-      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/ssd?_a=DAJAUVWIZAA0",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp",
       description: "Spice things up with Adhunik DecoDive's 2024 trends! We are talking smart storage, multifunctional...",
       date: "January 2025",
       link: "https://adhunikdecodive.com/blogs/2"
@@ -320,7 +320,7 @@ function LandingPage() {
     {
       id: 3,
       title: "Stunning Wardrobe Design Ideas for Indian Homes",
-      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/sd?_a=DAJAUVWIZAA0",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp",
       description: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with...",
       date: "January 2025",
       link: "https://adhunikdecodive.com/blogs/3"
@@ -328,7 +328,7 @@ function LandingPage() {
     {
       id: 4,
       title: "Bar Counter Design Ideas to Replicate in Your Home In 2024",
-      image: "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/home_bar_rmncdx?_a=DAJAUVWIZAA0",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp",
       description: "Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs...",
       date: "February 2025",
       link: "https://adhunikdecodive.com/blogs/4"
@@ -748,20 +748,16 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
+                            <img
 
-                              cldImg={cld
-                                .image(category.imgSrc)
-                                .quality('auto:best')
-                                // Serve WebP/AVIF if supported
-                              }
+                             src={category.imgSrc}
+                               
                               sizes="50px"
-                              height={48}
-                              width={48}
+                            
                               loading="lazy"
                               className="object-cover h-12 w-12"
                               alt={category.name}
-                              fetchpriority="high"
+                             
                               decoding="async"
                             />
 
@@ -852,19 +848,13 @@ function LandingPage() {
                         </h2>
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
-                            <AdvancedImage
-                              cldImg={cld
-                                .image(category.imgSrc)
-                                // Resize to match displayed size
-                                .quality('auto:best') // Optimizes compression
-                                // Uses WebP/AVIF when supported
-                              }
-                              height={48}
-                              width={48}
+                            <img
+                              src={category.imgSrc}                            
+                             
                               loading="lazy"
                               className="object-cover h-12 w-12"
                               alt={category.name}
-                              fetchpriority="high"
+                              
                               decoding="async"
                             />
 
@@ -891,10 +881,8 @@ function LandingPage() {
                   <div className=" w-auto">
 
 
-                    <AdvancedImage loading="lazy" className=" h-auto w-auto border-2 rounded-2xl " src="https://res.cloudinary.com/ddkyx2jhh/image/upload/c_limit,w_1200/f_auto/q_auto/v1743500674/indiaawards_k0es0f?_a=BAVAZGDX0" fetchpriority="high" decoding="async"
-                      width={800}
-                      height={500}
-                      effect="blur" alt="Modular Kitchen Designs" />
+                    <img loading="lazy" className=" h-auto w-auto border-2 rounded-2xl " src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746790416/indiaawards_k0es0f_e5zffp.webp"  decoding="async"
+                    alt="Modular Kitchen Designs" />
 
 
 
@@ -946,10 +934,12 @@ function LandingPage() {
                 <div className="w-full lg:w-6/12 h-full flex items-center justify-center lg:justify-start mb-8 lg:mb-0">
                   <div className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw] flex-shrink-0 mr-4">
 
-                    <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" sizes="50px" width={50} loading="lazy"
-                      height={50} className="  w-full h-full object-cover text-black " alt="DURABILITY
-Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
+                    <img
+                     loading="lazy"
+                       className="  w-full h-full object-cover text-black "
+                        alt="DURABILITY
+Lasting 10 Years" 
+src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_aynv6g_t4hvbu.webp'} />
 
                   </div>
                   <div className="text-center lg:text-left">
@@ -962,9 +952,11 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 <div className="  w-full lg:w-10/12 h-full flex items-center justify-center lg:justify-start">
                   <div className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw] flex-shrink-0 mr-4 lg:ml-7">
 
-                    <AdvancedImage loading="lazy" fetchpriority="high" decoding="async"
-                      effect="blur" width={70}
-                      height={70} className="  w-full h-full object-cover" alt="MODERN INTERIOR" cldImg={cld.image('Images/modern_t76wou')} />
+                    <img loading="lazy"   decoding="async"
+                      
+                       className="  w-full h-full object-cover"
+                        alt="MODERN INTERIOR" 
+                        src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785993/modern_t76wou_g4dil3.webp'} />
 
                   </div>
                   <div className="text-center lg:text-left ">
@@ -1007,21 +999,21 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 modules={[EffectCreative, Autoplay]}
                 className="mySwiper3"
               >
-                {imageIds.map((id, index) => (
+                {imageIds.map((url, index) => (
                   <SwiperSlide key={index}>
 
 
 
-                    <AdvancedImage
-                      fetchpriority="high" decoding="async"
+                    <img
+                     decoding="async"
                       key={index}
                       width='100%'
                       height='100%'
                       className=" w-full  object-cover object-left"
-                      effect="blur"
+                    
                       loading="lazy"
                       alt={`Image ${index + 1}`}
-                      cldImg={cld.image(id)}
+                      src={url}
                     />
                   </SwiperSlide>
 
@@ -1056,9 +1048,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       }}
                     >
 
-                      <AdvancedImage fetchpriority="high" decoding="async"
-                        effect="blur" width={50} loading="lazy"
-                        height={50} className=" h-11 w-11 mb-2" alt="Design inside imac using paint" cldImg={cld.image('Images/designk_ghb9u1')} />
+                      <img  decoding="async"
+                         loading="lazy"
+                        className=" h-11 w-11 mb-2" alt="Design inside imac using paint" src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785958/designk_ghb9u1_p0fozd.webp"} />
 
                       <h2 className=" text-center text-[3vw] lg:text-3xl  text-white">
                         Design
@@ -1075,9 +1067,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                       }}
                     >
 
-                      <AdvancedImage fetchpriority="high" decoding="async"
-                        effect="blur" width={50} loading="lazy"
-                        height={50} className=" h-11 w-11 mb-2" alt="Build product and step up" cldImg={cld.image('Images/build_nz2i8p')} />
+                      <img  decoding="async"
+                          loading="lazy"
+                         className=" h-11 w-11 mb-2" alt="Build product and step up" src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785946/build_nz2i8p_ufoym1.webp"} />
 
                       <h2 className="  text-center text-[3vw] lg:text-3xl  text-white">
                         Build
@@ -1101,9 +1093,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
 
                   <div className="flex-col md:flex-row flex justify-center items-center">
 
-                    <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70} loading="lazy"
-                      height={70} className="h-12 w-12 " alt="Quality Design of home" cldImg={cld.image('Images/interior_vymssy')} />
+                    <img   decoding="async"
+                         loading="lazy"
+                      className="h-12 w-12 " alt="Quality Design of home" src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785988/interior_vymssy_axnunl.webp"} />
 
                     <div className="  md:pl-5">
                       <h2 className="text-xl lg:text-2xl font-semibold text-center md:text-start">
@@ -1119,9 +1111,10 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
 
                   {/* Feature 2 */}
                   <div className="flex-col md:flex-row flex justify-center items-center">
-                    <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70} loading="lazy"
-                      height={70} className="h-12 w-12 " alt="Team of Experts , skilled designers bring expertise to every project" cldImg={cld.image('Images/design_xotkss_ssaaef')} />
+                    <img  decoding="async"
+                        loading="lazy"
+                        className="h-12 w-12 " alt="Team of Experts , skilled designers bring expertise to every project"
+                         src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785954/design_xotkss_ssaaef_c8gcsw.webp"} />
 
 
                     <div className=" md:pl-5">
@@ -1138,9 +1131,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
 
                   {/* Feature 3 */}
                   <div className="flex-col md:flex-row flex justify-center  items-center">
-                    <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70} loading="lazy"
-                      height={70} className="h-12 w-12 " alt="Expect clear communication" cldImg={cld.image('Images/com_uonsax')} />
+                    <img  decoding="async"
+                        loading="lazy"
+                        className="h-12 w-12 " alt="Expect clear communication" src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785949/com_uonsax_ou0dzc.webp"} />
                     <div className="md:pl-5 ">
                       <h2 className="text-xl lg:text-2xl font-semibold text-center md:text-start">
                         Professional Service
@@ -1155,9 +1148,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
 
                   {/* Feature 4 */}
                   <div className="flex-col md:flex-row flex justify-center  items-center">
-                    <AdvancedImage fetchpriority="high" decoding="async"
-                      effect="blur" width={70} loading="lazy"
-                      height={70} className="h-12 w-12 " alt="On-time Delivery" cldImg={cld.image('Images/delivery_euogle')} />
+                    <img  decoding="async"
+                       loading="lazy"
+                       className="h-12 w-12 " alt="On-time Delivery" src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785951/delivery_euogle_nqyjga.webp"} />
                     <div className=" md:pl-5">
                       <h2 className="text-xl lg:text-2xl font-semibold text-center md:text-start">
                         On-time Delivery
@@ -1224,8 +1217,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
             <div className="w-full p-9">
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-                  <AdvancedImage width={500} loading="lazy"
-                    height={500} alt="Revitalize your interior kitchen space." cldImg={cld.image('Images/meeting2_qa5a1w')} />
+                  <img   loading="lazy"
+                     alt="Revitalize your interior kitchen space." 
+                    src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785991/meeting2_qa5a1w_muck4u.avif"} />
 
 
                 </div>
@@ -1255,8 +1249,9 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
               <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
                 <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
 
-                  <AdvancedImage width={500} loading="lazy"
-                    height={500} alt="Get Professional Installation & Shop with Confidence" cldImg={cld.image('Images/meeting3_woteoo')} />
+                  <img   loading="lazy"
+                      alt="Get Professional Installation & Shop with Confidence" 
+                   src={"https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww"} />
 
                 </div>
                 <div className="p-6 text-center">
@@ -1367,8 +1362,10 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage loading="lazy" cldImg={cld.image('Images/wr_qfshhd')} width={500}
-                        height={500} alt="Wardrobe Designs" />
+                      <img loading="lazy" 
+                      src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746786006/wr_qfshhd_mjbnwm.webp"} 
+                      
+                       alt="Wardrobe Designs" />
 
                     </div>
                   </div>
@@ -1512,8 +1509,10 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                   <div className=" h-full w-auto">
                     <div className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125 rounded-xl">
 
-                      <AdvancedImage loading="lazy" cldImg={cld.image('Others/TV/2_k9vhdt')} width={500}
-                        height={500} alt="TV Unit Panels" />
+                      <img loading="lazy"
+                      src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746786865/2_k9vhdt_hsp5ru.webp"}
+                        
+                        alt="TV Unit Panels" />
 
 
                     </div>
@@ -1600,13 +1599,13 @@ Lasting 10 Years" cldImg={cld.image('Images/durability_aynv6g')} />
                 <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                   <div className="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
                     <div className="row h-14 w-14">
-                      <AdvancedImage
+                      <img
                         decoding="async"
                         loading="lazy"
-                        effect="blur"
+                       
                         className=" w-full h-full object-cover object-center"
                         alt={slide.name}
-                        cldImg={cld.image(slide.image)}
+                        src={slide.image}
                       />
                     </div>
                     <div className="flex w-full flex-col gap-0.5">
