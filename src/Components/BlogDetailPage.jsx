@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet-async";
 const blogs = [
     {
         id: 1,
-        imgSrc: 'Blogs/home_decor1_ph7toz',
+        imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp',
         title: "Home Decor Ideas for Compact Living",
         summary: " How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life! ",
         content:
@@ -64,7 +64,7 @@ const blogs = [
     },
     {
         id: 2,
-        imgSrc: "Blogs/ssd",
+        imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp",
         title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024 ",
         summary: " Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together. ",
 
@@ -140,7 +140,7 @@ const blogs = [
 
     {
         id: 3,
-        imgSrc: "Blogs/sd",
+        imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp",
         title: " Stunning Wardrobe Design Ideas for Indian Homes",
         summary: " From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs.",
         quote: "Blend traditional charm with modern functionality through elegant, custom cabinetry and space-maximizing designs.",
@@ -254,7 +254,7 @@ const blogs = [
 
     {
         id: 4,
-        imgSrc: 'Blogs/home_bar_rmncdx',
+        imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp',
         title: "Bar Counter Design Ideas to Replicate in Your Home In 2024",
         quote: "Refresh your space with trendy bar counter designs that feature sleek lines, stylish materials, and functional storage solutions.",
         summary:
@@ -330,7 +330,7 @@ const blogs = [
         summary:
             "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and functionality, this style creates serene, uncluttered spaces with clean lines and neutral colors.",
 
-        imgSrc: "AboutUs/ab6_omdoa9",
+        imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
         contentHeading:
             <>
                 <p className=" mt-2">Living in a compact space doesn't mean you have to sacrifice style! With a few clever ideas and some space-saving furniture, you can create a comfortable and stylish home that feels anything but cramped. Here, Adhunik DecoDive shares some of our favorite decor hacks to maximize functionality and design in your cozy corners:</p>
@@ -388,7 +388,7 @@ const blogs = [
         summary:
             "Brighten up your home with the Stunning Sculptural pendant lights from Adhunik DecoDive. With a blend of modern aesthetics and retro charm, these lights add a touch of sophistication and creativity to your home. Ready to elevate your decor?",
 
-        imgSrc: "Blogs/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr",
+        imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784146/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr_ugykea.webp",
         contentHeading:
             <>
 
@@ -451,7 +451,7 @@ const blogs = [
         summary:
             " Your furniture is more than just decor—it's a reflection of your identity and the vibe of your space, be it your cozy home or sleek office. At Adhunik DecoDive, we offer a diverse range of Commercial and Domestic furniture that speaks volumes about your individuality and lifestyle",
 
-        imgSrc: "Blogs/furniture_1_kbt4gm",
+        imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784142/furniture_1_kbt4gm_majvly.webp",
         quote: "Choose furniture that embodies your style and personality, creating a space that truly reflects who you are.",
         contentHeading:
             <>
@@ -587,7 +587,7 @@ const BlogDetailPage = () => {
                                 effect="blur"
                                 className="  w-full  "
                                 alt={blog.title}
-                                cldImg={cld.image(blog.imgSrc)}
+                                src={blog.imgSrc}
                                 ></AdvancedImage>
 
                         </figure>
@@ -611,7 +611,7 @@ const BlogDetailPage = () => {
                     <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                         <article className="max-w-xs">
                             <div >
-                                <img src="https://res.cloudinary.com/dwhmfz63n/image/upload/v1/AboutUs/ab6_omdoa9?_a=DAJAUVWIZAA0" className="mb-5 rounded-lg" alt="Image 1" />
+                                <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp" className="mb-5 rounded-lg" alt="Image 1" />
                             </div>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                 <div >Minimalist Interior Design in every Style</div>
@@ -626,7 +626,7 @@ const BlogDetailPage = () => {
                         </article>
                         <article className="max-w-xs">
                             <div >
-                                <img src="https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/ssd?_a=DAJAUVWIZAA0" className="mb-5 rounded-lg" alt="Image 2" />
+                                <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp" className="mb-5 rounded-lg" alt="Image 2" />
                             </div>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                 <div href="#">Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024</div>
@@ -638,7 +638,7 @@ const BlogDetailPage = () => {
                         </article>
                         <article className="max-w-xs">
                             <div href="#">
-                                <img src="https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/sd?_a=DAJAUVWIZAA0" className="mb-5 rounded-lg" alt="Image 3" />
+                                <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp" className="mb-5 rounded-lg" alt="Image 3" />
                             </div>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                 <div href="#">Stunning Wardrobe Design Ideas for Indian Homes</div>
@@ -650,7 +650,7 @@ const BlogDetailPage = () => {
                         </article>
                         <article className="max-w-xs">
                             <div href="#">
-                                <img src="https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Blogs/home_bar_rmncdx?_a=DAJAUVWIZAA0" className="mb-5 rounded-lg" alt="Image 4" />
+                                <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp" className="mb-5 rounded-lg" alt="Image 4" />
                             </div>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                 <div href="#">Bar Counter Design Ideas to Replicate in Your Home In 2024</div>

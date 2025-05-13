@@ -19,7 +19,7 @@ import { Helmet } from "react-helmet-async";
 const slideData = [
   {
     name: "Shabnam Gupta",
-    image: "AboutUs/avatar_ltfwos",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
     position: "Mumbai",
     testimonial:
       "Amazing! They totally listened to what I wanted for my living room and came up with a design that's both creative and works perfectly for me. They were super careful about all the little details and made sure the final product was exactly what I pictured.",
@@ -27,7 +27,7 @@ const slideData = [
 
   {
     name: "Ambrish Arora",
-    image: "AboutUs/avatar_ltfwos",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
     position: "Chennai",
     testimonial:
       "Our kitchen was stuck in the past, and they completely transformed it. They made the whole renovation process enjoyable, which is practically unheard of! The whole team was professional, polite, and always on time.",
@@ -41,7 +41,7 @@ const slideData = [
   },
   {
     name: "Manit Rastogi",
-    image: "AboutUs/avatar_ltfwos",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
     position: "Varanasi",
     testimonial:
       "We love the kitchen! It was definitely the appropriate thing to do! The layout, flooring, and backsplash are fantastic. Thank you for your suggestions and great thoughts. It has been a true pleasure to deal with you. ",
@@ -55,7 +55,7 @@ const slideData = [
   },
   {
     name: "Akari Studio",
-    image: "AboutUs/avatar_ltfwos",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/avatar_ltfwos_yhzcdy.webp",
     position: "Shimla",
     testimonial:
       "Absolutely love the home decor pieces I picked up! They've completely elevated the look and feel of my living space. Each item adds its own unique touch, from the vibrant throw pillows to the elegant wall art.",
@@ -68,7 +68,7 @@ const slideData = [
 const blogs = [
   { 
     id: 1,
-    imgSrc: 'Blogs/home_decor1_ph7toz',
+    imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp',
     title: <>Home Decor Ideas for Compact <br />  Living</> ,
     summary: " How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life!" ,
     tags: ["#DIYHomeDecor", "#InteriorDesign "],
@@ -77,7 +77,7 @@ const blogs = [
 
   {
      id: 2,
-    imgSrc: "Blogs/ssd",
+    imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp",
     title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
     summary: " Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together. ",
     tags: ["#modularkitchen", "#interiordesign ", "#kitchendesign"],
@@ -85,7 +85,7 @@ const blogs = [
   },
      
   { id: 3,
-    imgSrc: "Blogs/sd",
+    imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp",
      title: 
      "Stunning Wardrobe Design Ideas for Indian Homes",
      summary: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs." ,
@@ -154,7 +154,7 @@ function AboutUs() {
                     effect="blur"
                     className=" w-full h-full object-cover object-center"
                     alt="orange  modern sofa in a beautiful space with a gold-plated lamp and black door"
-                    cldImg={cld.image("AboutUs/ab7_qkbknf")}
+                    src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746783431/ab7_qkbknf_dsfspf.webp"
                   />
                 </div>
               </div>
@@ -405,7 +405,7 @@ function AboutUs() {
           effect="blur"
           className="w-full"
           alt={blog.title}
-          cldImg={cld.image(blog.imgSrc)}
+          src={blog.imgSrc}
         ></AdvancedImage>
 
         <div className="px-6 py-4">

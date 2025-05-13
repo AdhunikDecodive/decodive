@@ -13,7 +13,7 @@ const blogs = [
     title: "Home Decor Ideas for Compact Living",
     description:" How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life! ",
     image:
-      "Blogs/home_decor1_ph7toz",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp",
     author: "Jonathan Reinink",
     date: "Aug 18",
     tag: "Trending",
@@ -26,7 +26,7 @@ const blogs = [
     description:
       " Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together.",
     image:
-      "Blogs/ssd",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp",
     author: "Alex Johnson",
     date: "Sep 5",
     tag: "Featured",
@@ -38,7 +38,7 @@ const blogs = [
     description:
       " From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs.",
     image:
-      "Blogs/sd",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp",
     author: "Maria Garcia",
     date: "Jul 22",
     tag: "Top",
@@ -50,7 +50,7 @@ const blogs = [
     description:
       " Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs blend functionality with elegance. From sleek minimalist bars to luxurious statement pieces ",
       image:
-      "Blogs/home_bar_rmncdx",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp",
     author: "John Doe",
     date: "Nov 15",
     tag: "Popular",
@@ -62,7 +62,7 @@ const blogs = [
     description:
       "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and functionality, this style creates serene, uncluttered spaces with clean lines and neutral colors.",
       image:
-      "AboutUs/ab6_omdoa9",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
     author: "Jane Smith",
     date: "Oct 3",
     tag: "New",
@@ -74,7 +74,7 @@ const blogs = [
     description:
       "Brighten up your home with the Stunning Sculptural pendant lights from Adhunik DecoDive. With a blend of modern aesthetics and retro charm, these lights add a touch of sophistication and creativity to your home. Ready to elevate your décor?",
       image:
-      "Blogs/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784146/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr_ugykea.webp",
     author: "Emily White",
     date: "Dec 27",
     tag: "Trending",
@@ -86,7 +86,7 @@ const blogs = [
     description:
       "Your furniture is more than just decor—it's a reflection of your identity and the vibe of your space, be it your cozy home or sleek office. At Adhunik DecoDive, we offer a diverse range of Commercial and Domestic furniture that speaks volumes about your individuality and lifestyle.",
       image:
-      "Blogs/furniture_1_kbt4gm",
+      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784142/furniture_1_kbt4gm_majvly.webp",
     author: "Emily White",
     date: "Dec 27",
     tag: "Trending",
@@ -145,7 +145,7 @@ const MultipleBlogsPage = () => {
                     effect="blur"
                     className="  h-full w-full  object-cover object-center "
                     alt={blog.title}
-                    cldImg={cld.image(blog.image)}
+                   src={blog.image}
                     >
 
                 </AdvancedImage>
@@ -179,7 +179,7 @@ const MultipleBlogsPage = () => {
                     effect="blur"
                        className="w-10 h-10 rounded-full mr-4"
                     alt={blog.title}
-                    cldImg={cld.image(blog.image)}
+                   src={blog.image}
                 ></AdvancedImage>
                
 
