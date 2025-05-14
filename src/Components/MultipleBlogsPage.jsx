@@ -1,8 +1,7 @@
 // src/components/MultipleBlogsPage.js
 
 import { Link } from "react-router-dom";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from "@cloudinary/react";
 import { Helmet } from "react-helmet-async";
 
@@ -32,6 +31,8 @@ const blogs = [
     tag: "Featured",
     tags: ["#modularkitchen #interiordesign #kitchendesign "],
   },
+
+
   {
     id: 3,
     title: "Stunning Wardrobe Design Ideas for Indian Homes",
@@ -44,6 +45,8 @@ const blogs = [
     tag: "Top",
     tags: ["#wardrobestylist #interiordesigner"],
   },
+
+
   {
     id: 4,
     title: " Bar Counter Design Ideas to Replicate in Your Home In 2024",
@@ -56,6 +59,8 @@ const blogs = [
     tag: "Popular",
     tags: ["#bardesign #interiordesign"],
   },
+
+
   {
     id: 5,
     title: "Minimalist Interior Design Style.",
@@ -68,6 +73,8 @@ const blogs = [
     tag: "New",
     tags: ["#minimaldesign  #interiordesign"],
   },
+
+
   {
     id: 6,
     title: "The Artistic Trend of Sculptural Pendant Lights in Home Decor",
@@ -80,6 +87,8 @@ const blogs = [
     tag: "Trending",
     tags: ["#pendantlights #interiordesign"] ,
   },
+
+
   {
     id: 7,
     title: "Your Furniture Reflects You",
@@ -95,9 +104,7 @@ const blogs = [
 ];
 
 const MultipleBlogsPage = () => {
-
-  const cld = new Cloudinary({ cloud: { cloudName: "dwhmfz63n" } });
-
+ 
   return (
     <>
 
