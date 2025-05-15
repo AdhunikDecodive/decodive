@@ -922,12 +922,12 @@ function LandingPage() {
               <h2 className="font-semibold text-5xl text-center mb-9">
                 Explore The <span className="text-[#9f9f9f]">Art</span> of Decor
               </h2>
-              <p className=" mx-auto text-1xl  text-justify w-[90%]">
+              <p className=" py-4 mx-auto  text-[1.7vh] xl:text-[2vh]   text-center w-[95%]">
                 At Adhunik Decodive, our legacy is built on transforming spaces into breathtaking realities. With over 10 years of experience and a portfolio boasting 500+ delighted clients, our commitment to excellence shines through every project.
                 <br />
                 Our team of top interior designers in Gurgaon are passionate professionals dedicated to delivering extraordinary results within your budget. Whether it's a stylish business environment or a warm, inviting home, we bring an unmatched level of creativity and precision to every design.
                 <br />
-                Beyond traditional layout planning, our expertise spans urban planning, comprehensive space design, and innovative architecture. At Adhunik Decodive, we believe that every space should not only look stunning but also feel inviting and function seamlessly—enhancing the lifestyle of those who experience it.            <br />
+                
                 Our vision at Adhunik Decodive is to be a leading interior designers  in Gurgaon and beyond. We strive for the highest standards in quality, creativity, beautiful designs, and practical functionality in every project we undertake.   </p>
               <div className="flex flex-col lg:flex-row justify-center mt-4">
                 {/* Item 1 */}
@@ -1307,7 +1307,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
                       Lifestyle
                     </p>
                     <Link
-                      to="./KitchenCategory"
+                      to="./modular-kitchen-designs"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
                       &#10147;
@@ -1327,7 +1327,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
             </p>
             <div className="show_m mt-5">
               <Link
-                to="./KitchenCategory"
+                to="./modular-kitchen-designs"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
                 &#10147;

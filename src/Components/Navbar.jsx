@@ -48,8 +48,8 @@ function Navbar() {
             to: '#',
             text: 'Home Appliances',
             dropdownItems: [
-                { to: '/Nero-Chimney', text: 'Nero Chimney' },
-                { to: '/KitchenCategory', text: 'Fabia Chimney' },
+                { to: '/nero-chimney', text: 'Nero Chimney' },
+                { to: '/modular-kitchen-designs', text: 'Fabia Chimney' },
             
 
             ],
@@ -59,8 +59,8 @@ function Navbar() {
             to: '#',
             text: 'Kitchen',
             dropdownItems: [
-                { to: '/KitchenCategory', text: 'All Kitchen Categories' },
-                { to: '/LShapeKitchen', text: 'L-Shaped Kitchens' },
+                { to: '/modular-kitchen-designs', text: 'All Kitchen Categories' },
+                { to: '/l-shape-modular-kitchen-design', text: 'L-Shaped Kitchens' },
                 { to: '/UShapeKitchen', text: 'U-Shaped Kitchens' },
                 { to: '/PshapeKitchen', text: 'Parallel Kitchens' },
                 { to: '/IshapeKitchen', text: 'Island Kitchens' },
@@ -181,12 +181,12 @@ function Navbar() {
                                     label="Home Appliances"
                                     inline
                                 >
-                                    <Link to="/Nero-Chimney">
+                                    <Link to="/nero-chimney">
                                         <Dropdown.Item>
                                         Nero Chimney
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/KitchenCategory">
+                                    <Link to="/modular-kitchen-designs">
                                         <Dropdown.Item>
                                       Fabia Chimney
                                         </Dropdown.Item>
@@ -201,12 +201,12 @@ function Navbar() {
                                     label="Kitchen"
                                     inline
                                 >
-                                    <Link to="/KitchenCategory">
+                                    <Link to="/modular-kitchen-designs">
                                         <Dropdown.Item>
                                             All Kitchen Categories
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="./LShapeKitchen">
+                                    <Link to="./l-shape-modular-kitchen-design">
                                         <Dropdown.Item>
                                             L-Shaped Kitchens
                                         </Dropdown.Item>

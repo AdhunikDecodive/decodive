@@ -84,8 +84,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/kitchencategory" element={<KitchenCategory />} />
-        <Route path="/lshapekitchen" element={<LShapeKitchen />} />
+        <Route path="/modular-kitchen-designs" element={<KitchenCategory />} />
+        <Route path="/l-shape-modular-kitchen-design" element={<LShapeKitchen />} />
         <Route path="/ushapekitchen" element={<UshapeKitchen />} />
         <Route path="/pshapekitchen" element={<PshapeKitchen />} />
         <Route path="/ishapekitchen" element={<IshapeKitchen />} />
@@ -119,7 +119,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
         <Route path="/blogs" element={<MultipleBlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
-        <Route path="/Nero-Chimney" element={<NeroChimney />} />
+        <Route path="/nero-chimney" element={<NeroChimney />} />
 
 
       </Routes>

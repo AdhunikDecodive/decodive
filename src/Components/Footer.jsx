@@ -113,7 +113,7 @@ function Footer() {
                                 USEFUL LINKS
                             </h2>
                             <p className="mb-4">
-                                <Link to="/KitchenCategory" className="link link--thebe" >
+                                <Link to="/modular-kitchen-designs" className="link link--thebe" >
                                     Kitchen Designs</Link>
                             </p>
                             <p className="mb-4">

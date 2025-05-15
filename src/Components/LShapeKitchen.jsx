@@ -25,49 +25,49 @@ function LShapeKitchen() {
   const PcardData = [
     {
       id: 1,
-      imageUrl: 'Kitchen/LsKitchen/7_akynan',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786210/7_akynan_g3twto.webp',
       title: "",
       description:
         "Two tone design light wood laminate cabinets with vibrant blue accents for a stylish, trendy look",
     },
     {
       id: 2,
-      imageUrl: 'Kitchen/LsKitchen/8_ohp7fb',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786212/8_ohp7fb_bdvpnc.webp',
       title: "",
       description:
         "L-shaped kitchen in warm brown wood with white countertops offers bright, efficient workspace",
     },
     {
       id: 3,
-      imageUrl: 'Kitchen/LsKitchen/12_cc9sti',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786223/12_cc9sti_o2fy4a.webp',
       title: "",
       description:
         "Light gray color cabinets with a smooth surface and chrome pulls with white countertop for sleek look",
     },
     {
       id: 4,
-      imageUrl: 'Kitchen/LsKitchen/3_z9eejg',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786199/3_z9eejg_rhhask.webp',
       title: "",
       description:
         "Contemporary L-shaped kitchen with high-gloss acrylic cabinets radiates elegance and flair.",
     },
     {
       id: 5,
-      imageUrl: 'Kitchen/LsKitchen/11_p6lzqj',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786220/11_p6lzqj_k57ct5.webp',
       title: "",
       description:
         "Warm wooden cabinets with horizontal wood grain, bronze pulls, dark stone countertops for cozy, stylish kitchen",
     },
     {
       id: 6,
-      imageUrl: 'Kitchen/LsKitchen/18_11zon_yw3p2v',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786238/18_11zon_yw3p2v_vcy4l3.webp',
       title: "",
       description:
         "Contemporary L-shaped kitchen design, with sleek look. Light-colored wood with a grain pattern",
     },
     {
       id: 7,
-      imageUrl: 'Kitchen/LsKitchen/13_wsxklp',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786225/13_wsxklp_mjyndq.webp',
       title: "",
       description:
         "Modern L shaped Modular Kitchen Design with Gray Cabinets and Marble Countertop for sleek look ",
@@ -79,49 +79,49 @@ function LShapeKitchen() {
   const P2cardData = [
     {
       id: 1,
-      imageUrl: 'Kitchen/LsKitchen/14_r5k0zx',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786227/14_r5k0zx_ngl40s.webp',
       title: "",
       description:
         "Sleek white cabinets with crisp look L-layout kitchen and integrated appliances for a clean, spacious feel.",
     },
     {
       id: 2,
-      imageUrl: 'Kitchen/LsKitchen/15_vznwfm',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786230/15_vznwfm_daa7cl.webp',
       title: "",
       description:
         "L-shaped kitchens with Quartz or white granite for a sleek, modern look for a beautiful home efficient",
     },
     {
       id: 3,
-      imageUrl: 'Kitchen/LsKitchen/16_yhgis8',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786233/16_yhgis8_ngkwud.webp',
       title: "",
       description:
         "Light wood cabinets with warm glow. Modern aesthetic topped with cool white marble countertops",
     },
     {
       id: 4,
-      imageUrl: 'Kitchen/LsKitchen/17_btpbi0',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786235/17_btpbi0_aouwcb.webp',
       title: "",
       description:
         "Light gray wood cabinets, white veined counters and classic subway tiles create a warm and luxurious L-shaped space",
     },
     {
       id: 5,
-      imageUrl: 'Kitchen/LsKitchen/2_clubfh',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786197/2_clubfh_xtysnw.webp',
       title: "",
       description:
         "L-shaped kitchen with two-toned crisp white upper cabinets and blue lowers add pop. Optimizes space, creates a modern look.",
     },
     {
       id: 6,
-      imageUrl: 'Kitchen/LsKitchen/19_q0s6nb',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786240/19_q0s6nb_tw2upf.webp',
       title: "",
       description:
         "L-shaped kitchen with white cabinets and brown countertops. Classic combination .durable and affordable.",
     },
     {
       id: 7,
-      imageUrl: 'Kitchen/LsKitchen/20_11zon_jcby5h',
+      imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786243/20_11zon_jcby5h_yfhlb4.webp',
       title: "",
       description:
         "L-shaped kitchen with white cabinets and brown countertops. Classic combination .durable and affordable",
@@ -136,7 +136,7 @@ function LShapeKitchen() {
     "@type": "CollectionPage",
     "name": "L-Shape Kitchen Designs in Gurugram | Stylish & Space-Saving Layouts – Adhunik Decodive",
     "description": "Discover the best L-shape modular kitchen designs in Gurugram with Adhunik Decodive. Designed for functionality and style, L-shaped kitchens maximize space and efficiency for modern homes.",
-    "url": "https://adhunikdecodive.com/LShapeKitchen",
+    "url": "https://adhunikdecodive.com/l-shape-modular-kitchen-design",
     "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/LsKitchen/3_z9eejg?_a=DAJAUVWIZAA0",
     "mainEntity": {
       "@type": "ItemList",
@@ -149,7 +149,7 @@ function LShapeKitchen() {
             "name": "L-Shape Kitchen Design",
             "description": "Efficient and space-saving L-shaped modular kitchens, perfect for small to medium spaces. Customizable with high-quality finishes and smart storage solutions.",
             "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/LsKitchen/3_z9eejg?_a=DAJAUVWIZAA0",
-            "url": "https://adhunikdecodive.com/LShapeKitchen"
+            "url": "https://adhunikdecodive.com/l-shape-modular-kitchen-design"
           }
         }
       ]
@@ -237,7 +237,7 @@ function LShapeKitchen() {
         >
           <div className="relative h-80">
             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -301,7 +301,7 @@ function LShapeKitchen() {
               <div className="relative h-80">
              
                                              <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} 
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

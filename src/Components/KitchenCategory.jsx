@@ -62,7 +62,7 @@ function KitchenCategory() {
       title: "L-shaped kitchen",
       description:
         "Two-tone L-shaped cabinetry in crisp white&bold blue with a modern contrast. Warm wood accents and sleek quartz countertops for cool sophistication",
-      link: "/LShapeKitchen",
+      link: "/l-shape-modular-kitchen-design",
     },
     {
       id: 2,
@@ -394,7 +394,7 @@ function KitchenCategory() {
     "@type": "CollectionPage",
     "name": "Top Modular Kitchen Designs in Gurugram | L-Shape, U-Shape & More – Adhunik Decodive",
     "description": "Discover top modular kitchen designs in Gurugram with Adhunik Decodive. Explore L-shape, U-shape, Parallel, Island, and Straight kitchen layouts designed for luxury and efficiency. Get a free consultation today!",
-    "url": "https://adhunikdecodive.com/KitchenCategory",
+    "url": "https://adhunikdecodive.com/modular-kitchen-designs",
     "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/all_category/2_bl3cxj?_a=DAJAUVWIZAA0",
     "mainEntity": {
       "@type": "ItemList",
@@ -407,7 +407,7 @@ function KitchenCategory() {
             "name": "L-Shape Kitchen Design",
             "description": "Efficient and space-saving L-shaped modular kitchens, perfect for small to medium spaces.",
             "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/LsKitchen/3_z9eejg?_a=DAJAUVWIZAA0",
-            "url": "https://adhunikdecodive.com/LShapeKitchen"
+            "url": "https://adhunikdecodive.com/l-shape-modular-kitchen-design"
           }
         },
         {
@@ -656,7 +656,7 @@ function KitchenCategory() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas. Get a Free Consultation Today!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/KitchenCategory" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/modular-kitchen-designs" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
@@ -849,7 +849,7 @@ function KitchenCategory() {
                   className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                 >
                   <div className="relative h-80 overflow-hidden">
-                    <Link to="/LShapeKitchen">
+                    <Link to="/l-shape-modular-kitchen-design">
                       <AdvancedImage
                         src={card.imageUrl}
                         alt={card.description}
