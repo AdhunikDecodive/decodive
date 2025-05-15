@@ -103,7 +103,36 @@ const furnitureCategories = [
   { name: 'Commercial Furniture', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784275/15_zrilzh_ooc8tp.webp' },
 ];
 
+const logos = [
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292689/12_nemoqd.webp', alt: 'logo of explore himalaya travel and adventure', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292688/11_wden5x.webp', alt: 'logo of clove dental ', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292688/10_vzf3q3.webp', alt: 'logo of walk talk radio ', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292687/9_zax6ge.webp', alt: 'logo of arun constructions and developer ', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292686/8_lf5poo.webp', alt: 'logo of jumpstart the coworking hub ', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292685/7_btlfve.webp', alt: 'logo of iipm ', width: 176, height: 212 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292684/5_um4fjv.webp', alt: 'logo of orris expect the best ', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292684/4_zuqakh.webp', alt: 'logo of DND fine dine restaurant and bar ', width: 176, height: 112 },
+    
 
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292684/2_wz76lt.webp', alt: 'logo of srivaas group of companies ', width: 176, height: 112 },
+    
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292684/3_jk8vrs.webp', alt: 'logo of green palace hotel ', width: 176, height: 112 },
+    
+
+    { src: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1747292684/1_n59lw9.webp', alt: 'logo of prasad psycho ', width: 176, height: 112 },
+    
+
+
+
+
+  ];
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { Cloudinary } from "@cloudinary/url-gen";
@@ -1558,6 +1587,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
           </div>
         </div>
 
+
         <div className="row h-full w-full px-5 py-5 bg-[#F3F4F6] ">
 
           <div className=" py-4 inline-flex items-center justify-center w-full mx-auto md:mt-0  my-7 md:mb-0">
@@ -1648,6 +1678,58 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
           </Swiper>
         </div>
 
+<div className="row">
+     <section>
+          <div className="row  py-6">
+            <div className="  inline-flex mb-4  items-center justify-center w-full mx-auto mt-3 ">
+
+              <hr className="w-[90%] h-px my-8 bg-gray-300 border-0  " />
+
+              <h2 className="absolute text-3xl px-3  text-gray-700 -translate-x-1/2 bg-white left-1/2  md:text-3xl text-1xl capitalize font-extrabold text-center font-sans" > OUR CLIENTS
+              </h2>
+
+            </div>
+            <style jsx>{`
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-infinite-scroll {
+    animation: infinite-scroll 15s linear infinite;
+  }
+`}</style>
+
+            <div className="w-full py-5 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+              {[...Array(2)].map((_, index) => (
+                <ul
+                  key={index}
+                  className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                  aria-hidden={index === 1 ? 'true' : 'false'}
+                >
+                  {logos.map((image, index) => (
+                    <li key={index}>
+                      <img loading='lazy' 
+                      src={image.src}
+                       className=' object-center  object-cover'
+                        width={image.width}
+                         height={image.height}
+                         alt={image.alt} />
+                    </li>
+                  ))}
+                </ul>
+              ))}
+
+            </div>
+
+
+          </div>
+        </section>
+
+</div>
 
         <aside aria-label="Related Blogs" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
           <div className="px-4 mx-auto max-w-screen-xl">
