@@ -341,7 +341,7 @@ function LandingPage() {
     {
       id: 2,
       title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
-      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
       description: "Spice things up with Adhunik DecoDive's 2024 trends! We are talking smart storage, multifunctional...",
       date: "January 2025",
       link: "https://adhunikdecodive.com/blogs/2"
@@ -349,7 +349,7 @@ function LandingPage() {
     {
       id: 3,
       title: "Stunning Wardrobe Design Ideas for Indian Homes",
-      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp",
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/sd_etqleb_1_myputd.webp",
       description: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with...",
       date: "January 2025",
       link: "https://adhunikdecodive.com/blogs/3"

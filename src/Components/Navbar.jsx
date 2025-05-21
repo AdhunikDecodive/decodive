@@ -61,8 +61,8 @@ function Navbar() {
             dropdownItems: [
                 { to: '/modular-kitchen-designs', text: 'All Kitchen Categories' },
                 { to: '/l-shape-modular-kitchen-design', text: 'L-Shaped Kitchens' },
-                { to: '/UShapeKitchen', text: 'U-Shaped Kitchens' },
-                { to: '/PshapeKitchen', text: 'Parallel Kitchens' },
+                { to: '/u-shape-modular-kitchen-design', text: 'U-Shaped Kitchens' },
+                { to: '/parallel-modular-kitchen-design', text: 'Parallel Kitchens' },
                 { to: '/IshapeKitchen', text: 'Island Kitchens' },
                 { to: '/SshapeKitchen', text: 'Straight Kitchens' },
 
@@ -141,7 +141,7 @@ function Navbar() {
 
                        
 
-<img  alt="Adhunik DecoDive"   className="w-40"  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
+<img  alt="Adhunik DecoDive"   className="w-40"  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1747811688/Adhunik_DecoDive_Logo_povt7l.webp"
 
    
   loading="lazy"    sizes="(max-width: 768px) 100vw, 400px"   
@@ -211,12 +211,12 @@ function Navbar() {
                                             L-Shaped Kitchens
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="./UShapeKitchen">
+                                    <Link to="./u-shape-modular-kitchen-design">
                                         <Dropdown.Item>
                                             U-Shaped Kitchens
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/PshapeKitchen">
+                                    <Link to="/parallel-modular-kitchen-design">
                                         <Dropdown.Item>
                                             Parallel Kitchens
                                         </Dropdown.Item>

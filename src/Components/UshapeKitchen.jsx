@@ -23,7 +23,7 @@ function UshapeKitchen() {
         {
             id: 1,
             imageUrl:
-                'Kitchen/UsKitchen/1_xo3ogy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786513/1_xo3ogy_ift7ja.webp',
             title: '',
             description:
                 'U-shaped layout in a luxurious blue and silver palette. Spacious blue cabinets ensure ample storage,organized countertop appliance placement',
@@ -31,7 +31,7 @@ function UshapeKitchen() {
         {
             id: 2,
             imageUrl:
-            'Kitchen/UsKitchen/2_cvjbul',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786516/2_cvjbul_qszv7v.webp',
             title: '',
             description:
                 'Parrot green laminated wooden cabinets contrast with quartz white countertops, for refreshing and  inviting U-shaped kitchen',
@@ -39,7 +39,7 @@ function UshapeKitchen() {
         {
             id: 3,
             imageUrl:
-            'Kitchen/UsKitchen/3_vfdzhh',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786518/3_vfdzhh_anemkr.webp',
             title: '',
             description:
                 'Vintage U-shaped kitchen features white lacquered wood cabinets for a bright and airy feel, complemented by a warm wooden countertop',
@@ -47,7 +47,7 @@ function UshapeKitchen() {
         {
             id: 4,
             imageUrl:
-            'Kitchen/UsKitchen/4_hcgvmg',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786522/4_hcgvmg_svghy5.webp',
             title: '',
             description:
                 'Modern U-shaped kitchen with its sleek blue laminated cabinets and crisp white quartz countertops. perfectly suited for contemporary kitchen design',
@@ -55,7 +55,7 @@ function UshapeKitchen() {
         {
             id: 5,
             imageUrl:
-            'Kitchen/UsKitchen/5_rw6gcq',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786536/5_rw6gcq_ckfl9u.webp',
             title: '',
             description:
                 'Stunning U-shaped kitchen in European style with blue marine plywood cabinets with crisp white countertops. Perfect for a contemporary kitchen',
@@ -63,7 +63,7 @@ function UshapeKitchen() {
         {
             id: 6,
             imageUrl:
-            'Kitchen/UsKitchen/6_gprga6',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786539/6_gprga6_roh71y.webp',
             title: '',
             description:
                 'U-shaped kitchens shine with olive green laminate cabinets. Durable, affordable, and easy to clean, they complement various styles with a natural touch.',
@@ -71,7 +71,7 @@ function UshapeKitchen() {
         {
             id: 7,
             imageUrl:
-            'Kitchen/UsKitchen/7_yvnznr',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786543/7_yvnznr_egvemj.webp',
             title: '',
             description:
                 'U-shaped kitchen layout features modern, matte-finished wooden cabinets, for practicality and sleek design in a compact space',
@@ -83,7 +83,7 @@ function UshapeKitchen() {
         {
             id: 1,
             imageUrl:
-            'Kitchen/UsKitchen/8_avclus',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786546/8_avclus_mg44dp.webp',
             title: '',
             description:
                 'Modern U-shaped kitchen with refined aesthetics. Brushed stainless steel cabinets add a classy touch',
@@ -91,7 +91,7 @@ function UshapeKitchen() {
         {
             id: 2,
             imageUrl:
-            'Kitchen/UsKitchen/9_rphhw6',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786549/9_rphhw6_z0xo6n.webp',
             title: '',
             description:
                 'U-shaped kitchen layout, painted wood cabinets with glossy bright orange hue infuses modern flair, Matte black finish for modern elegance',
@@ -99,7 +99,7 @@ function UshapeKitchen() {
         {
             id: 3,
             imageUrl:
-            'Kitchen/UsKitchen/10_up3jjf',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786552/10_up3jjf_uqh9kj.webp',
             title: '',
             description:
                 'U-shaped layout with white, high-gloss cabinetry.Crafted from durable materials like laminate, thermofoil, or MDF with a sleek lacquer finish',
@@ -107,7 +107,7 @@ function UshapeKitchen() {
         {
             id: 4,
             imageUrl:
-            'Kitchen/UsKitchen/11_nxzusj',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786555/11_nxzusj_dvicby.webp',
             title: '',
             description:
                 'U-shaped kitchens boast laminated white cabinets with a high-gloss finish, prized for affordability, durability, and effortless maintenance',
@@ -115,7 +115,7 @@ function UshapeKitchen() {
         {
             id: 5,
             imageUrl:
-            'Kitchen/UsKitchen/12_esesyq',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786557/12_esesyq_qkv6nk.webp',
             title: '',
             description:
                 'Light wood tone cabinets and white marble countertops define the efficient U-shaped kitchen layout. For more efficiency & defined space',
@@ -123,7 +123,7 @@ function UshapeKitchen() {
         {
             id: 6,
             imageUrl:
-            'Kitchen/UsKitchen/13_isfxez',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786560/13_isfxez_d9eklw.webp',
             title: '',
             description:
                 'High-gloss polyester creates sleek, modern cabinets in a vibrant orange U-shape.Paired with sleek stainless steel countertops',
@@ -131,21 +131,20 @@ function UshapeKitchen() {
         {
             id: 7,
             imageUrl:
-            'Kitchen/UsKitchen/14_k7z6qy',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786563/14_k7z6qy_tzfvt7.webp',
             title: '',
             description:
                 'Achieve a timeless kitchen with our U-shaped layout. Crafted from durable woodGray, wood cabinets while white quartz countertops bring a bright and airy feel.',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+     
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Best U-Shape Kitchen Designs in Gurugram | Spacious & Functional Layouts – Adhunik Decodive",
         "description": "Explore the latest U-shape modular kitchen designs in Gurugram by Adhunik Decodive. Perfect for spacious layouts, these kitchens offer maximum storage, seamless workflow, and premium finishes.",
-        "url": "https://adhunikdecodive.com/UShapeKitchen",
+        "url": "https://adhunikdecodive.com/u-shape-modular-kitchen-design",
         "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/UsKitchen/6_gprga6?_a=DAJAUVWIZAA0",
         "mainEntity": {
           "@type": "ItemList",
@@ -158,7 +157,7 @@ function UshapeKitchen() {
                 "name": "U-Shape Kitchen Design",
                 "description": "Spacious and highly functional U-shaped modular kitchens, designed for maximum storage, smooth workflow, and premium aesthetics.",
                 "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/UsKitchen/6_gprga6?_a=DAJAUVWIZAA0",
-                "url": "https://adhunikdecodive.com/UShapeKitchen"
+                "url": "https://adhunikdecodive.com/u-shape-modular-kitchen-design"
               }
             }
           ]
@@ -168,7 +167,7 @@ function UshapeKitchen() {
           "name": "Adhunik Decodive",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
+            "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811688/Adhunik_DecoDive_Logo_povt7l.webp"
           }
         }
       };
@@ -241,7 +240,7 @@ function UshapeKitchen() {
                             <div className="relative h-80">
                             
                                               <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+             src={card.imageUrl} // Assuming `imageUrl` contains the Cloudinary image identifier
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -291,7 +290,7 @@ function UshapeKitchen() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} // Assuming `imageUrl` contains the Cloudinary image identifier
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

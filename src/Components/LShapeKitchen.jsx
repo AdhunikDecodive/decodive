@@ -159,7 +159,7 @@ function LShapeKitchen() {
       "name": "Adhunik Decodive",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
+        "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811688/Adhunik_DecoDive_Logo_povt7l.webp"
       }
     }
   };

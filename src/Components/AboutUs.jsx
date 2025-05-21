@@ -77,7 +77,7 @@ const blogs = [
 
   {
      id: 2,
-    imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784155/ssd_t9jpex.webp",
+    imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
     title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
     summary: " Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together. ",
     tags: ["#modularkitchen", "#interiordesign ", "#kitchendesign"],
@@ -85,7 +85,7 @@ const blogs = [
   },
      
   { id: 3,
-    imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784159/sd_etqleb.webp",
+    imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/sd_etqleb_1_myputd.webp",
      title: 
      "Stunning Wardrobe Design Ideas for Indian Homes",
      summary: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs." ,

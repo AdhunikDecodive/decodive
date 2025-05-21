@@ -5,7 +5,7 @@ import {  Tooltip } from "flowbite-react";
 
 
 const styles = {
-    backgroundImage: "url('https://res.cloudinary.com/dwhmfz63n/image/upload/v1740637220/Images/footer2__amymnq.webp')",
+    backgroundImage: "url('https://res.cloudinary.com/dq14b7xie/image/upload/v1747299705/footer_1_tz9rbk.webp')",
     backgroundSize: 'cover',
     backgroundPosition: 'top',
     filter: 'brightness(1)'

@@ -79,7 +79,7 @@ function KitchenCategory() {
       title: "Parallel kitchen",
       description:
         "Modern parallel layout with dark charcoal cabinets and light marble countertops for a dramatic look feels both striking and stylish",
-      link: "/PShapeKitchen",
+      link: "/parallel-modular-kitchen-design",
     },
     {
       id: 4,
@@ -95,7 +95,7 @@ function KitchenCategory() {
       title: "Parallel Kitchen",
       description:
         "Parallel Kitchen Design with crisp white cabinets and warm hardwood floors. Countertops and cabinets on two opposing walls  for a timeless elegance",
-      link: "/PShapeKitchen",
+      link: "/parallel-modular-kitchen-design",
     },
     {
       id: 6,
@@ -103,7 +103,7 @@ function KitchenCategory() {
       title: "U-shaped kitchen",
       description:
         "Light wood cabinets with white quartz counters.U-Shaped Kitchen with Peninsula for extra space & separation",
-      link: "/UShapeKitchen",
+      link: "/u-shape-modular-kitchen-design",
     },
 
   ];
@@ -418,7 +418,7 @@ function KitchenCategory() {
             "name": "U-Shape Kitchen Design",
             "description": "U-shaped modular kitchens offering abundant storage and a smooth workflow for serious cooks.",
             "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/UsKitchen/6_gprga6?_a=DAJAUVWIZAA0",
-            "url": "https://adhunikdecodive.com/UShapeKitchen"
+            "url": "https://adhunikdecodive.com/u-shape-modular-kitchen-design"
           }
         },
         {
@@ -429,7 +429,7 @@ function KitchenCategory() {
             "name": "Parallel Kitchen Design",
             "description": "Parallel modular kitchens designed for efficient use of space and seamless functionality.",
             "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/PsKitchen/8_xeibjp?_a=DAJAUVWIZAA0",
-            "url": "https://adhunikdecodive.com/PshapeKitchen"
+            "url": "https://adhunikdecodive.com/parallel-modular-kitchen-design"
           }
         },
         {
@@ -461,7 +461,7 @@ function KitchenCategory() {
       "name": "Adhunik Decodive",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1746616040/ylzbgsu0sw6qgh5yj544_k3wzci.webp"
+        "url": "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811688/Adhunik_DecoDive_Logo_povt7l.webp"
       }
     }
   };
@@ -909,7 +909,7 @@ function KitchenCategory() {
                   className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                 >
                   <div className="relative h-80 overflow-hidden">
-                    <Link to="/UShapeKitchen">
+                    <Link to="/u-shape-modular-kitchen-design">
                       <AdvancedImage
                         src={card.imageUrl}
                         alt={card.description}
@@ -972,7 +972,7 @@ function KitchenCategory() {
                   className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                 >
                   <div className="relative h-80 overflow-hidden">
-                    <Link to="/PShapeKitchen">
+                    <Link to="/parallel-modular-kitchen-design">
                       <AdvancedImage
                         src={card.imageUrl}
                         alt={card.description}

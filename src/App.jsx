@@ -8,6 +8,7 @@ import ContactUs from "./Components/ContactUs";
 import KitchenCategory from "./Components/KitchenCategory";
 import LShapeKitchen from "./Components/LShapeKitchen";
 import UshapeKitchen from "./Components/UshapeKitchen";
+
 import PshapeKitchen from "./Components/PshapeKitchen";
 import IshapeKitchen from "./Components/IshapeKitchen";
 import SshapeKitchen from "./Components/SshapeKitchen";
@@ -22,6 +23,7 @@ import CommercialFurniture from "./Components/CommercialFurniture";
 import HomeDecor from "./Components/HomeDecor";
 import MirrorsDecor from "./Components/MirrorsDecor";
 import WallDecor from "./Components/WallDecor";
+
 import VasesDecor from "./Components/VasesDecor";
 import WallPaintingDecor from "./Components/WallPaintingDecor";
 import LampsDecor from "./Components/LampsDecor";
@@ -33,9 +35,7 @@ import OthersCategory from "./Components/OthersCategory";
 import TVUnitPanels from "./Components/TVUnitPanels";
 import PoojaRoom from "./Components/PoojaRoom";
 import ThankYouPage from "./Components/ThankYouPage";
-
 import ClocksDecor from "./Components/ ClocksDecor";
-
 import BarCounter from "./Components/BarCounter";
 import AboutUs from "./Components/AboutUs";
 import Navbar from "./Components/Navbar";
@@ -44,7 +44,6 @@ import WatsapButton from "./Components/WatsapButton";
 import ScrollToTop from "./Components/ScrollToTop";
 
 import BlogPage from "./Components/BlogPage";
-
 import Error404 from "./Components/Error404";
 import MultipleBlogsPage from "./Components/MultipleBlogsPage";
 import BlogDetailPage from "./Components/BlogDetailPage";
@@ -68,6 +67,7 @@ function App() {
       page: window.location.pathname + window.location.search,
       title: document.title,
     });
+
   }, [location]);
 
 
@@ -86,8 +86,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/modular-kitchen-designs" element={<KitchenCategory />} />
         <Route path="/l-shape-modular-kitchen-design" element={<LShapeKitchen />} />
-        <Route path="/ushapekitchen" element={<UshapeKitchen />} />
-        <Route path="/pshapekitchen" element={<PshapeKitchen />} />
+        <Route path="/u-shape-modular-kitchen-design" element={<UshapeKitchen />} />
+        <Route path="/parallel-modular-kitchen-design" element={<PshapeKitchen />} />
         <Route path="/ishapekitchen" element={<IshapeKitchen />} />
         <Route path="/sshapekitchen" element={<SshapeKitchen />} />
         <Route path="/wardrobe" element={<Wardrobe />} />

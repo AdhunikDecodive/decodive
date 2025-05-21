@@ -1,12 +1,9 @@
-
 import "./LShapeKitchen.css"
 
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
 import ModalNew from "./ModalNew";
 
-
-import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -26,7 +23,7 @@ function IshapeKitchen() {
         {
             id: 1,
             imageUrl:
-            'Kitchen/IsKitchen/7_11zon_olrgym',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786058/7_11zon_olrgym_zjxmph.webp',
             title: '',
             description:
                 'Sleek & Stylish Island kitchen with painted wooden cabinets and a light-colored marble composite lower level',
@@ -34,7 +31,7 @@ function IshapeKitchen() {
         {
             id: 2,
             imageUrl:
-            'Kitchen/IsKitchen/4_gj8dho',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786051/4_gj8dho_jshdij.webp',
             title: '',
             description:
                 'Island layout with two-tone light gray painted cabinets with warm wood stain of the island base injects a touch of contrast and warmth into the space',
@@ -42,7 +39,7 @@ function IshapeKitchen() {
         {
             id: 3,
             imageUrl:
-            'Kitchen/IsKitchen/2_dy9uog',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786046/2_dy9uog_uzbeea.webp',
             title: '',
             description:
                 'The Alluring Island Kitchen with a warm wood veneer base. Indulge in the luxurious elegance of a white marble countertop',
@@ -50,7 +47,7 @@ function IshapeKitchen() {
         {
             id: 4,
             imageUrl:
-            'Kitchen/IsKitchen/10_11zon_qxoi9s',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786068/10_11zon_qxoi9s_qjzusa.webp',
             title: '',
             description:
                 'A Stylish Island-shaped layout with durable wood cabinets and  white countertops with kitchen appliances',
@@ -58,7 +55,7 @@ function IshapeKitchen() {
         {
             id: 5,
             imageUrl:
-            'Kitchen/IsKitchen/11_11zon_dbdfkk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786072/11_11zon_dbdfkk_bks8jh.webp',
             title: '',
             description:
                 'Island stuns with a vibrant blue lacquer finish on shaker cabinets and classic butcher block countertop with vintage charm',
@@ -66,7 +63,7 @@ function IshapeKitchen() {
         {
             id: 6,
             imageUrl:
-            'Kitchen/IsKitchen/12_lydklp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786078/12_lydklp_u4uda6.webp',
             title: '',
             description:
                 'An island kitchen with light gray laminated cabinet, and warm wood stain island base with wood veneer  and white marble countertop',
@@ -74,7 +71,7 @@ function IshapeKitchen() {
         {
             id: 7,
             imageUrl:
-            'Kitchen/IsKitchen/13_11zon_bracki',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786080/13_11zon_bracki_ur26rv.webp',
             title: '',
             description:
                 'Light wood cabinets with a dark granite countertop Island kitchen layout. With a warm and airy touch of practicality',
@@ -82,11 +79,13 @@ function IshapeKitchen() {
 
         // Add more card objects as needed
     ];
+
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-            'Kitchen/IsKitchen/14_11zon_rz82xh',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786085/14_11zon_rz82xh_ijygxs.webp',
             title: '',
             description:
                 'Modern Island kitchen with glossy white cabinets and straightforward, effective layout in a minimalist design.with open shelving & closed cabinets',
@@ -94,7 +93,7 @@ function IshapeKitchen() {
         {
             id: 2,
             imageUrl:
-            'Kitchen/IsKitchen/15_11zon_ntaeor',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786090/15_11zon_ntaeor_gjj1qq.webp',
             title: '',
             description:
                 'Modular Island Kitchen Design With An Accent Wall. Yellow and gray cabinets along with an accent wall make this kitchen look stylish and chic ',
@@ -102,7 +101,7 @@ function IshapeKitchen() {
         {
             id: 3,
             imageUrl:
-            'Kitchen/IsKitchen/16_s1fkxv',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786095/16_s1fkxv_ouke2v.webp',
             title: '',
             description:
                 'The two-tiered island with  light woodgrain finish  and light countertop  brighten the space. Lower tier offers prep space, the upper tier creates  extra workspace',
@@ -110,7 +109,7 @@ function IshapeKitchen() {
         {
             id: 4,
             imageUrl:
-            'Kitchen/IsKitchen/17_ehg08d',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786097/17_ehg08d_ofewr0.webp',
             title: '',
             description:
                 'A central island kitchen with stunning white marble. With  integrated appliances for a streamlined aesthetic, and casual dining',
@@ -118,7 +117,7 @@ function IshapeKitchen() {
         {
             id: 5,
             imageUrl:
-            'Kitchen/IsKitchen/18_fxdhjn',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786100/18_fxdhjn_gaxtuv.webp',
             title: '',
             description:
                 'The spacious island modern kitchen with green hue cabinets and white  light countertop for beautiful contrast, with fresh and modern look',
@@ -126,7 +125,7 @@ function IshapeKitchen() {
         {
             id: 6,
             imageUrl:
-            'Kitchen/IsKitchen/19_v95a39',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786102/19_v95a39_boxo9w.webp',
             title: '',
             description:
                 'Light wood island with warm contrast and white veined countertop, adding a touch of nature-inspired elegance to the kitchen. Offers both beauty and functionality',
@@ -134,15 +133,14 @@ function IshapeKitchen() {
         {
             id: 7,
             imageUrl:
-            'Kitchen/IsKitchen/20_11zon_kx4wzh',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786105/20_11zon_kx4wzh_hadrms.webp',
             title: '',
             description:
                 'Larger island with waterfall countertop in white marble  and light wood cabinets  offers a versatile choice for kitchen designers choice',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+  
     return (
 
 
@@ -179,9 +177,6 @@ function IshapeKitchen() {
             <ModalNew isOpen={openModal} onClose={toggleModal} />
 
 
-
-
-
             <div className="w-full bg-white p-3 md:p-5 svg "  >
 
                 <div className="row justify-around flex">
@@ -207,7 +202,7 @@ function IshapeKitchen() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -257,7 +252,7 @@ function IshapeKitchen() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
