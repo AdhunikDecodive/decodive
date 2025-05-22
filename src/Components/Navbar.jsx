@@ -64,7 +64,7 @@ function Navbar() {
                 { to: '/u-shape-modular-kitchen-design', text: 'U-Shaped Kitchens' },
                 { to: '/parallel-modular-kitchen-design', text: 'Parallel Kitchens' },
                 { to: '/IshapeKitchen', text: 'Island Kitchens' },
-                { to: '/SshapeKitchen', text: 'Straight Kitchens' },
+                { to: '/straight-modular-kitchen', text: 'Straight Kitchens' },
 
             ],
         },
@@ -226,7 +226,7 @@ function Navbar() {
                                             Island Kitchens
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/SshapeKitchen">
+                                    <Link to="/straight-modular-kitchen">
                                         <Dropdown.Item>
                                             Straight Kitchens
                                         </Dropdown.Item>

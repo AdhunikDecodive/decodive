@@ -5,8 +5,7 @@ import { useState } from 'react'
 import PhoneCallButton from "./PhoneCallButton";
 
 import ModalNew from "./ModalNew";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -23,11 +22,12 @@ function SshapeKitchen() {
         setOpenModal(!openModal);
     };
 
+
     const PcardData = [
         {
             id: 1,
             imageUrl:
-            'Kitchen/SsKitchen/2_xdjj6e',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786409/2_xdjj6e_t09yy6.webp',
             title: '',
             description:
                 'Modern straight kitchen highlighting the polished cabinets with sleek acrylic doors for a clean, contemporary look',
@@ -35,7 +35,7 @@ function SshapeKitchen() {
         {
             id: 2,
             imageUrl:
-            'Kitchen/SsKitchen/7_ktjxg5',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786424/7_ktjxg5_cce33e.webp',
             title: '',
             description:
                 'Straight modular kitchen design with a contemporary colour palette of crisp white countertops and cobalt blue cabinets',
@@ -43,7 +43,7 @@ function SshapeKitchen() {
         {
             id: 3,
             imageUrl:
-            'Kitchen/SsKitchen/10_x0dvfn',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786431/10_x0dvfn_lbfg1i.webp',
             title: '',
             description:
                 'Straight kitchen stuns with a mix of vibrant green cabinets for a shot of energy, balanced by crisp white acrylic cabinets',
@@ -51,7 +51,7 @@ function SshapeKitchen() {
         {
             id: 4,
             imageUrl:
-            'Kitchen/SsKitchen/11_fadufs',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786434/11_fadufs_zws2cr.webp',
             title: '',
             description:
                 'Straight modern kitchen with green wooden cabinets with Glossy finish and white countertops for a spacious feel',
@@ -59,7 +59,7 @@ function SshapeKitchen() {
         {
             id: 5,
             imageUrl:
-            'Kitchen/SsKitchen/12_sw5dds',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786437/12_sw5dds_kn1gyj.webp',
             title: '',
             description:
                 ' A modern straight kitchen with dark elegance with sleek acrylic doors for a polished look and countertops in quartz sophisticated space',
@@ -67,7 +67,7 @@ function SshapeKitchen() {
         {
             id: 6,
             imageUrl:
-            'Kitchen/SsKitchen/13_i5wzro',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786440/13_i5wzro_cb6lnm.webp',
             title: '',
             description:
                 'Modern White and Green Straight Kitchen Design with Quartz Countertop with Laminate in suede finish',
@@ -75,20 +75,22 @@ function SshapeKitchen() {
         {
             id: 7,
             imageUrl:
-            'Kitchen/SsKitchen/14_qaiwym',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786443/14_qaiwym_tjeqq7.webp',
             title: '',
             description:
                 'Modern straight kitchen with green cabinets and white countertops. Ideal for smaller spaces.',
         },
 
-        // Add more card objects as needed
+        
     ];
+
+
 
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-            'Kitchen/SsKitchen/15_rcpvkf',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786446/15_rcpvkf_zkjntb.webp',
             title: '',
             description:
                 'Contemporary straight  kitchen with  high-gloss cobalt cabinetry with integrated pulls, and light-colored countertops',
@@ -96,7 +98,7 @@ function SshapeKitchen() {
         {
             id: 2,
             imageUrl:
-            'Kitchen/SsKitchen/16_ezwbao',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786448/16_ezwbao_mftant.webp',
             title: '',
             description:
                 'The modern kitchen features sleek, high-gloss cabinets in a light wood tone with integrated pulls. Light colored countertops for clean look',
@@ -104,7 +106,7 @@ function SshapeKitchen() {
         {
             id: 3,
             imageUrl:
-            'Kitchen/SsKitchen/17_orvojw',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786452/17_orvojw_hvtnea.webp',
             title: '',
             description:
                 'Modern kitchen combines cool blue cabinets with warm wooden countertops  and open shelves  for a stylish contrast',
@@ -112,7 +114,7 @@ function SshapeKitchen() {
         {
             id: 4,
             imageUrl:
-            'Kitchen/SsKitchen/18_b1jkyt',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786454/18_b1jkyt_uzjtd1.webp',
             title: '',
             description:
                 'Gray flat-panel cabinets with chrome pulls and quartz countertops offer a bright workspace creating a sleek look for a modern kitchen',
@@ -120,7 +122,7 @@ function SshapeKitchen() {
         {
             id: 5,
             imageUrl:
-            'Kitchen/SsKitchen/19_ycdqv2',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786461/19_ycdqv2_e0c9p1.webp',
             title: '',
             description:
                 'Modern kitchen design with light blue color cabinets and countertops with integrated pulls add a modern touch for sleek and stylish look',
@@ -128,7 +130,7 @@ function SshapeKitchen() {
         {
             id: 6,
             imageUrl:
-            'Kitchen/SsKitchen/20_aukye8',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786464/20_aukye8_a8pn4t.webp',
             title: '',
             description:
                 'Modern kitchen with high-gloss cabinets and integrated pulls. Light countertops balance a sleek, sophisticated look',
@@ -136,7 +138,7 @@ function SshapeKitchen() {
         {
             id: 7,
             imageUrl:
-            'Kitchen/SsKitchen/21_tpw90d',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786466/21_tpw90d_keolzj.webp',
             title: '',
             description:
                 'Flat-panel orange cabinets pop against dark countertops,with a glossy cream backsplash Chrome pulls complete the chic look',
@@ -145,8 +147,7 @@ function SshapeKitchen() {
 
    
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+    
 
 
     return (
@@ -212,7 +213,7 @@ function SshapeKitchen() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} // Assuming `imageUrl` contains the Cloudinary image identifier
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -262,7 +263,7 @@ function SshapeKitchen() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

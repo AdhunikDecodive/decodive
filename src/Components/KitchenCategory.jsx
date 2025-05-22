@@ -87,7 +87,7 @@ function KitchenCategory() {
       title: "Straight kitchen",
       description:
         "Straight-laminate kitchen for timeless elegance.Warm cherry cabinets bring richness, while off-white countertops offer a bright balance",
-      link: "/SshapeKitchen",
+      link: "/straight-modular-kitchen",
     },
     {
       id: 5,
@@ -451,7 +451,7 @@ function KitchenCategory() {
             "name": "Straight Kitchen Design",
             "description": "Sleek and efficient straight-wall modular kitchens for compact spaces.",
             "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/SsKitchen/10_x0dvfn?_a=DAJAUVWIZAA0",
-            "url": "https://adhunikdecodive.com/SshapeKitchen"
+            "url": "https://adhunikdecodive.com/straight-modular-kitchen"
           }
         }
       ]
@@ -1093,7 +1093,7 @@ function KitchenCategory() {
                   className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                 >
                   <div className="relative h-80 overflow-hidden">
-                    <Link to='/SshapeKitchen'>
+                    <Link to='/straight-modular-kitchen'>
                       <AdvancedImage
                         src={card.imageUrl}
                         alt={card.description}

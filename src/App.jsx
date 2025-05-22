@@ -89,7 +89,7 @@ function App() {
         <Route path="/u-shape-modular-kitchen-design" element={<UshapeKitchen />} />
         <Route path="/parallel-modular-kitchen-design" element={<PshapeKitchen />} />
         <Route path="/ishapekitchen" element={<IshapeKitchen />} />
-        <Route path="/sshapekitchen" element={<SshapeKitchen />} />
+        <Route path="/straight-modular-kitchen" element={<SshapeKitchen />} />
         <Route path="/wardrobe" element={<Wardrobe />} />
         <Route path="/VastuTips" element={<VastuTips />} />
         <Route path="/ShutterDoorWardrobe" element={<ShutterDoorWardrobe />} />
