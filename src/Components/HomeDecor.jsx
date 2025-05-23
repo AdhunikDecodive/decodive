@@ -45,7 +45,7 @@ function HomeDecor() {
     const AllcardData = [
         {
             id: 1,
-            imageUrl: 'HomeDecor/mrr/1_xlkabe',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785034/1_xlkabe_yl7qxl.webp',
             title: "Mirrors",
             description:
                 "A decorative round mirror with a gleaming gold frame.",
@@ -54,7 +54,7 @@ function HomeDecor() {
         },
         {
             id: 2,
-            imageUrl: 'HomeDecor/WallD/1_xqauoo',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785535/1_xqauoo_vqphtm.webp',
             title: "Wall Decor",
             description:
                 "mrribrant Floral Mural Wallpaper",
@@ -62,7 +62,7 @@ function HomeDecor() {
         },
         {
             id: 3,
-            imageUrl: 'HomeDecor/V/8_z0udwv',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785318/8_z0udwv_eogbdl.webp',
             title: "Vases Decor",
             description:
                 " Floral blue ceramic vase.",
@@ -70,7 +70,7 @@ function HomeDecor() {
         },
         {
             id: 4,
-            imageUrl: 'HomeDecor/Lamps/4_lh44nt',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784911/4_lh44nt_ljxdsj.webp',
             title: "Lamps",
             description:
                 "Modern wooden floor lamp",
@@ -78,7 +78,7 @@ function HomeDecor() {
         },
         {
             id: 5,
-            imageUrl: 'HomeDecor/Ceiling_Light/room_light_iy2jve',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784778/room_light_iy2jve_enll6g.webp ',
             title: "Ceiling Lights",
             description:
                 "Multi-tiered crystal droplet chandelier",
@@ -86,7 +86,7 @@ function HomeDecor() {
         },
         {
             id: 6,
-            imageUrl: 'HomeDecor/OutdoorLight/13_uqhjvu',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785119/13_uqhjvu_tfyzfx.webp ',
             title: "Out-Door Light",
             description:
                 " Black and gold wall sconces",
@@ -99,7 +99,7 @@ function HomeDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/mrr/5_qmqgz4',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785039/5_qmqgz4_codah9.webp ',
             title: "Mirrors",
             description:
                 "Large, circular wall mirror with a geometric frame in a luxurious gold finish.",
@@ -108,7 +108,7 @@ function HomeDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/WallD/4_t5ayax',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785542/4_t5ayax_zyr6ib.webp',
             title: "Wall Decor",
             description:
                 " 3D effect with blue squares minimalist wallpaper design",
@@ -117,7 +117,7 @@ function HomeDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/V/7_c108lp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785315/7_c108lp_lv0uj9.webp ',
             title: "Vases Decor",
             description:
                 "Elegant Ceramic Face Vasses, Modern White Flower Vasses",
@@ -126,7 +126,7 @@ function HomeDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/Lamps/l1_varb6b',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784938/l1_varb6b_e3yef3.webp ',
             title: "Lamp",
             description:
                 "Oversized Pendulum Wall Clock.",
@@ -135,7 +135,7 @@ function HomeDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/Ceiling_Light/16_fp7xbh',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784773/16_fp7xbh_mmykri.webp',
             title: "Ceiling Light",
             description:
                 "Contemporary Canvas Floral Art for Living Room",
@@ -144,7 +144,7 @@ function HomeDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/RoomLights/13_fvv0ay',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785287/13_fvv0ay_blszer.webp',
             title: " Room Light",
             description:
                 "Elegant Circular Mirror with Radiant Light Frame",
@@ -157,7 +157,7 @@ function HomeDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/Lamps/5_bqhi9f',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784913/5_bqhi9f_zkvnsn.webp',
             title: "Lamps",
             description:
                 "Fabric minimalist table lamp",
@@ -166,7 +166,7 @@ function HomeDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/Ceiling_Light/6_f2iwqz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784761/6_f2iwqz_rksi8o.webp',
             title: "Ceiling Light",
             description:
                 "Multi-light pendant fixture with a crystal droplet design.",
@@ -175,7 +175,7 @@ function HomeDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/Wall_Light/21_r6rftv',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785425/21_r6rftv_gm7fwz.webp',
             title: "Wall Light",
             description:
                 "Gold sconce with crystal ball",
@@ -184,7 +184,7 @@ function HomeDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/OutdoorLight/12_bjvrbp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785117/12_bjvrbp_asiwdz.webp',
             title: "Out-Door Light",
             description:
                 "Minimalist rectangular exterior wall lights",
@@ -193,7 +193,7 @@ function HomeDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/RoomLights/14_hbzeay',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785289/14_hbzeay_ylv4k0.webp ',
             title: "Room Light",
             description:
                 "Wave-like black LED wall light",
@@ -202,7 +202,7 @@ function HomeDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/Lamps/6_up1l35',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784914/6_up1l35_vdn1yk.webp',
             title: "Lamps",
             description:
                 "Gold metal table lamp with white globe shade.",
@@ -299,7 +299,7 @@ function HomeDecor() {
                         title={
                             <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs ">
                                 <AdvancedImage
-                                    cldImg={cld.image('HomeDecor/V/21_chxhty')}
+                                  src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785351/21_chxhty_r43p2r.webp'}
                                     height={70}
                                     width={70}
                                     className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="All Decor Category"
@@ -323,7 +323,7 @@ function HomeDecor() {
 
 
                                             <AdvancedImage
-                                                cldImg={cld.image(card.imageUrl)}
+                                               src={card.imageUrl}
                                                 alt={card.description}
                                                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                                                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -366,7 +366,7 @@ function HomeDecor() {
                         title={
                             <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                                 <AdvancedImage
-                                    cldImg={cld.image('HomeDecor/mrr/13_szvre9')}
+                                   src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785053/13_szvre9_wz5hvd.webp"}
                                     height={70}
                                     width={70}
                                     className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt=" Mirrors Category"
@@ -391,7 +391,7 @@ function HomeDecor() {
                                         <Link to={card.link}>
 
                                             <AdvancedImage
-                                                cldImg={cld.image(card.imageUrl)}
+                                               src={card.imageUrl}
                                                 alt={card.description}
                                                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                                                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -434,7 +434,7 @@ function HomeDecor() {
                         title={
                             <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                                 <AdvancedImage
-                                    cldImg={cld.image('HomeDecor/RoomLights/12_iynrag')}
+                                 src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785285/12_iynrag_cezwz0.webp"}
                                     height={70}
                                     width={70}
                                     className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Lamps and Lighting"
@@ -458,7 +458,7 @@ function HomeDecor() {
 
 
                                             <AdvancedImage
-                                                cldImg={cld.image(card.imageUrl)}
+                                               src={card.imageUrl}
                                                 alt={card.description}
                                                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                                                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}

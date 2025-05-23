@@ -92,12 +92,12 @@ function App() {
         <Route path="/straight-modular-kitchen" element={<SshapeKitchen />} />
         <Route path="/wardrobe" element={<Wardrobe />} />
         <Route path="/VastuTips" element={<VastuTips />} />
-        <Route path="/ShutterDoorWardrobe" element={<ShutterDoorWardrobe />} />
+        <Route path="/shutter-door-wardrobe" element={<ShutterDoorWardrobe />} />
         <Route path="/slidingdoorwardrobe" element={<SlidingDoorWardrobe />} />
         <Route path="/walkdoorwardrobe" element={<WalkDoorWardrobe />} />
-        <Route path="/furniture" element={<Furniture />} />
-        <Route path="/domesticfurniture" element={<DomesticFurniture />} />
-        <Route path="/commercialfurniture" element={<CommercialFurniture />} />
+        <Route path="/furniture-categories" element={<Furniture />} />
+        <Route path="/domestic-furniture" element={<DomesticFurniture />} />
+        <Route path="/commercial-furniture" element={<CommercialFurniture />} />
         <Route path="/homedecor" element={<HomeDecor />} />
         <Route path="/mirrorsdecor" element={<MirrorsDecor />} />
         <Route path="/walldecor" element={<WallDecor />} />

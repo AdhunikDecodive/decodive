@@ -48,54 +48,53 @@ function Furniture() {
     const AllcardData = [
         {
             id: 1,
-            imageUrl: 'Furniture/All_C/1_qzrdhs',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784217/1_qzrdhs_huw9mn.webp',
             title: "Commercial Furniture",
             description:
                 "Scandinavian-style living room with a velvet terracotta sofa complemented by contemporary wooden furniture ",
-                link: "/CommercialFurniture",
+                link: "/commercial-furniture",
         },
         {
             id: 2,
-            imageUrl: 'Furniture/All_C/2_uctj22',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784218/2_uctj22_ufpxu7.webp',
             title: "Domestic Furniture",
             description:
                 "Wooden desk paired with a fabric seat chair  with Light wooden corner cabinet keeps your stuff stashed away",
-                link: "/DomesticFurniture",
+                link: "/domestic-furniture",
         },
         {
             id: 3,
-            imageUrl: 'Furniture/All_C/3_gff2vs',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784219/3_gff2vs_xof8fv.webp',
             title: "Commercial Furniture",
             description:
                 "Light-colored top modern office desk paired white, and chrome legs for a sleek and contemporary look.",
-                link: "/CommercialFurniture",
+                link: "/commercial-furniture",
         },
         {
             id: 4,
-            imageUrl: 'Furniture/All_C/4_wnsujt',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784219/4_wnsujt_o1odph.webp',
             title: "Commercial Furniture",
             description:
                 " Modern office  with light-colored cubicles  for a spacious feel, a sleek desk  for smooth workspace",
-                link: "/CommercialFurniture",
+                link: "/commercial-furniture",
         },
         {
             id: 5,
-            imageUrl: 'Furniture/DF/1_bnakez',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784318/1_bnakez_gpq499.webp',
             title: "Domestic Furniture",
             description:
                 "Scandinavian Style Dining Table Set with Teak Wood, Rectangular,4 Seater",
-                link: "/DomesticFurniture",
+                link: "/domestic-furniture",
         },
         {
             id: 6,
-            imageUrl: 'Furniture/All_C/5_hgz82b',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784220/5_hgz82b_x8jfjv.webp',
             title: "Commercial Furniture",
             description:
                 "A round wooden dining table with four light colored chairs tucked underneath.",
-                link: "/CommercialFurniture",
+                link: "/commercial-furniture",
         },
-      
-        // Add more card objects as needed
+       
     ];
 
 
@@ -103,7 +102,7 @@ function Furniture() {
         {
             id: 1,
             imageUrl:
-                'Furniture/DF/1_bnakez',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784318/1_bnakez_gpq499.webp',
             title: "",
             description:
                 "Scandinavian Style Dining Table Set with Teak Wood, Rectangular,4 Seater",
@@ -111,7 +110,7 @@ function Furniture() {
         {
             id: 2,
             imageUrl:
-                'Furniture/DF/2_lez4qg',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784319/2_lez4qg_raryxm.webp',
             title: "",
             description:
                 "Sliding Door Shoe Racks Save Space in Your Closet, Hide Shoes for A Neater Look, And Keep them Dust-Free",
@@ -119,7 +118,7 @@ function Furniture() {
         {
             id: 3,
             imageUrl:
-                'Furniture/DF/4_twrrs9',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784322/4_twrrs9_gihvry.webp',
             title: "",
             description:
                 "A sleek white desk chair with a comfortable fabric seat, charming wooden cupboard with blue and white hues.",
@@ -127,7 +126,7 @@ function Furniture() {
         {
             id: 4,
             imageUrl:
-                'Furniture/DF/3_vfxvxa',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784321/3_vfxvxa_gxxdmf.webp',
             title: "",
             description:
                 "A plush green armchair with rolled arms and a cushioned back with wooden coffee table.",
@@ -135,7 +134,7 @@ function Furniture() {
         {
             id: 5,
             imageUrl:
-                'Furniture/DF/5_x1zhcm',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784323/5_x1zhcm_oqrr8j.webp',
             title: "",
             description:
                 "Warm and inviting dining room with a  natural wood grain finish dining table and matched chairs.",
@@ -143,12 +142,12 @@ function Furniture() {
         {
             id: 6,
             imageUrl:
-                'Furniture/DF/17_cnqwqt',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784338/17_cnqwqt_vcmq41.webp',
             title: "",
             description:
                 "The King-Size Bed with  Golden and Off-White Colors, Squeak-Resistant for great Comfort ",
         },
-        // Add more card objects as needed
+       
     ];
 
 
@@ -156,7 +155,7 @@ function Furniture() {
         {
             id: 1,
             imageUrl:
-                'Furniture/CF/4_kdfjtu',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784265/4_kdfjtu_nczros.webp',
             title: "",
             description:
                 "Office workstation with individual laminated desks in a rectangular layout with high-contrast color scheme",
@@ -164,7 +163,7 @@ function Furniture() {
         {
             id: 2,
             imageUrl:
-                'Furniture/CF/7_pa6pkm',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784268/7_pa6pkm_yf6jdd.webp',
             title: "",
             description:
                 "Stylish office cabin furniture with premium wooden oak, paired with compact chairs for  for comfortable ",
@@ -172,7 +171,7 @@ function Furniture() {
         {
             id: 3,
             imageUrl:
-                'Furniture/CF/3_oou8h0',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784264/3_oou8h0_zvgwou.webp',
             title: "",
             description:
                 "A modern office interior with sleek charcoal gray desk's and the ergonomic supportive chair's designs",
@@ -180,7 +179,7 @@ function Furniture() {
         {
             id: 4,
             imageUrl:
-                'Furniture/CF/10_thtagy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784271/10_thtagy_uqzjid.webp',
             title: "",
             description:
                 "Light luxury slate desk, for a modern, minimalist design with sleek lines and a high-end finish for a stylish and functional workspace",
@@ -188,7 +187,7 @@ function Furniture() {
         {
             id: 5,
             imageUrl:
-                'Furniture/CF/5_iocwng',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784266/5_iocwng_jqll8h.webp',
             title: "",
             description:
                 "Modern office desk with sleek, rounded in luxurious planked oak veneer with brushed champagne metal accents. Perfect for a professional workspace.",
@@ -196,7 +195,7 @@ function Furniture() {
         {
             id: 6,
             imageUrl:
-                'Furniture/CF/6_kq3nv7',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784266/6_kq3nv7_txxzms.webp',
             title: "",
             description:
                 "A modern home office with high-quality wooden furniture with a sleek design, including a bookcase, desk, and wall cabinet with led light.",
@@ -221,7 +220,7 @@ function Furniture() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of domestic and commercial furniture. From concept to installation, we create bespoke, functional, and stylish furniture solutions. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/Furniture" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/furniture-categories" data-react-helmet="true" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Domestic & Commercial Furniture in Gurugram | Stylish & Functional – Adhunik Decodive" />
@@ -232,7 +231,7 @@ function Furniture() {
         <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top provider of domestic and commercial furniture. From concept to installation, we create bespoke, functional, and stylish furniture solutions. Free consultation!" />
 
-        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/furniture"></meta>
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/furniture-categories"></meta>
         <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Furniture Experts" />
         <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Domestic & Commercial Furniture in Gurugram | Stylish & Functional – Adhunik Decodive" />
         <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Adhunik Decodive: Gurugram's top provider of domestic and commercial furniture. From concept to installation, we create bespoke, functional, and stylish furniture solutions. Free consultation!" />
@@ -315,10 +314,11 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh
                     <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs ">
                        
                        <AdvancedImage
-              cldImg={cld.image('Furniture/All_C/1_qzrdhs')}
+              src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784217/1_qzrdhs_huw9mn.webp'}
                 height={70}
                 width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt=" All Furniture Categories"
+                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
+                 alt=" All Furniture Categories"
                 decoding="async"
                 effect="blur"
               
@@ -337,7 +337,7 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh
                                     <div className="relative h-80 overflow-hidden">
                                     <Link to={card.link}>
                                     <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+                src={card.imageUrl}
                 alt="card-image"
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -373,7 +373,7 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh
                 title={
                     <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                        <AdvancedImage
-              cldImg={cld.image('Furniture/DF/10_zmpqqz')}
+              src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784329/10_zmpqqz_on2a4e.webp'}
                 height={70}
                 width={70}
                 className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Image Description"
@@ -393,9 +393,9 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/DomesticFurniture'>
+                                    <Link to='/domestic-furniture'>
                                     <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+                src={card.imageUrl}
                 alt="card-image"
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -431,7 +431,7 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh
                 title={
                     <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                         <AdvancedImage
-              cldImg={cld.image('Furniture/CF/13_cbhjdm')}
+              src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784276/13_cbhjdm_e1femy.webp'}
                 height={70}
                 width={70}
                 className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Image Description"
@@ -450,9 +450,9 @@ Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/CommercialFurniture'>
+                                    <Link to='/commercial-furniture'>
                                     <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+                src={card.imageUrl}
                 alt="card-image"
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}

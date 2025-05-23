@@ -1450,7 +1450,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
                       Furniture
                     </p>
                     <Link
-                      to="/Furniture"
+                      to="/furniture-categories"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
                       &#10147;
@@ -1471,7 +1471,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
             </p>
             <div className="show_m mt-5">
               <Link
-                to="/Furniture"
+                to="/furniture-categories"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
                 &#10147;

@@ -75,7 +75,7 @@ function Navbar() {
             text: 'Wardrobe',
             dropdownItems: [
                 { to: '/Wardrobe', text: 'All Wardrobe Categories' },
-                { to: '/ShutterDoorWardrobe', text: 'Shutter  Wardrobe' },
+                { to: '/shutter-door-wardrobe', text: 'Shutter  Wardrobe' },
                 { to: '/SlidingDoorWardrobe', text: 'Sliding  Wardrobe' },
                 { to: '/WalkDoorWardrobe', text: 'Walk in Wardrobe' },
 
@@ -85,9 +85,9 @@ function Navbar() {
             to: '#',
             text: 'Furniture',
             dropdownItems: [
-                { to: '/Furniture', text: 'All Furniture Categories' },
-                { to: '/DomesticFurniture', text: 'Domestic Furniture' },
-                { to: '/CommercialFurniture', text: 'Commercial Furniture' },
+                { to: '/furniture-categories', text: 'All Furniture Categories' },
+                { to: '/domestic-furniture', text: 'Domestic Furniture' },
+                { to: '/commercial-furniture', text: 'Commercial Furniture' },
 
             ],
         },
@@ -255,7 +255,7 @@ function Navbar() {
                                         </Dropdown.Item>
                                     </Link>
                                 
-                                    <Link to="/ShutterDoorWardrobe">
+                                    <Link to="/shutter-door-wardrobe">
                                         <Dropdown.Item>
                                             Shutter  Wardrobe
                                         </Dropdown.Item>
@@ -280,17 +280,17 @@ function Navbar() {
                                     label="Furniture"
                                     inline
                                 >
-                                    <Link to="/Furniture">
+                                    <Link to="/furniture-categories">
                                         <Dropdown.Item>
                                             All Furniture Categories
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/DomesticFurniture">
+                                    <Link to="/domestic-furniture">
                                         <Dropdown.Item>
                                             Domestic Furniture
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/CommercialFurniture">
+                                    <Link to="/commercial-furniture">
                                         <Dropdown.Item>
                                             Commercial Furniture
                                         </Dropdown.Item>

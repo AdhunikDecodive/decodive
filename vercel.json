@@ -42,7 +42,7 @@
             "dest": "/"
         },
         {
-            "src": "/ShutterDoorWardrobe",
+            "src": "/shutter-door-wardrobe",
             "dest": "/"
         },
         {
@@ -54,15 +54,15 @@
             "dest": "/"
         },
         {
-            "src": "/Furniture",
+            "src": "/furniture-categories",
             "dest": "/"
         },
         {
-            "src": "/DomesticFurniture",
+            "src": "/domestic-furniture",
             "dest": "/"
         },
         {
-            "src": "/CommercialFurniture",
+            "src": "/commercial-furniture",
             "dest": "/"
         },
         {

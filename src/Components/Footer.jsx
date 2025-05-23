@@ -121,7 +121,7 @@ function Footer() {
                                     Wardrobe Designs</Link>
                             </p>
                             <p className="mb-4">
-                                <Link to="/Furniture" className="link link--thebe">
+                                <Link to="/furniture-categories" className="link link--thebe">
                                     Furniture Designs</Link>
                             </p>
                             <p className="mb-4">

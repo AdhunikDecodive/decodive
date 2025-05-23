@@ -6,8 +6,6 @@ import "./LShapeKitchen.css"
 import ModalNew from './ModalNew';
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
-
-import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -25,7 +23,7 @@ function DomesticFurniture() {
         {
             id: 1,
             imageUrl:
-                'Furniture/DF/7_fruzw1',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784325/7_fruzw1_qamk8m.webp',
             title: '',
             description:
                 'A Contemporary Wooden Shoe Cabinet with a Charcoal Grey Sliding Door, Designed for Ample Storage Space.',
@@ -33,7 +31,7 @@ function DomesticFurniture() {
         {
             id: 2,
             imageUrl:
-                'Furniture/DF/8_1_auv8w2',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784326/8_1_auv8w2_rjzdjq.webp',
             title: '',
             description:
                 'Clean and organized living room workspace with white wooden cabinets and a warm-toned study table',
@@ -41,7 +39,7 @@ function DomesticFurniture() {
         {
             id: 3,
             imageUrl:
-                'Furniture/DF/9_dsenwc',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784328/9_dsenwc_yw7fhl.webp',
             title: '',
             description:
                 'Beech Wood White Mdf Board Shoe Racks Easy to Installed Living Room Shoe Rack Cabinet For Hallway',
@@ -49,7 +47,7 @@ function DomesticFurniture() {
         {
             id: 4,
             imageUrl:
-                'Furniture/DF/10_zmpqqz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784329/10_zmpqqz_on2a4e.webp',
             title: '',
             description:
                 'A Wooden Desk with Wood With A Sleek Laminate Coating and Fabric Chair With a Cushion for Comfort and Smooth Workspace ',
@@ -57,7 +55,7 @@ function DomesticFurniture() {
         {
             id: 5,
             imageUrl:
-                'Furniture/DF/15_gksrdz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784336/15_gksrdz_nedbmk.webp',
             title: '',
             description:
                 'An Off-White Wooden Corner Study Table Designed with an Integrated Bookshelf, Offering a Stylish and Space-Efficient.',
@@ -65,7 +63,7 @@ function DomesticFurniture() {
         {
             id: 6,
             imageUrl:
-                'Furniture/DF/11_j1yqvo',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784330/11_j1yqvo_ngjnsh.webp',
             title: '',
             description:
                 'A Modern Yellow Study Desk with a Rectangular Engineered Wood Top with White Wooden Base  Corner Study Table  ',
@@ -73,20 +71,20 @@ function DomesticFurniture() {
         {
             id: 7,
             imageUrl:
-                'Furniture/DF/12_kn608h',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784331/12_kn608h_vjrrzu.webp',
             title: '',
             description:
                 'A Beige, Three-Seater Fabric Sofa with Curved Edges and Rounded Corners for a Sophisticated Look.',
         },
 
-        // Add more card objects as needed
+        
     ];
     
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-                'Furniture/DF/14_sgloqa',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784333/14_sgloqa_sjq5mx.webp',
             title: '',
             description:
                 'The Amaze L-Shape Sofa with a Teal Finished Solid Wood Frame and Comfy Soft Foam with Polyester Fabric.',
@@ -94,7 +92,7 @@ function DomesticFurniture() {
         {
             id: 2,
             imageUrl:
-                'Furniture/DF/13_qkuddd',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784334/13_qkuddd_ky0hfj.webp',
             title: '',
             description:
                 'Off-White Queen Size Wooden Double Bed for Their Timeless Look, and more Durability',
@@ -102,7 +100,7 @@ function DomesticFurniture() {
         {
             id: 3,
             imageUrl:
-                'Furniture/DF/1_bnakez',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784318/1_bnakez_gpq499.webp',
             title: '',
             description:
                 'Scandinavian Style Dining Table Set with Teak Wood, Rectangular,4 Seater',
@@ -110,7 +108,7 @@ function DomesticFurniture() {
         {
             id: 4,
             imageUrl:
-                'Furniture/DF/2_lez4qg',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784319/2_lez4qg_raryxm.webp',
             title: '',
             description:
                 'Sliding Door Shoe Racks Save Space in Your Closet, Hide Shoes for A Neater Look, And Keep them Dust-Free',
@@ -118,7 +116,7 @@ function DomesticFurniture() {
         {
             id: 5,
             imageUrl:
-                'Furniture/DF/19_grkpfl',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784340/19_grkpfl_z9hizh.webp',
             title: '',
             description:
                 'A Luxurious Single Bed with A Plush Velvet Material and Silver Frame for A Versatile Look In Bedroom',
@@ -126,7 +124,7 @@ function DomesticFurniture() {
         {
             id: 6,
             imageUrl:
-                'Furniture/DF/16_iev7yy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784337/16_iev7yy_lrtpb8.webp',
             title: '',
             description:
                 'Off-White Queen Size Wooden Double Bed for Their Timeless Look, and more Durability',
@@ -134,15 +132,14 @@ function DomesticFurniture() {
         {
             id: 7,
             imageUrl:
-                'Furniture/DF/18_sgmdox',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784339/18_sgmdox_lpxg7m.webp',
             title: '',
             description:
                 'The King-Size Bed with Solid Cedar Pine with Light Pink Finish and a Light Pink Fabric Upholstered Headboard.',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+  
     return (
         <>
 
@@ -156,7 +153,7 @@ function DomesticFurniture() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of domestic furniture. From concept to installation, we create bespoke, functional, and stylish home furniture solutions. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/DomesticFurniture" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/domestic-furniture" data-react-helmet="true" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Domestic Furniture in Gurugram | Stylish & Functional – Adhunik Decodive" />
@@ -212,7 +209,7 @@ function DomesticFurniture() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+            src={card.imageUrl}  
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -262,7 +259,7 @@ function DomesticFurniture() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

@@ -18,7 +18,7 @@ function CommercialFurniture() {
         {
             id: 1,
             imageUrl:
-                'Furniture/CF/7_pa6pkm',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784268/7_pa6pkm_yf6jdd.webp',
             title: '',
             description:
                 'Elegant and stylish, this white desk not only offers a generous work surface but also enhances the ambiance of any home office with its sophisticated design',
@@ -26,7 +26,7 @@ function CommercialFurniture() {
         {
             id: 2,
             imageUrl:
-                'Furniture/CF/8_zsfvkp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784270/8_zsfvkp_axkhek.webp',
             title: '',
             description:
                 'Stylish white office chair offers a clean look and ergonomic design for all-day comfort, perfect for any workspace',
@@ -34,7 +34,7 @@ function CommercialFurniture() {
         {
             id: 3,
             imageUrl:
-                'Furniture/CF/9_iqc65x',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784270/9_iqc65x_ndjpfw.webp',
             title: '',
             description:
                 'Ergonomic white office chair for easy mobility and leather upholstery for a sleek and professional look for your workspace',
@@ -42,7 +42,7 @@ function CommercialFurniture() {
         {
             id: 4,
             imageUrl:
-                'Furniture/CF/10_thtagy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784271/10_thtagy_uqzjid.webp',
             title: '',
             description:
                 'Light luxury slate desk, for a modern, minimalist design with sleek lines and a high-end finish for a stylish and functional workspace',
@@ -50,7 +50,7 @@ function CommercialFurniture() {
         {
             id: 5,
             imageUrl:
-                'Furniture/CF/11_cdo6zf',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784273/11_cdo6zf_krmygr.webp',
             title: '',
             description:
                 'Dark brown modern desks with wood veneer for warmth, solid laminated wood for elegance, sharp and focused workspace.',
@@ -58,7 +58,7 @@ function CommercialFurniture() {
         {
             id: 6,
             imageUrl:
-                'Furniture/CF/12_febpmz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784275/12_febpmz_edvqtt.webp',
             title: '',
             description:
                 'Modern office desk featuring a light-colored top complemented by sleek white and chrome legs, creating a contemporary and stylish aesthetic.',
@@ -66,7 +66,7 @@ function CommercialFurniture() {
         {
             id: 7,
             imageUrl:
-                'Furniture/CF/14_yyca6x',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784274/14_yyca6x_ew2zrm.webp',
             title: '',
             description:
                 'Ideal office chair with adjustable height and armrests and a dynamic chair back for superior support. Perfect for work from home/home office setups',
@@ -78,7 +78,7 @@ function CommercialFurniture() {
         {
             id: 1,
             imageUrl:
-                'Furniture/CF/15_zrilzh',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784275/15_zrilzh_ooc8tp.webp',
             title: '',
             description:
                 'Luxurious european l-shaped office desk with ample storage and reception counter. Ideal for office workstations',
@@ -86,7 +86,7 @@ function CommercialFurniture() {
         {
             id: 2,
             imageUrl:
-                'Furniture/CF/16_sdsm1z',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784275/16_sdsm1z_xkzfcp.webp',
             title: '',
             description:
                 'A modern office space with modular workstations with light-colored finishes on the desks and partitions contribute to a bright and airy feel, with  chairs',
@@ -94,7 +94,7 @@ function CommercialFurniture() {
         {
             id: 3,
             imageUrl:
-                'Furniture/CF/2_vbboni',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784263/2_vbboni_yksqgb.webp',
             title: '',
             description:
                 'stylish office cabin furniture with premium wooden oak, paired with compact chairs for ergonomic comfort ideal for comfortable and efficient workspace',
@@ -102,7 +102,7 @@ function CommercialFurniture() {
         {
             id: 4,
             imageUrl:
-                'Furniture/CF/6_kq3nv7',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784266/6_kq3nv7_txxzms.webp',
             title: '',
             description:
                 'A modern home office with high-quality wooden furniture with a sleek design, including a bookcase, desk, and wall cabinet with led light',
@@ -110,7 +110,7 @@ function CommercialFurniture() {
         {
             id: 5,
             imageUrl:
-                'Furniture/CF/5_iocwng',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784266/5_iocwng_jqll8h.webp',
             title: '',
             description:
                 'Luxurious modern office desk with sleek oak veneer and brushed  metal accents, perfect  professional workspace.',
@@ -118,7 +118,7 @@ function CommercialFurniture() {
         {
             id: 6,
             imageUrl:
-                'Furniture/CF/1_ujohk6',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784262/1_ujohk6_lpdvsl.webp',
             title: '',
             description:
                 'Office workstation with individual laminated desks in a rectangular layout with high-contrast color scheme ',
@@ -126,7 +126,7 @@ function CommercialFurniture() {
         {
             id: 7,
             imageUrl:
-                'Furniture/CF/3_oou8h0',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784264/3_oou8h0_zvgwou.webp',
             title: '',
             description:
                 'A modern office interior with sleek charcoal gray desk and the ergonomic supportive chair designs',
@@ -160,7 +160,7 @@ function CommercialFurniture() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of commercial furniture. From concept to installation, we create bespoke, functional, and stylish office and business furniture solutions. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/CommercialFurniture" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/commercial-furniture" data-react-helmet="true" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Commercial Furniture in Gurugram | Stylish & Functional – Adhunik Decodive" />
@@ -218,7 +218,7 @@ Furniture
                             <div className="relative h-80">
 
                                <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -269,7 +269,7 @@ Furniture
                             <div className="relative h-80">
 
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

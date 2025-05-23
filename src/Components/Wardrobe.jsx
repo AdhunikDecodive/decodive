@@ -62,7 +62,7 @@ function Wardrobe() {
             title: "Shutter Wardrobe",
             description:
                 "A clean and contemporary double-door wardrobes design with a neutral gray color and black handles",
-                link: "/ShutterDoorWardrobe",
+                link: "/shutter-door-wardrobe",
                 unique: true,
         },
         {
@@ -96,7 +96,7 @@ function Wardrobe() {
             title: "Shutter  Wardrobe ",
             description:
                 "Simple Shutter  Wardrobe with yellow and gray colored wood and silver handles.",
-                link: "/ShutterDoorWardrobe",
+                link: "/shutter-door-wardrobe",
         },
         // Add more card objects as needed
     ];
@@ -377,15 +377,16 @@ function Wardrobe() {
                         active
                         title={
                             <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs ">
+
                                      <AdvancedImage
+
               cldImg={cld.image('WardRobe/SDW/wr8-1709018266-CXd5t_17_11zon_1_cg5n77')}
-                height={70}
-                width={70}
                 className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="All Wardrobe Designs Category "
                 decoding="async"
                 effect="blur"
               
               />
+
                                
                                 All Category
                             </div>
@@ -461,7 +462,7 @@ function Wardrobe() {
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/ShutterDoorWardrobe'>
+                                    <Link to='/shutter-door-wardrobe'>
                                     <AdvancedImage
                 cldImg={cld.image(card.imageUrl)}
                 alt={card.description}

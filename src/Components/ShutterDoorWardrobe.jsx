@@ -25,7 +25,7 @@ function ShutterDoorWardrobe() {
         {
             id: 1,
             imageUrl:
-            'WardRobe/2DW/7_a47fb9',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787134/7_a47fb9_ndcqfx.webp',
             title: '',
             description:
                 ' Shutter  wardrobes with shades of green and white hue made of wooden dresser with three drawers.',
@@ -33,7 +33,7 @@ function ShutterDoorWardrobe() {
         {
             id: 2,
             imageUrl:
-            'WardRobe/2DW/8_hxhlwq',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788426/8_hxhlwq_unvxvc.webp',
             title: '',
             description:
                 'A shutter  wardrobe with a handleless design with a matte finish and reaches the ceiling for maximum storage space.',
@@ -41,7 +41,7 @@ function ShutterDoorWardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/2DW/10_swso5e',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787143/10_swso5e_uvw4yx.webp',
             title: '',
             description:
                 'A contemporary two white, shutter  wardrobes with gold-toned pulls a shelf unit for showcasing decorative objects.',
@@ -49,7 +49,7 @@ function ShutterDoorWardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/2DW/11_enjzqn',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788436/11_enjzqn_xine4q.webp',
             title: '',
             description:
                 'A clean and contemporary shutter  wardrobes design with a neutral gray color and black handles',
@@ -57,7 +57,7 @@ function ShutterDoorWardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/2DW/12_nlhxz5',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787150/12_nlhxz5_zyzbyw.webp',
             title: '',
             description:
                 'Simple shutter  wardrobes with yellow and gray colored wood and silver handles.',
@@ -65,7 +65,7 @@ function ShutterDoorWardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/2DW/14_meldw6',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788446/14_meldw6_vkxhcm.webp',
             title: '',
             description:
                 'The off-white shutter  wardrobes with drawers and a mirror made up of wood with a glossy finish.',
@@ -73,7 +73,7 @@ function ShutterDoorWardrobe() {
         {
             id: 7,
             imageUrl:
-            'WardRobe/2DW/15_n8tldp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788450/15_n8tldp_mjxl9v.webp',
             title: '',
             description:
                 'The built-in shutter  wardrobes with a smooth, laminate green finish with a contemporary, minimalist design.',
@@ -86,7 +86,7 @@ function ShutterDoorWardrobe() {
         {
             id: 1,
             imageUrl:
-            'WardRobe/2DW/16_y6ttql',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787163/16_y6ttql_xy6lim.webp',
             title: '',
             description:
                 'Wooden shutter  wardrobes design with chevron pattern and offer ample storage space creating geometric aesthetic.',
@@ -94,7 +94,7 @@ function ShutterDoorWardrobe() {
         {
             id: 2,
             imageUrl:
-            'WardRobe/2DW/17_dsisju',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787166/17_dsisju_zxsonf.webp',
             title: '',
             description:
                 'shutter  wardrobes with a lacquered finish forest green color and integrated pulls with a polished gold finish, with touch of sophistication. ',
@@ -102,7 +102,7 @@ function ShutterDoorWardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/2DW/2door_anczh8',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787118/2door_anczh8_ejew4y.webp',
             title: '',
             description:
                 'A pair of contemporary, shutter door wooden wardrobes with a natural wood finish reinforces the modern, minimalist aesthetic.',
@@ -110,7 +110,7 @@ function ShutterDoorWardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/2DW/19_uhtobz',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788478/19_uhtobz_ygevi4.webp',
             title: '',
             description:
                 'White shutter  wardrobes with a chevron pattern. Made for durability with high-quality laminated board and pvc edges. Gold metal handles add a touch of style.',
@@ -118,7 +118,7 @@ function ShutterDoorWardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/2DW/2_DOOR_iygeqp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787112/2_DOOR_iygeqp_geugi6.webp',
             title: '',
             description:
                 'Pair of built-in shutter  wardrobes with a white laminate finish and wooden panel with ample storage capacity.',
@@ -126,7 +126,7 @@ function ShutterDoorWardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/2DW/21_mhqbgn',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788247/21_mhqbgn_coobjp.webp',
             title: '',
             description:
                 'Wooden shutter  wardrobe with a glossy finish offering a sleek and contemporary aesthetic look',
@@ -134,7 +134,7 @@ function ShutterDoorWardrobe() {
         {
             id: 7,
             imageUrl:
-            'WardRobe/2DW/13_pdrznd',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788443/13_pdrznd_bukmze.webp',
             title: '',
             description:
                 ' Shutter  wardrobes with shades of green and white hue made of wooden dresser with three drawers.',
@@ -156,7 +156,7 @@ function ShutterDoorWardrobe() {
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         
-  <link rel="canonical" href="https://adhunikdecodive.com/ShutterDoorWardrobe" data-react-helmet="true"/>
+  <link rel="canonical" href="https://adhunikdecodive.com/shutter-door-wardrobe" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Shutter Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
@@ -209,7 +209,7 @@ function ShutterDoorWardrobe() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -259,7 +259,7 @@ function ShutterDoorWardrobe() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

@@ -79,6 +79,7 @@ function SlidingDoorWardrobe() {
 
         // Add more card objects as needed
     ];
+
     const P2cardData = [
         {
             id: 1,
@@ -137,6 +138,7 @@ function SlidingDoorWardrobe() {
                 'Sliding wardrobe with geometric chevron design in cherry red on lacquered glass doors adding a touch of elegance and contemporary style.',
         },
     ];
+    
     const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
 
     return (
