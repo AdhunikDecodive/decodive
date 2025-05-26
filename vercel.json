@@ -34,7 +34,7 @@
             "dest": "/"
         },
         {
-            "src": "/Wardrobe",
+            "src": "/wardrobes",
             "dest": "/"
         },
         {
@@ -46,11 +46,11 @@
             "dest": "/"
         },
         {
-            "src": "/SlidingDoorWardrobe",
+            "src": "/sliding-door-wardrobes",
             "dest": "/"
         },
         {
-            "src": "/WalkDoorWardrobe",
+            "src": "/Walk-in-door-wardrobes",
             "dest": "/"
         },
         {
@@ -66,15 +66,15 @@
             "dest": "/"
         },
         {
-            "src": "/HomeDecor",
+            "src": "/home-decors",
             "dest": "/"
         },
         {
-            "src": "/MirrorsDecor",
+            "src": "/mirrors",
             "dest": "/"
         },
         {
-            "src": "/WallDecor",
+            "src": "/wall-decor",
             "dest": "/"
         },
         {

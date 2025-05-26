@@ -9,16 +9,15 @@ import PhoneCallButton from "./PhoneCallButton";
 import ModalNew from "./ModalNew";
 import { useState } from "react";
 
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
 
 
 function WallDecor() {
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
 
+    
     const [openModal, setOpenModal] = useState(false);
 
     const toggleModal = () => {
@@ -30,7 +29,7 @@ function WallDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/WallD/7_b7vhhc',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785548/7_b7vhhc_fmvlzf.webp',
             title: '',
             description:
                 'Circular Seagrass Woven Mirror Wall Decor',
@@ -38,7 +37,7 @@ function WallDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/WallD/8_pritxx',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785551/8_pritxx_t5x4qj.webp',
             title: '',
             description:
                 'Chic Boho Dreamcatcher ',
@@ -46,7 +45,7 @@ function WallDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/WallD/9_rxvhon',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785553/9_rxvhon_jmckpx.webp',
             title: '',
             description:
                 'Set of three gold metal ginkgo leaves',
@@ -54,7 +53,7 @@ function WallDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/WallD/10_xrusxb',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785555/10_xrusxb_d0uzhv.webp',
             title: '',
             description:
                 'Contemporary Wall Art with Mirrors and Butterflies',
@@ -62,7 +61,7 @@ function WallDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/WallD/11_ibyyhv',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785557/11_ibyyhv_vxvoxv.webp',
             title: '',
             description:
                 'Metal Branch Silhouette for Wall Décor',
@@ -70,7 +69,7 @@ function WallDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/WallD/12_di11ms',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785559/12_di11ms_cuejrb.webp',
             title: '',
             description:
                 'Gold Metal Wall Art Decor',
@@ -78,19 +77,19 @@ function WallDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/WallD/14_laylub',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785565/14_laylub_tyldgc.webp',
             title: '',
             description:
                 'Charcoal & Copper Geometric Wall design ',
         },
 
-        // Add more card objects as needed
+       
     ];
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-                'HomeDecor/WallD/1_xqauoo',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785535/1_xqauoo_vqphtm.webp',
             title: '',
             description:
                 'Vibrant Floral Mural Wallpaper',
@@ -98,7 +97,7 @@ function WallDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/WallD/2_nikxdc',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785537/2_nikxdc_t2c1h0.webp',
             title: '',
             description:
                 'Trio of Rustic Wooden Wall Hangings.',
@@ -106,7 +105,7 @@ function WallDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/WallD/15_nwrkzy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785567/15_nwrkzy_zqrmnj.webp',
             title: '',
             description:
                 'Whimsical Wall sticker, cats on a Branch',
@@ -114,7 +113,7 @@ function WallDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/WallD/4_t5ayax',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785542/4_t5ayax_zyr6ib.webp',
             title: '',
             description:
                 ' 3D effect with blue squares minimalist wall paper design ',
@@ -122,7 +121,7 @@ function WallDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/WallD/16_gtxjsd',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785568/16_gtxjsd_jbto10.webp',
             title: '',
             description:
                 'A modern wooden wall shelf',
@@ -130,7 +129,7 @@ function WallDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/WallD/17_f5c53m',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785571/17_f5c53m_w4j235.webp',
             title: '',
             description:
                 'Smaller, decorative wind chimes',
@@ -138,7 +137,7 @@ function WallDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/WallD/18_dnxjpe',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785573/18_dnxjpe_urlwia.webp',
             title: '',
             description:
                 'Wooden Art Wall Decor for Home',
@@ -157,7 +156,7 @@ function WallDecor() {
 
 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
 
-<link rel="canonical" href="https://adhunikdecodive.com/WallDecor" data-react-helmet="true"/> 
+<link rel="canonical" href="https://adhunikdecodive.com/wall-decor" data-react-helmet="true"/> 
 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Wall Decor Designs in Gurugram | Adhunik Decodive" />
@@ -212,7 +211,7 @@ function WallDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+             src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -262,8 +261,7 @@ function WallDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
-               alt={card.description}
+            src={card.imageUrl}  alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}

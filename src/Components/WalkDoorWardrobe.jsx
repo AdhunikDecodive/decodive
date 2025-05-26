@@ -5,8 +5,7 @@ import { Helmet } from "react-helmet-async";
 import ModalNew from './ModalNew';
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 
 function WalkDoorWardrobe() {
@@ -25,7 +24,7 @@ function WalkDoorWardrobe() {
         {
             id: 1,
             imageUrl:
-            'WardRobe/WIW/wardrobe_rvezwk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241044/1_g2mb9b.webp',
             title: '',
             description:
                 'A spacious walk-in closet with custom light wood cabinets and drawers. Center island for additional storage creating a well-organized look.',
@@ -33,7 +32,7 @@ function WalkDoorWardrobe() {
         {
             id: 2,
             imageUrl:
-            'WardRobe/WIW/walk-in_11zon_jdbhyk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241045/2_j2baem.webp',
             title: '',
             description:
                 ' walk-in closet with a cool blue paint finish with open compartments and a large mirror r a space-saving and functional design.',
@@ -41,7 +40,7 @@ function WalkDoorWardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/WIW/9_tuay7q',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241048/3_nwyacp.webp',
             title: '',
             description:
                 'A contemporary walk-in closet design with white closet doors and gold hardware for ample storage with built-in drawers, shelves. ',
@@ -49,7 +48,7 @@ function WalkDoorWardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/WIW/10_ziq668',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241051/4_mundsx.webp',
             title: '',
             description:
                 'The walk-in closet with dark brown wooden shelves and drawers providing ample storage and sophisticated look.',
@@ -57,7 +56,7 @@ function WalkDoorWardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/WIW/walk-in_gez9bc',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241054/5_avvmze.webp',
             title: '',
             description:
                 'A well-organized walk-in closet with shelves, drawers likely made from a classic wood for durability and timeless style. For clean and sophisticated touch.',
@@ -65,7 +64,7 @@ function WalkDoorWardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/WIW/w3_w0ncwb',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241057/6_z4knt4.webp',
             title: '',
             description:
                 'A large walk-in closet with a light wood finish with plenty of shelves and drawers for storage for clean and airy aesthetic.',
@@ -73,7 +72,7 @@ function WalkDoorWardrobe() {
         {
             id: 7,
             imageUrl:
-            'WardRobe/WIW/14_ahh29z',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241060/7_ah0nhr.webp',
             title: '',
             description:
                 'The walk-in closets with classic materials like cherry rich include a cozy vanity corner for a touch of glamour and trendy design.',
@@ -86,7 +85,7 @@ function WalkDoorWardrobe() {
         {
             id: 1,
             imageUrl:
-            'WardRobe/WIW/15_a6t2ji',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241079/8_qllqws.webp',
             title: '',
             description:
                 'A large walk-in closet with sliding glass doors made of light colored woodgrain finish maintaining a sleek and modern aesthetic.',
@@ -94,7 +93,7 @@ function WalkDoorWardrobe() {
         {
             id: 2,
             imageUrl:
-            'WardRobe/WIW/16_cd866g',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241082/9_z3u4pm.webp',
             title: '',
             description:
                 'A minimalist Scandinavian walk-in closet with light wood tones, clean lines, and uncluttered storage, reflecting the Scandinavian design aesthetic.',
@@ -102,7 +101,7 @@ function WalkDoorWardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/WIW/2_unk5jg',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241085/10_xguaxf.webp',
             title: '',
             description:
                 ' spacious custom walk-in closets with white wood shelves, drawers and hanging light all in sleek finish.',
@@ -110,7 +109,7 @@ function WalkDoorWardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/WIW/6_wvlx4a',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241089/11_zcxi9a.webp',
             title: '',
             description:
                 'A luxurious walk-in closet featuring a built-in dressing table with a mirror. A white wood finish offers sleek storage with drawers, shelves.',
@@ -118,7 +117,7 @@ function WalkDoorWardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/WIW/5_bjt61c',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241092/12_f83ibb.webp',
             title: '',
             description:
                 '  Spacious and well-organized a white walk-in closet with shelves, drawers and hanging rails.',
@@ -126,7 +125,7 @@ function WalkDoorWardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/WIW/4_a2wzb4',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241095/13_cg3uyw.webp',
             title: '',
             description:
                 'A contemporary walk-in closet made from high-grade wood. With a combination of drawers and shelves integrated with led light for visually appealing space.',
@@ -134,14 +133,13 @@ function WalkDoorWardrobe() {
         {
             id: 7,
             imageUrl:
-            'WardRobe/WIW/3_kl8ik5',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp',
             title: '',
             description:
                 'Luxurious walk-in wardrobe with sleek white wood finish for seamless blend of style and functionality.',
         },
     ];
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     return (
         
         <>
@@ -155,7 +153,7 @@ function WalkDoorWardrobe() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of walk-in wardrobe designs. From concept to installation, we create bespoke, functional, and luxurious wardrobes. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/WalkDoorWardrobe" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/Walk-in-door-wardrobes" data-react-helmet="true" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Walk-in Wardrobe Designs in Gurugram | Spacious & Stylish – Adhunik Decodive" />
@@ -210,8 +208,8 @@ function WalkDoorWardrobe() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
-              alt={card.description}
+               src={card.imageUrl} 
+                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -260,7 +258,7 @@ function WalkDoorWardrobe() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

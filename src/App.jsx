@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-// import LandingPage from "./Components/LandingPage"
+ 
 import Headroom from "react-headroom";
 import LandingPage from "./Components/LandingPage";
 import ContactUs from "./Components/ContactUs";
@@ -90,17 +90,17 @@ function App() {
         <Route path="/parallel-modular-kitchen-design" element={<PshapeKitchen />} />
         <Route path="/ishapekitchen" element={<IshapeKitchen />} />
         <Route path="/straight-modular-kitchen" element={<SshapeKitchen />} />
-        <Route path="/wardrobe" element={<Wardrobe />} />
+        <Route path="/wardrobes" element={<Wardrobe />} />
         <Route path="/VastuTips" element={<VastuTips />} />
         <Route path="/shutter-door-wardrobe" element={<ShutterDoorWardrobe />} />
-        <Route path="/slidingdoorwardrobe" element={<SlidingDoorWardrobe />} />
-        <Route path="/walkdoorwardrobe" element={<WalkDoorWardrobe />} />
+        <Route path="/sliding-door-wardrobes" element={<SlidingDoorWardrobe />} />
+        <Route path="/Walk-in-door-wardrobes" element={<WalkDoorWardrobe />} />
         <Route path="/furniture-categories" element={<Furniture />} />
         <Route path="/domestic-furniture" element={<DomesticFurniture />} />
         <Route path="/commercial-furniture" element={<CommercialFurniture />} />
-        <Route path="/homedecor" element={<HomeDecor />} />
-        <Route path="/mirrorsdecor" element={<MirrorsDecor />} />
-        <Route path="/walldecor" element={<WallDecor />} />
+        <Route path="/home-decors" element={<HomeDecor />} />
+        <Route path="/mirrors" element={<MirrorsDecor />} />
+        <Route path="/wall-decor" element={<WallDecor />} />
         <Route path="/vasesdecor" element={<VasesDecor />} />
         <Route path="/clocksdecor" element={<ClocksDecor />} />
         <Route path="/wallpaintingdecor" element={<WallPaintingDecor />} />

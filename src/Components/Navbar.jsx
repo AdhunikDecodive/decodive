@@ -74,10 +74,10 @@ function Navbar() {
             to: '#',
             text: 'Wardrobe',
             dropdownItems: [
-                { to: '/Wardrobe', text: 'All Wardrobe Categories' },
+                { to: '/wardrobes', text: 'All Wardrobe Categories' },
                 { to: '/shutter-door-wardrobe', text: 'Shutter  Wardrobe' },
-                { to: '/SlidingDoorWardrobe', text: 'Sliding  Wardrobe' },
-                { to: '/WalkDoorWardrobe', text: 'Walk in Wardrobe' },
+                { to: '/sliding-door-wardrobes', text: 'Sliding  Wardrobe' },
+                { to: '/Walk-in-door-wardrobes', text: 'Walk in Wardrobe' },
 
             ],
         },
@@ -95,9 +95,9 @@ function Navbar() {
             to: '#',
             text: 'Home Decor',
             dropdownItems: [
-                { to: '/HomeDecor', text: 'All Categories' },
-                { to: '/MirrorsDecor', text: 'Mirrors' },
-                { to: '/WallDecor', text: 'Wall Decor' },
+                { to: '/home-decors', text: 'All Categories' },
+                { to: '/mirrors', text: 'Mirrors' },
+                { to: '/wall-decor', text: 'Wall Decor' },
                 { to: '/VasesDecor', text: 'Vases' },
                 { to: '/ClocksDecor', text: 'Clocks' },
                 { to: '/WallPaintingDecor', text: 'Wall Painting' },
@@ -249,7 +249,7 @@ function Navbar() {
                                     label="Wardrobe"
                                     inline
                                 >
-                                    <Link to="/Wardrobe">
+                                    <Link to="/wardrobes">
                                         <Dropdown.Item>
                                             All Wardrobe Categories
                                         </Dropdown.Item>
@@ -260,12 +260,12 @@ function Navbar() {
                                             Shutter  Wardrobe
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/SlidingDoorWardrobe">
+                                    <Link to="/sliding-door-wardrobes">
                                         <Dropdown.Item>
                                             Sliding  Wardrobe
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/WalkDoorWardrobe">
+                                    <Link to="/Walk-in-door-wardrobes">
                                         <Dropdown.Item>
                                             Walk in Wardrobe
                                         </Dropdown.Item>
@@ -301,7 +301,7 @@ function Navbar() {
 
                             <li>
                             <Dropdown label="Home Decor" inline>
-    <Link to="/HomeDecor">
+    <Link to="/home-decors">
         <div className="text-center justify-center flex">
             <Dropdown.Item className="w-full">
                 All Categories
@@ -311,12 +311,12 @@ function Navbar() {
     <div className="row flex w-64">
         <div className="w-6/12 flex">
             <ul>
-                <Link to="/MirrorsDecor">
+                <Link to="/mirrors">
                     <Dropdown.Item>
                         Mirrors
                     </Dropdown.Item>
                 </Link>
-                <Link to="/WallDecor">
+                <Link to="/wall-decor">
                     <Dropdown.Item>
                         Wall Decor
                     </Dropdown.Item>

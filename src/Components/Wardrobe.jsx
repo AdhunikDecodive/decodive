@@ -18,8 +18,8 @@ import { useState } from "react";
 import PopUp from "./PopUp";
 import { Link } from "react-router-dom";
 
-import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
+ 
+import { AdvancedImage } from '@cloudinary/react';
 
 function Wardrobe() {
 
@@ -27,16 +27,16 @@ function Wardrobe() {
 
     const toggleModal = () => {
         setOpenModal(!openModal);
-      };
+    };
 
     useGSAP(() => {
-        // gsap code here...
 
         gsap.from(".box", {
             x: 360,
             stagger: .03,
 
         });
+
 
     });
 
@@ -48,102 +48,101 @@ function Wardrobe() {
     const AllcardData = [
         {
             id: 1,
-            imageUrl: 'WardRobe/WIW/4_a2wzb4',
-            title: " Walk in Wardrobe ",
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp',
+            title: "Walk in Wardrobe ",
             description:
                 "Compact Walk in Wardrobe with mirror front and side shelf. Ideal for small rooms, contemporary style.",
-                link: "/WalkDoorWardrobe",
-                unique: true,
+            link: "/Walk-in-door-wardrobes",
+            unique: true,
         }
         ,
         {
             id: 2,
-            imageUrl: 'WardRobe/2DW/11_enjzqn',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787140/9_pck731_agwpa6.webp',
             title: "Shutter Wardrobe",
             description:
                 "A clean and contemporary double-door wardrobes design with a neutral gray color and black handles",
-                link: "/shutter-door-wardrobe",
-                unique: true,
+            link: "/shutter-door-wardrobe",
+            unique: true,
         },
         {
             id: 3,
-            imageUrl: 'WardRobe/SDW/4_xeqbnl',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239652/wr8-1709018266-CXd5t_17_11zon_1_cg5n77_ixcpn0.webp',
             title: "Sliding  Wardrobe",
             description:
                 "Contemporary wardrobe with three sliding doors with a white laminate finish for a sleek and modern design",
-                link: "/SlidingDoorWardrobe",
+            link: "/sliding-door-wardrobes",
         },
         {
             id: 4,
-            imageUrl: 'WardRobe/WIW/1_vnjzn3',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241117/20_ohlmrl.webp',
             title: "Walk in Door Wardrobe",
-            description:
-                "Modern walk-in wardrobe with shelves, drawers, and hanging rods, accented with gray trim.",
-                link: "/WalkDoorWardrobe",
+            description: "Modern walk-in wardrobe with shelves, drawers, and hanging rods, accented with gray trim.",
+            link: "/Walk-in-door-wardrobes",
         },
         {
             id: 5,
-            imageUrl: 'WardRobe/SDW/8_wrsurk',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239641/11_jteifh_igjgq6.webp',
             title: "Sliding Wardrobe",
             description:
                 "The Sliding Wardrobe with clean, white finish with a full-length mirror space-saving storage solution.",
-                link: "/SlidingDoorWardrobe",
-                unique:true,
+            link: "/sliding-door-wardrobes",
+            unique: true,
         },
         {
             id: 6,
-            imageUrl: 'WardRobe/2DW/12_nlhxz5',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787112/2_DOOR_iygeqp_geugi6.webp',
             title: "Shutter  Wardrobe ",
             description:
                 "Simple Shutter  Wardrobe with yellow and gray colored wood and silver handles.",
-                link: "/shutter-door-wardrobe",
+            link: "/shutter-door-wardrobe",
         },
-        // Add more card objects as needed
+        
     ];
 
-   
+
 
     const UcardData = [
         {
             id: 1,
             imageUrl:
-            'WardRobe/2DW/1_pwrzx0',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788263/22_itwnc3_yxqtkc.webp',
             title: "",
             description:
                 "The built-in 2- door wardrobes ,white laminate finish with concealed closures. Creating a streamlined and contemporary storage solution.",
-                unique:true,
+            unique: true,
         },
         {
             id: 2,
             imageUrl:
-                 'WardRobe/2DW/2_ng4fq6',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788247/21_mhqbgn_coobjp.webp',
             title: "",
             description:
                 "White Shutter wardrobes with stripes and concealed closures for a clean, modern look that complements the bedroom's style",
-                unique:true,
+            unique: true,
         },
         {
             id: 3,
             imageUrl:
-            'WardRobe/2DW/3_prc8lp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788245/20_ynxzl7_su8usi.webp',
             title: "",
             description:
                 "Stylish gray Shutter wardrobe with matte finish. Additional corner storage for versatility. Elevate your bedroom with practicality and sophistication",
-                unique:true,
+            unique: true,
         },
         {
             id: 4,
             imageUrl:
-            'WardRobe/2DW/4_finfow',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787170/18_gx25rn_uin0fb.webp',
             title: "",
             description:
                 " The white wardrobes with a circular motif embossed on the doors, creating a visually interesting element in the space. ",
-                unique:true,
+            unique: true,
         },
         {
             id: 5,
             imageUrl:
-            'WardRobe/2DW/5_vlpb5h',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787166/17_dsisju_zxsonf.webp',
             title: "",
             description:
                 "The Shutter wardrobe  with a minimalist design with a wooden frame and a horizontal panel configuration.",
@@ -151,7 +150,7 @@ function Wardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/2DW/6_ffvxs1',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746787163/16_y6ttql_xy6lim.webp',
             title: "",
             description:
                 "Modern Shutter wardrobe with a mirrored front offers stylish storage for clothes and belongings.",
@@ -159,21 +158,24 @@ function Wardrobe() {
         // Add more card objects as needed
     ];
 
+
+
+
     const PcardData = [
         {
             id: 1,
             imageUrl:
-            'WardRobe/SDW/1_au0nwo',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239649/17_1_u32jdj_rjhaod.webp',
             title: "",
             description:
                 "Sliding  wardrobes with two cherry red doors for smooth access to the interior and maintaining a clean and contemporary aesthetic",
-                unique:true,
-                
+            unique: true,
+
         },
         {
             id: 2,
             imageUrl:
-            'WardRobe/SDW/2_eu0v3u',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239648/16_wknork_ax1blg.webp',
             title: "",
             description:
                 "The sliding wardrobes with white laminate doors that span from floor to ceiling for a modern, minimalist look.",
@@ -181,7 +183,7 @@ function Wardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/SDW/3_oqckqp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239645/15_ucg5gv_fisniw.webp',
             title: "",
             description:
                 "Sliding wardrobe with geometric chevron design in cherry red on lacquered glass doors adding a touch of elegance and contemporary style.",
@@ -189,7 +191,7 @@ function Wardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/SDW/4_xeqbnl',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239644/14_uwgozu_ztg7tf.webp',
             title: "",
             description:
                 "The beige sliding wardrobe design with three doors made up of plywood with a polished finish adds a touch of sophistication.",
@@ -197,7 +199,7 @@ function Wardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/SDW/5_sxergk',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239637/9_ya6jlf_wyf9ek.webp',
             title: "",
             description:
                 "A contemporary sliding wardrobe design two sliding doors with alternating opaque white and sunshine yellow panels for a modern and colorful accent",
@@ -205,7 +207,7 @@ function Wardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/SDW/6_h7y5hp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239640/10_fnqni2_ahxaog.webp',
             title: "",
             description:
                 " Sliding wardrobe design with a Shutter, floor-to-ceiling panel configuration with a lacquered glass finish. And a black, metal trim.",
@@ -217,7 +219,7 @@ function Wardrobe() {
         {
             id: 1,
             imageUrl:
-                'WardRobe/WIW/17_rwcli5',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241120/21_uewnvj.webp',
             title: "",
             description:
                 "A large,custom walk-in closet with a central island that includes clothing storage and a bench offering a functional and stylish design element.",
@@ -225,7 +227,7 @@ function Wardrobe() {
         {
             id: 2,
             imageUrl:
-                'WardRobe/WIW/2_unk5jg',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241113/19_o89g8u.webp',
             title: "",
             description:
                 "A minimalist Scandinavian walk-in closet with light wood tones, clean lines, and uncluttered storage, reflecting the Scandinavian design aesthetic.",
@@ -233,7 +235,7 @@ function Wardrobe() {
         {
             id: 3,
             imageUrl:
-                'WardRobe/WIW/3_kl8ik5',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241110/18_wgcoc0.webp',
             title: "",
             description:
                 "A contemporary walk-in closet made from high-grade wood. With a combination of drawers and shelves integrated with led light for visually appealing space.",
@@ -241,7 +243,7 @@ function Wardrobe() {
         {
             id: 4,
             imageUrl:
-                'WardRobe/WIW/4_a2wzb4',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241107/17_nexx5h.webp',
             title: "",
             description:
                 "Spacious and well-organized a white walk-in closet with shelves, drawers and hanging rails.",
@@ -249,7 +251,7 @@ function Wardrobe() {
         {
             id: 5,
             imageUrl:
-                'WardRobe/WIW/5_bjt61c',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241104/16_bz8ghu.webp',
             title: "",
             description:
                 "Elegant walk-in closet with built-in dressing table, mirror, and white wood finish for chic storage.",
@@ -257,7 +259,7 @@ function Wardrobe() {
         {
             id: 6,
             imageUrl:
-                'WardRobe/WIW/6_wvlx4a',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241095/13_cg3uyw.webp',
             title: "",
             description:
                 "Spacious custom walk-in closets with white wood shelves, drawers and hanging light all in sleek finish.",
@@ -265,9 +267,8 @@ function Wardrobe() {
         // Add more card objects as needed
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-  
     
+
 
 
     return (
@@ -276,37 +277,40 @@ function Wardrobe() {
 
 
 
-<Helmet>
+            <Helmet>
 
-<title>Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive</title>
+                <title>Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive</title>
 
-<meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wardrobe designs in Gurugram with Adhunik Decodive. Explore 1-door, 2-door, sliding, and walk-in wardrobes customized for style and efficiency. Get a free consultation today!" />
+                <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wardrobe designs in Gurugram with Adhunik Decodive. Explore 1-door, 2-door, sliding, and walk-in wardrobes customized for style and efficiency. Get a free consultation today!" />
 
-<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-<link rel="canonical" href="https://adhunikdecodive.com/Wardrobe" data-react-helmet="true" />
-<meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
-<meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+                <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+                <link rel="canonical" href="https://adhunikdecodive.com/wardrobes" data-react-helmet="true" />
+                <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+                <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
-<meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
-<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wardrobe designs, Shutter Wardrobe, sliding wardrobe, walk-in wardrobe, best wardrobes in Gurugram, modern wardrobe layouts, custom wardrobe designs, wardrobe renovation Gurugram, Adhunik Decodive interiors" />
-<meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
-<meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-<meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+                <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
+                <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wardrobe designs, Shutter Wardrobe, sliding wardrobe, walk-in wardrobe, best wardrobes in Gurugram, modern wardrobe layouts, custom wardrobe designs, wardrobe renovation Gurugram, Adhunik Decodive interiors" />
+                <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+                <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+                <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
+                <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
 
-<meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your home with Adhunik Decodive's best wardrobe designs in Gurugram. Choose from stylish 1-door, 2-door, sliding, and walk-in wardrobes tailored for modern homes. Book a free consultation today!" />
+                <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your home with Adhunik Decodive's best wardrobe designs in Gurugram. Choose from stylish 1-door, 2-door, sliding, and walk-in wardrobes tailored for modern homes. Book a free consultation today!" />
 
-<meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/wardrobe-category"></meta>
-<meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Experts" />
-<meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
-<meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore space-efficient and stylish wardrobe designs in Gurugram by Adhunik Decodive. From 1-door and 2-door to sliding and walk-in wardrobes, we craft modern storage solutions. Get a free consultation today!" />
-{/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
+                <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/wardrobe-category">
+                </meta>
 
-</Helmet>
+                <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Experts" />
+                <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
+                <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore space-efficient and stylish wardrobe designs in Gurugram by Adhunik Decodive. From 1-door and 2-door to sliding and walk-in wardrobes, we craft modern storage solutions. Get a free consultation today!" />
+                {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
 
-  <PopUp/>
-<ModalNew  isOpen={openModal} onClose={toggleModal}  />
-      
+            </Helmet>
+
+            <PopUp />
+
+            <ModalNew isOpen={openModal} onClose={toggleModal} />
+
             <div className="w-auto  bg-white p-5">
                 <div className="h-full w-full ">
                     <div className="video_container "></div>
@@ -316,14 +320,14 @@ function Wardrobe() {
                     </div>
 
                     <div className="row flex relative ">
-                        
+
                         <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746610731/Wardrobe_category_bbbltk.webp"
-                alt="Wardrobes that Reflects your Style Unveil Our Latest Design Collection!  " 
-                 className="   relative   h-[86vh]  md:h-[55vh] w-full object-cover rounded-lg "
-              />
+                            alt="Wardrobes that Reflects your Style Unveil Our Latest Design Collection!  "
+                            className="   relative   h-[86vh]  md:h-[55vh] w-full object-cover rounded-lg "
+                        />
                         <div className="w-full  h-full p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row-reverse  md:text-center  items-center mx-auto  absolute">
                             <p className=" h-full  text-white text-3xl flex-col flex my-auto justify-center items-center ">
-                               
+
                             </p>
 
                             <div className="w-fit border-cyan-500 border-[1px] rounded-lg text-center p-5 bg-[#fffffb]">
@@ -349,12 +353,12 @@ function Wardrobe() {
                                 </p>
 
                                 <button onClick={toggleModal} className=" mt-3 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#8F664E] rounded-full shadow-md group">
-<span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#8F664E] duration-300 -translate-x-full bg-[#eae5e3] group-hover:translate-x-0 ease">
-<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-</span>
-<span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease   font-extrabold bg-[#8F664E]">   Book Free Consultation</span>
-<span className="relative invisible font-extrabold">   Book Free Consultation</span>
-</button>
+                                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#8F664E] duration-300 -translate-x-full bg-[#eae5e3] group-hover:translate-x-0 ease">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                    </span>
+                                    <span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease   font-extrabold bg-[#8F664E]">   Book Free Consultation</span>
+                                    <span className="relative invisible font-extrabold">   Book Free Consultation</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -378,16 +382,16 @@ function Wardrobe() {
                         title={
                             <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs ">
 
-                                     <AdvancedImage
+                                <AdvancedImage
 
-              cldImg={cld.image('WardRobe/SDW/wr8-1709018266-CXd5t_17_11zon_1_cg5n77')}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="All Wardrobe Designs Category "
-                decoding="async"
-                effect="blur"
-              
-              />
+                                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1748239650/sw_vvrgby_rm4rr8.webp"
+                                    className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="All Wardrobe Designs Category "
+                                    decoding="async"
+                                    effect="blur"
 
-                               
+                                />
+
+
                                 All Category
                             </div>
                         }
@@ -399,17 +403,17 @@ function Wardrobe() {
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to={card.link}>
+                                        <Link to={card.link}>
 
-                                    <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
-                alt={card.description}
-                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-              /> 
-                                 
+                                            <AdvancedImage
+                                                src={card.imageUrl}
+                                                alt={card.description}
+                                                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+                                                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+                                            />
 
-                                    </Link>
+
+                                        </Link>
                                     </div>
                                     <div className="p-6">
                                         <h2 className="text-base font-medium text-blue-gray-900 mb-2">
@@ -419,15 +423,15 @@ function Wardrobe() {
                                             {card.description}
                                         </p>
                                         <div className="flex justify-between">
-                                                <PhoneCallButton />
-                                                   <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-</button>
+                                            <PhoneCallButton />
+                                            <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                                                <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+                                                <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -435,22 +439,22 @@ function Wardrobe() {
                         </div>
                     </Tabs.Item>
 
-                   
+
                     <Tabs.Item
                         title={
                             <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-                               
-                               <AdvancedImage
-              cldImg={cld.image('WardRobe/2DW/2_ng4fq6')}
-                height={70}
-                width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Shutter Wardrobe"
-                decoding="async"
-                effect="blur"
-              
-              />
-              
-                                
+
+                                <AdvancedImage
+                               src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746787127/5_vlpb5h_ouesep.webp"
+                                    height={70}
+                                    width={70}
+                                    className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Shutter Wardrobe"
+                                    decoding="async"
+                                    effect="blur"
+
+                                />
+
+
                                 Shutter Wardrobe
                             </div>
                         }
@@ -462,14 +466,16 @@ function Wardrobe() {
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/shutter-door-wardrobe'>
-                                    <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
-                alt={card.description}
-                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-              /> 
-                                    </Link>
+                                        <Link to='/shutter-door-wardrobe'>
+
+                                            <AdvancedImage
+                                                src={card.imageUrl}
+                                                alt={card.description}
+                                                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+                                                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+                                            />
+                                            
+                                        </Link>
                                     </div>
                                     <div className="p-6">
                                         <h2 className="text-base font-medium text-blue-gray-900 mb-2">
@@ -479,15 +485,15 @@ function Wardrobe() {
                                             {card.description}
                                         </p>
                                         <div className="flex justify-between">
-                                                <PhoneCallButton />
-                                                   <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-</button>
+                                            <PhoneCallButton />
+                                            <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                                                <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+                                                <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -498,17 +504,17 @@ function Wardrobe() {
                     <Tabs.Item
                         title={
                             <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-                               
-                               <AdvancedImage
-              cldImg={cld.image('WardRobe/SDW/6_h7y5hp')}
-                height={70}
-                width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Sliding Wardrobe"
-                decoding="async"
-                effect="blur"
-              
-              />
-              
+
+                                <AdvancedImage
+                                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1748239629/2_eu0v3u_yxnhtx.webp" 
+                                  height={70}
+                                    width={70}
+                                    className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Sliding Wardrobe"
+                                    decoding="async"
+                                    effect="blur"
+
+                                />
+
                                 Sliding Wardrobe
                             </div>
                         }
@@ -520,14 +526,14 @@ function Wardrobe() {
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/SlidingDoorWardrobe'>
-                                    <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
-                alt={card.description}
-                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-              /> 
-                                    </Link>
+                                        <Link to='/sliding-door-wardrobes'>
+                                            <AdvancedImage
+                                                src={card.imageUrl}
+                                                alt={card.description}
+                                                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+                                                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="p-6">
                                         <h2 className="text-base font-medium text-blue-gray-900 mb-2">
@@ -537,15 +543,15 @@ function Wardrobe() {
                                             {card.description}
                                         </p>
                                         <div className="flex justify-between">
-                                                <PhoneCallButton />
-                                                   <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-</button>
+                                            <PhoneCallButton />
+                                            <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                                                <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+                                                <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -556,17 +562,17 @@ function Wardrobe() {
                     <Tabs.Item
                         title={
                             <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-                             
-                             <AdvancedImage
-              cldImg={cld.image('WardRobe/WIW/14_ahh29z')}
-                height={70}
-                width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt=" Walk in Wardrobe"
-                decoding="async"
-                effect="blur"
-              
-              />
-                
+
+                                <AdvancedImage
+                                 src="https://res.cloudinary.com/dq14b7xie/image/upload/v1748241101/15_zish43.webp"
+                                   height={70}
+                                    width={70}
+                                    className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt=" Walk in Wardrobe"
+                                    decoding="async"
+                                    effect="blur"
+                                />
+
+
                                 Walk in Wardrobe
                             </div>
                         }
@@ -578,15 +584,17 @@ function Wardrobe() {
                                     className="group relative cursor-pointer items-center justify-center  transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
                                 >
                                     <div className="relative h-80 overflow-hidden">
-                                    <Link to='/WalkDoorWardrobe'>
-                                    <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
-                alt={card.description}
-                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-              /> 
-                                    </Link>
+                                        <Link to='/Walk-in-door-wardrobes'>
+                                            <AdvancedImage
+                                                src={card.imageUrl}
+                                                alt={card.description}
+                                                className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+                                                style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+                                            />
+                                        </Link>
                                     </div>
+
+
                                     <div className="p-6">
                                         <h2 className="text-base font-medium text-blue-gray-900 mb-2">
                                             {card.title}
@@ -595,17 +603,19 @@ function Wardrobe() {
                                             {card.description}
                                         </p>
                                         <div className="flex justify-between">
-                                                <PhoneCallButton />
-                                                   <button   onClick={toggleModal}  className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-<span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-<span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-<span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-</button>
+                                            <PhoneCallButton />
+                                            <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                                                <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                                                <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                                                <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+                                                <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
+                                            </button>
                                         </div>
                                     </div>
+
+
                                 </div>
                             ))}
                         </div>
@@ -613,9 +623,9 @@ function Wardrobe() {
 
                 </Tabs>
             </div>
-            
-            </>
-        
+
+        </>
+
     )
 }
 

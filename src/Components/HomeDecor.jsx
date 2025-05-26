@@ -49,7 +49,7 @@ function HomeDecor() {
             title: "Mirrors",
             description:
                 "A decorative round mirror with a gleaming gold frame.",
-            link: "/MirrorsDecor",
+            link: "/mirrors",
             unique: true,
         },
         {
@@ -58,7 +58,7 @@ function HomeDecor() {
             title: "Wall Decor",
             description:
                 "mrribrant Floral Mural Wallpaper",
-            link: "/WallDecor",
+            link: "/wall-decor",
         },
         {
             id: 3,
@@ -103,7 +103,7 @@ function HomeDecor() {
             title: "Mirrors",
             description:
                 "Large, circular wall mirror with a geometric frame in a luxurious gold finish.",
-            link: "/MirrorsDecor",
+            link: "/mirrors",
         },
         {
             id: 2,
@@ -112,7 +112,7 @@ function HomeDecor() {
             title: "Wall Decor",
             description:
                 " 3D effect with blue squares minimalist wallpaper design",
-            link: "/WallDecor",
+            link: "wall-decor",
         },
         {
             id: 3,
@@ -179,7 +179,7 @@ function HomeDecor() {
             title: "Wall Light",
             description:
                 "Gold sconce with crystal ball",
-            link: "/WallDecor",
+            link: "/wall-decor",
         },
         {
             id: 4,
@@ -227,7 +227,7 @@ function HomeDecor() {
 
                 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
 
-                <link rel="canonical" href="https://adhunikdecodive.com/HomeDecor" data-react-helmet="true" />
+                <link rel="canonical" href="https://adhunikdecodive.com/home-decors" data-react-helmet="true" />
                 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
                 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
                 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Home Decor Trends & Accessories in Gurugram | Adhunik Decodive" />

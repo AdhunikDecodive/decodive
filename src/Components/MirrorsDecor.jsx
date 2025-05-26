@@ -7,7 +7,7 @@ import { useState } from "react";
 import ModalNew from "./ModalNew";
 
 
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -16,8 +16,7 @@ import { Helmet } from "react-helmet-async";
 
 function MirrorsDecor() {
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
 
     const [openModal, setOpenModal] = useState(false);
 
@@ -29,7 +28,7 @@ function MirrorsDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/mrr/7_enraz1',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785043/7_enraz1_tckjuy.webp',
             title: '',
             description:
                 'A decorative round mirror with a gleaming gold frame.',
@@ -37,7 +36,7 @@ function MirrorsDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/mrr/18_unhqk1',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785061/18_unhqk1_e4xmrp.webp',
             title: '',
             description:
                 'Rectangular Mirror with Contemporary Metal Frame',
@@ -45,7 +44,7 @@ function MirrorsDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/mrr/19_pre7qv',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785063/19_pre7qv_sgtcpo.webp',
             title: '',
             description:
                 'Leaf-Shaped Wooden Frame  Decorative Mirror',
@@ -53,7 +52,7 @@ function MirrorsDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/mrr/20_x4ac8y',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785064/20_x4ac8y_fbnhrq.webp',
             title: '',
             description:
                 'Antiqued gold-finished irregular wall mirror',
@@ -61,7 +60,7 @@ function MirrorsDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/mrr/6_q0sus8',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785041/6_q0sus8_rhuby5.webp',
             title: '',
             description:
                 'Elegant Circular Mirror with Radiant Light Frame',
@@ -69,7 +68,7 @@ function MirrorsDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/mrr/shopping_2_dae6fv',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785072/shopping_2_dae6fv_cqs34o.webp',
             title: '',
             description:
                 'Sleek Full-Length Rectangular Mirror with Integrated Side Lighting',
@@ -77,7 +76,7 @@ function MirrorsDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/mrr/21_jhvm8s',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785067/21_jhvm8s_rhsr7m.webp',
             title: '',
             description:
                 'A circular bathroom Vanity mirror with a gold-tone metal frame. ',
@@ -90,7 +89,7 @@ function MirrorsDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/mrr/15_hzyhb2',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785056/15_hzyhb2_a41fyx.webp',
             title: '',
             description:
                 'The circular mirror with a gilded frame, adding a touch of luxury to the space.',
@@ -98,7 +97,7 @@ function MirrorsDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/mrr/16_rcttg8',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785058/16_rcttg8_wjq5nx.webp',
             title: '',
             description:
                 'Large rectangular mirror with a metallic frame integrated with led light ',
@@ -106,7 +105,7 @@ function MirrorsDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/mrr/17_vwphfe',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785059/17_vwphfe_czlewl.webp',
             title: '',
             description:
                 'LED Black Framed Bathroom Vanity Mirror',
@@ -114,7 +113,7 @@ function MirrorsDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/mrr/3_xzdipl',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785036/3_xzdipl_a4xp9c.webp',
             title: '',
             description:
                 'Circular wall mirror with a natural wood frame.',
@@ -122,7 +121,7 @@ function MirrorsDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/mrr/4_o9dpta',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785037/4_o9dpta_praobl.webp',
             title: '',
             description:
                 'Wall-mounted, circular mirror with integrated LED lighting',
@@ -130,7 +129,7 @@ function MirrorsDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/mrr/5_qmqgz4',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785039/5_qmqgz4_codah9.webp',
             title: '',
             description:
                 'Large, circular wall mirror with a geometric frame in a luxurious gold finish.',
@@ -138,7 +137,7 @@ function MirrorsDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/mrr/2_lchv8n',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785034/2_lchv8n_cggxm8.webp',
             title: '',
             description:
                 'Round wall mirror with a natural rattan frame.',
@@ -159,7 +158,7 @@ function MirrorsDecor() {
 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
 
  
-<link rel="canonical" href="https://adhunikdecodive.com/MirrorsDecor" data-react-helmet="true"/>
+<link rel="canonical" href="https://adhunikdecodive.com/mirrors" data-react-helmet="true"/>
 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Mirror Designs in Gurugram | Adhunik Decodive" />
@@ -218,7 +217,7 @@ function MirrorsDecor() {
                             <div className="relative h-80">
                             <div className="card h-full w-full">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} 
+              src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -270,7 +269,7 @@ function MirrorsDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

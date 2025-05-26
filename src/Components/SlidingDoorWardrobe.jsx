@@ -5,8 +5,7 @@ import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
 
 
-import ModalNew from './ModalNew';
-import { Cloudinary } from "@cloudinary/url-gen";
+import ModalNew from './ModalNew'; 
 import { AdvancedImage } from '@cloudinary/react';
 
 
@@ -23,7 +22,7 @@ function SlidingDoorWardrobe() {
         {
             id: 1,
             imageUrl:
-            'WardRobe/SDW/7_1_bmnrhz',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239635/7_1_bmnrhz_x5j1ov.webp',
             title: '',
             description:
                 'With a sleek and contemporary finish sliding wardrobe. Mirrored doors add a touch of luxury and elegance, creating a feeling of spaciousness.',
@@ -31,7 +30,7 @@ function SlidingDoorWardrobe() {
         {
             id: 2,
             imageUrl:
-            'WardRobe/SDW/8_wrsurk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239636/8_wrsurk_pyhggk.webp',
             title: '',
             description:
                 'Simple and elegant design sliding wardrobes made of white wood for a sleek, modern look.',
@@ -39,7 +38,7 @@ function SlidingDoorWardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/SDW/9_ya6jlf',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239637/9_ya6jlf_wyf9ek.webp',
             title: '',
             description:
                 'Contemporary two-door wardrobe with a champagne laminate finish and a suede finish on the shutters for space saving and ample storage.',
@@ -47,7 +46,7 @@ function SlidingDoorWardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/SDW/10_fnqni2',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239640/10_fnqni2_ahxaog.webp',
             title: '',
             description:
                 'A sleek lacquered finish light gray sliding  wardrobe with minimalist handles offers clutter-free storage.',
@@ -55,7 +54,7 @@ function SlidingDoorWardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/SDW/11_jteifh',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239641/11_jteifh_igjgq6.webp',
             title: '',
             description:
                 'a sleek sliding wardrobe featuring two mirrored doors, offering a minimalist aesthetic. Ideal for compact rooms, saving valuable space',
@@ -63,7 +62,7 @@ function SlidingDoorWardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/SDW/sw_vvrgby',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239650/sw_vvrgby_rm4rr8.webp ',
             title: '',
             description:
                 'With geometric pattern sliding wardrobes in teal blue shades with vertical lines of varying widths, and the cool teal shade adds a modern touch.',
@@ -71,7 +70,7 @@ function SlidingDoorWardrobe() {
         {
             id: 7,
             imageUrl:
-            'WardRobe/SDW/14_uwgozu',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239644/14_uwgozu_ztg7tf.webp',
             title: '',
             description:
                " A sleek wooden finish sliding wardrobe design. Perfect for smaller rooms, it's a classic and practical choice." ,
@@ -84,7 +83,7 @@ function SlidingDoorWardrobe() {
         {
             id: 1,
             imageUrl:
-            'WardRobe/SDW/15_ucg5gv',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239645/15_ucg5gv_fisniw.webp',
             title: '',
             description:
                 'Three-door contemporary wardrobe with dark gray, suede-finish laminate shutters.',
@@ -92,7 +91,7 @@ function SlidingDoorWardrobe() {
         {
             id: 2,
             imageUrl:
-            'WardRobe/SDW/16_wknork',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1748239648/16_wknork_ax1blg.webp ',
             title: '',
             description:
                 'Coffee brown contemporary sliding  wardrobe with glossy laminate finish combines style and functionality.',
@@ -100,7 +99,7 @@ function SlidingDoorWardrobe() {
         {
             id: 3,
             imageUrl:
-            'WardRobe/SDW/17_1_u32jdj',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239649/17_1_u32jdj_rjhaod.webp ',
             title: '',
             description:
                 'the wardrobe has three sliding wooden doors with gold handles for a modern look. Sliding doors save space in bedrooms by eliminating the need for clearance to open',
@@ -108,7 +107,7 @@ function SlidingDoorWardrobe() {
         {
             id: 4,
             imageUrl:
-            'WardRobe/SDW/6_h7y5hp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239633/6_h7y5hp_sb3kyu.webp ',
             title: '',
             description:
                 'Sliding wardrobe design with a two-door, floor-to-ceiling panel configuration with a lacquered glass finish. And a black, metal trim.',
@@ -116,7 +115,7 @@ function SlidingDoorWardrobe() {
         {
             id: 5,
             imageUrl:
-            'WardRobe/SDW/5_sxergk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239632/5_sxergk_unqhfl.webp',
             title: '',
             description:
                 'A contemporary sliding wardrobe design two sliding doors with alternating opaque white and sunshine yellow panels for a modern and colorful accent.',
@@ -124,7 +123,7 @@ function SlidingDoorWardrobe() {
         {
             id: 6,
             imageUrl:
-            'WardRobe/SDW/4_xeqbnl',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239631/4_xeqbnl_etb0rh.webp ',
             title: '',
             description:
                 'The beige sliding wardrobe design with three doors made up of plywood with a polished finish adds a touch of sophistication.',
@@ -132,15 +131,14 @@ function SlidingDoorWardrobe() {
         {
             id: 7,
             imageUrl:
-            'WardRobe/SDW/3_oqckqp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1748239630/3_oqckqp_ac64iw.webp ',
             title: '',
             description:
                 'Sliding wardrobe with geometric chevron design in cherry red on lacquered glass doors adding a touch of elegance and contemporary style.',
         },
     ];
     
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     return (
         <>
 
@@ -153,7 +151,7 @@ function SlidingDoorWardrobe() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Adhunik Decodive: Gurugram's top provider of sliding  wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/SlidingDoorWardrobe" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/sliding-door-wardrobes" data-react-helmet="true" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Sliding  Wardrobe Designs in Gurugram | Space-Saving & Stylish – Adhunik Decodive" />
@@ -205,7 +203,7 @@ function SlidingDoorWardrobe() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+             src={card.imageUrl} 
               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -255,8 +253,8 @@ function SlidingDoorWardrobe() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
-              alt={card.description}
+             src={card.imageUrl} 
+               alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
