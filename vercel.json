@@ -86,25 +86,22 @@
             "dest": "/"
         },
         {
-            "src": "/WallPaintingDecor",
+            "src": "/wall-paintings",
             "dest": "/"
         },
         {
-            "src": "/LampsDecor",
+            "src": "/lamps",
             "dest": "/"
         },
         {
-            "src": "/CeilingLightsDecor",
+            "src": "/ceiling-lights",
             "dest": "/"
         },
         {
             "src": "/WallLightDecor",
             "dest": "/"
         },
-        {
-            "src": "/LampsDecor",
-            "dest": "/"
-        },
+        
         {
             "src": "/OutDoorLightDecor",
             "dest": "/"

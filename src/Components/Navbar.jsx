@@ -100,9 +100,9 @@ function Navbar() {
                 { to: '/wall-decor', text: 'Wall Decor' },
                 { to: '/vases', text: 'Vases' },
                 { to: '/clocks', text: 'Clocks' },
-                { to: '/WallPaintingDecor', text: 'Wall Painting' },
-                { to: '/LampsDecor', text: 'Lamps' },
-                { to: '/CeilingLightsDecor', text: 'Ceiling Lights' },
+                { to: '/wall-paintings', text: 'Wall Painting' },
+                { to: '/lamps', text: 'Lamps' },
+                { to: '/ceiling-lights', text: 'Ceiling Lights' },
                 { to: '/WallLightDecor', text: 'Wall Lights' },
                 { to: '/OutDoorLightDecor', text: 'Outdoor Lights' },
                 { to: '/RoomLightDecor', text: 'Room Lights' },
@@ -331,7 +331,7 @@ function Navbar() {
                         Clocks
                     </Dropdown.Item>
                 </Link>
-                <Link to="/WallPaintingDecor">
+                <Link to="/wall-paintings">
                     <Dropdown.Item>
                         Wall Painting
                     </Dropdown.Item>
@@ -340,12 +340,12 @@ function Navbar() {
         </div>
         <div className="w-6/12">
             <ul>
-                <Link to="/LampsDecor">
+                <Link to="/lamps">
                     <Dropdown.Item>
                         Lamps
                     </Dropdown.Item>
                 </Link>
-                <Link to="/CeilingLightsDecor">
+                <Link to="/ceiling-lights">
                     <Dropdown.Item>
                         Ceiling Lights
                     </Dropdown.Item>

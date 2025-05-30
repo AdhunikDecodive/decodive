@@ -23,7 +23,7 @@ function CeilingLightsDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/Ceiling_Light/7_p66wzo',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784761/7_p66wzo_zdwi10.webp ',
             title: '',
             description:
                 'Extra large golden chandelier with cascading crystals',
@@ -31,7 +31,7 @@ function CeilingLightsDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/Ceiling_Light/8_h7zbut',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784763/8_h7zbut_nbyifo.webp ',
             title: '',
             description:
                 'Cascading crystal chandelier.',
@@ -39,7 +39,7 @@ function CeilingLightsDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/Ceiling_Light/9_wwebvk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784764/9_wwebvk_oplvfv.webp',
             title: '',
             description:
                 'Modern LED ceiling light with a leaf-shaped design',
@@ -47,7 +47,7 @@ function CeilingLightsDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Ceiling_Light/10_jo8anp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784765/10_jo8anp_lw5ylv.webp ',
             title: '',
             description:
                 'Modern flower-shaped LED ceiling light',
@@ -55,7 +55,7 @@ function CeilingLightsDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/Ceiling_Light/11_yzkt1l',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784767/11_yzkt1l_o5pag3.webp ',
             title: '',
             description:
                 'Ultra-thin, geometric LED ceiling light',
@@ -63,7 +63,7 @@ function CeilingLightsDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/Ceiling_Light/12_vfbmhv',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784768/12_vfbmhv_lcdqcd.webp ',
             title: '',
             description:
                 'Crystal chandelier with cascading crystals',
@@ -71,7 +71,7 @@ function CeilingLightsDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/Ceiling_Light/14_t6l3fu',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784771/14_t6l3fu_vodvhn.webp ',
             title: '',
             description:
                 'Circular LED ceiling light with an interlocking geometric design',
@@ -83,7 +83,7 @@ function CeilingLightsDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/Ceiling_Light/15_gdxguy',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784772/15_gdxguy_wzfgbd.webp',
             title: '',
             description:
                 'Modern black and white rectangular LED ceiling light',
@@ -91,7 +91,7 @@ function CeilingLightsDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/Ceiling_Light/16_q2khqy',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784775/16_q2khqy_nsiz1b.webp ',
             title: '',
             description:
                 'White ceiling light with a swirl of cascading star shapes.',
@@ -99,7 +99,7 @@ function CeilingLightsDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/Ceiling_Light/17_nnfcow',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784776/17_nnfcow_nnkafu.webp ',
             title: '',
             description:
                 'Unique circular ceiling light featuring a cut-out elephant design.',
@@ -107,7 +107,7 @@ function CeilingLightsDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Ceiling_Light/1_fjdpzw',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784756/1_fjdpzw_oq9r8a.webp',
             title: '',
             description:
                 'Brass and glass semi-flush mount ceiling light.',
@@ -115,7 +115,7 @@ function CeilingLightsDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/Ceiling_Light/2_u4gjyb',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784756/2_u4gjyb_pmhalh.webp ',
             title: '',
             description:
                 'Modern starburst LED ceiling light',
@@ -123,7 +123,7 @@ function CeilingLightsDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/Ceiling_Light/13_d14wqe',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784769/13_d14wqe_avysz4.webp',
             title: '',
             description:
                 'Multi-level false ceiling with recessed LED downlights.',
@@ -131,16 +131,16 @@ function CeilingLightsDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/Ceiling_Light/16_fp7xbh',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746784773/16_fp7xbh_mmykri.webp ',
             title: '',
             description:
                 'Large, gold chandelier with cascading crystals',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+    
     return (
+
         <>
 
 <Helmet>
@@ -150,7 +150,7 @@ function CeilingLightsDecor() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best ceiling light designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern ceiling lights to enhance your home decor. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/CeilingLightsDecor" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/ceiling-lights" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Ceiling Lights Designs in Gurugram | Adhunik Decodive" />
@@ -204,7 +204,7 @@ function CeilingLightsDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -254,7 +254,7 @@ function CeilingLightsDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

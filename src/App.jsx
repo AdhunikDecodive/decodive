@@ -27,6 +27,7 @@ import WallDecor from "./Components/WallDecor";
 import VasesDecor from "./Components/VasesDecor";
 import WallPaintingDecor from "./Components/WallPaintingDecor";
 import LampsDecor from "./Components/LampsDecor";
+
 import CeilingLightsDecor from "./Components/CeilingLightsDecor";
 import WallLightDecor from "./Components/WallLightDecor";
 import OutDoorLightDecor from "./Components/OutDoorLightDecor";
@@ -34,6 +35,7 @@ import RoomLightDecor from "./Components/RoomLightDecor";
 import OthersCategory from "./Components/OthersCategory";
 import TVUnitPanels from "./Components/TVUnitPanels";
 import PoojaRoom from "./Components/PoojaRoom";
+
 import ThankYouPage from "./Components/ThankYouPage";
 import ClocksDecor from "./Components/ ClocksDecor";
 import BarCounter from "./Components/BarCounter";
@@ -42,12 +44,10 @@ import Navbar from "./Components/Navbar";
 import WatsapButton from "./Components/WatsapButton";
 
 import ScrollToTop from "./Components/ScrollToTop";
-
 import BlogPage from "./Components/BlogPage";
 import Error404 from "./Components/Error404";
 import MultipleBlogsPage from "./Components/MultipleBlogsPage";
 import BlogDetailPage from "./Components/BlogDetailPage";
-
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import NeroChimney from "./Components/NeroChimney";
@@ -103,9 +103,9 @@ function App() {
         <Route path="/wall-decor" element={<WallDecor />} />
         <Route path="/vases" element={<VasesDecor />} />
         <Route path="/clocks" element={<ClocksDecor />} />
-        <Route path="/wallpaintingdecor" element={<WallPaintingDecor />} />
-        <Route path="/lampsdecor" element={<LampsDecor />} />
-        <Route path="/ceilinglightsdecor" element={<CeilingLightsDecor />} />
+        <Route path="/wall-paintings" element={<WallPaintingDecor />} />
+        <Route path="/lamps" element={<LampsDecor />} />
+        <Route path="/ceiling-lights" element={<CeilingLightsDecor />} />
         <Route path="/walllightdecor" element={<WallLightDecor />} />
         <Route path="/outdoorlightdecor" element={<OutDoorLightDecor />} />
         <Route path="/roomlightdecor" element={<RoomLightDecor />} />

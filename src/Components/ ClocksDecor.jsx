@@ -152,7 +152,8 @@ function ClocksDecor() {
 
 <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best clock designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern clocks to enhance your home decor. Free consultation!" />
 
-<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+<meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+</meta>
 
 <link rel="canonical" href="https://adhunikdecodive.com/clocks" data-react-helmet="true"/>
 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />

@@ -2,8 +2,7 @@ import "./LShapeKitchen.css"
 import PhoneCallButton from "./PhoneCallButton";
 import { useState } from "react";
 import ModalNew from "./ModalNew";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -22,7 +21,7 @@ function WallPaintingDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/Wall_Painting/6_onoeyr',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785438/6_onoeyr_hgxfgm.webp',
             title: '',
             description:
                 'Black, white, and gold with geometric shapes',
@@ -30,7 +29,7 @@ function WallPaintingDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/Wall_Painting/7_w6x8jk',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785440/7_w6x8jk_idoclo.webp',
             title: '',
             description:
                 'traditional Ganesha Lippan wall art',
@@ -38,7 +37,7 @@ function WallPaintingDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/Wall_Painting/17_p9mbos',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785459/17_p9mbos_bpkfgb.webp',
             title: '',
             description:
                 'Contemporary Canvas Floral Art for Living Room',
@@ -46,7 +45,7 @@ function WallPaintingDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Wall_Painting/8_tr6vwi',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785442/8_tr6vwi_vt25gr.webp ',
             title: '',
             description:
                 'Mystical Mandala Canvas Art',
@@ -54,7 +53,7 @@ function WallPaintingDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/Wall_Painting/11_qt1lzr',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785448/11_qt1lzr_t6p53c.webp',
             title: '',
             description:
                 'DIY Blue Peacock Wall Art',
@@ -62,7 +61,7 @@ function WallPaintingDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/Wall_Painting/18_dpibm5',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785461/18_dpibm5_utu44j.webp ',
             title: '',
             description:
                 'Modern Canvas Art for Stylish Wall Décor',
@@ -70,7 +69,7 @@ function WallPaintingDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/Wall_Painting/12_o9txya',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785450/12_o9txya_wj84zn.webp ',
             title: '',
             description:
                 '3-Piece Floral Wall Art Set',
@@ -78,11 +77,12 @@ function WallPaintingDecor() {
 
         // Add more card objects as needed
     ];
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-            'HomeDecor/Wall_Painting/13_zft8z3',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785453/13_zft8z3_tbfyxo.webp',
             title: '',
             description:
                 'Lavender Moonlight Stillness: Canvas Wall Art',
@@ -90,7 +90,7 @@ function WallPaintingDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/Wall_Painting/14_11zon_aewthz',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785454/14_11zon_aewthz_dlwwml.webp',
             title: '',
             description:
                 '"Modern Multicolor Flower Canvas Wall Art',
@@ -98,7 +98,7 @@ function WallPaintingDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/Wall_Painting/15_yojl74',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785457/15_yojl74_ntpcl4.webp ',
             title: '',
             description:
                 'Contemporary Framed Wall Art',
@@ -106,7 +106,7 @@ function WallPaintingDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Wall_Painting/5_r1girb',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785436/5_r1girb_u4koz5.webp',
             title: '',
             description:
                 'Vibrant Mandala & Botanical Wall Art',
@@ -114,7 +114,7 @@ function WallPaintingDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/Wall_Painting/1_kd1fhp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785428/1_kd1fhp_t7g5z0.webp ',
             title: '',
             description:
                 'Unframed Religious Wall Art',
@@ -122,7 +122,7 @@ function WallPaintingDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/Wall_Painting/2_rp93rv',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785430/2_rp93rv_dbt7xf.webp ',
             title: '',
             description:
                 'Modern Botanical Canvas Trio, Gold Leaf Wall Art',
@@ -130,29 +130,34 @@ function WallPaintingDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/Wall_Painting/3_wksxrb',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785432/3_wksxrb_itj669.webp ',
             title: '',
             description:
                 'Black, white, and gold with geometric shapes',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+     
     return (
-        <>
+
+<>
 
 
 <Helmet>
 
-        <title>Top Wall Painting Designs in Gurugram | Adhunik Decodive</title>
+        <title> Top Wall Painting Designs in Gurugram | Adhunik Decodive </title>
+
 
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wall painting designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern wall paintings to enhance your home decor. Free consultation!" />
 
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+        </meta>
         
-  <link rel="canonical" href="https://adhunikdecodive.com/WallPaintingDecor" data-react-helmet="true"/>
+  <link rel="canonical" href="https://adhunikdecodive.com/wall-paintings" data-react-helmet="true"/>
+
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Wall Painting Designs in Gurugram | Adhunik Decodive" />
         <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wall painting designs, best wall paintings in Gurugram, stylish home decor, decorative wall art, modern wall paintings, custom paintings Gurugram, home decor accessories, Adhunik Decodive wall art, artistic interior paintings Gurugram" />
@@ -205,7 +210,7 @@ function WallPaintingDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -255,7 +260,7 @@ function WallPaintingDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

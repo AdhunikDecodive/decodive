@@ -3,8 +3,7 @@ import "./LShapeKitchen.css"
 import ModalNew from './ModalNew';
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -23,7 +22,7 @@ function LampsDecor() {
         {
             id: 1,
             imageUrl:
-         'HomeDecor/Lamps/7_mdizlp',
+         'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784916/7_mdizlp_nrnmka.webp',
             title: '',
             description:
                 'Sleek white floor lamp',
@@ -31,7 +30,7 @@ function LampsDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/Lamps/l1_varb6b',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784938/l1_varb6b_e3yef3.webp ',
             title: '',
             description:
                 'Modern table lamp with a natural wood base',
@@ -39,7 +38,7 @@ function LampsDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/Lamps/8_qi78cq',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784917/8_qi78cq_xgpcvm.webp ',
             title: '',
             description:
                 'Floral ceramic table lamp',
@@ -47,7 +46,7 @@ function LampsDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Lamps/18_zmtjl2',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784933/18_zmtjl2_rpx2xj.webp',
             title: '',
             description:
                 'Colorful mosaic table lamp',
@@ -55,7 +54,7 @@ function LampsDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/Lamps/9_cwtsns',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784919/9_cwtsns_puac4e.webp',
             title: '',
             description:
                 'A knotted gold table lamp',
@@ -63,7 +62,7 @@ function LampsDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/Lamps/10_cpuptg',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784922/10_cpuptg_tqu9z1.webp',
             title: '',
             description:
                 'Striped table lamp',
@@ -71,7 +70,7 @@ function LampsDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/Lamps/19_vmb95g',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784935/19_vmb95g_zt5vmg.webp',
             title: '',
             description:
                 'Modern wooden LED table lamp',
@@ -79,11 +78,12 @@ function LampsDecor() {
 
         // Add more card objects as needed
     ];
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-            'HomeDecor/Lamps/11_kpyhvi',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784922/11_kpyhvi_kcfz4o.webp ',
             title: '',
             description:
                 'LED Table Lamp',
@@ -91,7 +91,7 @@ function LampsDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/Lamps/12_qomfy8',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784924/12_qomfy8_kbtadr.webp ',
             title: '',
             description:
                 'Wood shelf floor lamp with fabric shade',
@@ -99,7 +99,7 @@ function LampsDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/Lamps/14_yiftgm',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784927/14_yiftgm_gpuqym.webp',
             title: '',
             description:
                 'Wooden tripod lamp',
@@ -107,7 +107,7 @@ function LampsDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/Lamps/1_jvxolf',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784907/1_jvxolf_ruue1y.webp',
             title: '',
             description:
                 'Adjustable desk lamp with a wooden base',
@@ -115,7 +115,7 @@ function LampsDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/Lamps/2_hx3mr7',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784908/2_hx3mr7_xduaoq.webp ',
             title: '',
             description:
                 'Metal arc lamp with three wicker shades',
@@ -123,7 +123,7 @@ function LampsDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/Lamps/3_ini56h',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784909/3_ini56h_cyjgsj.webp ',
             title: '',
             description:
                 'Ceramic table lamp with tan shade',
@@ -131,13 +131,14 @@ function LampsDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/Lamps/20_nsds36',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784936/20_nsds36_qlpxwg.webp ',
             title: '',
             description:
                 'Brushed gold table lamp with a conical white fabric shade',
         },
     ];
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
+    
+
 
     return (
         <>
@@ -152,7 +153,7 @@ function LampsDecor() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best lamp designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern lamps to enhance your home decor. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/LampsDecor" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/lamps" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Lamps Designs in Gurugram | Adhunik Decodive" />
@@ -207,11 +208,13 @@ function LampsDecor() {
                     {PcardData.map((card) => (
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
+
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
             />
                             </div>
@@ -257,13 +260,17 @@ function LampsDecor() {
                     {P2cardData.map((card) => (
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
+
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+
+              src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
+
             />
+
                             </div>
                             <div className="p-6">
                                 <h2 className="text-base font-medium text-blue-gray-900 mb-2">{card.title}</h2>

@@ -74,7 +74,7 @@ function HomeDecor() {
             title: "Lamps",
             description:
                 "Modern wooden floor lamp",
-            link: "/LampsDecor",
+            link: "/lamps",
         },
         {
             id: 5,
@@ -82,7 +82,7 @@ function HomeDecor() {
             title: "Ceiling Lights",
             description:
                 "Multi-tiered crystal droplet chandelier",
-            link: "/CeilingLightsDecor",
+            link: "/ceiling-lights",
         },
         {
             id: 6,
@@ -130,7 +130,7 @@ function HomeDecor() {
             title: "Lamp",
             description:
                 "Oversized Pendulum Wall Clock.",
-            link: "/LampsDecor",
+            link: "/lamps",
         },
         {
             id: 5,
@@ -139,7 +139,7 @@ function HomeDecor() {
             title: "Ceiling Light",
             description:
                 "Contemporary Canvas Floral Art for Living Room",
-            link: "/CeilingLightsDecor",
+            link: "/ceiling-lights",
         },
         {
             id: 6,
@@ -161,7 +161,7 @@ function HomeDecor() {
             title: "Lamps",
             description:
                 "Fabric minimalist table lamp",
-            link: "/LampsDecor",
+            link: "/lamps",
         },
         {
             id: 2,
@@ -170,7 +170,7 @@ function HomeDecor() {
             title: "Ceiling Light",
             description:
                 "Multi-light pendant fixture with a crystal droplet design.",
-            link: "/CeilingLightsDecor",
+            link: "/ceiling-lights",
         },
         {
             id: 3,
@@ -206,7 +206,7 @@ function HomeDecor() {
             title: "Lamps",
             description:
                 "Gold metal table lamp with white globe shade.",
-            link: "/LampsDecor",
+            link: "/lamps",
         },
         // Add more card objects as needed
     ];
