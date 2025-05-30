@@ -4,8 +4,7 @@ import "./LShapeKitchen.css"
 import PhoneCallButton from "./PhoneCallButton";
 import { useState } from "react";
 import ModalNew from "./ModalNew";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet,  } from "react-helmet-async";
 
@@ -24,7 +23,7 @@ function ClocksDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/Clocks/7_sttg0e',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784853/7_sttg0e_zmipxg.webp',
             title: '',
             description:
                 'Black and gold metal geometric clock',
@@ -32,7 +31,7 @@ function ClocksDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/Clocks/8_p6538e',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784855/8_p6538e_rlcyij.webp ',
             title: '',
             description:
                 'A colorful, vintage wall clock ',
@@ -40,7 +39,7 @@ function ClocksDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/Clocks/9_xveimc',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784856/9_xveimc_oth7r8.webp ',
             title: '',
             description:
                 'A vintage-style table clock with a blue metal base and a white clock face ',
@@ -48,7 +47,7 @@ function ClocksDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/Clocks/10_ots5ia',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784857/10_ots5ia_yp6e3v.webp ',
             title: '',
             description:
                 'A gold-framed clock with a white LED face.',
@@ -56,7 +55,7 @@ function ClocksDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/Clocks/11_fq484j',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784859/11_fq484j_ze7tfu.webp',
             title: '',
             description:
                 ' Contemporary gold-tone wall clock',
@@ -64,7 +63,7 @@ function ClocksDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/Clocks/12_pahtxg',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784860/12_pahtxg_f6bmau.webp ',
             title: '',
             description:
                 'Three-piece modern geometric wall clock set with canvas art and a gold metal frame.',
@@ -72,7 +71,7 @@ function ClocksDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/Clocks/14_kcyc7n',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784864/14_kcyc7n_kpkxjk.webp ',
             title: '',
             description:
                 'A brown Karlsson alarm clock ',
@@ -80,11 +79,13 @@ function ClocksDecor() {
 
         // Add more card objects as needed
     ];
+
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-                'HomeDecor/Clocks/6_s3zulz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784852/6_s3zulz_acioru.webp ',
             title: '',
             description:
                 'Modern botanical wall clock',
@@ -92,7 +93,7 @@ function ClocksDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/Clocks/1_ridkun',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746784845/1_ridkun_zhrjj2.webp ',
             title: '',
             description:
                 'Geometric Iron Wall Clock',
@@ -100,7 +101,7 @@ function ClocksDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/Clocks/3_uapzdw',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784847/3_uapzdw_ygnzn3.webp',
             title: '',
             description:
                 'A decorative table clock.',
@@ -108,7 +109,7 @@ function ClocksDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/Clocks/4_uv60fy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784849/4_uv60fy_qbcwfd.webp ',
             title: '',
             description:
                 'Oversized Pendulum Wall Clock.',
@@ -116,7 +117,7 @@ function ClocksDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/Clocks/5_t3oak9',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784851/5_t3oak9_yecvh4.webp ',
             title: '',
             description:
                 'Miller Cycle Style Analog Metal Wall Clock',
@@ -124,7 +125,7 @@ function ClocksDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/Clocks/13_qnfczx',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784862/13_qnfczx_gklebd.webp',
             title: '',
             description:
                 'Charm Pendulum Wall Clock',
@@ -132,15 +133,14 @@ function ClocksDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/Clocks/18_wmqutw',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784871/18_wmqutw_lmztbj.webp ',
             title: '',
             description:
                 'Chic and Clear Acrylic Wall Clock with a Unique Design',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+    
 
     return (
         <>
@@ -154,7 +154,7 @@ function ClocksDecor() {
 
 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
 
-<link rel="canonical" href="https://adhunikdecodive.com/ClocksDecor" data-react-helmet="true"/>
+<link rel="canonical" href="https://adhunikdecodive.com/clocks" data-react-helmet="true"/>
 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Clocks Designs in Gurugram | Adhunik Decodive" />
@@ -209,7 +209,7 @@ function ClocksDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -259,7 +259,7 @@ function ClocksDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+             src={card.imageUrl}
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

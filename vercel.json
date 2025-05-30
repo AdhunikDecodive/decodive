@@ -78,11 +78,11 @@
             "dest": "/"
         },
         {
-            "src": "/VasesDecor",
+            "src": "/vases",
             "dest": "/"
         },
         {
-            "src": "/ClocksDecor",
+            "src": "/clocks",
             "dest": "/"
         },
         {

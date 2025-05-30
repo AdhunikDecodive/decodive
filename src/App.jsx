@@ -101,8 +101,8 @@ function App() {
         <Route path="/home-decors" element={<HomeDecor />} />
         <Route path="/mirrors" element={<MirrorsDecor />} />
         <Route path="/wall-decor" element={<WallDecor />} />
-        <Route path="/vasesdecor" element={<VasesDecor />} />
-        <Route path="/clocksdecor" element={<ClocksDecor />} />
+        <Route path="/vases" element={<VasesDecor />} />
+        <Route path="/clocks" element={<ClocksDecor />} />
         <Route path="/wallpaintingdecor" element={<WallPaintingDecor />} />
         <Route path="/lampsdecor" element={<LampsDecor />} />
         <Route path="/ceilinglightsdecor" element={<CeilingLightsDecor />} />

@@ -27,7 +27,7 @@ function VasesDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/V/7_c108lp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785315/7_c108lp_lv0uj9.webp',
             title: '',
             description:
                 'Elegant Ceramic Face Vases, Modern White Flower Vases',
@@ -35,7 +35,7 @@ function VasesDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/V/8_z0udwv',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785318/8_z0udwv_eogbdl.webp',
             title: '',
             description:
                 'Elegant Nordic Minimalist Ceramic Flower Vase',
@@ -43,7 +43,7 @@ function VasesDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/V/9_epzvhz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785319/9_epzvhz_sfblti.webp',
             title: '',
             description:
                 'Decorative Aluminum Vases with Hammered Texture for Modern Home Decor',
@@ -51,7 +51,7 @@ function VasesDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/V/v2_kzicaq',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785361/v2_kzicaq_lfot7s.webp ',
             title: '',
             description:
                 'Minimalist Wooden Vase with Glass Test Tube',
@@ -59,7 +59,7 @@ function VasesDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/V/18_wzvia9',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785345/18_wzvia9_eeasnr.webp ',
             title: '',
             description:
                 'Metal Geometric Vase with Luxurious Gold Finish',
@@ -67,7 +67,7 @@ function VasesDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/V/12_ioia6a',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785325/12_ioia6a_ejkvoz.webp ',
             title: '',
             description:
                 'Complementary Ceramic Vases in Matte Red and Orange',
@@ -75,7 +75,7 @@ function VasesDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/V/19_rm7fvf',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785347/19_rm7fvf_lvwjxu.webp ',
             title: '',
             description:
                 'Ceramic Floor Vase Trio with Geometric Designs',
@@ -88,7 +88,7 @@ function VasesDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/V/20_tqqxlt',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785349/20_tqqxlt_sslusy.webp ',
             title: '',
             description:
                 'Chic White Pottery Farmhouse Vase',
@@ -96,7 +96,7 @@ function VasesDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/V/21_chxhty',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785351/21_chxhty_r43p2r.webp ',
             title: '',
             description:
                 'White Ceramic Tall Floor Vase for Modern Floral Displays',
@@ -104,7 +104,7 @@ function VasesDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/V/22_ufg45n',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785353/22_ufg45n_iegrcr.webp ',
             title: '',
             description:
                 'White ceramic vase with a swirl design',
@@ -112,7 +112,7 @@ function VasesDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/V/23_bmz9nf',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785356/23_bmz9nf_cxyow2.webp ',
             title: '',
             description:
                 'Green ceramic vase with a face pattern',
@@ -120,7 +120,7 @@ function VasesDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/V/24_p2w6me',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785358/24_p2w6me_yoswzc.webp ',
             title: '',
             description:
                 'Textured ceramic vase with funnel neck.',
@@ -128,7 +128,7 @@ function VasesDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/V/2_sxzvmb',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785305/2_sxzvmb_l5ksod.webp',
             title: '',
             description:
                 'Frosted green glass vase for dried or artificial flowers.',
@@ -136,15 +136,14 @@ function VasesDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/V/3_qonkjh',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785307/3_qonkjh_voaubs.webp ',
             title: '',
             description:
                 'Ceramic bud vases in a neutral beige tone',
         },
     ];
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     return (
         <>
 
@@ -157,7 +156,7 @@ function VasesDecor() {
 <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best vase designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern vases to enhance your home decor. Free consultation!" />
 
 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-<link rel="canonical" href="https://adhunikdecodive.com/VasesDecor" data-react-helmet="true"/>
+<link rel="canonical" href="https://adhunikdecodive.com/vases" data-react-helmet="true"/>
 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Vases Designs in Gurugram | Adhunik Decodive" />
@@ -212,7 +211,9 @@ function VasesDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+
+              src={card.imageUrl}  
+
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -262,7 +263,7 @@ function VasesDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

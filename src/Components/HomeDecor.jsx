@@ -66,7 +66,7 @@ function HomeDecor() {
             title: "Vases Decor",
             description:
                 " Floral blue ceramic vase.",
-            link: "/VasesDecor",
+            link: "/vases",
         },
         {
             id: 4,
@@ -121,7 +121,7 @@ function HomeDecor() {
             title: "Vases Decor",
             description:
                 "Elegant Ceramic Face Vasses, Modern White Flower Vasses",
-            link: "/VasesDecor",
+            link: "/vases",
         },
         {
             id: 4,

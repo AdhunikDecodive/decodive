@@ -98,8 +98,8 @@ function Navbar() {
                 { to: '/home-decors', text: 'All Categories' },
                 { to: '/mirrors', text: 'Mirrors' },
                 { to: '/wall-decor', text: 'Wall Decor' },
-                { to: '/VasesDecor', text: 'Vases' },
-                { to: '/ClocksDecor', text: 'Clocks' },
+                { to: '/vases', text: 'Vases' },
+                { to: '/clocks', text: 'Clocks' },
                 { to: '/WallPaintingDecor', text: 'Wall Painting' },
                 { to: '/LampsDecor', text: 'Lamps' },
                 { to: '/CeilingLightsDecor', text: 'Ceiling Lights' },
@@ -321,12 +321,12 @@ function Navbar() {
                         Wall Decor
                     </Dropdown.Item>
                 </Link>
-                <Link to="/VasesDecor">
+                <Link to="/vases">
                     <Dropdown.Item>
                         Vases
                     </Dropdown.Item>
                 </Link>
-                <Link to="/ClocksDecor">
+                <Link to="/clocks">
                     <Dropdown.Item>
                         Clocks
                     </Dropdown.Item>
