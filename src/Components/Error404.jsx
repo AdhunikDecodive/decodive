@@ -17,9 +17,15 @@ function Error404() {
     
 <div className="w-full h-full justify-center items-center flex">
 
-<AdvancedImage fetchpriority="high" decoding="async"
+<AdvancedImage 
+fetchpriority="high" 
+decoding="async"
+                     
                       effect="blur" 
-                    className="  object-cover   h-[70vh] w-fit  " alt="Thank You page" cldImg={cld.image('Images/Untitled_design_sfe4yc')} />
+                    className="  object-cover   h-[70vh] w-fit  "
+                     alt="Thank You page"
+                   src="https://res.cloudinary.com/dq14b7xie/image/upload/v1748678441/error_kr9m7v.webp"
+                     />
 
                   
 

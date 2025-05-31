@@ -2,8 +2,7 @@ import "./LShapeKitchen.css"
 
 import PhoneCallButton from "./PhoneCallButton";
 
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 
 
@@ -14,8 +13,7 @@ import { Helmet } from "react-helmet-async";
 
 function RoomLightDecor() {
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     const [openModal, setOpenModal] = useState(false);
 
     const toggleModal = () => {
@@ -27,7 +25,7 @@ function RoomLightDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/RoomLights/7_kaxocz',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785272/7_kaxocz_brsgkp.webp',
             title: '',
             description:
                 'Multiple-sphere pendant chandelier crafted from high-polished aluminum',
@@ -36,7 +34,7 @@ function RoomLightDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/RoomLights/8_l3wexx',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785275/8_l3wexx_hmlocd.webp',
             title: '',
             description:
                 'Woven rattan pendant light',
@@ -44,7 +42,7 @@ function RoomLightDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/RoomLights/19_abdvyr',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785298/19_abdvyr_wyni8k.webp',
             title: '',
             description:
                 'A modern LED wall light with a spiraling design',
@@ -52,7 +50,7 @@ function RoomLightDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/RoomLights/10_ahmy1m',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785280/10_ahmy1m_f7vu8i.webp ',
             title: '',
             description:
                 'A modern gold ring pendant lights with warm white LED.',
@@ -60,7 +58,7 @@ function RoomLightDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/RoomLights/13_fvv0ay',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785287/13_fvv0ay_blszer.webp ',
             title: '',
             description:
                 'A gold spiral LED pendant light.',
@@ -68,7 +66,7 @@ function RoomLightDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/RoomLights/16_oweppp',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785292/16_oweppp_gwrmz0.webp ',
             title: '',
             description:
                 'Minimalist chandelier with cascading aluminum rings',
@@ -76,7 +74,7 @@ function RoomLightDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/RoomLights/14_hbzeay',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785289/14_hbzeay_ylv4k0.webp',
             title: '',
             description:
                 'Wave-like black LED wall light',
@@ -90,7 +88,7 @@ function RoomLightDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/RoomLights/17_wu1wd1',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785294/17_wu1wd1_uzcdbb.webp',
             title: '',
             description:
                 'Gold LED chandelier with cascading crystals',
@@ -98,7 +96,7 @@ function RoomLightDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/RoomLights/1_uyseab',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785216/1_uyseab_juqqm2.webp ',
             title: '',
             description:
                 'Golden swirl ceiling light with white bulbs',
@@ -106,7 +104,7 @@ function RoomLightDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/RoomLights/2_tsipgg',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785218/2_tsipgg_jyyp3r.webp ',
             title: '',
             description:
                 'Circular LED wall sconce with brushed gold metal',
@@ -114,7 +112,7 @@ function RoomLightDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/RoomLights/3_u76a7p',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785263/3_u76a7p_dxhfx3.webp ',
             title: '',
             description:
                 'Black square pendant lamp with integrated warm white LED panels',
@@ -122,7 +120,7 @@ function RoomLightDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/RoomLights/4_o1p3kg',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785265/4_o1p3kg_yhidly.webp ',
             title: '',
             description:
                 ': "Contemporary Nordic-style wall light ',
@@ -130,7 +128,7 @@ function RoomLightDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/RoomLights/5_hqesjp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785267/5_hqesjp_og5rdp.webp ',
             title: '',
             description:
                 'Modern minimalist square LED wall sconces',
@@ -138,7 +136,7 @@ function RoomLightDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/RoomLights/18_pnebod',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785296/18_pnebod_d0oqvu.webp',
             title: '',
             description:
                 'Contemporary two-tone ceiling light with interlocking black and white metal rings.',
@@ -153,16 +151,19 @@ function RoomLightDecor() {
 
 <Helmet>
 
-        <title>Top Room Light Designs in Gurugram | Adhunik Decodive</title>
+        <title>Top Bedroom Lights Designs in Gurugram | Adhunik Decodive</title>
 
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best room light designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern lighting solutions to enhance your home decor. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/RoomLightDecor" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/bedroom-lights" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Room Light Designs in Gurugram | Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="room light designs, best room lights in Gurugram, stylish home decor, decorative room lighting, modern lighting designs, custom room lights Gurugram, home decor accessories, Adhunik Decodive room lights, artistic interior lighting Gurugram" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="room light designs, best Bedroom Lights
+ in Gurugram, stylish home decor, decorative room lighting, modern lighting designs, custom Bedroom Lights
+ Gurugram, home decor accessories, Adhunik Decodive Bedroom Lights
+, artistic interior lighting Gurugram" />
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
@@ -183,17 +184,17 @@ function RoomLightDecor() {
             <div className="w-full bg-white p-5 svg3 "  >
 
                 <div className="row justify-around flex">
-                    <div className="w-[80%] flex">
-                        <p className="text-5xl font-semibold p-9">
-                        Room Light Designs
+                    <div className=" w-full md:w-[80%] flex">
+                        <p className="text-5xl font-semibold p-5 md:p-9">
+                        Bedroom Lights Design
 </p>
                     </div>
                 </div>
 
                 <div className="row justify-around flex">
-                    <div className="w-[80%] flex">
+                    <div className=" w-full md:w-[80%] flex">
                         <div className="border border-r-8 h-[50%] my-auto w-[10px] border-orange-600"></div>
-                        <p className="text-1xl w-[75%] font-semibold p-9  rounded-lg mb-2">
+                        <p className="text-1xl md:w-[75%] font-semibold md:p-9 p-5 text-justify md:text-left  rounded-lg mb-2">
                         Fill your home with the perfect ambience and enhance your space's unique style with Adhunik Deco Dive's diverse lighting collection. Whether you're searching for soft, calming bedroom lights or bright, functional kitchen lights, we have everything you need. Adhunik Deco Dive goes beyond basic illumination, offering a variety of decorative accents to transform your space. Browse our curated selection and discover the perfect lighting pieces to bring your design vision to life.
 
                         </p>
@@ -208,7 +209,7 @@ function RoomLightDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -258,8 +259,8 @@ function RoomLightDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
-               alt={card.description}
+             src={card.imageUrl} 
+              alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}

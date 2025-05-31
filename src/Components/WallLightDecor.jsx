@@ -4,8 +4,7 @@ import "./LShapeKitchen.css"
 import ModalNew from './ModalNew';
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -18,7 +17,7 @@ function WallLightDecor() {
         {
             id: 1,
             imageUrl:
-                'HomeDecor/Wall_Light/7_a0xzy3',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785395/7_a0xzy3_nsu4on.webp ',
             title: '',
             description:
                 'A vibrant mosaic wall sconce',
@@ -26,7 +25,7 @@ function WallLightDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/Wall_Light/8_os8oeb',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785398/8_os8oeb_in6pyc.webp ',
             title: '',
             description:
                 'Flora wall light',
@@ -34,7 +33,7 @@ function WallLightDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/Wall_Light/9_gabskw',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785400/9_gabskw_jlxjif.webp ',
             title: '',
             description:
                 'A globe sconce with a wood frame',
@@ -42,7 +41,7 @@ function WallLightDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/Wall_Light/10_nrxjai',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785402/10_nrxjai_zwwuyy.webp',
             title: '',
             description:
                 'Modern metal wall sconce with two white glass globes.',
@@ -50,7 +49,7 @@ function WallLightDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/Wall_Light/11_ljgxnu',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785405/11_ljgxnu_jxfus8.webp',
             title: '',
             description:
                 'Copper sconces with white glass shades',
@@ -58,7 +57,7 @@ function WallLightDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/Wall_Light/12_yb1bgy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785407/12_yb1bgy_gfwqvm.webp ',
             title: '',
             description:
                 'White ceramic wall sconce',
@@ -66,19 +65,20 @@ function WallLightDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/Wall_Light/13_l5el84',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785409/13_l5el84_r9fcwv.webp ',
             title: '',
             description:
                 'Mosaic glass wall sconce',
         },
 
-        // Add more card objects as needed
+       
     ];
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-                'HomeDecor/Wall_Light/16_rri89t',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785415/16_rri89t_xkokh9.webp ',
             title: '',
             description:
                 'Elegant yellow round wall lamp',
@@ -86,7 +86,7 @@ function WallLightDecor() {
         {
             id: 2,
             imageUrl:
-                'HomeDecor/Wall_Light/17_gxbgcx',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785417/17_gxbgcx_suzif6.webp ',
             title: '',
             description:
                 'Stylish Nordic LED wall lamp',
@@ -94,7 +94,7 @@ function WallLightDecor() {
         {
             id: 3,
             imageUrl:
-                'HomeDecor/Wall_Light/18_i0cyyc',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785419/18_i0cyyc_uzso8f.webp ',
             title: '',
             description:
                 'Gold sconces with cascading crystals',
@@ -102,7 +102,7 @@ function WallLightDecor() {
         {
             id: 4,
             imageUrl:
-                'HomeDecor/Wall_Light/19_ymupwm',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785421/19_ymupwm_fycjwx.webp ',
             title: '',
             description:
                 'A gold wall sconce with a clear, curved glass shade',
@@ -110,7 +110,7 @@ function WallLightDecor() {
         {
             id: 5,
             imageUrl:
-                'HomeDecor/Wall_Light/2_l11apq',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785382/2_l11apq_zrzr2v.webp ',
             title: '',
             description:
                 'Brass wall sconces with two white glass globes',
@@ -118,7 +118,7 @@ function WallLightDecor() {
         {
             id: 6,
             imageUrl:
-                'HomeDecor/Wall_Light/20_qcvhqq',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785423/20_qcvhqq_zumimo.webp ',
             title: '',
             description:
                 'Modern LED rectangular wall sconce with metal frame and acrylic shade',
@@ -126,7 +126,7 @@ function WallLightDecor() {
         {
             id: 7,
             imageUrl:
-                'HomeDecor/Wall_Light/5_ppnhwy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785390/5_ppnhwy_sn2by6.webp',
             title: '',
             description:
                 'A clear glass brass wall sconce',
@@ -138,8 +138,7 @@ function WallLightDecor() {
     const toggleModal = () => {
         setOpenModal(!openModal);
     };
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     return (
         <>
 
@@ -148,10 +147,11 @@ function WallLightDecor() {
             <Helmet>
 
                 <title>Top Wall Light Designs in Gurugram | Adhunik Decodive</title>
+
                 <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wall light designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern wall lights to enhance your home decor. Free consultation!" />
 
                 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-                <link rel="canonical" href="https://adhunikdecodive.com/WallLightDecor" data-react-helmet="true" />
+                <link rel="canonical" href="https://adhunikdecodive.com/wall-lights" data-react-helmet="true" />
 
                 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
                 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
@@ -202,7 +202,7 @@ function WallLightDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                                 <AdvancedImage
-                                    cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+                                    src={card.imageUrl}  
                                     alt={card.description}
                                     decoding="async"
                                     className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -252,7 +252,7 @@ function WallLightDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                                 <AdvancedImage
-                                    cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+                                    src={card.imageUrl} 
                                     alt={card.description}
                                     decoding="async"
                                     className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

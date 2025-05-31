@@ -83,7 +83,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/support-form" element={<ContactUs />} />
         <Route path="/modular-kitchen-designs" element={<KitchenCategory />} />
         <Route path="/l-shape-modular-kitchen-design" element={<LShapeKitchen />} />
         <Route path="/u-shape-modular-kitchen-design" element={<UshapeKitchen />} />
@@ -106,10 +106,10 @@ function App() {
         <Route path="/wall-paintings" element={<WallPaintingDecor />} />
         <Route path="/lamps" element={<LampsDecor />} />
         <Route path="/ceiling-lights" element={<CeilingLightsDecor />} />
-        <Route path="/walllightdecor" element={<WallLightDecor />} />
-        <Route path="/outdoorlightdecor" element={<OutDoorLightDecor />} />
-        <Route path="/roomlightdecor" element={<RoomLightDecor />} />
-        <Route path="/otherscategory" element={<OthersCategory />} />
+        <Route path="/wall-lights" element={<WallLightDecor />} />
+        <Route path="/outdoor-lights" element={<OutDoorLightDecor />} />
+        <Route path="/bedroom-lights" element={<RoomLightDecor />} />
+        <Route path="/storage-furniture" element={<OthersCategory />} />
         <Route path="/tvunitpanels" element={<TVUnitPanels />} />
         <Route path="/poojaroom" element={<PoojaRoom />} />
         <Route path="/thankyoupage" element={<ThankYouPage />} />

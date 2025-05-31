@@ -90,7 +90,7 @@ function HomeDecor() {
             title: "Out-Door Light",
             description:
                 " Black and gold wall sconces",
-            link: "/OutDoorLightDecor",
+            link: "/outdoor-lights",
         },
         // Add more card objects as needed
     ];
@@ -148,7 +148,7 @@ function HomeDecor() {
             title: " Room Light",
             description:
                 "Elegant Circular Mirror with Radiant Light Frame",
-            link: "/RoomLightDecor",
+            link: "/bedroom-lights",
         },
         // Add more card objects as needed
     ];
@@ -188,7 +188,7 @@ function HomeDecor() {
             title: "Out-Door Light",
             description:
                 "Minimalist rectangular exterior wall lights",
-            link: "/OutDoorLightDecor",
+            link: "/outdoor-lights",
         },
         {
             id: 5,
@@ -197,7 +197,7 @@ function HomeDecor() {
             title: "Room Light",
             description:
                 "Wave-like black LED wall light",
-            link: "/RoomLightDecor",
+            link: "/bedroom-lights",
         },
         {
             id: 6,

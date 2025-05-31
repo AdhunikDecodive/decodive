@@ -4,8 +4,7 @@ import "./LShapeKitchen.css"
 
 import PhoneCallButton from "./PhoneCallButton";
 
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 
 import ModalNew from './ModalNew';
@@ -15,8 +14,7 @@ import { Helmet } from "react-helmet-async";
 
 function OutDoorLightDecor() {
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     const [openModal, setOpenModal] = useState(false);
 
     const toggleModal = () => {
@@ -27,7 +25,7 @@ function OutDoorLightDecor() {
         {
             id: 1,
             imageUrl:
-            'HomeDecor/OutdoorLight/7_urecra',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785108/7_urecra_q7irb3.webp ',
             title: '',
             description:
                 'Simple modern aesthetic outdoor lighting ',
@@ -35,7 +33,7 @@ function OutDoorLightDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/OutdoorLight/1_msuj84',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785104/1_msuj84_xtc9wt.webp',
             title: '',
             description:
                 ' Black and white rectangular outdoor wall light',
@@ -43,7 +41,7 @@ function OutDoorLightDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/OutdoorLight/9_g6uqpr',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785112/9_g6uqpr_pv7w4i.webp ',
             title: '',
             description:
                 'Vintage-style solar wall lights',
@@ -51,7 +49,7 @@ function OutDoorLightDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/OutdoorLight/10_kekg3j',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785113/10_kekg3j_kx4bgd.webp',
             title: '',
             description:
                 'A modern minimalist outdoor wall lamp',
@@ -59,7 +57,7 @@ function OutDoorLightDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/OutdoorLight/12_bjvrbp',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785117/12_bjvrbp_asiwdz.webp ',
             title: '',
             description:
                 'Modern Up and Down Wall Lights.',
@@ -67,7 +65,7 @@ function OutDoorLightDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/OutdoorLight/14_tknccw',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785121/14_tknccw_zkaezr.webp',
             title: '',
             description:
                 'Outdoor Lighting Gate Pillar Post Lighting collection',
@@ -75,7 +73,7 @@ function OutDoorLightDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/OutdoorLight/15_kjs78t',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785123/15_kjs78t_oxppcl.webp ',
             title: '',
             description:
                 'Fence with three illuminated white globes.',
@@ -84,11 +82,12 @@ function OutDoorLightDecor() {
         // Add more card objects as needed
     ];
 
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-            'HomeDecor/OutdoorLight/18_qhzpnq',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785128/18_qhzpnq_n5a6zr.webp ',
             title: '',
             description:
                 'Pair of modern disc-shaped outdoor sconces with a petal effect.',
@@ -96,7 +95,7 @@ function OutDoorLightDecor() {
         {
             id: 2,
             imageUrl:
-            'HomeDecor/OutdoorLight/11_d8hqf7',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785115/11_d8hqf7_llfwpj.webp ',
             title: '',
             description:
                 'sleek and contemporary outdoor lamp',
@@ -104,7 +103,7 @@ function OutDoorLightDecor() {
         {
             id: 3,
             imageUrl:
-            'HomeDecor/OutdoorLight/4_m75v5c',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785105/4_m75v5c_i8t7u1.webp ',
             title: '',
             description:
                 'modern cylindrical outdoor wall lights',
@@ -112,7 +111,7 @@ function OutDoorLightDecor() {
         {
             id: 4,
             imageUrl:
-            'HomeDecor/OutdoorLight/13_uqhjvu',
+            ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746785119/13_uqhjvu_tfyzfx.webp',
             title: '',
             description:
                 'Square LED Outdoor Wall Lights',
@@ -120,7 +119,7 @@ function OutDoorLightDecor() {
         {
             id: 5,
             imageUrl:
-            'HomeDecor/OutdoorLight/6_rmee7i',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785106/6_rmee7i_djlr5j.webp ',
             title: '',
             description:
                 'white metal gate light',
@@ -128,7 +127,7 @@ function OutDoorLightDecor() {
         {
             id: 6,
             imageUrl:
-            'HomeDecor/OutdoorLight/16_ez6f0g',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785125/16_ez6f0g_oexyl6.webp',
             title: '',
             description:
                 'led square pillar light gate lamp',
@@ -136,7 +135,7 @@ function OutDoorLightDecor() {
         {
             id: 7,
             imageUrl:
-            'HomeDecor/OutdoorLight/17_gwk9lb',
+            'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785126/17_gwk9lb_mrhap1.webp',
             title: '',
             description:
                 'Black, modern solar fence post light',
@@ -150,12 +149,12 @@ function OutDoorLightDecor() {
     
 
 <Helmet>
-<title>Top Outdoor Light Designs in Gurugram | Adhunik Decodive</title>
+<title>Outdoor Lights @Upto 70% Off | Buy Outdoor Light | Adhunik Decodive</title>
 
 <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best outdoor light designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern outdoor lighting solutions to enhance your exterior decor. Free consultation!" />
 
 <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-<link rel="canonical" href="https://adhunikdecodive.com/OutDoorLightDecor" data-react-helmet="true"/>
+<link rel="canonical" href="https://adhunikdecodive.com/outdoor-lights" data-react-helmet="true"/>
 <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
 <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Outdoor Light Designs in Gurugram | Adhunik Decodive" />
@@ -180,7 +179,9 @@ function OutDoorLightDecor() {
                 <div className="row justify-around flex">
                     <div className="w-[80%] flex">
                         <p className="text-5xl font-semibold p-9">
-                        Out-Door Light  Designs
+
+                       Outdoor Lights
+
 </p>
                     </div>
                 </div>
@@ -202,7 +203,7 @@ function OutDoorLightDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl} 
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -252,8 +253,8 @@ function OutDoorLightDecor() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
-               alt={card.description}
+              src={card.imageUrl} 
+                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}

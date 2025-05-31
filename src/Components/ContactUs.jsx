@@ -161,7 +161,7 @@ function ContactUs() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/contact" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/support-form" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Contact Us | Adhunik Decodive" />
@@ -172,7 +172,7 @@ function ContactUs() {
         <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
 
-        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/contact-us"></meta>
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/support-form"></meta>
         <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
         <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Contact Us | Adhunik Decodive" />
         <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
@@ -289,7 +289,7 @@ function ContactUs() {
          <div className="h-auto w-full md:w-7/12 ">
         
           <AdvancedImage  decoding="async"
-                  loading="lazy"     effect="blur" className=" h-auto w-full p-3 " alt="Talk To Our Design Expert." cldImg={cld.image('Images/1__mj5ckj')} />
+                  loading="lazy"     effect="blur" className=" h-auto w-full p-3 " alt="Talk To Our Design Expert."  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746785879/1__mj5ckj_bxslgf.webp" />
         </div>
         </Suspense>
 

@@ -65,7 +65,7 @@ const lightingCategories = [
   { name: 'Ceiling Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785421/19_ymupwm_fycjwx.webp' },
   { name: 'Wall Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784769/13_d14wqe_avysz4.webp' },
   { name: 'Outdoor Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/trc0hvgzaaq4gnbfbcde_jcjthe.webp' },
-  { name: 'Room Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785285/12_iynrag_cezwz0.webp' },
+  { name: 'Bedroom Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785285/12_iynrag_cezwz0.webp' },
   { name: 'Lamps', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785423/20_qcvhqq_zumimo.webp' },
   { name: 'Lighting', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746784776/17_nnfcow_nnkafu.webp' },
   { name: 'Ceiling Lights', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746616038/bhxzfd5szxwtg6fdskyw_p9uqrv.webp' },
@@ -572,7 +572,7 @@ function LandingPage() {
      
 
     <p className="text-lg mb-6 text-center">
-      Getting started is easy! Schedule a <a href="/contact" className="font-semibold text-blue-600">FREE CONSULTATION</a> with our expert interior designers.
+      Getting started is easy! Schedule a <a href="/support-form" className="font-semibold text-blue-600">FREE CONSULTATION</a> with our expert interior designers.
     </p>
 
     <p className="text-gray-600">
@@ -1556,7 +1556,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
                       Awaken the Style of Your Living Room with Sleek TV Panels
                     </p>
                     <Link
-                      to="/OthersCategory"
+                      to="/storage-furniture"
                       className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
                     >
                       &#10147;
@@ -1578,7 +1578,7 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
             </p>
             <div className="show_m mt-5">
               <Link
-                to="/OthersCategory"
+                to="/storage-furniture"
                 className="rounded-md bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 mt-5"
               >
                 &#10147;

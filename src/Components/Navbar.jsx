@@ -95,7 +95,7 @@ function Navbar() {
             to: '#',
             text: 'Home Decor',
             dropdownItems: [
-                { to: '/home-decors', text: 'All Categories' },
+                { to: '/home-decors', text: 'Living Cabinets' },
                 { to: '/mirrors', text: 'Mirrors' },
                 { to: '/wall-decor', text: 'Wall Decor' },
                 { to: '/vases', text: 'Vases' },
@@ -103,17 +103,17 @@ function Navbar() {
                 { to: '/wall-paintings', text: 'Wall Painting' },
                 { to: '/lamps', text: 'Lamps' },
                 { to: '/ceiling-lights', text: 'Ceiling Lights' },
-                { to: '/WallLightDecor', text: 'Wall Lights' },
-                { to: '/OutDoorLightDecor', text: 'Outdoor Lights' },
-                { to: '/RoomLightDecor', text: 'Room Lights' },
+                { to: '/wall-lights', text: 'Wall Lights' },
+                { to: '/outdoor-lights', text: 'Outdoor Lights' },
+                { to: '/bedroom-lights', text: 'Bedroom Lights' },
 
             ],
         },
         {
             to: '#',
-            text: 'Others',
+            text: 'Storage',
             dropdownItems: [
-                { to: '/OthersCategory', text: 'All Categories' },
+                { to: '/storage-furniture', text: 'Living Cabinets' },
                 { to: '/PoojaRoom', text: 'Spiritual Space ' },
                 { to: '/TVUnitPanels', text: 'TV units / Panels' },
                 { to: '/BarCounter', text: 'Bar Counter' },
@@ -121,7 +121,7 @@ function Navbar() {
             ],
         },
         {
-            to: '/contact',
+            to: '/support-form',
             text: 'Contact us',
         },
     ];
@@ -350,17 +350,17 @@ function Navbar() {
                         Ceiling Lights
                     </Dropdown.Item>
                 </Link>
-                <Link to="/WallLightDecor">
+                <Link to="/wall-lights">
                     <Dropdown.Item>
                         Wall Lights
                     </Dropdown.Item>
                 </Link>
-                <Link to="/RoomLightDecor">
+                <Link to="/bedroom-lights">
                     <Dropdown.Item>
-                        Room Lights
+                         Bedroom Lights
                     </Dropdown.Item>
                 </Link>
-                <Link to="/OutDoorLightDecor">
+                <Link to="/outdoor-lights">
                     <Dropdown.Item>
                         Outdoor Lights
                     </Dropdown.Item>
@@ -379,12 +379,12 @@ function Navbar() {
 
                             <li>
     <Dropdown
-        label="Others"
+        label="Storage"
         inline
     >
-        <Link to="/OthersCategory">
+        <Link to="/storage-furniture">
             <Dropdown.Item>
-                All Categories
+             Living Cabinets
             </Dropdown.Item>
         </Link>
         <Link to="/PoojaRoom">
@@ -414,7 +414,7 @@ function Navbar() {
                             <li>
 
                                 <Link
-                                    to="/contact"
+                                    to="/support-form"
                                     className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Contact us

@@ -6,7 +6,7 @@
             "dest": "/"
         },
         {
-            "src": "/contact",
+            "src": "/support-form",
             "dest": "/"
         },
         {
@@ -98,20 +98,20 @@
             "dest": "/"
         },
         {
-            "src": "/WallLightDecor",
+            "src": "/wall-lights",
             "dest": "/"
         },
         
         {
-            "src": "/OutDoorLightDecor",
+            "src": "/outdoor-lights",
             "dest": "/"
         },
         {
-            "src": "/RoomLightDecor",
+            "src": "/bedroom-lights",
             "dest": "/"
         },
         {
-            "src": "/OthersCategory",
+            "src": "/storage-furniture",
             "dest": "/"
         },
         {

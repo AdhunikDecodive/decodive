@@ -14,15 +14,13 @@ import { useState } from "react";
 import PopUp from "./PopUp";
 import { Link } from "react-router-dom";
 import PhoneCallButton from "./PhoneCallButton";
-
-import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
+ 
+import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
 
 function OthersCategory() {
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-  
+   
 
      const [openModal, setOpenModal] = useState(false);
 
@@ -49,7 +47,7 @@ function OthersCategory() {
     const AllcardData = [
         {
             id: 1,
-            imageUrl: 'Others/PoojaRoom/1_c5a6no',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786725/1_c5a6no_bfjfaw.webp',
             title: "Spiritual Space ",
             description:
                 "Modern pooja room design with a champagne-colored base unit and crescent acacia wall unit with open shelving and a beige damask wallpaper with a traditional pattern for a touch of elegance",
@@ -57,7 +55,7 @@ function OthersCategory() {
         },
         {
             id: 2,
-            imageUrl: 'Others/TV/2_k9vhdt',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786865/2_k9vhdt_hsp5ru.webp',
             title: "Tv Unit",
             description:
                 "Modern tv unit panel feature a sleek design with clean lines made up of light-colored wood with a smooth finish, perfect for minimalist living spaces.",
@@ -65,7 +63,7 @@ function OthersCategory() {
         },
         {
             id: 3,
-            imageUrl: 'Others/BarCounter/25_mddd9x',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786654/25_mddd9x_hikpze.webp ',
             title: " Bar Counter",
             description:
                 "A living room with a wine cellar built-in wooden wine cabinet with integrated glass doors Along tv unit design for visually appealing home bar area",
@@ -73,7 +71,7 @@ function OthersCategory() {
         },
         {
             id: 4,
-            imageUrl: 'Others/PoojaRoom/22_aaufkn',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786785/22_aaufkn_vhug1x.webp ',
             title: "Spiritual Space ",
             description:
                 "A contemporary pooja room design with traditional indian hues, a wooden altar, nestled with corner, light tile flooring, recessed lighting, and a modest shelf for essential supplies.",
@@ -81,7 +79,7 @@ function OthersCategory() {
         },
         {
             id: 5,
-            imageUrl: 'Others/TV/10_i0mfw4',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786937/10_i0mfw4_mggrig.webp',
             title: "Tv Unit",
             description:
                 "Modern tv unit panel with wooden storage and drawers with cob light effect for sleek look.",
@@ -89,19 +87,19 @@ function OthersCategory() {
         },
         {
             id: 6,
-            imageUrl: 'Others/BarCounter/22_cfio7p',
+            imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786645/22_cfio7p_a3fote.webp',
             title: "Bar Counter",
             description:
                 "Minimalist home bar featuring a sleek white counter with chrome accents integrated lighting, creating an elegant and functional entertaining space.",
                 link: "/BarCounter",
         },
-        // Add more card objects as needed
+        
     ];
     const LcardData = [
         {
             id: 1,
             imageUrl:
-                'Others/TV/2_k9vhdt',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786865/2_k9vhdt_hsp5ru.webp',
             title: "",
             description:
                 "Modern tv unit panel feature a sleek design with clean lines made up of light-colored wood with a smooth finish, perfect for minimalist living spaces.",
@@ -109,7 +107,7 @@ function OthersCategory() {
         {
             id: 2,
             imageUrl:
-                'Others/TV/1_xgz30d',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786863/1_xgz30d_iswhgi.webp',
             title: "",
             description:
                 "Simple and modern tv unit design with a clean white finish wooden drawers for a streamlined look.",
@@ -117,7 +115,7 @@ function OthersCategory() {
         {
             id: 3,
             imageUrl:
-                'Others/TV/3_ap56gs',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786868/3_ap56gs_gsxxca.webp ',
             title: "",
             description:
                 "A minimalist white marble tv unit with a sleek marble slab atop a streamlined base that conceals storage space.  For clean and modern look for your living room.",
@@ -125,7 +123,7 @@ function OthersCategory() {
         {
             id: 4,
             imageUrl:
-                'Others/TV/4_urzfhe',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786871/4_urzfhe_duk36a.webp ',
             title: "",
             description:
                 "Streamlined tv wall panel design, crafted from a beautiful wood grain finish for a touch of sophistication.",
@@ -133,7 +131,7 @@ function OthersCategory() {
         {
             id: 5,
             imageUrl:
-                'Others/TV/5_ffubr1',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786874/5_ffubr1_duxjln.webp ',
             title: "",
             description:
                 "Modern tv unit panel with wooden storage and drawers with cob light effect for sleek look.",
@@ -141,18 +139,18 @@ function OthersCategory() {
         {
             id: 6,
             imageUrl:
-                'Others/TV/6_pzqjjy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786877/6_pzqjjy_yp3jrs.webp',
             title: "",
             description:
                 "A modern tv unit design with a low-profile marble cabinet beneath the mounted tv. The cabinet rests on a thin metal base, creating a minimalist look for the space.",
         },
-        // Add more card objects as needed
+        
     ];
     const UcardData = [
         {
             id: 1,
             imageUrl:
-                'Others/PoojaRoom/18_b1auhi',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786775/18_b1auhi_dqtuxp.webp ',
             title: "",
             description:
                 "A wooden temple with antique brass bells and a walnut pu finish, and could be a beautiful addition to a pooja room.",
@@ -160,7 +158,7 @@ function OthersCategory() {
         {
             id: 2,
             imageUrl:
-                'Others/PoojaRoom/20_yg61hp',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786778/20_yg61hp_r5a8ik.webp ',
             title: "",
             description:
                 "A traditional pooja room design floor-mounted mandir unit with a wooden panel along yellow painted wall creating a vibrant backdrop for the mandir unit",
@@ -168,7 +166,7 @@ function OthersCategory() {
         {
             id: 3,
             imageUrl:
-                'Others/PoojaRoom/21_ywlxu2',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786781/21_ywlxu2_ph4evd.webp ',
             title: "",
             description:
                 "A modern hindu pooja room featuring a central circular wooden temple. The mandir’s dark wood contrasts with the light walls, creating a visually striking focal point. ",
@@ -176,7 +174,7 @@ function OthersCategory() {
         {
             id: 4,
             imageUrl:
-                'Others/PoojaRoom/6_zkboih',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786740/6_zkboih_h02lv3.webp',
             title: "",
             description:
                 "Contemporary pooja room features a recessed niche with warm led lighting for simplicity and serenity",
@@ -184,7 +182,7 @@ function OthersCategory() {
         {
             id: 5,
             imageUrl:
-                'Others/PoojaRoom/23_j3g1en',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786788/23_j3g1en_jonip4.webp ',
             title: "",
             description:
                 "The pooja room design features a modern wooden cabinet with drawers and a bell for a touch of elegance.",
@@ -192,18 +190,18 @@ function OthersCategory() {
         {
             id: 6,
             imageUrl:
-                'Others/PoojaRoom/2_gvgc2a',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786728/2_gvgc2a_uidnzd.webp ',
             title: "",
             description:
                 "Create serenity with a minimalist puja room. Neutral tones, soft light, Ganesha statue on sleek wood shelf. Space-saving peace.",
         },
-        // Add more card objects as needed
+         
     ];
     const BCcardData = [
         {
             id: 1,
             imageUrl:
-                'Others/BarCounter/1_ypw6mg',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786586/1_ypw6mg_dih2r0.webp ',
             title: "",
             description:
                 "A well-lit home bar featuring a long wooden counter with sitting arrangement along with pendant lights",
@@ -211,7 +209,7 @@ function OthersCategory() {
         {
             id: 2,
             imageUrl:
-                'Others/BarCounter/2_jdseth',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786589/2_jdseth_vkzyng.webp',
             title: "",
             description:
                 "Modern home bar featuring a sleek white counter with chrome accents integrated lighting showcases a variety of colorful liquor bottles.",
@@ -219,7 +217,7 @@ function OthersCategory() {
         {
             id: 3,
             imageUrl:
-                'Others/BarCounter/3_ll43dy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786592/3_ll43dy_ykeuj1.webp ',
             title: "",
             description:
                 "A living room with a wine cellar built-in wooden wine cabinet with integrated glass doors Along tv unit design for visually appealing home bar area.",
@@ -227,7 +225,7 @@ function OthersCategory() {
         {
             id: 4,
             imageUrl:
-                'Others/BarCounter/25_mddd9x',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786654/25_mddd9x_hikpze.webp ',
             title: "",
             description:
                 "Wooden bar counter with a single open drawer filled with liquor bottles",
@@ -235,7 +233,7 @@ function OthersCategory() {
         {
             id: 5,
             imageUrl:
-                'Others/BarCounter/5_xyzlmj',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786597/5_xyzlmj_d6znir.webp',
             title: "",
             description:
                 "Minimalist home bar featuring a sleek white counter with chrome accents integrated lighting, creating an elegant and functional entertaining space.",
@@ -243,7 +241,7 @@ function OthersCategory() {
         {
             id: 6,
             imageUrl:
-                'Others/BarCounter/6_swkjkd',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786600/6_swkjkd_vskhl7.webp',
             title: "",
             description:
                 "Black, abstract-shaped bar counter with open shelves for storage. A sculptural light fixture hangs from the ceiling above the counter. Plush yellow bar stools with cushioned seats complete the modern look.",
@@ -264,7 +262,7 @@ function OthersCategory() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Explore the best interior design categories in Gurugram with Adhunik Decodive. Discover Spiritual Spaces, TV Units, Bar Counters, and more to enhance your home decor. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/OthersCategory" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/storage-furniture" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Interior Design Categories in Gurugram | Adhunik Decodive" />
@@ -307,23 +305,25 @@ function OthersCategory() {
                             className=" relative   h-[86vh]  md:h-[45vh] w-full object-cover object-center rounded-lg"
                         ></video> */}
 
-                        <AdvancedVideo
-               muted
-                autoPlay
-                loop preload="auto" playsInline
-                cldVid={cld.video('Videos/otr_deibqv').quality('auto')}
+                        <AdvancedImage
+              
+            
+               src="https://images.unsplash.com/photo-1603533880965-e1302f35290b?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Level Up Your Space With Stunning Ideas!" className="   relative   h-[86vh]  md:h-[45vh] w-full object-cover rounded-lg "
               />
                         <div className="w-full  h-full p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row  md:text-center  items-center mx-auto  absolute">
-                              <p className=" h-full  text-white text-4xl flex-col flex my-auto justify-center items-center">
+                        <div className="blur-sm  card">
+    <p className=" h-full  text-white text-4xl flex-col flex my-auto justify-center items-center">
                               Level Up Your Space…
                                 <br />
                                 <span className=" text-[22px]">
                                 With Stunning Ideas!
                                 </span>
                             </p>
+                        </div>
+                          
                             <div className="w-fit border-cyan-500 border-[1px] rounded-lg text-center p-5 bg-[#fffffb]">
-                                <p className="text-2xl"> All Others Categories </p>
+                                <p className="text-2xl"> All Storage Categories </p>
                                 <p className="bg-black w-fit mx-auto text-white p-1 relative rounded-full  mt-9">
                                     Starting
                                 </p>
@@ -351,7 +351,10 @@ function OthersCategory() {
                     </div>
 
                     <div className="w-full h-full md:p-9  text-justify md:text-center">
-                        <p className="text-4xl text-center mt-2 md:mt-0">All Others Categories</p>
+                        <p className="text-4xl text-center mt-2 md:mt-0">Living Cabinets
+
+
+</p>
                         <p className="text-gray-600 mt-3">
                         Cultivate your own living space that describes your one-of-a-kind personality with our expansive collection of design elements. From serene Spiritual Space Designs that inspire spiritual reflection to modern bar counters perfect for entertaining, discover Adhunik DecoDive world of design possibilities. Find the perfect blend of functionality and elegance to suit your taste across every space. Design a pooja room that fosters peace and tranquility, select TV unit panels that become a stylish centerpiece for your living room, and elevate your entertaining game with a modern and functional bar counter that guarantees unforgettable gatherings. Dive into a universe of design possibilities and transform your dream house into a reality. Let your imagination be your guide as you explore our curated selection and discover the perfect pieces to reflect your taste across every space.
                         </p>
@@ -369,10 +372,10 @@ function OthersCategory() {
                         title={
                             <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs ">
                               <AdvancedImage
-              cldImg={cld.image('Others/PoojaRoom/8_aspurm')}
+             src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786746/8_aspurm_xurm0u.webp"
                 height={70}
                 width={70}
-                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="All Others Category "
+                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="All Storage Category "
                 decoding="async"
                 effect="blur"
               
@@ -393,7 +396,7 @@ function OthersCategory() {
 
 
                                         <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+                src={card.imageUrl}
                 alt={card.description}
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -436,7 +439,7 @@ function OthersCategory() {
                         title={
                             <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                                  <AdvancedImage
-              cldImg={cld.image('Others/PoojaRoom/9_yqhpue')}
+              src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786750/9_yqhpue_vl6wu7.webp"
                 height={70}
                 width={70}
                 className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Spiritual Space Designs"
@@ -445,6 +448,7 @@ function OthersCategory() {
               
               />
                                 Spiritual Space 
+
                             </div>
                         }
                     >
@@ -460,7 +464,8 @@ function OthersCategory() {
 
 
                                         <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+
+                src={card.imageUrl}
                 alt= {card.description}
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -502,7 +507,7 @@ function OthersCategory() {
                         title={
                             <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                                  <AdvancedImage
-              cldImg={cld.image('Others/TV/12_fayle0')}
+              src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786894/12_fayle0_yst2dd.webp"
                 height={70}
                 width={70}
                 className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt=" TV Unit / Panels "
@@ -527,7 +532,7 @@ function OthersCategory() {
 
 
                                         <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+                src={card.imageUrl}
                 alt={card.description}
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
@@ -570,7 +575,7 @@ function OthersCategory() {
                         title={
                             <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
                                     <AdvancedImage
-              cldImg={cld.image('Others/BarCounter/23_mhqjyy')}
+             src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786648/23_mhqjyy_mrszjq.webp"
                 height={70}
                 width={70}
                 className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden" alt="Bar Counter"
@@ -594,7 +599,7 @@ function OthersCategory() {
 
 
                                         <AdvancedImage
-                cldImg={cld.image(card.imageUrl)}
+                src={card.imageUrl}
                 alt={card.description}
                 className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
                 style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
