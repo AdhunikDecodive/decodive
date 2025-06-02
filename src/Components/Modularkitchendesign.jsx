@@ -24,6 +24,7 @@ import {
   LayoutList,
   Heart,
 } from "lucide-react";
+import { Helmet } from 'react-helmet-async';
  
  
 
@@ -275,6 +276,25 @@ const costFactors = [
 
 
   return (
+
+
+<>
+  <Helmet>
+
+        <title>Luxury Modular Kitchen Design in Gurugram | Adhunik Decodive
+</title>
+
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover bespoke luxury modular kitchens in Gurugram with Adhunik Decodive. Explore premium designs, quality materials, and expert craftsmanship for your dream culinary space." />
+
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+        
+   
+        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+        
+      
+      </Helmet>
+
     <div className="font-sans text-gray-800 bg-gradient-to-br from-orange-50 via-white to-orange-100">
       {/* Hero Section */}
       <header className="relative h-[600px] flex items-center justify-center bg-gradient-to-r from-orange-700 via-white to-orange-700">
@@ -585,5 +605,6 @@ Connect with our expert designers for a complimentary, personalized modular kitc
       
     </div>
     </div>
+</>
   );
 }
