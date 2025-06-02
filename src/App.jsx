@@ -122,7 +122,7 @@ function App() {
         <Route path="/blogs" element={<MultipleBlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
         <Route path="/nero-chimney" element={<NeroChimney />} />
-        <Route path="/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
+        <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
 
 
       </Routes>

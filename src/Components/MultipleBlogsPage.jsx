@@ -112,7 +112,7 @@ import { Helmet } from "react-helmet-async";
     tag: "Trending",
     tags: ["#furniture", "#interiordesign"],
     readTime: " ",
-    href:"/luxury-modular-kitchen-design-gurugram"
+    href:"/blogs/luxury-modular-kitchen-design-gurugram"
   }
 ];
 
@@ -145,6 +145,7 @@ const MultipleBlogsPage = () => {
               className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
             >
             
+    
               <Link to={blog.href} className="block group">
                 <div className="relative h-60 overflow-hidden">
                   <AdvancedImage

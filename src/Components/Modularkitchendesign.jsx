@@ -303,7 +303,7 @@ const costFactors = [
           alt="Luxury Modular Kitchen"
           className="absolute w-full h-full object-cover opacity-30"
         />
-        <div className="relative z-10 text-center px-4 max-w-4xl">
+        <div className="relative text-center px-4 max-w-4xl">
           <div className="flex justify-center mb-8">
             <img
               src="https://res.cloudinary.com/dq14b7xie/image/upload/v1747811688/Adhunik_DecoDive_Logo_povt7l.webp"
@@ -350,7 +350,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-orange-400 hover:-translate-y-2"
+              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-orange-400"
             >
               <div className="mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
@@ -402,7 +402,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
 
       {/* CTA Section */}
       <section className="relative bg-gradient-to-r from-orange-500 via-white to-orange-500 text-gray-900 py-20 px-6 rounded-xl overflow-hidden mb-16">
-        <div className="relative z-10 text-center max-w-3xl mx-auto">
+        <div className="relative  text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Kitchen?</h2>
           <div className="h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent w-3/4 mx-auto my-8"></div>
           <p className="text-xl mb-8">
@@ -410,7 +410,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
             step toward your dream culinary space.
           </p>
           <Link
-            to="/contact"
+            to="/support-form"
             className="inline-block bg-orange-400 hover:bg-orange-500  font-bold py-4 px-8 rounded-lg transition-colors duration-300 shadow-lg"
           >
             Book Your Consultation
