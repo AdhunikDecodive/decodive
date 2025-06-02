@@ -50,7 +50,8 @@ import MultipleBlogsPage from "./Components/MultipleBlogsPage";
 import BlogDetailPage from "./Components/BlogDetailPage";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
-import NeroChimney from "./Components/NeroChimney";
+import NeroChimney from "./Components/NeroChimney"; 
+import Modularkitchendesign from "./Components/Modularkitchendesign";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -117,9 +118,11 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/blogpage" element={<BlogPage />} />
         <Route path="*" element={<Error404 />} />
+
         <Route path="/blogs" element={<MultipleBlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
         <Route path="/nero-chimney" element={<NeroChimney />} />
+        <Route path="/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
 
 
       </Routes>

@@ -1,217 +1,201 @@
-// src/components/MultipleBlogsPage.js
-
 import { Link } from "react-router-dom";
- 
 import { AdvancedImage } from "@cloudinary/react";
 import { Helmet } from "react-helmet-async";
 
-const blogs = [
+ const blogs = [
   {
-
     id: 1,
+    slug: "home-decor-ideas-compact-living",
     title: "Home Decor Ideas for Compact Living",
-    description:" How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life! ",
-    image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp",
+    description: "How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life!",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp",
     author: "Jonathan Reinink",
     date: "Aug 18",
     tag: "Trending",
-    tags: [ "#DIYHomeDecor #InteriorDesign"],
+    tags: ["#DIYHomeDecor", "#InteriorDesign"],
+    readTime: "4 min read"
+    ,
+     href:"/"
   },
-
   {
     id: 2,
+    slug: "modular-kitchen-designs-2024",
     title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
-    description:
-      " Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together.",
-    image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
+    description: "Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
     author: "Alex Johnson",
     date: "Sep 5",
     tag: "Featured",
-    tags: ["#modularkitchen #interiordesign #kitchendesign "],
+    tags: ["#modularkitchen", "#interiordesign", "#kitchendesign"],
+    readTime: "6 min read"
+    ,
+     href:"/"
   },
-
-
   {
     id: 3,
+    slug: "wardrobe-design-ideas-indian-homes",
     title: "Stunning Wardrobe Design Ideas for Indian Homes",
-    description:
-      " From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs.",
-    image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/sd_etqleb_1_myputd.webp ",
+    description: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/sd_etqleb_1_myputd.webp",
     author: "Maria Garcia",
     date: "Jul 22",
     tag: "Top",
-    tags: ["#wardrobestylist #interiordesigner"],
+    tags: ["#wardrobestylist", "#interiordesigner"],
+    readTime: "5 min read"
+    ,
+     href:"/"
   },
-
-
   {
     id: 4,
-    title: " Bar Counter Design Ideas to Replicate in Your Home In 2024",
-    description:
-      " Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs blend functionality with elegance. From sleek minimalist bars to luxurious statement pieces ",
-      image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp",
+    slug: "bar-counter-design-ideas-2024",
+    title: "Bar Counter Design Ideas to Replicate in Your Home In 2024",
+    description: "Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs blend functionality with elegance. From sleek minimalist bars to luxurious statement pieces.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp",
     author: "John Doe",
     date: "Nov 15",
     tag: "Popular",
-    tags: ["#bardesign #interiordesign"],
+    tags: ["#bardesign", "#interiordesign"],
+    readTime: "5 min read"
+    ,
+     href:"/"
   },
-
-
   {
     id: 5,
-    title: "Minimalist Interior Design Style.",
-    description:
-      "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and functionality, this style creates serene, uncluttered spaces with clean lines and neutral colors.",
-      image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
+    slug: "minimalist-interior-design-style",
+    title: "Minimalist Interior Design Style",
+    description: "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and functionality, this style creates serene, uncluttered spaces with clean lines and neutral colors.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
     author: "Jane Smith",
     date: "Oct 3",
     tag: "New",
-    tags: ["#minimaldesign  #interiordesign"],
+    tags: ["#minimaldesign", "#interiordesign"],
+    readTime: "4 min read"
+    ,
+     href:"/"
   },
-
-
   {
     id: 6,
+    slug: "sculptural-pendant-lights-trend",
     title: "The Artistic Trend of Sculptural Pendant Lights in Home Decor",
-    description:
-      "Brighten up your home with the Stunning Sculptural pendant lights from Adhunik DecoDive. With a blend of modern aesthetics and retro charm, these lights add a touch of sophistication and creativity to your home. Ready to elevate your décor?",
-      image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784146/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr_ugykea.webp",
+    description: "Brighten up your home with the stunning sculptural pendant lights from Adhunik DecoDive. With a blend of modern aesthetics and retro charm, these lights add sophistication and creativity to your home. Ready to elevate your décor?",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784146/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr_ugykea.webp",
     author: "Emily White",
     date: "Dec 27",
     tag: "Trending",
-    tags: ["#pendantlights #interiordesign"] ,
+    tags: ["#pendantlights", "#interiordesign"],
+    readTime: "5 min read"
+    
+    ,
+     href:"/"
   },
-
-
   {
     id: 7,
+    slug: "your-furniture-reflects-you",
     title: "Your Furniture Reflects You",
-    description:
-      "Your furniture is more than just decor—it's a reflection of your identity and the vibe of your space, be it your cozy home or sleek office. At Adhunik DecoDive, we offer a diverse range of Commercial and Domestic furniture that speaks volumes about your individuality and lifestyle.",
-      image:
-      "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784142/furniture_1_kbt4gm_majvly.webp",
+    description: "Your furniture is more than just decor—it's a reflection of your identity and the vibe of your space, be it your cozy home or sleek office. At Adhunik DecoDive, we offer a diverse range of Commercial and Domestic furniture that speaks volumes about your individuality and lifestyle.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784142/furniture_1_kbt4gm_majvly.webp",
     author: "Emily White",
     date: "Dec 27",
     tag: "Trending",
-    tags: ["#furniture #interiordesign "],
+    tags: ["#furniture", "#interiordesign"],
+    readTime: "4 min read",
+    href:"/"
   },
+  {
+    id: 8,
+    slug: "your-furniture-reflects-you",
+    title: "The Ultimate Guide to Luxury Modular Kitchen Design in Gurugram – Crafting Your Bespoke Culinary Oasis",
+    description: "The kitchen is more than just a place to cook; it's the vibrant heart of your home, a space for culinary creativity, family gatherings...",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748841832/1_th2zgt.webp",
+    author: "Modular Kitchen Design",
+    date: "June 2025",
+    tag: "Trending",
+    tags: ["#furniture", "#interiordesign"],
+    readTime: " ",
+    href:"/luxury-modular-kitchen-design-gurugram"
+  }
 ];
 
+
 const MultipleBlogsPage = () => {
- 
   return (
     <>
-
-<Helmet>
-
+      <Helmet>
         <title>Latest Interior Design Trends & Tips | Adhunik Decodive Blog</title>
-
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
-
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/blogs" data-react-helmet="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
-        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
-        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="interior design blog, home decor ideas, furniture trends, modern interiors, space-saving solutions, luxury interior tips, Adhunik Decodive blog, home improvement ideas, office decor tips, contemporary design insights" />
-        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
-        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
-        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
-
-        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/blog"></meta>
-        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Blog" />
-        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
-        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
-
-        {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
-
+        <meta name="description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
+        <meta name="keywords" content="interior design blog, home decor ideas, furniture trends, modern interiors, space-saving solutions, luxury interior tips" />
+        <meta property="og:title" content="Latest Interior Design Trends & Tips | Adhunik Decodive Blog" />
+        <meta property="og:description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
       </Helmet>
-      
- 
-    <div className="container-fluid p-3 md:mt-9  ">
-      <div className="flex flex-wrap  justify-center  items-center w-full h-full ">
-        {blogs.map((blog) => (
-        
 
-          <div key={blog.id} className=" md:w-[70%] h-full  lg:flex m-4">
-        <Link to={`/blogs/${blog.id}`} className="row flex flex-wrap">
-           <div className=" w-12/12 lg:w-6/12">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Page Header */}
+        <div className="text-center mb-14">
+          <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight">  Blogs</h1>
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            Dive into expert advice, modern styles, and timeless decor inspiration for your dream space.
+          </p>
+        </div>
 
-          <AdvancedImage
-                    decoding="async"
-                    loading="lazy"
-                    effect="blur"
-                    className="  h-full w-full  object-cover object-center "
-                    alt={blog.title}
-                   src={blog.image}
-                    >
-
-                </AdvancedImage>
-
-          </div>
-
-          <div className=" w-12/12 lg:w-6/12  px-5 py-5">
-          <div className="mb-8">
-                <p className="text-sm text-gray-600 flex items-center">
-                  {blog.tag}
-                </p>
-                <div className="text-gray-900 font-bold text-xl mb-2">
-                  {blog.title}
-                </div>
-              
-                <p className="text-gray-700 text-justify">{blog.description}</p>
-               
-              </div>
-
-              <span className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 lowercase"
+        {/* Blog Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {blogs.reverse().map((blog) => (
+            <div
+              key={blog.id}
+              className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
             >
-            {blog.tags}
-
             
-            </span>
-            
-              <div className="flex items-center">
-              <AdvancedImage
-                    decoding="async"
-                    loading="lazy"
-                    effect="blur"
-                       className="w-10 h-10 rounded-full mr-4"
+              <Link to={blog.href} className="block group">
+                <div className="relative h-60 overflow-hidden">
+                  <AdvancedImage
+                    src={blog.image}
                     alt={blog.title}
-                   src={blog.image}
-                ></AdvancedImage>
-               
-
-               
-                <div className="text-sm">
-                 <p className="text-gray-600">{blog.date} / 2024</p>
-                  <p className="text-gray-600">
-              
-
-                  </p>
-                  
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <span className="absolute top-4 right-4 bg-yellow-400 text-xs font-semibold uppercase px-3 py-1 rounded-full text-gray-800 shadow-sm">
+                    {blog.tag}
+                  </span>
                 </div>
-              </div>
-          </div>
-       
 
-        </Link>
-       
-            
-          </div>
-     
-        ))}
+                <div className="p-5">
+                  <div className="flex items-center justify-between text-sm text-gray-500 mb-2">
+                    <span>{blog.date}</span>
+                    <span>{blog.readTime}</span>
+                  </div>
+
+                  <h2 className="text-xl font-semibold text-gray-900 group-hover:text-yellow-500 transition-colors mb-2">
+                    {blog.title}
+                  </h2>
+
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">{blog.description}</p>
+
+                  <div className="flex flex-wrap gap-2 text-xs mb-4">
+                    {blog.tags.map((tag, index) => (
+                      <span key={index} className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
+                      <AdvancedImage
+                        src={blog.image}
+                        alt={blog.author}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <span className="text-sm font-medium text-gray-700">{blog.author}</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        {/* Load More */}
+      
       </div>
-    </div>
-   
     </>
   );
 };
