@@ -3,11 +3,8 @@ import "./LShapeKitchen.css"
 
 
 import PhoneCallButton from "./PhoneCallButton";
-
-
 import ModalNew from './ModalNew';
-import { useState } from "react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { useState } from "react"; 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -24,7 +21,7 @@ function BarCounter() {
         {
             id: 1,
             imageUrl:
-                'Others/BarCounter/7_hw166m',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786603/7_hw166m_peqmv0.webp',
             title: '',
             description:
                 'A Chilcomb Dusk Blue In-Frame Home Bar designed to fit under the stairs with blue cabinets with drawers and a wine fridge. Open shelves provide additional storage',
@@ -32,7 +29,7 @@ function BarCounter() {
         {
             id: 2,
             imageUrl:
-                'Others/BarCounter/26_onevwv',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786657/26_onevwv_o5b644.webp ',
             title: '',
             description:
                 'Home bar with light colored wood and moody lighting, creating a sophisticated and intimate atmosphere. Ideal for entertaining or relaxing with friends.',
@@ -40,7 +37,7 @@ function BarCounter() {
         {
             id: 3,
             imageUrl:
-                'Others/BarCounter/9_r0f9hl',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786609/9_r0f9hl_ljtgdm.webp',
             title: '',
             description:
                 'Stylish and sleek home bar built-in wine cellar with glass doors. Warm wood accents balance the modern vibe, and hidden drawers stash barware for effortless entertaining.',
@@ -48,7 +45,7 @@ function BarCounter() {
         {
             id: 4,
             imageUrl:
-                'Others/BarCounter/23_mhqjyy',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786648/23_mhqjyy_mrszjq.webp ',
             title: '',
             description:
                 'A sleek and functional home bar design with a wall-mounted wine rack. Efficiently stores wine bottles, with the integrated stemware holder keeps glasses within easy reach.',
@@ -56,7 +53,7 @@ function BarCounter() {
         {
             id: 5,
             imageUrl:
-                'Others/BarCounter/11_uqjeec',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786614/11_uqjeec_yrgyhm.webp ',
             title: '',
             description:
                 ' A sleek home bar with a light wood countertop and a black metal frame for a modern look. Perfect for a contemporary home.',
@@ -64,7 +61,7 @@ function BarCounter() {
         {
             id: 6,
             imageUrl:
-                'Others/BarCounter/12_ghhbyb',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786617/12_ghhbyb_r5ef2l.webp ',
             title: '',
             description:
                 'Wooden breakfast bar with integrated storage. Light colored wooden top and drawers with bronze handles. ',
@@ -72,19 +69,20 @@ function BarCounter() {
         {
             id: 7,
             imageUrl:
-                'Others/BarCounter/27_mcaqng',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786660/27_mcaqng_ytmply.webp ',
             title: '',
             description:
                 'Medium tone wood floor Home Bar with White Cabinets built-under wine cooler with a stainless steel frame for a sleek look.',
         },
 
-        // Add more card objects as needed
+        
     ];
+
     const P2cardData = [
         {
             id: 1,
             imageUrl:
-                'Others/BarCounter/22_cfio7p',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786645/22_cfio7p_a3fote.webp ',
             title: '',
             description:
                 'The minimalist home bar design with built-in, a wine cooler and rack for efficient storage and display. Space-saving design creates a sophisticated entertaining area within the kitchen.',
@@ -92,7 +90,7 @@ function BarCounter() {
         {
             id: 2,
             imageUrl:
-                'Others/BarCounter/16_qrtqjm',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786628/16_qrtqjm_ruqcas.webp ',
             title: '',
             description:
                 ' Modern home bar design with a dark wood finish and a mirrored backsplash with some bottles of liquor and glasses.',
@@ -100,7 +98,7 @@ function BarCounter() {
         {
             id: 3,
             imageUrl:
-                'Others/BarCounter/18_fol33j',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786634/18_fol33j_djz06q.webp ',
             title: '',
             description:
                 'A simple wooden countertop home bar design with a focus on functionality and for streamlined approach.',
@@ -108,23 +106,25 @@ function BarCounter() {
         {
             id: 4,
             imageUrl:
-                'Others/BarCounter/19_rpgbxb',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786637/19_rpgbxb_ee76od.webp',
             title: '',
             description:
                 'A built-in home bar designed to maximize under-stair storage space with a polished marble countertop, complemented by classic white cabinetry with drawers.',
         },
+
         {
             id: 5,
             imageUrl:
-                'Others/BarCounter/28_j2djr6',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786663/28_j2djr6_eep95x.webp ',
             title: '',
             description:
                 'Sophisticated built-in bar featuring a mirrored backsplash that creates a spacious feel. Classic wood shelves add warmth for extra functionality',
         },
+
         {
             id: 6,
             imageUrl:
-                'Others/BarCounter/29_t0yfkn',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786665/29_t0yfkn_xhjqju.webp ',
             title: '',
             description:
                 'A contemporary wet bar with dark cabinetry and integrated wine storage creating a sleek and functional entertaining area.',
@@ -132,14 +132,13 @@ function BarCounter() {
         {
             id: 7,
             imageUrl:
-                'Others/BarCounter/25_mddd9x',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786654/25_mddd9x_hikpze.webp ',
             title: '',
             description:
                 'A Chilcomb Dusk Blue In-Frame Home Bar designed to fit under the stairs with blue cabinets with drawers and a wine fridge. Open shelves provide additional storage',
         },
     ];
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+    
     return (
         <>
 
@@ -156,7 +155,7 @@ function BarCounter() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best bar counter designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient bar counters for your home and commercial spaces. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/BarCounter" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/bar-furniture" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Bar Counter Designs in Gurugram | Adhunik Decodive" />
@@ -171,9 +170,8 @@ function BarCounter() {
         <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
         <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Top Bar Counter Designs in Gurugram | Adhunik Decodive" />
         <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Discover the best bar counter designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient bar counters for your home and commercial spaces. Free consultation!" />
-
       
-      </Helmet>
+</Helmet>
 
 
 <ModalNew  isOpen={openModal} onClose={toggleModal}  />
@@ -210,7 +208,7 @@ function BarCounter() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -260,7 +258,7 @@ function BarCounter() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

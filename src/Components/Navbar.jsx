@@ -114,9 +114,9 @@ function Navbar() {
             text: 'Storage',
             dropdownItems: [
                 { to: '/storage-furniture', text: 'Living Cabinets' },
-                { to: '/PoojaRoom', text: 'Spiritual Space ' },
-                { to: '/TVUnitPanels', text: 'TV units / Panels' },
-                { to: '/BarCounter', text: 'Bar Counter' },
+                { to: '/wall-mounted-pooja-mandir', text: ' Pooja Shelves ' },
+                { to: '/tv-units', text: 'TV units / Panels' },
+                { to: '/bar-furniture', text: 'Bar Counter' },
 
             ],
         },
@@ -391,22 +391,22 @@ function Navbar() {
              Living Cabinets
             </Dropdown.Item>
         </Link>
-        <Link to="/PoojaRoom">
+        <Link to="/wall-mounted-pooja-mandir">
             <Dropdown.Item>
-                Spiritual Space 
+               Pooja Shelves
             </Dropdown.Item>
         </Link>
-        <Link to="/TVUnitPanels">
+        <Link to="/tv-units">
             <Dropdown.Item>
                 TV units / Panels
             </Dropdown.Item>
         </Link>
-        <Link to="/BarCounter">
+        <Link to="/bar-furniture">
             <Dropdown.Item >
                 Bar Counter
             </Dropdown.Item>
         </Link>
-        <Link to="/VastuTips">
+        <Link to="/basic-vastu-tips-for-home">
             <Dropdown.Item >
             Vastu Tips
             </Dropdown.Item>

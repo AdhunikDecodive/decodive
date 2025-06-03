@@ -6,13 +6,12 @@ import PhoneCallButton from "./PhoneCallButton";
 import ModalNew from "./ModalNew";
 import { useState } from "react";
 
-import { Cloudinary } from "@cloudinary/url-gen";
+
 import { AdvancedImage } from "@cloudinary/react";
 import { Helmet } from "react-helmet-async";
 
 function TVUnitPanels() {
-  const cld = new Cloudinary({ cloud: { cloudName: "dwhmfz63n" } });
-
+  
   const [openModal, setOpenModal] = useState(false);
 
   const toggleModal = () => {
@@ -22,49 +21,49 @@ function TVUnitPanels() {
   const PcardData = [
     {
       id: 1,
-      imageUrl: "Others/PoojaRoom/7_jys5nh",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786743/7_jys5nh_g0plvm.webp",
       title: "",
       description:
         "Modern spiritual space with lord Ganesha statue on wooden platform, complemented by floral wallpaper in calming yellow and orange hues and small LED lights for added ambiance. ",
     },
     {
       id: 2,
-      imageUrl: "Others/PoojaRoom/8_aspurm",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786746/8_aspurm_xurm0u.webp",
       title: "",
       description:
         "Modern  Spiritual Space  with white walls and light wood furniture create a sense of serenity and a minimalist aesthetic. Geometric shelves flank the statue, displaying puja essentials.",
     },
     {
       id: 3,
-      imageUrl: "Others/PoojaRoom/9_yqhpue",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786750/9_yqhpue_vl6wu7.webp",
       title: "",
       description:
         "Traditional  Spiritual Space  design with a krishna statue made up of a wooden mandir unit with a marble platform and gold accents. Decorative lighting and floral garlands adorn the mandir.",
     },
     {
       id: 4,
-      imageUrl: "Others/PoojaRoom/10_mmj9ai",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786752/10_mmj9ai_pk8bvv.webp",
       title: "",
       description:
         "Modern  Spiritual Space  with a ganesha statue on a white pedestal with multicolored mandala design",
     },
     {
       id: 5,
-      imageUrl: "Others/PoojaRoom/11_dxgfcl",
+      imageUrl: " https://res.cloudinary.com/dq14b7xie/image/upload/v1746786754/11_dxgfcl_xibizl.webp ",
       title: "",
       description:
         "Modern  Spiritual Space  with light colors, clean lines, and a krishna statue. Peacock feather pattern on back wall adds a touch of tradition.",
     },
     {
       id: 6,
-      imageUrl: "Others/PoojaRoom/12_kbmynx",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786758/12_kbmynx_le2hl8.webp ",
       title: "",
       description:
         "Modern  Spiritual Space  with a conch shell door. The room features a white color palette with wooden accents.",
     },
     {
       id: 7,
-      imageUrl: "Others/PoojaRoom/14_ofrqxh",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786763/14_ofrqxh_jebhnw.webp",
       title: "",
       description:
         "A modern hindu  Spiritual Space  featuring a central circular wooden temple. The mandir’s dark wood contrasts with the light walls, creating a visually striking focal point.",
@@ -72,52 +71,53 @@ function TVUnitPanels() {
 
     // Add more card objects as needed
   ];
+
   const P2cardData = [
     {
       id: 1,
-      imageUrl: "Others/PoojaRoom/16_keoh3t",
+      imageUrl: " https://res.cloudinary.com/dq14b7xie/image/upload/v1746786769/16_keoh3t_rgfjvy.webp ",
       title: "",
       description:
         "Modern  Spiritual Space  with a ganesha statue on a marble platform in front of a lotus flower wall mural and rich brown drawers",
     },
     {
       id: 2,
-      imageUrl: "Others/PoojaRoom/18_b1auhi",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786775/18_b1auhi_dqtuxp.webp ",
       title: "",
       description:
         "Modern  Spiritual Space  featuring a statue on a simple wooden table. The backdrop features a floral om symbol design in soft colors",
     },
     {
       id: 3,
-      imageUrl: "Others/PoojaRoom/poojaroom_tv7huq",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786794/poojaroom_tv7huq_he6t2j.webp ",
       title: "",
       description:
         "A serene space with soft lighting, and neutral tones creates a calming atmosphere for prayer and meditation in contemporary homes.",
     },
     {
       id: 4,
-      imageUrl: "Others/PoojaRoom/poojamandir_ktbnvo",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786792/poojamandir_ktbnvo_z5wmen.webp",
       title: "",
       description:
         "Elegant  Spiritual Space  design: golden statue on marble altar with sophisticated floral pattern. Traditional elements meet modern twist.",
     },
     {
       id: 5,
-      imageUrl: "Others/PoojaRoom/20_yg61hp",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786778/20_yg61hp_r5a8ik.webp ",
       title: "",
       description:
         "A wooden temple with antique brass bells and a walnut pu finish, and could be a beautiful addition to a  Spiritual Space .",
     },
     {
       id: 6,
-      imageUrl: "Others/PoojaRoom/6_zkboih",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786740/6_zkboih_h02lv3.webp",
       title: "",
       description:
         "Contemporary  Spiritual Space  features a recessed niche with warm led lighting for simplicity and serenity.",
     },
     {
       id: 7,
-      imageUrl: "Others/PoojaRoom/23_j3g1en",
+      imageUrl: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786788/23_j3g1en_jonip4.webp",
       title: "",
       description:
         "The  Spiritual Space  design features a modern wooden cabinet with drawers and a bell for a touch of elegance.",
@@ -138,7 +138,7 @@ function TVUnitPanels() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best spiritual space designs in Gurugram with Adhunik Decodive. Create peaceful, harmonious, and aesthetic spaces for meditation and mindfulness. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/PoojaRoom" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/wall-mounted-pooja-mandir" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top Spiritual Space Designs in Gurugram | Adhunik Decodive" />
@@ -164,7 +164,7 @@ function TVUnitPanels() {
         <div className="row justify-around flex">
           <div className="w-[80%] flex">
             <p className="text-5xl font-semibold p-3 md:p-9">
-              Spiritual Space Designs
+              Pooja Stand Design
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ function TVUnitPanels() {
               <div className="relative h-80">
               
                 <AdvancedImage
-                  cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+                  src={card.imageUrl} 
                    alt={card.description}
                   decoding="async"
                   className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -262,7 +262,7 @@ function TVUnitPanels() {
             >
               <div className="relative h-80">
                 <AdvancedImage
-                  cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+                  src={card.imageUrl} 
                    alt={card.description}
                   decoding="async"
                   className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"

@@ -6,8 +6,7 @@ import PhoneCallButton from "./PhoneCallButton";
 
 import ModalNew from './ModalNew';
 import { useState } from "react";
-
-import { Cloudinary } from "@cloudinary/url-gen";
+ 
 import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
@@ -15,8 +14,7 @@ import { Helmet } from "react-helmet-async";
 
 function TVUnitPanels() {
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     const [openModal, setOpenModal] = useState(false);
 
     const toggleModal = () => {
@@ -27,7 +25,7 @@ function TVUnitPanels() {
         {
             id: 1,
             imageUrl:
-                'Others/TV/7_vdlrb3',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786880/7_vdlrb3_k6olv5.webp',
             title: '',
             description:
                 'A rustic and sleek look Tv unit by combining the natural wood tones of the chevron pattern with the dark color of the shelf.',
@@ -35,7 +33,7 @@ function TVUnitPanels() {
         {
             id: 2,
             imageUrl:
-                'Others/TV/8_xxp5rv',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786883/8_xxp5rv_mdag8f.webp ',
             title: '',
             description:
                 'A modern floating TV unit made of laminate wood. For a sleek, low-profile design mounts directly to the wall for a streamlined look.',
@@ -43,7 +41,7 @@ function TVUnitPanels() {
         {
             id: 3,
             imageUrl:
-                'Others/TV/9_xq9mqu',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786887/9_xq9mqu_hyvijm.webp ',
             title: '',
             description:
                 'A wall-mounted flat Tv screen with sleek wooden shelves providing storage and display for decorative objects.',
@@ -51,7 +49,7 @@ function TVUnitPanels() {
         {
             id: 4,
             imageUrl:
-                'Others/TV/10_i0mfw4',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786937/10_i0mfw4_mggrig.webp',
             title: '',
             description:
                 'Sleek and modern TV unit design with wall-mounted TV centered on a light-colored laminated wooden cabinet. With shelves and drawers on either side.',
@@ -59,7 +57,7 @@ function TVUnitPanels() {
         {
             id: 5,
             imageUrl:
-                'Others/TV/11_mlbkhz',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786890/11_mlbkhz_f3ctos.webp',
             title: '',
             description:
                 'A modern TV unit design with a mounted flat screen TV and a sleek white laminate floating media console with two drawers.',
@@ -68,7 +66,7 @@ function TVUnitPanels() {
         {
             id: 6,
             imageUrl:
-                'Others/TV/12_fayle0',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786894/12_fayle0_yst2dd.webp',
             title: '',
             description:
                 'Sleek TV panel design crafted from quality wood, with curved design along integrated LED light strip for modern touch.',
@@ -76,7 +74,7 @@ function TVUnitPanels() {
         {
             id: 7,
             imageUrl:
-                'Others/TV/14_tog8gm',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786899/14_tog8gm_hdq0vh.webp ',
             title: '',
             description:
                 'Modern minimalist TV units incorporate lacquered wood with shades of gray with sleek and modern touch.',
@@ -89,7 +87,7 @@ function TVUnitPanels() {
         {
             id: 1,
             imageUrl:
-                'Others/TV/15_covy73',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786902/15_covy73_of1tzr.webp',
             title: '',
             description:
                 'A luxury Tv unit design with a glass cabinet with an built-in LED light strip for a sleek, modern design.',
@@ -97,7 +95,7 @@ function TVUnitPanels() {
         {
             id: 2,
             imageUrl:
-                'Others/TV/16_jbxf20',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786905/16_jbxf20_pwpwzc.webp',
             title: '',
             description:
                 'Sleek and Chic TV Wall Panel Design with glossy finish along with vertical shelves for display ',
@@ -105,7 +103,7 @@ function TVUnitPanels() {
         {
             id: 3,
             imageUrl:
-                'Others/TV/17_wpvk1l',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786926/17_wpvk1l_gsiw2b.webp',
             title: '',
             description:
                 'A modern and sleek POP design for TV Wall with dark color integrated with led light on shelf for contemporary feel.',
@@ -113,7 +111,7 @@ function TVUnitPanels() {
         {
             id: 4,
             imageUrl:
-                'Others/TV/18_nrfdzt',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786928/18_nrfdzt_mwidyc.webp',
             title: '',
             description:
                 'Wooden Accents in sleek Bedroom TV Panel Designs integrated with led lights enriching its ambiance.  ',
@@ -121,7 +119,7 @@ function TVUnitPanels() {
         {
             id: 5,
             imageUrl:
-                'Others/TV/19_cvtj8u',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786930/19_cvtj8u_r5om0n.webp',
             title: '',
             description:
                 'A modern TV unit panel with a high-gloss laminate finish in Irish Cream and Crescent Acacia for a touch of warmth.',
@@ -129,7 +127,7 @@ function TVUnitPanels() {
         {
             id: 6,
             imageUrl:
-                'Others/TV/20_ft720z',
+                ' https://res.cloudinary.com/dq14b7xie/image/upload/v1746786940/20_ft720z_acudb8.webp ',
             title: '',
             description:
                 ' Modern Tv panel design with a shelf underneath made from light colored wood with a smooth finish.',
@@ -137,7 +135,7 @@ function TVUnitPanels() {
         {
             id: 7,
             imageUrl:
-                'Others/TV/21_yi5nkc',
+                'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786934/21_yi5nkc_kn3kxh.webp ',
             title: '',
             description:
                 'A Modern rich brown wooden Tv unit within shelves and drawer for more organized and showcasing.',
@@ -158,7 +156,7 @@ function TVUnitPanels() {
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best TV unit and panel designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient TV unit solutions for your home. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/TVUnitPanels" data-react-helmet="true"/>
+        <link rel="canonical" href="https://adhunikdecodive.com/tv-units" data-react-helmet="true"/>
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
         <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Top TV Unit & Panel Designs in Gurugram | Adhunik Decodive" />
@@ -214,7 +212,7 @@ function TVUnitPanels() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
+              src={card.imageUrl}  
                alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
@@ -264,8 +262,8 @@ function TVUnitPanels() {
                         <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
                             <div className="relative h-80">
                             <AdvancedImage
-              cldImg={cld.image(card.imageUrl)} // Assuming `imageUrl` contains the Cloudinary image identifier
-               alt={card.description}
+              src={card.imageUrl} 
+                 alt={card.description}
               decoding="async"
               className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
               style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}

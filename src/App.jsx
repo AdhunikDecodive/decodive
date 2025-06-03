@@ -13,7 +13,7 @@ import PshapeKitchen from "./Components/PshapeKitchen";
 import IshapeKitchen from "./Components/IshapeKitchen";
 import SshapeKitchen from "./Components/SshapeKitchen";
 import Wardrobe from "./Components/Wardrobe";
-import VastuTips from "./Components/VastuTips";
+ 
 import ShutterDoorWardrobe from "./Components/ShutterDoorWardrobe";
 import SlidingDoorWardrobe from "./Components/SlidingDoorWardrobe";
 import WalkDoorWardrobe from "./Components/WalkDoorWardrobe";
@@ -52,6 +52,7 @@ import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import NeroChimney from "./Components/NeroChimney"; 
 import Modularkitchendesign from "./Components/Modularkitchendesign";
+import VastuBasicsTips from "./Components/VastuBasicsTips";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -92,7 +93,7 @@ function App() {
         <Route path="/ishapekitchen" element={<IshapeKitchen />} />
         <Route path="/straight-modular-kitchen" element={<SshapeKitchen />} />
         <Route path="/wardrobes" element={<Wardrobe />} />
-        <Route path="/VastuTips" element={<VastuTips />} />
+        
         <Route path="/shutter-door-wardrobe" element={<ShutterDoorWardrobe />} />
         <Route path="/sliding-door-wardrobes" element={<SlidingDoorWardrobe />} />
         <Route path="/Walk-in-door-wardrobes" element={<WalkDoorWardrobe />} />
@@ -111,10 +112,10 @@ function App() {
         <Route path="/outdoor-lights" element={<OutDoorLightDecor />} />
         <Route path="/bedroom-lights" element={<RoomLightDecor />} />
         <Route path="/storage-furniture" element={<OthersCategory />} />
-        <Route path="/tvunitpanels" element={<TVUnitPanels />} />
-        <Route path="/poojaroom" element={<PoojaRoom />} />
+        <Route path="/tv-units" element={<TVUnitPanels />} />
+        <Route path="/wall-mounted-pooja-mandir" element={<PoojaRoom />} />
         <Route path="/thankyoupage" element={<ThankYouPage />} />
-        <Route path="/barcounter" element={<BarCounter />} />
+        <Route path="/bar-furniture" element={<BarCounter />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/blogpage" element={<BlogPage />} />
         <Route path="*" element={<Error404 />} />
@@ -123,6 +124,7 @@ function App() {
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
         <Route path="/nero-chimney" element={<NeroChimney />} />
         <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
+        <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
 
 
       </Routes>

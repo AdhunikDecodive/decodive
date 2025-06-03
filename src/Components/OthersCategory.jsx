@@ -48,10 +48,10 @@ function OthersCategory() {
         {
             id: 1,
             imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786725/1_c5a6no_bfjfaw.webp',
-            title: "Spiritual Space ",
+            title: " Pooja Shelves ",
             description:
                 "Modern pooja room design with a champagne-colored base unit and crescent acacia wall unit with open shelving and a beige damask wallpaper with a traditional pattern for a touch of elegance",
-                link: "/PoojaRoom",
+                link: "/wall-mounted-pooja-mandir",
         },
         {
             id: 2,
@@ -59,7 +59,7 @@ function OthersCategory() {
             title: "Tv Unit",
             description:
                 "Modern tv unit panel feature a sleek design with clean lines made up of light-colored wood with a smooth finish, perfect for minimalist living spaces.",
-                link: "/TVUnitPanels",
+                link: "/tv-units",
         },
         {
             id: 3,
@@ -67,15 +67,15 @@ function OthersCategory() {
             title: " Bar Counter",
             description:
                 "A living room with a wine cellar built-in wooden wine cabinet with integrated glass doors Along tv unit design for visually appealing home bar area",
-                link: "/BarCounter",
+                link: "/bar-furniture",
         },
         {
             id: 4,
             imageUrl: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786785/22_aaufkn_vhug1x.webp ',
-            title: "Spiritual Space ",
+            title: "Pooja Shelves ",
             description:
                 "A contemporary pooja room design with traditional indian hues, a wooden altar, nestled with corner, light tile flooring, recessed lighting, and a modest shelf for essential supplies.",
-                link: "/PoojaRoom",
+                link: "/wall-mounted-pooja-mandir",
         },
         {
             id: 5,
@@ -83,7 +83,7 @@ function OthersCategory() {
             title: "Tv Unit",
             description:
                 "Modern tv unit panel with wooden storage and drawers with cob light effect for sleek look.",
-                link: "/TVUnitPanels",
+                link: "/tv-units",
         },
         {
             id: 6,
@@ -91,7 +91,7 @@ function OthersCategory() {
             title: "Bar Counter",
             description:
                 "Minimalist home bar featuring a sleek white counter with chrome accents integrated lighting, creating an elegant and functional entertaining space.",
-                link: "/BarCounter",
+                link: "/bar-furniture",
         },
         
     ];
@@ -460,7 +460,7 @@ function OthersCategory() {
                                 >
                                     <div className="relative h-80 overflow-hidden">
 
-                                        <Link to='/PoojaRoom'>
+                                        <Link to='/wall-mounted-pooja-mandir'>
 
 
                                         <AdvancedImage
@@ -528,7 +528,7 @@ function OthersCategory() {
                                 >
                                     <div className="relative h-80 overflow-hidden">
 
-                                        <Link to='/TVUnitPanels'>
+                                        <Link to='/tv-units'>
 
 
                                         <AdvancedImage
@@ -595,7 +595,7 @@ function OthersCategory() {
                                 >
                                     <div className="relative h-80 overflow-hidden">
 
-                                        <Link to='/BarCounter'>
+                                        <Link to='/bar-furniture'>
 
 
                                         <AdvancedImage

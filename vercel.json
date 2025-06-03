@@ -115,11 +115,11 @@
             "dest": "/"
         },
         {
-            "src": "/TVUnitPanels",
+            "src": "/tv-units",
             "dest": "/"
         },
         {
-            "src": "/PoojaRoom",
+            "src": "/wall-mounted-pooja-mandir",
             "dest": "/"
         },
         {
@@ -127,7 +127,7 @@
             "dest": "/"
         },
         {
-            "src": "/BarCounter",
+            "src": "/bar-furniture",
             "dest": "/"
         },
         {
