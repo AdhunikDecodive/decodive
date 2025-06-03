@@ -208,38 +208,45 @@ const kitchenLayouts = [
     icon: LucideLayoutGrid,
     description:
       "Ideal for open-plan living spaces and medium-sized Gurugram apartments, offering ample counter space and storage, often with a seamless connection to dining areas.",
+    href: "/l-shape-modular-kitchen-design",
   },
   {
     title: "U-Shaped Kitchen",
     icon: LucideLayers,
     description:
       "Perfect for larger homes or those seeking maximum storage and countertop space. It provides a highly efficient \"work triangle\" and is a popular choice for spacious villas in Gurugram.",
+    href: "/u-shape-modular-kitchen-design",
   },
   {
     title: "Parallel or Gallery Kitchen",
     icon: LucideList,
     description:
       "Best suited for compact Gurugram apartments, this layout makes efficient use of narrow spaces, providing two parallel countertops and excellent workflow.",
+    href: "/parallel-modular-kitchen-design",
   },
   {
     title: "Straight Line Kitchen",
     icon: LucidePackageSearch,
     description:
       "An excellent choice for studio apartments or homes where space is at a premium, offering a sleek, minimalist aesthetic while maintaining core functionality.",
+    href: "/straight-modular-kitchen",
   },
   {
     title: "Island Kitchen",
     icon: LucideSparkles,
     description:
       "The epitome of luxury and social living. A central island provides additional counter space, storage, and often serves as a breakfast bar or informal dining area, making it a highly sought-after feature in premium Gurugram homes.",
+    href: "/IshapeKitchen", // Reusing U-shaped path
   },
   {
     title: "G-Shaped Kitchen",
     icon: LucideLayoutGrid,
     description:
       "An extension of the U-shaped layout, providing an additional peninsula for extra counter space or seating, perfect for larger families or avid entertainers.",
+    href: "/u-shape-modular-kitchen-design", // Reusing U-shaped path
   },
 ];
+
 
 const costFactors = [
   {
@@ -312,7 +319,7 @@ const costFactors = [
             />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugram – Crafting Your Bespoke Culinary Oasis
+Adhunik Decodive : The Ultimate Guide to Luxury Modular Kitchen Design in Gurugram – Crafting Your Bespoke Culinary Oasis
           </h1>
           <div className="h-1 bg-gradient-to-r from-transparent via-orange-400 to-transparent w-3/4 mx-auto my-6"></div>
           <p className="text-xl text-gray-700">
@@ -327,7 +334,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
           The kitchen is more than just a place to cook; it's the vibrant heart of your home, a space for culinary creativity, family gatherings, and memorable moments. For the discerning homeowner in Gurugram, where contemporary living meets sophisticated aesthetics, a modular kitchen isn't just a trend—it's a necessity. It’s an investment in unparalleled style, functionality, and lasting value.
         </p>
         <p className="text-lg text-gray-700 mb-6">
-          At Adhunik Decodive, we understand this aspiration. As Gurugram's leading luxury interior design firm, we specialize in transforming ordinary kitchens into extraordinary culinary sanctuaries. With over 10 years of expertise and a legacy of 500+ successful projects, we are renowned for crafting bespoke modular kitchens that blend cutting-edge functionality with timeless elegance, uniquely tailored for Gurugram's modern homes.
+          At <Link className=' text-orange-600' to='/'>Adhunik Decodive</Link>, we understand this aspiration. As Gurugram's leading luxury interior design firm, we specialize in transforming ordinary kitchens into extraordinary culinary sanctuaries. With over 10 years of expertise and a legacy of 500+ successful projects, we are renowned for crafting bespoke modular kitchens that blend cutting-edge functionality with timeless elegance, uniquely tailored for Gurugram's modern homes.
         </p>
         <p className="text-lg text-gray-700">
           This ultimate guide will take you through everything you need to know about designing a luxury modular kitchen in Gurugram, showcasing how Adhunik Decodive ensures your culinary space is nothing short of a masterpiece.
@@ -428,22 +435,28 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2">
-        {kitchenLayouts.map(({ title, description, icon: Icon }, idx) => (
-          <div
-            key={idx}
-            className="flex items-start gap-5 bg-white shadow-lg p-6 rounded-2xl border-l-4 border-orange-500"
-          >
-            <div className="bg-orange-100 p-3 rounded-full">
-              <Icon className="w-6 h-6 text-orange-800" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-orange-900 mb-1">{title}</h3>
-              <p className="text-gray-700 text-sm">{description}</p>
-            </div>
-          </div>
-        ))}
+     <div className="grid gap-8 md:grid-cols-2">
+  {kitchenLayouts.map(({ title, description, icon: Icon, href }, idx) => (
+    <div
+      key={idx}
+      className="flex items-start gap-5 bg-white shadow-lg p-6 rounded-2xl border-l-4 border-orange-500"
+    >
+      <div className="bg-orange-100 p-3 rounded-full">
+        <Icon className="w-6 h-6 text-orange-800" />
       </div>
+      <div>
+        <Link
+          to={href}
+          className="text-xl font-semibold text-orange-600 mb-1 hover:underline inline-block"
+        >
+          {title}
+        </Link>
+        <p className="text-gray-700 text-sm">{description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
       <div className="text-center mt-20 mb-12">
         <h2 className="text-4xl font-bold text-orange-800 mb-4">The Investment in Luxury: Understanding Modular Kitchen Costs in Gurugram</h2>
@@ -471,7 +484,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
         ))}
       </div>
 
-        <p className="text-lg text-gray-700 max-w-7xl py-6  px-2 mx-auto">At Adhunik Decodive, we ensure unparalleled value through superior materials, expert craftsmanship, and a design that truly elevates your lifestyle. For a personalized consultation and a precise cost estimate tailored to your dream luxury modular kitchen in Gurugram, contact our design experts today! We provide detailed, shock-free quotations, ensuring you understand every aspect of your investment.
+        <p className="text-lg text-gray-700 max-w-7xl py-6  px-2 mx-auto">At Adhunik Decodive, we ensure unparalleled value through superior materials, expert craftsmanship, and a design that truly elevates your lifestyle. For a personalized consultation and a precise cost estimate tailored to your dream luxury modular kitchen in Gurugram, <Link className=' text-orange-600' to='/support-form'>contact our design experts today!</Link>  We provide detailed, shock-free quotations, ensuring you understand every aspect of your investment.
 </p>
 
 
@@ -538,7 +551,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
           </ul>
 
           <h3 className="text-3xl font-semibold text-orange-700 mt-16 mb-6 drop-shadow-md">
-            Conclusion: Begin Your Bespoke Culinary Journey with Adhunik Decodive Today
+            Conclusion: Begin Your Bespoke Culinary Journey <Link className=' text-orange-600' to='/'>with Adhunik Decodive</Link>   Today
           </h3>
 
           <p className="text-lg mb-6 leading-relaxed tracking-wide">
@@ -556,7 +569,7 @@ Adhunik Decodive: The Ultimate Guide to Luxury Modular Kitchen Design in Gurugra
           </p>
 
           <p className="mt-6 text-orange-800  hover:text-orange-900 font-medium tracking-wide">
-            Explore our exquisite Luxury Modular Kitchen Portfolio for Gurugram Residences to spark your inspiration! Modular Kitchen Designs
+            Explore our exquisite Luxury Modular Kitchen Portfolio for Gurugram Residences to spark your  inspiration! <Link className=' text-orange-600' to='/modular-kitchen-designs'>Modular Kitchen Designs</Link> 
           </p>
         </div>
       </div>
@@ -596,7 +609,7 @@ Connect with our expert designers for a complimentary, personalized modular kitc
               <LucideGlobe className="text-orange-700 w-6 h-6" />
               <div>
                 <div className="font-medium text-gray-800">Visit Our Website</div>
-                <div className="text-orange-800 font-semibold">www.adhunikdecodive.com</div>
+                <div className="text-orange-800 font-semibold"><Link className=' text-orange-600' to='/'>www.adhunikdecodive.com</Link></div>
               </div>
             </div>
           </div>
