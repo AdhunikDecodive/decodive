@@ -42,9 +42,8 @@ function Wardrobe() {
 
     const onClickBad = () => {
 
-    };
-
-
+    }; 
+    
     const AllcardData = [
         {
             id: 1,
@@ -98,9 +97,7 @@ function Wardrobe() {
             link: "/shutter-door-wardrobe",
         },
         
-    ];
-
-
+    ]; 
 
     const UcardData = [
         {
@@ -156,10 +153,7 @@ function Wardrobe() {
                 "Modern Shutter wardrobe with a mirrored front offers stylish storage for clothes and belongings.",
         },
         // Add more card objects as needed
-    ];
-
-
-
+    ]; 
 
     const PcardData = [
         {

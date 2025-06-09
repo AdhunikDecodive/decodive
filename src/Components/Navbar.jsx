@@ -3,14 +3,10 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import { Dropdown, DropdownItem } from "flowbite-react";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { AdvancedImage } from "@cloudinary/react";
-
-import { Cloudinary } from "@cloudinary/url-gen";
-
+ 
 function Navbar() {
 
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+   
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -49,7 +45,7 @@ function Navbar() {
             text: 'Home Appliances',
             dropdownItems: [
                 { to: '/nero-chimney', text: 'Nero Chimney' },
-                { to: '/modular-kitchen-designs', text: 'Fabia Chimney' },
+                { to: '/fabia-chimney', text: 'Fabia Chimney' },
             
 
             ],
@@ -190,7 +186,7 @@ function Navbar() {
                                         Nero Chimney
                                         </Dropdown.Item>
                                     </Link>
-                                    <Link to="/modular-kitchen-designs">
+                                    <Link to="/fabia-chimney">
                                         <Dropdown.Item>
                                       Fabia Chimney
                                         </Dropdown.Item>
