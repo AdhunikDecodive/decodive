@@ -24,6 +24,7 @@
     "flowbite-react": "^0.8.0",
     "locomotive-scroll": "^5.0.0-beta.11",
     "lucide-react": "^0.488.0",
+    "motion": "^12.18.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-blurhash": "^0.3.0",

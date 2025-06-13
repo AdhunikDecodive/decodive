@@ -62,6 +62,9 @@ const blogs = [
         quote: "Use multi-purpose furniture and light colors to maximize and brighten your space.",
 
     },
+
+
+    
     {
         id: 2,
         imgSrc: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
@@ -505,8 +508,7 @@ const blogs = [
 const BlogDetailPage = () => {
     const { id } = useParams();
     const blog = blogs.find((blog) => blog.id === parseInt(id));
-    const cld = new Cloudinary({ cloud: { cloudName: "dwhmfz63n" } });
-
+ 
 
     const [scrollProgress, setScrollProgress] = useState(0);
 

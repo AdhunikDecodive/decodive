@@ -11,6 +11,7 @@
  * {
 
    font-family: 'woodpecker', sans-serif;
+    letter-spacing: 0.025em; 
 }
 
 
@@ -19,6 +20,8 @@
    /* src: url('./assets/Fonts/WoodPecker.ttf'); */
    src: url('./assets/Fonts/WoodPecker.ttf') format('truetype');
    font-display: swap;
+
+
  }
 
  .mobile-menu {

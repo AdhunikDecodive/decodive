@@ -3,106 +3,106 @@ import { AdvancedImage } from "@cloudinary/react";
 import { Helmet } from "react-helmet-async";
 
  const blogs = [
+  // {
+  //   id: 1,
+  //   slug: "home-decor-ideas-compact-living",
+  //   title: "Home Decor Ideas for Compact Living",
+  //   description: "How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life!",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp",
+  //   author: "Jonathan Reinink",
+  //   date: "Aug 18",
+  //   tag: "Trending",
+  //   tags: ["#DIYHomeDecor", "#InteriorDesign"],
+  //   readTime: "4 min read"
+  //   ,
+  //    href:"/"
+  // },
+  // {
+  //   id: 2,
+  //   slug: "modular-kitchen-designs-2024",
+  //   title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
+  //   description: "Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together.",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
+  //   author: "Alex Johnson",
+  //   date: "Sep 5",
+  //   tag: "Featured",
+  //   tags: ["#modularkitchen", "#interiordesign", "#kitchendesign"],
+  //   readTime: "6 min read"
+  //   ,
+  //    href:"/"
+  // },
+  // {
+  //   id: 3,
+  //   slug: "wardrobe-design-ideas-indian-homes",
+  //   title: "Stunning Wardrobe Design Ideas for Indian Homes",
+  //   description: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs.",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/sd_etqleb_1_myputd.webp",
+  //   author: "Maria Garcia",
+  //   date: "Jul 22",
+  //   tag: "Top",
+  //   tags: ["#wardrobestylist", "#interiordesigner"],
+  //   readTime: "5 min read"
+  //   ,
+  //    href:"/"
+  // },
+  // {
+  //   id: 4,
+  //   slug: "bar-counter-design-ideas-2024",
+  //   title: "Bar Counter Design Ideas to Replicate in Your Home In 2024",
+  //   description: "Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs blend functionality with elegance. From sleek minimalist bars to luxurious statement pieces.",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp",
+  //   author: "John Doe",
+  //   date: "Nov 15",
+  //   tag: "Popular",
+  //   tags: ["#bardesign", "#interiordesign"],
+  //   readTime: "5 min read"
+  //   ,
+  //    href:"/"
+  // },
+  // {
+  //   id: 5,
+  //   slug: "minimalist-interior-design-style",
+  //   title: "Minimalist Interior Design Style",
+  //   description: "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and functionality, this style creates serene, uncluttered spaces with clean lines and neutral colors.",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
+  //   author: "Jane Smith",
+  //   date: "Oct 3",
+  //   tag: "New",
+  //   tags: ["#minimaldesign", "#interiordesign"],
+  //   readTime: "4 min read"
+  //   ,
+  //    href:"/"
+  // },
+  // {
+  //   id: 6,
+  //   slug: "sculptural-pendant-lights-trend",
+  //   title: "The Artistic Trend of Sculptural Pendant Lights in Home Decor",
+  //   description: "Brighten up your home with the stunning sculptural pendant lights from Adhunik DecoDive. With a blend of modern aesthetics and retro charm, these lights add sophistication and creativity to your home. Ready to elevate your décor?",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784146/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr_ugykea.webp",
+  //   author: "Emily White",
+  //   date: "Dec 27",
+  //   tag: "Trending",
+  //   tags: ["#pendantlights", "#interiordesign"],
+  //   readTime: "5 min read"
+    
+  //   ,
+  //    href:"/"
+  // },
+  // {
+  //   id: 7,
+  //   slug: "your-furniture-reflects-you",
+  //   title: "Your Furniture Reflects You",
+  //   description: "Your furniture is more than just decor—it's a reflection of your identity and the vibe of your space, be it your cozy home or sleek office. At Adhunik DecoDive, we offer a diverse range of Commercial and Domestic furniture that speaks volumes about your individuality and lifestyle.",
+  //   image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784142/furniture_1_kbt4gm_majvly.webp",
+  //   author: "Emily White",
+  //   date: "Dec 27",
+  //   tag: "Trending",
+  //   tags: ["#furniture", "#interiordesign"],
+  //   readTime: "4 min read",
+  //   href:"/"
+  // },
   {
     id: 1,
-    slug: "home-decor-ideas-compact-living",
-    title: "Home Decor Ideas for Compact Living",
-    description: "How to maximize comfort and style in your cozy home. Discover space-saving decor tricks and statement pieces that bring personality and function to your life!",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784144/home_decor1_ph7toz_jdmedf.webp",
-    author: "Jonathan Reinink",
-    date: "Aug 18",
-    tag: "Trending",
-    tags: ["#DIYHomeDecor", "#InteriorDesign"],
-    readTime: "4 min read"
-    ,
-     href:"/"
-  },
-  {
-    id: 2,
-    slug: "modular-kitchen-designs-2024",
-    title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
-    description: "Spice things up with Adhunik DecoDive's 2024 trends! We're talking smart storage, multifunctional islands, bold colors, and eco-friendly materials. Let's design your dream kitchen together.",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/ssd_t9jpex_xljukf.webp",
-    author: "Alex Johnson",
-    date: "Sep 5",
-    tag: "Featured",
-    tags: ["#modularkitchen", "#interiordesign", "#kitchendesign"],
-    readTime: "6 min read"
-    ,
-     href:"/"
-  },
-  {
-    id: 3,
-    slug: "wardrobe-design-ideas-indian-homes",
-    title: "Stunning Wardrobe Design Ideas for Indian Homes",
-    description: "From space-saving sliders to luxurious walk-in options, our wardrobes seamlessly blend modern trends with timeless Indian aesthetics. The perfect wardrobe solution for your Indian home with Adhunik Deco Dive’s stylish designs.",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1747811360/sd_etqleb_1_myputd.webp",
-    author: "Maria Garcia",
-    date: "Jul 22",
-    tag: "Top",
-    tags: ["#wardrobestylist", "#interiordesigner"],
-    readTime: "5 min read"
-    ,
-     href:"/"
-  },
-  {
-    id: 4,
-    slug: "bar-counter-design-ideas-2024",
-    title: "Bar Counter Design Ideas to Replicate in Your Home In 2024",
-    description: "Whether you’re dreaming of a cozy corner for cocktails or a stylish entertainment space, our designs blend functionality with elegance. From sleek minimalist bars to luxurious statement pieces.",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784143/home_bar_rmncdx_sg9fx1.webp",
-    author: "John Doe",
-    date: "Nov 15",
-    tag: "Popular",
-    tags: ["#bardesign", "#interiordesign"],
-    readTime: "5 min read"
-    ,
-     href:"/"
-  },
-  {
-    id: 5,
-    slug: "minimalist-interior-design-style",
-    title: "Minimalist Interior Design Style",
-    description: "Discover the beauty of minimalist interior design with Adhunik DecoDive. Focused on simplicity and functionality, this style creates serene, uncluttered spaces with clean lines and neutral colors.",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746783432/ab6_omdoa9_sb4lfm.webp",
-    author: "Jane Smith",
-    date: "Oct 3",
-    tag: "New",
-    tags: ["#minimaldesign", "#interiordesign"],
-    readTime: "4 min read"
-    ,
-     href:"/"
-  },
-  {
-    id: 6,
-    slug: "sculptural-pendant-lights-trend",
-    title: "The Artistic Trend of Sculptural Pendant Lights in Home Decor",
-    description: "Brighten up your home with the stunning sculptural pendant lights from Adhunik DecoDive. With a blend of modern aesthetics and retro charm, these lights add sophistication and creativity to your home. Ready to elevate your décor?",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784146/The_Artistic_Trend_of_Sculptural_Pendant_Lights_in_Home_Decor_cf90yr_ugykea.webp",
-    author: "Emily White",
-    date: "Dec 27",
-    tag: "Trending",
-    tags: ["#pendantlights", "#interiordesign"],
-    readTime: "5 min read"
-    
-    ,
-     href:"/"
-  },
-  {
-    id: 7,
-    slug: "your-furniture-reflects-you",
-    title: "Your Furniture Reflects You",
-    description: "Your furniture is more than just decor—it's a reflection of your identity and the vibe of your space, be it your cozy home or sleek office. At Adhunik DecoDive, we offer a diverse range of Commercial and Domestic furniture that speaks volumes about your individuality and lifestyle.",
-    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746784142/furniture_1_kbt4gm_majvly.webp",
-    author: "Emily White",
-    date: "Dec 27",
-    tag: "Trending",
-    tags: ["#furniture", "#interiordesign"],
-    readTime: "4 min read",
-    href:"/"
-  },
-  {
-    id: 8,
     slug: "your-furniture-reflects-you",
     title: "The Ultimate Guide to Luxury Modular Kitchen Design in Gurugram – Crafting Your Bespoke Culinary Oasis",
     description: "The kitchen is more than just a place to cook; it's the vibrant heart of your home, a space for culinary creativity, family gatherings...",
@@ -120,6 +120,7 @@ import { Helmet } from "react-helmet-async";
 const MultipleBlogsPage = () => {
   return (
     <>
+
       <Helmet>
         <title>Latest Interior Design Trends & Tips | Adhunik Decodive Blog</title>
         <meta name="description" content="Stay updated with the latest interior design trends, tips, and inspirations. Explore expert insights, decor ideas, and furniture solutions by Adhunik Decodive." />
