@@ -161,7 +161,7 @@ function LampsDecor() {
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best lamp designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern lamps to enhance your home decor. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/lamps-designs"></meta>

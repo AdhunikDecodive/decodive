@@ -169,7 +169,7 @@ function ContactUs() {
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Get in touch with Adhunik Decodive. Contact us for expert interior design solutions, consultations, and inquiries. We're here to assist you!" />
 
         <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/support-form"></meta>

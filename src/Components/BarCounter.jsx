@@ -162,8 +162,7 @@ function BarCounter() {
         <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="bar counter designs, best bar counters in Gurugram, stylish bar setups, modern bar counter designs, custom bar solutions Gurugram, space-saving bar counters, Adhunik Decodive interiors, luxury bar designs Gurugram" />
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta> 
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best bar counter designs in Gurugram with Adhunik Decodive. Explore stylish, modern, and space-efficient bar counters for your home and commercial spaces. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/bar-counter-designs"></meta>

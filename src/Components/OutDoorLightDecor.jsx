@@ -162,7 +162,7 @@ function OutDoorLightDecor() {
 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+
 <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best outdoor light designs in Gurugram with Adhunik Decodive. Explore stylish, artistic, and modern outdoor lighting solutions to enhance your exterior decor. Free consultation!" />
 <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/outdoor-light-designs"></meta>
 <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Home Decor Experts" />

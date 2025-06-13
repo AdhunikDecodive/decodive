@@ -287,7 +287,7 @@ function Wardrobe() {
                 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
                 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
                 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-                <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+                
 
                 <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your home with Adhunik Decodive's best wardrobe designs in Gurugram. Choose from stylish 1-door, 2-door, sliding, and walk-in wardrobes tailored for modern homes. Book a free consultation today!" />
 

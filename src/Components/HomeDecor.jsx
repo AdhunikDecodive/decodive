@@ -235,7 +235,7 @@ function HomeDecor() {
                 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
                 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
                 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-                <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+                
                 <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Discover the best home decor trends and accessories in Gurugram with Adhunik Decodive. Explore stylish mirrors, lamps, lighting, and more to elevate your interiors. Free consultation!" />
 
                 <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/home-decor"></meta>

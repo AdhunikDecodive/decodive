@@ -544,34 +544,26 @@ function LShapeKitchen() {
 
 
 
-      <Helmet>
-
-        <title>Best L-Shape Modular Kitchen Designs in Gurugram | Adhunik Decodive</title>
-
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best L-shape modular kitchen designs in Gurugram with Adhunik Decodive. Stylish, space-efficient, and customized kitchen solutions for modern homes. Get a free consultation today!" />
-
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/l-shape-kitchen" data-react-helmet="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
-        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best L-Shape Modular Kitchen Designs in Gurugram | Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="L-shape kitchen, modular kitchen designs, best modular kitchen in Gurugram, modern kitchen layouts, custom kitchen designs, kitchen renovation Gurugram, space-saving kitchens, Adhunik Decodive kitchen interiors" />
-        <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
-        <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
-
-        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your kitchen with Adhunik Decodive's best L-shape modular kitchen designs in Gurugram. Crafted for efficiency, style, and modern aesthetics. Book a free consultation today!" />
-
-        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/l-shape-kitchen"></meta>
-        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Modular Kitchen Experts" />
-        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Best L-Shape Modular Kitchen Designs in Gurugram | Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore space-efficient and stylish L-shape modular kitchen designs in Gurugram by Adhunik Decodive. Perfect for modern homes. Get a free consultation today!" />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-
-      </Helmet>
+    <Helmet>
+    <title> L-Shaped Kitchen Designs in Gurugram & Delhi | Adhunik Decodive </title>
+    <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" name="description" content="Maximize space and style with Adhunik Decodive's L-shaped modular kitchen designs in Gurugram, Delhi & NCR. Get expert solutions for efficient, modern kitchens. Book a free consultation!" />
+    <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+    <link rel="canonical" href="https://adhunikdecodive.com/l-shape-modular-kitchen-design" data-react-helmet="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="L-Shaped Kitchen Designs in Gurugram & Delhi | Adhunik Decodive" />
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="L-shaped kitchen designs Gurugram, modular L-kitchen Delhi, L-shape kitchen interior NCR, corner kitchen solutions, modern L-kitchen design, custom L-kitchens, kitchen designers Gurugram, Adhunik Decodive kitchens" />
+    <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+    <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image"></meta> 
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Maximize space and style with Adhunik Decodive's L-shaped modular kitchen designs in Gurugram, Delhi & NCR. Get expert solutions for efficient, modern kitchens. Book a free consultation!" />
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/l-shape-modular-kitchen-design"></meta>
+    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+    <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="L-Shaped Kitchen Designs in Gurugram & Delhi | Adhunik Decodive" />
+    <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Maximize space and style with Adhunik Decodive's L-shaped modular kitchen designs in Gurugram, Delhi & NCR. Get expert solutions for efficient, modern kitchens. Book a free consultation!" />
+    
+</Helmet>
 
       <ModalNew isOpen={openModal} onClose={toggleModal} />
 

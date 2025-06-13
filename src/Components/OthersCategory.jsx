@@ -270,7 +270,7 @@ function OthersCategory() {
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Explore the best interior design categories in Gurugram with Adhunik Decodive. Discover Spiritual Spaces, TV Units, Bar Counters, and more to enhance your home decor. Free consultation!" />
 
         <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/all-categories"></meta>

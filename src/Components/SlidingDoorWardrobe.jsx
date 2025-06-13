@@ -159,7 +159,7 @@ function SlidingDoorWardrobe() {
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
         <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        <link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+        
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive: Gurugram's top provider of sliding  wardrobe designs. From concept to installation, we create bespoke, functional, and space-saving wardrobes. Free consultation!" />
         <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/sliding-door-wardrobe"></meta>
         <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Design Experts" />

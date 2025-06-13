@@ -163,7 +163,7 @@ function IshapeKitchen() {
 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-<link data-n-head="ssr" rel="preconnect" href="http://cdn12.lemnisk.co"></link>
+
 
 <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your kitchen with Adhunik Decodive's best Island modular kitchen designs in Gurugram. Crafted for efficiency, style, and modern aesthetics. Book a free consultation today!" />
 
