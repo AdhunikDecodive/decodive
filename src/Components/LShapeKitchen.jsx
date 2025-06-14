@@ -779,14 +779,14 @@ function LShapeKitchen() {
               <p className="mb-6 text-lg text-gray-600 max-w-2xl">
                 Ready to bring your dream kitchen to life? Our experts will guide you in selecting the perfect materials.
               </p>
-              <button className="relative inline-flex items-center px-8 py-4 overflow-hidden text-white bg-orange-600 rounded-lg group hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-orange-300/30">
+              <a   href="tel:9355588595"  className="relative inline-flex items-center px-8 py-4 overflow-hidden text-white bg-orange-600 rounded-lg group hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-orange-300/30">
                 <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                 <span className="relative flex items-center gap-2 text-lg font-semibold">
                   <HardHat className="h-5 w-5" />
                   Get Your Custom Design Consultation
                   <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1041,10 +1041,10 @@ function LShapeKitchen() {
               <p className="text-lg text-gray-600 mb-8">
                 {content.hero.subtitle}
               </p>
-              <button className="inline-flex items-center px-8 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-orange-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+              <a  href="tel:9355588595"  className="inline-flex items-center px-8 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-orange-700 transition-colors duration-300 shadow-md hover:shadow-lg">
                 Book Free Consultation
                 <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </button>
+              </a>
             </div>
             <div className="lg:w-1/2 relative  rounded-xl overflow-hidden shadow-xl">
               <img
@@ -1234,12 +1234,12 @@ function LShapeKitchen() {
               className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-orange-600 font-bold rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              Call: 9355588595
+              Call Us Now
             </a>
-            <button className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-orange-600 transition-colors">
+            <a href="/support-form" className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-orange-600 transition-colors">
               <MessageSquare className="w-5 h-5" />
               Free Consultation
-            </button>
+            </a>
           </div>
           
         
