@@ -1,4 +1,3 @@
-
 import "./LShapeKitchen.css"
 import { useState } from "react";
 import PhoneCallButton from "./PhoneCallButton";
@@ -10,8 +9,22 @@ import { Layout, Zap, Triangle, Box, Users, Phone, MessageSquare, ArrowRight, Ge
 
 import { ChevronDown, } from 'lucide-react';
 
+import {   Shield, Droplets,   Heart,   RulerIcon,  HammerIcon } from 'lucide-react';
+import {      Settings,  } from 'lucide-react';
+
+import {
+
+  CheckCircle2,
+  HardHat,
+  ShieldCheck,
+  DollarSign,
+  Package,
+  ArrowRightIcon
+
+} from 'lucide-react';
 
 
+  
 function UshapeKitchen() {
 
     const [openModal, setOpenModal] = useState(false);
@@ -291,6 +304,161 @@ function UshapeKitchen() {
         }
     ];
 
+
+      const materials = [
+    {
+      id: 1,
+      name: 'Engineered Wood',
+      types: 'MDF, HDF-HMR, PB',
+      description: 'Light-weight, affordable solution with extensive design options and superior screw retention',
+      features: [
+        { text: 'Lightweight yet durable', icon: <Package className="h-4 w-4" /> },
+        { text: 'Cost-effective solution', icon: <DollarSign className="h-4 w-4" /> },
+        { text: 'Wide design variety', icon: <Settings className="h-4 w-4" /> },
+        { text: 'Strong screw retention', icon: <HammerIcon className="h-4 w-4" /> }
+      ],
+      image: 'https://images.unsplash.com/photo-1681752972950-6229ca099fbc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      icon: <HardHat className="text-orange-500" />
+    },
+    {
+      id: 2,
+      name: 'Plywood',
+      types: 'MR, BWR, BWP',
+      description: 'High-performance material offering structural integrity and environmental safety',
+      features: [
+        { text: 'Exceptional strength', icon: <ShieldCheck className="h-4 w-4" /> },
+        { text: 'Termite resistant', icon: <Leaf className="h-4 w-4" /> },
+        { text: 'Low emissions', icon: <Leaf className="h-4 w-4" /> },
+        { text: 'Moisture resistant', icon: <ShieldCheck className="h-4 w-4" /> }
+      ],
+      image: 'https://images.unsplash.com/photo-1591189863345-9db058f9f8ec?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2l0Y2hlbiUyMHdvb2RlbnxlbnwwfHwwfHx8MA%3D%3D',
+      icon: <ShieldCheck className="text-orange-500" />
+    },
+    {
+      id: 3,
+      name: 'Particle Board',
+      types: '',
+      description: 'Economical choice with improved moisture resistance and smooth finishing surface',
+      features: [
+        { text: 'Budget friendly', icon: <DollarSign className="h-4 w-4" /> },
+        { text: 'Moisture resistant', icon: <ShieldCheck className="h-4 w-4" /> },
+        { text: 'Smooth laminates', icon: <Package className="h-4 w-4" /> },
+        { text: 'Recyclable material', icon: <Leaf className="h-4 w-4" /> }
+      ],
+      image: 'https://images.unsplash.com/photo-1646006409274-9232106fc9d9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
+      icon: <Package className="text-orange-500" />
+    }
+  ];
+
+    const finishes = [
+    {
+      id: 1,
+      name: 'Laminate',
+      description: 'Durable and resistant to wear and tear, immune to stains, spills & scuffs',
+      features: [
+        'Highly scratch-resistant',
+        'Wide variety of designs',
+        'Easy to clean and maintain',
+        'Budget-friendly option'
+      ],
+      image: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bestFor: 'High-traffic kitchens'
+    },
+    {
+      id: 2,
+      name: 'Acrylic',
+      description: 'Premium high-gloss finish that creates a seamless, modern look',
+      features: [
+        'Sleek contemporary appearance',
+        'Non-toxic and eco-friendly',
+        'Resistant to moisture',
+        'Reflective surface brightens space'
+      ],
+      image: 'https://images.unsplash.com/photo-1571843439991-dd2b8e051966?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bestFor: 'Modern minimalist designs'
+    },
+    {
+      id: 3,
+      name: 'PU (Polyurethane)',
+      description: 'Luxurious matte or glossy finish with exceptional durability',
+      features: [
+        'Scratch and impact resistant',
+        'Easy to repair if damaged',
+        'Resists yellowing over time',
+        'Smooth tactile surface'
+      ],
+      image: 'https://plus.unsplash.com/premium_photo-1676321688609-bb955a90c8c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ',
+      bestFor: 'High-end luxury kitchens'
+    },
+    {
+      id: 4,
+      name: 'PVC',
+      description: 'Waterproof solution that withstands humidity and temperature changes',
+      features: [
+        'Completely waterproof',
+        'Termite and borer proof',
+        'Economical pricing',
+        'Available in woodgrain patterns'
+      ],
+      image: 'https://images.unsplash.com/photo-1560185127-1902ccdc5094?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      bestFor: 'Humid climates & budget projects'
+    }
+  ];
+
+
+   const materials2 = [
+    {
+      id: 1,
+      name: 'Granite',
+      description: 'Natural stone offering timeless elegance and exceptional durability',
+      features: [
+        { text: 'Heat and scratch resistant', icon: <Shield className="w-4 h-4 text-orange-500" /> },
+        { text: 'Unique natural patterns', icon: <Gem className="w-4 h-4 text-orange-500" /> },
+        { text: 'Low maintenance', icon: <Heart className="w-4 h-4 text-orange-500" /> },
+        { text: 'Long-lasting investment', icon: <Zap className="w-4 h-4 text-orange-500" /> }
+      ],
+      bestFor: 'Traditional & luxury kitchens'
+    },
+    {
+      id: 2,
+      name: 'Quartz',
+      description: 'Engineered stone combining natural quartz with resins for superior performance',
+      features: [
+        { text: 'Non-porous (hygienic)', icon: <Droplets className="w-4 h-4 text-orange-500" /> },
+        { text: '7/10 Mohs hardness scale', icon: <Gem className="w-4 h-4 text-orange-500" /> },
+        { text: 'Consistent color patterns', icon: <RulerIcon className="w-4 h-4 text-orange-500" /> },
+        { text: 'Stain resistant', icon: <Shield className="w-4 h-4 text-orange-500" /> }
+      ],
+      bestFor: 'Modern & busy kitchens'
+    },
+    {
+      id: 3,
+      name: 'Corian',
+      description: 'Versatile solid surface material allowing seamless installations',
+      features: [
+        { text: 'Seamless jointing possible', icon: <RulerIcon className="w-4 h-4 text-orange-500" /> },
+        { text: 'Repairable surface', icon: <Heart className="w-4 h-4 text-orange-500" /> },
+        { text: 'Wide color selection', icon: <Droplets className="w-4 h-4 text-orange-500" /> },
+        { text: 'Moderate heat resistance', icon: <Zap className="w-4 h-4 text-orange-500" /> }
+      ],
+      bestFor: 'Contemporary & curved designs'
+    },
+    {
+      id: 4,
+      name: 'Marble',
+      description: 'Luxurious natural stone with distinctive veining patterns',
+      features: [
+        { text: 'Classic elegant appearance', icon: <Gem className="w-4 h-4 text-orange-500" /> },
+        { text: 'Cool surface for baking', icon: <Zap className="w-4 h-4 text-orange-500" /> },
+        { text: 'Increases home value', icon: <Heart className="w-4 h-4 text-orange-500" /> },
+        { text: 'Requires periodic sealing', icon: <Droplets className="w-4 h-4 text-orange-500" /> }
+      ],
+      bestFor: 'High-end & classic kitchens'
+    }
+  ];
+
+
+
     return (
         <>
 
@@ -432,6 +600,339 @@ function UshapeKitchen() {
 
 
             </div>
+
+
+     <section className="bg-gradient-to-b from-orange-50 to-white py-10 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Header with decorative elements */}
+          <div className="text-center mb-16 relative">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-orange-300 rounded-full"></div>
+            <p className="text-3xl font-bold text-gray-900  mb-4">
+              <span className="block tracking-wide">Premium Kitchen Materials</span>
+              <span className="block tracking-wide text-orange-600 mt-2">Engineered for Excellence</span>
+            </p>
+            <p className="mt-6 text-sm tracking-wide text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Discover our carefully curated selection of high-performance materials that combine durability,
+              aesthetics, and sustainability for your dream kitchen.
+            </p>
+          </div>
+
+          {/* Materials Grid */}
+          <div className="grid gap-8 md:grid-cols-3">
+            {materials.map((material) => (
+              <div
+                key={material.id}
+                className="group bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100"
+              >
+                {/* Image with overlay */}
+                <div className="relative  w-full ">
+                  <img
+                    src={material.image}
+                    alt={material.name}
+                    className="object-cover    h-72  object-center"
+
+                  />
+                  <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full">
+                    {material.icon}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-2xl  tracking-wider font-bold text-gray-900">{material.name}</h3>
+
+                    {material.types && (
+                      <span className="inline-flex tracking-wide items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                        {material.types}
+                      </span>
+                    )}
+                  </div>
+
+                  <p className="mt-2 tracking-wide text-gray-600">{material.description}</p>
+
+                  <div className="mt-6">
+                    <h4 className="text-sm font-semibold text-orange-600 uppercase tracking-wider flex items-center gap-2">
+                      <CheckCircle2 className="h-4 w-4" />
+                      Key Advantages
+                    </h4>
+                    <ul className="mt-4 space-y-3">
+                      {material.features.map((feature, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <span className="flex-shrink-0 text-orange-500 mt-0.5">
+                            {feature.icon}
+                          </span>
+                          <span className="text-gray-700 tracking-wide">{feature.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-20 text-center">
+            <div className="inline-flex flex-col items-center">
+              <p className="mb-6 text-lg text-gray-600 max-w-2xl">
+                Ready to bring your dream kitchen to life? Our experts will guide you in selecting the perfect materials.
+              </p>
+              <a   href="tel:9355588595"  className="relative inline-flex items-center px-8 py-4 overflow-hidden text-white bg-orange-600 rounded-lg group hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-orange-300/30">
+                <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                <span className="relative flex items-center gap-2 text-lg font-semibold">
+                  <HardHat className="h-5 w-5" />
+                  Get Your Custom Design Consultation
+                  <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div className="w-full h-full py-9 p-4 bg-zinc-100 overflow-hidden relative ">
+          <div className="w-full text-center">
+            <p className="text-3xl">
+              The Simple 3-Step Journey  </p>
+            <p className="text-[#702b4f] text-sm mt-3">
+              Revealing the Path to Your Dream Interior            </p>
+          </div>
+
+          <div className="grid  gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3   ">
+            {/* First Step */}
+            <div className="w-full p-9">
+              <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+                <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+
+                  <img loading="lazy"
+                    alt="make your interior style and space optimization using professional designers" src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746616039/myh1ynmcgsmxmde8nwqy_ttfmha.webp" />
+
+
+
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Show your style and space optimization
+                  </h3>
+                  <p className="block text-base antialiased font-light leading-relaxed text-inherit">
+                    Dream big for your space! Share your inspiration, goals, and
+                    budget, and let us help you design a space you will adore.
+                  </p>
+                </div>
+
+                <div className="p-6 pt-0">
+                  <div className="text-center">
+                    <h2 className="bg-black w-auto  px-12 py-2 rounded-full text-1xl text-white inline-block p-2">
+                      STEP 1
+                    </h2>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Second Step */}
+            <div className="w-full p-9">
+              <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+                <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                  <img loading="lazy"
+                    alt="Revitalize your interior kitchen space."
+                    src={"https://res.cloudinary.com/dq14b7xie/image/upload/v1746785991/meeting2_qa5a1w_muck4u.avif"} />
+
+
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Revitalize your space
+                  </h3>
+                  <p className="block text-base antialiased font-light leading-relaxed text-inherit">
+                    Your dedicated designer will collaborate with you
+                    individually to transform your vision into reality,
+                    delivering a comprehensive 3D rendering of your specific
+                    space.
+                  </p>
+                </div>
+                <div className="p-6 pt-0">
+                  <div className="text-center">
+                    <h2 className="bg-black w-auto  px-12 py-2 rounded-full text-1xl text-white inline-block p-2">
+                      STEP 2
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Third Step */}
+            <div className="w-full p-9">
+              <div className="border border-[#CDC7C5] relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+                <div className="relative mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+
+                  <img loading="lazy"
+                    alt="Get Professional Installation & Shop with Confidence"
+                    src={"https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww"} />
+
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Get Professional Installation & Shop with Confidence
+                  </h3>
+                  <p className="block text-base antialiased font-light leading-relaxed text-inherit">
+                    Browse and purchase designs effortlessly in one simple
+                    transaction & enjoy exclusive discounts.
+                  </p>
+
+                </div>
+                <div className="p-6 pt-0">
+                  <div className="text-center">
+                    <h2 className="bg-black w-auto  px-12 py-2 rounded-full text-1xl text-white inline-block p-2">
+                      STEP 3
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="bg-gradient-to-b from-orange-50 to-white py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900  ">
+              <span className="block">Upgrade Your Kitchen</span>
+              <span className="block text-orange-600 mt-2">With Stunning Finishes</span>
+            </h2>
+            <p className="mt-6 text-sm text-gray-600 max-w-3xl mx-auto">
+              Premium materials that give your kitchen design finesse and lasting beauty
+            </p>
+          </div>
+
+          {/* Finishes Grid */}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {finishes.map((finish) => (
+              <div
+                key={finish.id}
+                className="group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+              >
+                {/* Image with overlay */}
+                <div className="relative  w-full">
+                  <img
+                    src={finish.image}
+                    alt={finish.name + " finish"}
+
+                    className="object-cover object-center h-80 transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <span className="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    {finish.bestFor}
+                  </span>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{finish.name}</h3>
+                  <p className="text-gray-600 mb-4">{finish.description}</p>
+
+                  <div className="mt-6">
+                    <h4 className="text-sm font-semibold text-orange-600 uppercase tracking-wider mb-3">
+                      Key Benefits
+                    </h4>
+                    <ul className="space-y-2">
+                      {finish.features.map((feature, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="flex-shrink-0 h-5 w-5 text-orange-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            ))}
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <section className="bg-white py-10 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              <span className="block">Countertops & Backsplashes</span>
+              <span className="block text-orange-600 mt-2">For Modular Kitchens</span>
+            </h2>
+            <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+              Premium materials that combine functionality with stunning aesthetics
+            </p>
+          </div>
+
+          {/* Materials Grid */}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {materials2.map((material) => (
+              <div
+                key={material.id}
+                className="group bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300"
+              >
+                {/* Icon Header */}
+                <div className="bg-orange-50 p-6 flex items-center gap-4">
+                  <div className="p-3 bg-orange-100 rounded-lg">
+                    <Gem className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">{material.name}</h3>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <p className="text-gray-600 mb-6">{material.description}</p>
+
+                  <div className="space-y-4">
+                    <h4 className="text-sm font-semibold text-orange-600 uppercase tracking-wider flex items-center gap-2">
+                      <Shield className="w-4 h-4" />
+                      Key Features
+                    </h4>
+                    <ul className="space-y-3">
+                      {material.features.map((feature, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <span className="text-orange-500 mt-0.5">
+                            {feature.icon}
+                          </span>
+                          <span className="text-gray-700">{feature.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-gray-100">
+                    <p className="text-sm font-medium text-gray-500">Best for:</p>
+                    <p className="text-orange-600 font-semibold">{material.bestFor}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
 
 
             <section className="bg-white">
