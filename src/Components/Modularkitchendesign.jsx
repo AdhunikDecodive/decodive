@@ -236,7 +236,7 @@ const kitchenLayouts = [
     icon: LucideSparkles,
     description:
       "The epitome of luxury and social living. A central island provides additional counter space, storage, and often serves as a breakfast bar or informal dining area, making it a highly sought-after feature in premium Gurugram homes.",
-    href: "/IshapeKitchen", // Reusing U-shaped path
+    href: "/kitchen-island-design", // Reusing U-shaped path
   },
   {
     title: "G-Shaped Kitchen",

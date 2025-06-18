@@ -14,7 +14,6 @@ import { Helmet } from "react-helmet-async";
 
 function TVUnitPanels() {
 
-   
     const [openModal, setOpenModal] = useState(false);
 
     const toggleModal = () => {

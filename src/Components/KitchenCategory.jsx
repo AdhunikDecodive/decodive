@@ -12,6 +12,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
 
+import { motion } from 'framer-motion'; 
 
 // import { Power2, Power4 } from 'gsap';
 
@@ -19,7 +20,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 import PopUp from "./PopUp";
 import ModalNew from "./ModalNew";
-import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
+import { AdvancedImage } from '@cloudinary/react';
 import { Helmet } from "react-helmet-async";
 
 
@@ -70,7 +71,7 @@ function KitchenCategory() {
       title: "Island kitchen",
       description:
         "A central island, meticulously crafted from white marble, for center stage. With outshining modularity built-in appliances & overhanging countertop ",
-      link: "/IshapeKitchen",
+      link: "/kitchen-island-design",
       unique: true,
     },
     {
@@ -440,7 +441,7 @@ function KitchenCategory() {
             "name": "Island Kitchen Design",
             "description": "Island modular kitchens, perfect for entertaining and creating a central hub in your home.",
             "image": "https://res.cloudinary.com/dwhmfz63n/image/upload/v1/Kitchen/IsKitchen/13_11zon_bracki?_a=DAJAUVWIZAA0",
-            "url": "https://adhunikdecodive.com/IshapeKitchen"
+            "url": "https://adhunikdecodive.com/kitchen-island-design"
           }
         },
         {
@@ -640,44 +641,72 @@ function KitchenCategory() {
   ];
 
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
+};
 
+const scaleUp = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
+    }
+  }
+};
 
+const tabVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+};
+
+ 
+
+const tabIconVariants = {
+  hover: { scale: 1.1 },
+  tap: { scale: 0.95 }
+};
   return (
     <>
 
 
       <Helmet>
-
-
-
-        <title>Kitchen Interior Designers in Gurugram | Adhunik Decodive
-        </title>
-
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas. Get a Free Consultation Today!" />
-
+        <title>Kitchen Interior Designers in Gurugram & Delhi | Adhunik Decodive</title>
+        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" name="description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas across Delhi & NCR. Get a Free Consultation Today!" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        <link rel="canonical" href="https://adhunikdecodive.com/modular-kitchen-designs" data-react-helmet="true" />
+        <link rel="canonical" href="https://adhunikdecodive.com/kitchen-interior" data-react-helmet="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Kitchen Interior Designers in Gurugram | Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content=" modular kitchen designs, L-shape kitchen, U-shape kitchen, parallel kitchen, island kitchen, straight kitchen, best modular kitchen in Gurugram, modern kitchen layouts, custom kitchen designs, kitchen renovation Gurugram, Adhunik Decodive kitchen interiors" />
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Kitchen Interior Designers in Gurugram & Delhi | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="kitchen interior Gurugram, kitchen designers Delhi, modular kitchen NCR, custom kitchen designs, modern kitchen interior, apartment kitchen design, villa kitchen interior, Adhunik Decodive kitchens" />
         <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
         <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-        
-
-        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas. Get a Free Consultation Today!" />
-
-        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/modular-kitchen"></meta>
-        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Modular Kitchen Experts" />
-        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Kitchen Interior Designers in Gurugram | Adhunik Decodive" />
-        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas. Get a Free Consultation Today!" />
+        <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image"></meta>
+        <link data-n-head="ssr" rel="preconnect" href="https://cdn12.lemnisk.co"></link>
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas across Delhi & NCR. Get a Free Consultation Today!" />
+        <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/kitchen-interior"></meta>
+        <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+        <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Kitchen Interior Designers in Gurugram & Delhi | Adhunik Decodive" />
+        <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Need stunning kitchen interiors in Gurugram? Adhunik Decodive creates practical designs for apartments, houses & villas across Delhi & NCR. Get a Free Consultation Today!" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-
-
-
       </Helmet>
 
       <ModalNew isOpen={openModal} onClose={toggleModal} />
@@ -752,380 +781,479 @@ function KitchenCategory() {
 
         </div>
 
+  
+
         <Tabs
-          aria-label="Tabs with underline"
-          style="underline"
-          className=" z-0  flex flex-wrap -mb-px text-sm font-medium text-center mt-7 mx-auto my-auto justify-center"
+      aria-label="Kitchen design tabs"
+      style="underline"
+      className="z-0 flex flex-wrap -mb-px text-center mt-7 mx-auto justify-center"
+    >
+
+       <Tabs.Item
+        title={
+          <motion.div 
+            variants={tabVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            onClick={onClickBad} 
+            className="group relative cursor-pointer justify-center transition-all items-center w-auto max-w-xs"
+          >
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <AdvancedImage
+                src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786017/3_ays5ku_oyprfj.webp'}
+                height={70}
+                width={70}
+                className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-all duration-300 group-hover:shadow-lg overflow-hidden"
+                decoding="async"
+                effect="blur"
+              />
+            </motion.div>
+            <span className="text-gray-700 group-hover:text-orange-600 transition-colors">All Categories</span>
+          </motion.div>
+        }
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center"
         >
-
-
-          <Tabs.Item
-            title={
-              <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-                <AdvancedImage
-                  src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746786017/3_ays5ku_oyprfj.webp'}
-                  height={70}
-                  width={70}
-                  className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
-
-                  decoding="async"
-                  effect="blur"
-
-                />
-
-                All Categories
+          {allCardData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              variants={fadeInUp}
+              transition={{ delay: index * 0.1 }}
+              className="group relative cursor-pointer items-center justify-center transition-all hover:shadow-xl hover:shadow-black/10 max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Link to={card.link}>
+                  <AdvancedImage
+                    src={card.imageUrl}
+                    alt={card.description}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={card.unique ? { objectPosition: '100% 37%' } : {}}
+                  />
+                </Link>
               </div>
-
-            }
-          >
-            <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {allCardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Link to={card.link}>
-                      <AdvancedImage
-                        src={card.imageUrl}
-                        alt={card.description}
-                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                        style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                      />
-                    </Link>
-                  </div>
-                  <div className="p-6">
-                    <div className="lg:h-[17vh] w-full overflow-hidden">
-                      <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                        {card.title}
-                      </h2>
-                      <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                        {card.description}
-                      </p>
-                    </div>
-                    <div className="flex justify-between">
-                      <PhoneCallButton />
-                      <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                      </button>
-                    </div>
-                  </div>
+              <div className="p-6">
+                <div className="lg:h-[17vh] w-full overflow-hidden">
+                  <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                    {card.title}
+                  </h2>
+                  <p className="text-sm text-gray-600 leading-normal mb-4">
+                    {card.description}
+                  </p>
                 </div>
-              ))}
-            </div>
-
-          </Tabs.Item>
-
-          <Tabs.Item
-            title={
-
-              <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-
-                <AdvancedImage
-                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786214/9_kvomih_gi692x.webp"
-                  height={70}
-                  width={70}
-                  className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
-                  alt="   L-shape kitchen "
-                  decoding="async"
-                  effect="blur"
-
-                />
-
-                L-shape
+                <div className="flex justify-between items-center">
+                  <PhoneCallButton />
+                  <button 
+                    onClick={toggleModal}
+                    className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+                  >
+                    Get Free Quote
+                  </button>
+                </div>
               </div>
-
-            }
+            </motion.div>
+          ))}
+        </motion.div>
+      </Tabs.Item>
+      {/* L-Shape Tab */}
+      <Tabs.Item
+        title={
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            onClick={onClickBad} 
+            className="group relative cursor-pointer justify-center items-center w-auto max-w-xs px-4"
           >
-            <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {LcardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Link to="/l-shape-modular-kitchen-design">
-                      <AdvancedImage
-                        src={card.imageUrl}
-                        alt={card.description}
-                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                        style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                      />
-                    </Link>
-                  </div>
-                  <div className="p-6">
-                    <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                      {card.title}
-                    </h2>
-                    <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                      {card.description}
-                    </p>
-                    <div className="flex justify-between">
-                      <PhoneCallButton />
-                      <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-          </Tabs.Item>
-
-          <Tabs.Item
-            title={
-              <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-
-                <AdvancedImage
-                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786579/20_vjns2y_fbty44.webp"
-                  height={70}
-                  width={70}
-                  className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
-                  alt=" U-Shape kitchen "
-                  decoding="async"
-                  effect="blur"
-
-                />
-
-                U-Shape
+            <motion.div 
+              variants={tabIconVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="mb-2"
+            >
+              <AdvancedImage
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786214/9_kvomih_gi692x.webp"
+                height={96}
+                width={96}
+                className="h-24 w-24 rounded-full mx-auto object-cover shadow-md transition-all duration-300 overflow-hidden"
+                alt="L-shape kitchen"
+                decoding="async"
+                effect="blur"
+              />
+            </motion.div>
+            <span className="text-gray-700 group-hover:text-orange-600 transition-colors font-medium">
+              L-shape
+            </span>
+          </motion.div>
+        }
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={fadeInUp}
+          className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center py-6"
+        >
+          {LcardData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              variants={fadeInUp}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="group relative cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Link to="/l-shape-modular-kitchen-design">
+                  <AdvancedImage
+                    src={card.imageUrl}
+                    alt={card.description}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={card.unique ? { objectPosition: '100% 37%' } : {}}
+                  />
+                </Link>
               </div>
-            }
-          >
-            <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {UcardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Link to="/u-shape-modular-kitchen-design">
-                      <AdvancedImage
-                        src={card.imageUrl}
-                        alt={card.description}
-                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                        style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                      />
-                    </Link>
-                  </div>
-
-
-                  <div className="p-6">
-                    <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                      {card.title}
-                    </h2>
-                    <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                      {card.description}
-                    </p>
-                    <div className="flex justify-between">
-                      <PhoneCallButton />
-
-                      <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                      </button>
-                    </div>
-                  </div>
+              <div className="p-6">
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-sm text-gray-600 mb-4">
+                  {card.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <PhoneCallButton />
+                  <button 
+                    onClick={toggleModal}
+                    className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+                  >
+                    Get Free Quote
+                  </button>
                 </div>
-              ))}
-            </div>
-          </Tabs.Item>
-
-          <Tabs.Item
-            title={
-              <div onClick={onClickBad} className="group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-
-                <AdvancedImage
-                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786370/15_ov7ml3_t7jmfy.webp"
-                  height={70}
-                  width={70}
-                  className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
-                  alt="Parallel kitchen interior"
-                  decoding="async"
-                  effect="blur"
-
-                />
-
-
-                Parallel
               </div>
-            }
+            </motion.div>
+          ))}
+        </motion.div>
+      </Tabs.Item>
+
+      {/* U-Shape Tab */}
+      <Tabs.Item
+        title={
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            onClick={onClickBad} 
+            className="group relative cursor-pointer justify-center items-center w-auto max-w-xs px-4"
           >
-            <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {PcardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Link to="/parallel-modular-kitchen-design">
-                      <AdvancedImage
-                        src={card.imageUrl}
-                        alt={card.description}
-                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                        style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                      />
-                    </Link>
-                  </div>
-                  <div className="p-6">
-                    <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                      {card.title}
-                    </h2>
-                    <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                      {card.description}
-                    </p>
-                    <div className="flex justify-between">
-                      <PhoneCallButton />
-                      <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Tabs.Item>
-
-          <Tabs.Item
-            title={
-              <div onClick={onClickBad} className=" group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-                <AdvancedImage
-                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786095/16_s1fkxv_ouke2v.webp"
-                  height={70}
-                  width={70}
-                  className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
-                  alt="Island kitchen "
-                  decoding="async"
-                  effect="blur"
-
-                />
-
-
-                Island
+            <motion.div 
+              variants={tabIconVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="mb-2"
+            >
+              <AdvancedImage
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786579/20_vjns2y_fbty44.webp"
+                height={96}
+                width={96}
+                className="h-24 w-24 rounded-full mx-auto object-cover shadow-md transition-all duration-300 overflow-hidden"
+                alt="U-Shape kitchen"
+                decoding="async"
+                effect="blur"
+              />
+            </motion.div>
+            <span className="text-gray-700 group-hover:text-orange-600 transition-colors font-medium">
+              U-Shape
+            </span>
+          </motion.div>
+        }
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={fadeInUp}
+          className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center py-6"
+        >
+          {UcardData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              variants={fadeInUp}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="group relative cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Link to="/u-shape-modular-kitchen-design">
+                  <AdvancedImage
+                    src={card.imageUrl}
+                    alt={card.description}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </Link>
               </div>
-            }
-          >
-            <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {IScardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Link to="/IshapeKitchen">
-                      <AdvancedImage
-                        src={card.imageUrl}
-                        alt={card.description}
-                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                        style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                      />
-                    </Link>
-                  </div>
-                  <div className="p-6">
-                    <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                      {card.title}
-                    </h2>
-                    <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                      {card.description}
-                    </p>
-
-                    <div className="flex justify-between">
-                      <PhoneCallButton />
-                      <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                      </button>
-                    </div>
-
-                  </div>
+              <div className="p-6">
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-sm text-gray-600 mb-4">
+                  {card.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <PhoneCallButton />
+                  <button 
+                    onClick={toggleModal}
+                    className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+                  >
+                    Get Free Quote
+                  </button>
                 </div>
-              ))}
-            </div>
-          </Tabs.Item>
-
-          <Tabs.Item
-            title={
-              <div onClick={onClickBad} className="  group relative cursor-pointer justify-center  transition-shadow   items-center w-auto max-w-xs">
-
-                <AdvancedImage
-                  src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786409/2_xdjj6e_t09yy6.webp"
-                  height={70}
-                  width={70}
-                  className="h-24 w-24 rounded-full mx-auto my-auto object-cover mb-2 transition-transform duration-500 group-hover:scale-110  overflow-hidden"
-                  alt="Straight kitchen"
-                  decoding="async"
-                  effect="blur"
-
-                />
-
-
-                Straight
               </div>
-            }
+            </motion.div>
+          ))}
+        </motion.div>
+      </Tabs.Item>
+
+      {/* Parallel Tab */}
+      <Tabs.Item
+        title={
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            onClick={onClickBad} 
+            className="group relative cursor-pointer justify-center items-center w-auto max-w-xs px-4"
           >
-            <div className="box w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {ScardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 box max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Link to='/straight-modular-kitchen'>
-                      <AdvancedImage
-                        src={card.imageUrl}
-                        alt={card.description}
-                        className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                        style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                      />
-                    </Link>
-                  </div>
-                  <div className="p-6">
-                    <h2 className="text-base font-medium text-blue-gray-900 mb-2">
-                      {card.title}
-                    </h2>
-                    <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">
-                      {card.description}
-                    </p>
-                    <div className="flex justify-between">
-                      <PhoneCallButton />
-                      <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                      </button>
-                    </div>
-                  </div>
+            <motion.div 
+              variants={tabIconVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="mb-2"
+            >
+              <AdvancedImage
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786370/15_ov7ml3_t7jmfy.webp"
+                height={96}
+                width={96}
+                className="h-24 w-24 rounded-full mx-auto object-cover shadow-md transition-all duration-300 overflow-hidden"
+                alt="Parallel kitchen"
+                decoding="async"
+                effect="blur"
+              />
+            </motion.div>
+            <span className="text-gray-700 group-hover:text-orange-600 transition-colors font-medium">
+              Parallel
+            </span>
+          </motion.div>
+        }
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={fadeInUp}
+          className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center py-6"
+        >
+          {PcardData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              variants={fadeInUp}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="group relative cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Link to="/parallel-modular-kitchen-design">
+                  <AdvancedImage
+                    src={card.imageUrl}
+                    alt={card.description}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={card.unique ? { objectPosition: '100% 37%' } : {}}
+                  />
+                </Link>
+              </div>
+              <div className="p-6">
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-sm text-gray-600 mb-4">
+                  {card.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <PhoneCallButton />
+                  <button 
+                    onClick={toggleModal}
+                    className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+                  >
+                    Get Free Quote
+                  </button>
                 </div>
-              ))}
-            </div>
-          </Tabs.Item>
-        </Tabs>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </Tabs.Item>
+
+      {/* Island Tab */}
+      <Tabs.Item
+        title={
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            onClick={onClickBad} 
+            className="group relative cursor-pointer justify-center items-center w-auto max-w-xs px-4"
+          >
+            <motion.div 
+              variants={tabIconVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="mb-2"
+            >
+              <AdvancedImage
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786095/16_s1fkxv_ouke2v.webp"
+                height={96}
+                width={96}
+                className="h-24 w-24 rounded-full mx-auto object-cover shadow-md transition-all duration-300 overflow-hidden"
+                alt="Island kitchen"
+                decoding="async"
+                effect="blur"
+              />
+            </motion.div>
+            <span className="text-gray-700 group-hover:text-orange-600 transition-colors font-medium">
+              Island
+            </span>
+          </motion.div>
+        }
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={fadeInUp}
+          className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center py-6"
+        >
+          {IScardData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              variants={fadeInUp}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="group relative cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Link to="/kitchen-island-design">
+                  <AdvancedImage
+                    src={card.imageUrl}
+                    alt={card.description}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </Link>
+              </div>
+              <div className="p-6">
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-sm text-gray-600 mb-4">
+                  {card.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <PhoneCallButton />
+                  <button 
+                    onClick={toggleModal}
+                    className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+                  >
+                    Get Free Quote
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </Tabs.Item>
+
+      {/* Straight Tab */}
+      <Tabs.Item
+        title={
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            onClick={onClickBad} 
+            className="group relative cursor-pointer justify-center items-center w-auto max-w-xs px-4"
+          >
+            <motion.div 
+              variants={tabIconVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="mb-2"
+            >
+              <AdvancedImage
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786409/2_xdjj6e_t09yy6.webp"
+                height={96}
+                width={96}
+                className="h-24 w-24 rounded-full mx-auto object-cover shadow-md transition-all duration-300 overflow-hidden"
+                alt="Straight kitchen"
+                decoding="async"
+                effect="blur"
+              />
+            </motion.div>
+            <span className="text-gray-700 group-hover:text-orange-600 transition-colors font-medium">
+              Straight
+            </span>
+          </motion.div>
+        }
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={fadeInUp}
+          className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center py-6"
+        >
+          {ScardData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              variants={fadeInUp}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="group relative cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <Link to='/straight-modular-kitchen'>
+                  <AdvancedImage
+                    src={card.imageUrl}
+                    alt={card.description}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </Link>
+              </div>
+              <div className="p-6">
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  {card.title}
+                </h2>
+                <p className="text-sm text-gray-600 mb-4">
+                  {card.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <PhoneCallButton />
+                  <button 
+                    onClick={toggleModal}
+                    className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+                  >
+                    Get Free Quote
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </Tabs.Item>
+    </Tabs>
+
+       
 
 
         <div className="container mx-auto  py-9 text-gray-700">

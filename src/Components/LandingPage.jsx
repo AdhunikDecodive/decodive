@@ -695,7 +695,7 @@ function LandingPage() {
 
       <Helmet>
 
-        <title>Adhunik Decodive : Best Luxury Interior Designers in Gurugram & Delhi NCR</title>
+        <title>Best Luxury Interior Designers in Gurugram & Delhi NCR | Adhunik Decodive</title>
 
         <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" name="description" content="Looking for top interior designers in Gurgaon? Adhunik Decodive crafts luxurious, functional interiors tailored to your style. Discover modern elegance today." />
 

@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
- 
+
 import Headroom from "react-headroom";
 import LandingPage from "./Components/LandingPage";
 import ContactUs from "./Components/ContactUs";
@@ -13,7 +13,7 @@ import PshapeKitchen from "./Components/PshapeKitchen";
 import IshapeKitchen from "./Components/IshapeKitchen";
 import SshapeKitchen from "./Components/SshapeKitchen";
 import Wardrobe from "./Components/Wardrobe";
- 
+
 import ShutterDoorWardrobe from "./Components/ShutterDoorWardrobe";
 import SlidingDoorWardrobe from "./Components/SlidingDoorWardrobe";
 import WalkDoorWardrobe from "./Components/WalkDoorWardrobe";
@@ -50,7 +50,7 @@ import MultipleBlogsPage from "./Components/MultipleBlogsPage";
 import BlogDetailPage from "./Components/BlogDetailPage";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
-import NeroChimney from "./Components/NeroChimney"; 
+import NeroChimney from "./Components/NeroChimney";
 import Modularkitchendesign from "./Components/Modularkitchendesign";
 import VastuBasicsTips from "./Components/VastuBasicsTips";
 import FabiaChimney from "./Components/FabiaChimney";
@@ -79,7 +79,7 @@ function App() {
       <ScrollToTop />
 
       <Headroom>
-        <Navbar/>
+        <Navbar />
       </Headroom>
 
       <WatsapButton phoneNumber="9289126052" />
@@ -91,10 +91,10 @@ function App() {
         <Route path="/l-shape-modular-kitchen-design" element={<LShapeKitchen />} />
         <Route path="/u-shape-modular-kitchen-design" element={<UshapeKitchen />} />
         <Route path="/parallel-modular-kitchen-design" element={<PshapeKitchen />} />
-        <Route path="/ishapekitchen" element={<IshapeKitchen />} />
+        <Route path="/kitchen-island-design" element={<IshapeKitchen />} />
         <Route path="/straight-modular-kitchen" element={<SshapeKitchen />} />
         <Route path="/wardrobes" element={<Wardrobe />} />
-        
+
         <Route path="/shutter-door-wardrobe" element={<ShutterDoorWardrobe />} />
         <Route path="/sliding-door-wardrobes" element={<SlidingDoorWardrobe />} />
         <Route path="/Walk-in-door-wardrobes" element={<WalkDoorWardrobe />} />
@@ -106,6 +106,7 @@ function App() {
         <Route path="/wall-decor" element={<WallDecor />} />
         <Route path="/vases" element={<VasesDecor />} />
         <Route path="/clocks" element={<ClocksDecor />} />
+
         <Route path="/wall-paintings" element={<WallPaintingDecor />} />
         <Route path="/lamps" element={<LampsDecor />} />
         <Route path="/ceiling-lights" element={<CeilingLightsDecor />} />

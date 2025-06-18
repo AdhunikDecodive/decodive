@@ -30,6 +30,7 @@ const fadeIn = {
     visible: { opacity: 1, y: 0 }
 };
 
+ 
 
 import {
 
@@ -502,6 +503,29 @@ function PshapeKitchen() {
     }
   ];
 
+  const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
+    }
+  }
+};
+
+const scaleIn = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1,
+      ease: "easeOut"
+    }
+  }
+};
 
 
     return (
@@ -558,92 +582,114 @@ function PshapeKitchen() {
 
 
 
-                <div className=" w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+  {/* First set of cards */}
+  {PcardData.map((card, index) => (
+    <motion.div 
+      key={card.id}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-50px" }}
+      variants={fadeInUp}
+      transition={{ delay: index * 0.1 }}
+      whileHover={{ y: -5 }}
+      className="max-w-md w-full bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+    >
+      <div className="relative h-80 overflow-hidden">
+        <AdvancedImage
+          src={card.imageUrl}
+          alt={card.description}
+          decoding="async"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          style={card.unique ? { objectPosition: '100% 37%' } : {}}
+        />
+      </div>
+      <div className="p-6">
+        <h2 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h2>
+        <p className="text-sm text-gray-600 mb-4">{card.description}</p>
+        <div className="flex justify-between items-center">
+          <PhoneCallButton />
+          <button 
+            onClick={toggleModal}
+            className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+          >
+            Get Free Quote
+          </button>
+        </div>
+      </div>
+    </motion.div>
+  ))}
 
-                    {PcardData.map((card) => (
-                        <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
-                            <div className="relative h-80">
-                                <AdvancedImage
-                                    src={card.imageUrl}
-                                    alt={card.description}
-                                    decoding="async"
-                                    className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                                    style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                                />
-                            </div>
-                            <div className="p-6">
-                                <h2 className="text-base font-medium text-blue-gray-900 mb-2">{card.title}</h2>
-                                <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">{card.description}</p>
-                                <div className="flex justify-between">
-                                    <PhoneCallButton />
-                                    <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+  {/* Promotional Card */}
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={scaleIn}
+    whileHover={{ scale: 1.02 }}
+    className="max-w-md w-full h-full flex flex-col justify-center text-white bg-gradient-to-br from-purple-700 to-pink-600 shadow-lg rounded-xl overflow-hidden"
+  >
+    <div className="p-8 text-center">
+      <h1 className="text-xl font-light mb-2">Kitchen Designs With</h1>
+      <p className="text-3xl font-bold mb-6">High Quality Materials</p>
+      <p className="mb-2">Starting from</p>
+      <p className="text-4xl font-bold mb-8">₹50,000</p>
+      
+      <motion.button 
+        onClick={toggleModal}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition-all duration-300 rounded-full group"
+      >
+        <span className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all"></span>
+        <span className="relative flex items-center">
+          Get Free Consultation
+          <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </span>
+      </motion.button>
+    </div>
+  </motion.div>
 
-                    <div className="  max-w-md w-full mx-auto my-auto h-[50vh]  text-white  bg-gradient-to-r from-[#41303e]  to-[#815379] bg-[ ,] shadow-md rounded-xl overflow-hidden">
+  {/* Second set of cards */}
+  {P2cardData.map((card, index) => (
+    <motion.div 
+      key={card.id}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-50px" }}
+      variants={fadeInUp}
+      transition={{ delay: (PcardData.length + index) * 0.1 }}
+      whileHover={{ y: -5 }}
+      className="max-w-md w-full bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+    >
+      <div className="relative h-80 overflow-hidden">
+        <AdvancedImage
+          src={card.imageUrl}
+          alt={card.description}
+          decoding="async"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          style={card.unique ? { objectPosition: '100% 37%' } : {}}
+        />
+      </div>
+      <div className="p-6">
+        <h2 className="text-lg font-semibold text-gray-800 mb-2">{card.title}</h2>
+        <p className="text-sm text-gray-600 mb-4">{card.description}</p>
+        <div className="flex justify-between items-center">
+          <PhoneCallButton />
+          <button 
+            onClick={toggleModal}
+            className="px-5 py-2.5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
+          >
+            Get Free Quote
+          </button>
+        </div>
+      </div>
+    </motion.div>
 
-                        <div className=" pt-14">
-
-                            <div className="text-center p-5">
-                                <h1 className="text-base font-light text-blue-gray-900 mb-2"> Kitchen Designs With</h1>
-                                <p className="text-2xl font-bold  leading-normal mb-4">High Quality Materials</p>
-                                <p>Starting <br /> <span className=" text-3xl">₹50,000</span></p>
-                            </div>
-
-                            <div className="flex justify-center">
-                                <button onClick={toggleModal} className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
-                                    <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
-                                    <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-[110deg]   ease"></span>
-                                    <span className="relative text-white">Get Free Consultation</span>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    {P2cardData.map((card) => (
-                        <div key={card.id} className="max-w-md w-full bg-white shadow-md rounded-xl overflow-hidden">
-                            <div className="relative h-80">
-                                <AdvancedImage
-                                    src={card.imageUrl}
-                                    alt={card.description}
-                                    decoding="async"
-                                    className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
-                                    style={card.unique ? { objectFit: 'fill', objectPosition: '100% 37%' } : {}}
-                                />
-                            </div>
-                            <div className="p-6">
-                                <h2 className="text-base font-medium text-blue-gray-900 mb-2">{card.title}</h2>
-                                <p className="text-sm text-gray-700 opacity-75 leading-normal mb-4">{card.description}</p>
-                                <div className="flex justify-between">
-                                    <PhoneCallButton />
-                                    <button onClick={toggleModal} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease"> Get Free Quote</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-
-
-
-
-                </div>
-
+  ))}
+</div>
 
             </div>
 
@@ -1369,7 +1415,7 @@ function PshapeKitchen() {
                                 </motion.a>
 
                                 <Link
-                                  to="/support-form"
+                                  href="/support-form"
                                     whilehover={{ y: -5 }}
                                     className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm"
                                 >
