@@ -8,6 +8,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Helmet } from "react-helmet-async";
+import { FiChevronRight } from 'react-icons/fi';
+import { BiCabinet, BiSlideshow, BiWalk } from 'react-icons/bi';
 
 // import { Power2, Power4 } from 'gsap';
 
@@ -20,6 +22,11 @@ import { Link } from "react-router-dom";
 
  
 import { AdvancedImage } from '@cloudinary/react';
+import {      FiSettings, FiLayers, FiHome, FiEye, FiShield    } from 'react-icons/fi';
+import { FaCanadianMapleLeaf } from "react-icons/fa";
+import { FiTrendingUp, FiMaximize2,    FiMinimize2, FiGrid, FiImage, FiPhone } from 'react-icons/fi';
+import { FaCity, FaRulerVertical, FaShoePrints } from 'react-icons/fa';
+
 
 function Wardrobe() {
 
@@ -261,8 +268,159 @@ function Wardrobe() {
         // Add more card objects as needed
     ];
 
-    
+     const wardrobeTypes = [
+    {
+      id: 1,
+      img:"https://res.cloudinary.com/dq14b7xie/image/upload/v1746787118/2door_anczh8_ejew4y.webp",
+      icon: <BiCabinet className="text-2xl" />,
+      title: " Shutter Wardrobes: Classic Elegance, Timeless Appeal",
+      subtitle: "Classic Elegance, Timeless Appeal",
+      description: "For those who appreciate enduring beauty and full accessibility, our shuttered (hinged) wardrobes offer classic charm with robust functionality. Ideal for larger rooms, they allow complete visibility of your wardrobe contents, making it easy to organize and access your belongings. Choose from a vast array of materials like premium laminates, natural veneers, high-gloss acrylic, sophisticated lacquered glass, or rich solid wood. Our designs encompass various shutter styles, handle options, and internal configurations, ensuring a perfect match for your home's décor, whether in the classic homes of Dehradun or modern residences in Gurugram.",
+      features: [
+        "Premium laminates, veneers, or solid wood",
+        "Custom hinge mechanisms",
+        "Tailored internal layouts",
+        "Multiple handle and finish options"
+      ],
+      more:<>
+        <Link  to='/shutter-door-wardrobe'>
+            Learn More About Shutter Wardrobes
+        </Link>
+      </>,
+    },
+    {
+      id: 2,
+        img:"https://res.cloudinary.com/dq14b7xie/image/upload/v1748239635/7_1_bmnrhz_x5j1ov.webp",
+      icon: <BiSlideshow className="text-2xl" />,
+      title: "Sliding Wardrobes: Modern, Space-Saving Solutions",
+      subtitle: "Modern, Space-Saving Solutions",
+      description: "Perfect for contemporary homes and compact spaces, our sliding wardrobes glide effortlessly, freeing up valuable floor space while delivering a sleek, minimalist look. Their innovative design is ideal for narrow passages or bedrooms where swing doors would be impractical, a common consideration in urban dwellings from Gurugram to Meerut. We offer a wide selection of panel materials, including elegant mirrored surfaces to visually expand your room, sophisticated lacquered glass, or classic wooden finishes. With smooth-glide mechanisms and soft-closing features, our sliding wardrobes offer both effortless functionality and cutting-edge style.",
+      features: [
+        "Mirrored or lacquered glass finishes",
+        "Soft-closing runners",
+        "Space-efficient design",
+        "Custom panel materials"
+      ],
+        more:<>
+        <Link  to='/sliding-door-wardrobes'>
+           Explore Our Sliding Wardrobes
+        </Link>
+      </>,
+      
+    },
+    {
+      id: 3,
+      icon: <BiWalk className="text-2xl" />,
+      
+        img:"https://res.cloudinary.com/dq14b7xie/image/upload/v1748241082/9_z3u4pm.webp",
+      title: "Walk-in Wardrobes: The Ultimate in Luxury & Organization",
+      subtitle: "The Ultimate in Luxury & Organization",
+      description: "Indulge in the epitome of personalized luxury with Adhunik Decodive's custom walk-in closets. Designed to be a private sanctuary, these offer unparalleled organization and bespoke features for your extensive collection. Our walk-in wardrobes are meticulously planned to include dedicated sections for clothing, footwear, accessories, and more, all within a beautifully illuminated and accessible space. From custom island units to integrated dressing tables and specialized display shelving, we create a truly tailored experience that enhances your daily routine and adds significant value to your home, from the spacious residences in Delhi NCR to the expansive bungalows in Haridwar.",
+      features: [
+        "Integrated lighting solutions",
+        "Island units & dressing tables",
+        "Bespoke organization systems",
+        "Material and finish customization"
+      ],
+    more:<>
+        <Link  to='/Walk-in-door-wardrobes'>
+          Discover Your Dream Walk-in Wardrobe
+        </Link>
+      </>,
+      
 
+    }
+  ];
+
+
+
+ const benefits = [
+    {
+      icon: <FiSettings className="text-2xl" />,
+      title: "Precision Engineering & Unmatched Craftsmanship",
+      description: "Every Adhunik Decodive wardrobe is a testament to superior craftsmanship. We utilize high-grade, durable materials, precision-cut with the latest European machinery, ensuring flawless finishes and lasting durability that withstand the demands of diverse environments across Gurugram, Delhi NCR, Haridwar, Dehradun, Roorkee, Muzaffarnagar, and Meerut."
+    },
+    {
+      icon: <FiLayers className="text-2xl" />,
+      title: "Data-Driven Design & Strategic Impact",
+      description: "Our design process integrates informed insights into optimal space utilization, material performance, and emerging trends. This strategic approach ensures your wardrobe is not just beautiful, but a highly efficient, high-impact asset for your home, maximizing both functionality and your investment."
+    },
+    {
+      icon: <FiHome className="text-2xl" />,
+      title: "Personalized Consultation & 3D Visualization",
+      description: "We believe in a truly collaborative process. Our expert designers offer personalized consultations, diligently understanding your lifestyle, precise space requirements, and aesthetic preferences. We then bring your vision to life with detailed 3D designs, allowing you to explore every detail and make adjustments."
+    },
+    {
+      icon: <FiEye className="text-2xl" />,
+      title: "Seamless Installation Across Our Service Areas",
+      description: "Our dedicated, highly skilled installation team ensures a swift, clean, and professional assembly at your residence in Gurugram, Delhi, Noida, Faridabad, Ghaziabad, Haridwar, Dehradun, Roorkee, Muzaffarnagar, or Meerut. We handle every aspect, providing a hassle-free experience from the initial concept to the final, perfect installation."
+    },
+    {
+      icon: <FiShield className="text-2xl" />,
+      title: "Uncompromising Quality & Comprehensive Warranty",
+      description: "We stand by the quality and longevity of our work. Adhunik Decodive wardrobes come with comprehensive warranties, giving you peace of mind and full assurance in your investment."
+    },
+    {
+      icon: <FaCanadianMapleLeaf className="text-2xl" />,
+      title: "Sustainable & Eco-Friendly Options",
+      description: "Committed to a greener future, we offer a range of sustainable material choices, allowing you to make an environmentally conscious decision without compromising on style or quality."
+    }
+  ];
+
+  const processSteps = [
+    {
+      title: "Initial Consultation & Needs Assessment",
+      description: "We begin with a detailed discussion to understand your exact requirements, space constraints, and aesthetic preferences. This can be an online consultation or a visit to your home within our extensive service region."
+    },
+    {
+      title: "Expert Design & 3D Visualization",
+      description: "Our designers craft preliminary concepts, followed by realistic 3D renderings that allow you to visualize your custom wardrobe from every angle and refine details."
+    },
+    {
+      title: "Material Selection & Customization",
+      description: "Choose from our extensive range of premium materials, finishes, and accessories. Our experts guide you through selecting the perfect options that fit your style, functionality needs, and budget."
+    },
+    {
+      title: "Precision Manufacturing",
+      description: "Once finalized, your wardrobe is meticulously crafted in our state-of-the-art facility using advanced machinery and skilled artisans, ensuring unparalleled quality and precision."
+    },
+    {
+      title: "Professional Installation & Quality Check",
+      description: "Our experienced installation team ensures seamless and efficient assembly at your residence, followed by a thorough quality inspection to guarantee perfection."
+    },
+    {
+      title: "Post-Installation Support",
+      description: "Our commitment extends beyond installation. We provide excellent after-sales support to ensure your complete satisfaction and the long-term enjoyment of your Adhunik Decodive wardrobe."
+    }
+  ];
+
+    const trends = [
+    {
+      icon: <FaRulerVertical className="text-2xl" />,
+      title: "Maximizing Vertical Space",
+      description: "With living spaces in cities like Gurugram and Delhi often compact, floor-to-ceiling wardrobes and smart loft storage are highly sought after to utilize every possible inch. This efficiency is increasingly valued in growing urban centers like Dehradun and Meerut as well."
+    },
+    {
+      icon: <FiLayers className="text-2xl" />,
+      title: "Integrated Solutions",
+      description: "Modern designs often feature wardrobes with integrated dressing units, concealed drawers, and multi-functional accessories that serve more than one purpose, reflecting a desire for smart, consolidated living."
+    },
+    {
+      icon: <FiMinimize2 className="text-2xl" />,
+      title: "Sleek & Minimalist Finishes",
+      description: "High-gloss, sophisticated matte, and subtle wood textures are popular, creating a seamless and uncluttered look that complements modern interiors across all regions."
+    },
+    {
+      icon: <FiImage className="text-2xl" />,
+      title: "Mirrored & Glass Accents",
+      description: "Mirrored panels and elegant lacquered or frosted glass continue to be popular, adding depth, light, and a touch of sophistication to any space, from traditional homes in Haridwar to contemporary apartments in Noida."
+    },
+    {
+      icon: <FaShoePrints className="text-2xl" />,
+      title: "Smart Internal Organizers",
+      description: "Increasing demand for specialized organizers like pull-out trouser racks, bespoke jewelry drawers, revolving shoe racks, and custom accessory compartments for ultimate organization."
+    }
+  ];
 
 
     return (
@@ -271,35 +429,28 @@ function Wardrobe() {
 
 
 
-            <Helmet>
+           <Helmet>
+    <title>Custom Wardrobes in Gurugram, Delhi NCR & Beyond | Adhunik Decodive</title>
+    <meta name="description" content="Discover Adhunik Decodive's exquisite range of custom wardrobes. Serving Gurugram, Delhi NCR, Haridwar, Dehradun, Meerut & more, we craft personalized storage solutions for your home. Get a free consultation today!" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+    <link rel="canonical" href="https://adhunikdecodive.com/wardrobes" /> <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
-                <title>Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive</title>
-
-                <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover the best wardrobe designs in Gurugram with Adhunik Decodive. Explore 1-door, 2-door, sliding, and walk-in wardrobes customized for style and efficiency. Get a free consultation today!" />
-
-                <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-                <link rel="canonical" href="https://adhunikdecodive.com/wardrobes" data-react-helmet="true" />
-                <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
-                <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-
-                <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
-                <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="wardrobe designs, Shutter Wardrobe, sliding wardrobe, walk-in wardrobe, best wardrobes in Gurugram, modern wardrobe layouts, custom wardrobe designs, wardrobe renovation Gurugram, Adhunik Decodive interiors" />
-                <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
-                <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
-                <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary"></meta>
-                
-
-                <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Upgrade your home with Adhunik Decodive's best wardrobe designs in Gurugram. Choose from stylish 1-door, 2-door, sliding, and walk-in wardrobes tailored for modern homes. Book a free consultation today!" />
-
-                <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/wardrobe-category">
-                </meta>
-
-                <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Wardrobe Experts" />
-                <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Best Wardrobe Designs in Gurugram | 1-Door, 2-Door, Sliding & Walk-in – Adhunik Decodive" />
-                <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Explore space-efficient and stylish wardrobe designs in Gurugram by Adhunik Decodive. From 1-door and 2-door to sliding and walk-in wardrobes, we craft modern storage solutions. Get a free consultation today!" />
-                {/* <script type="application/ld+json">{JSON.stringify(jsonLd)}</script> */}
-
-            </Helmet>
+    <meta property="og:title" content="Custom Wardrobes in Gurugram, Delhi NCR & Beyond | Adhunik Decodive" />
+    <meta property="og:description" content="Discover Adhunik Decodive's exquisite range of custom wardrobes. Serving Gurugram, Delhi NCR, Haridwar, Dehradun, Meerut & more, we craft personalized storage solutions for your home. Get a free consultation today!" />
+    <meta property="og:url" content="https://adhunikdecodive.com/wardrobes"></meta> <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+    <meta property="og:locale" content="en_IN"></meta>
+    <meta property="og:type" content="website"></meta>
+    <meta property="og:image" content="https://adhunikdecodive.com/images/wardrobe-overview-social-share.jpg" />
+    <meta name="twitter:card" content="summary_large_image"></meta>
+    <meta name="twitter:title" content="Custom Wardrobes in Gurugram, Delhi NCR & Beyond | Adhunik Decodive" />
+    <meta name="twitter:description" content="Discover Adhunik Decodive's exquisite range of custom wardrobes. Serving Gurugram, Delhi NCR, Haridwar, Dehradun, Meerut & more, we craft personalized storage solutions for your home. Get a free consultation today!" />
+    <meta name="twitter:image" content="https://adhunikdecodive.com/images/wardrobe-overview-social-share.jpg" />
+    <meta name="keywords" content="custom wardrobes Gurugram, modular wardrobes Delhi NCR, sliding wardrobes Haridwar, walk-in closets Dehradun, wardrobe designs Meerut, bespoke wardrobes Roorkee, storage solutions Muzaffarnagar, modern wardrobe Delhi, Adhunik Decodive wardrobes, custom closet design India" />
+    
+   
+  
+</Helmet>
 
             <PopUp />
 
@@ -618,6 +769,324 @@ function Wardrobe() {
                 </Tabs>
             </div>
 
+
+        <div className="bg-white">
+    
+
+      {/* Hero Section */}
+       <section className="relative bg-gradient-to-r from-orange-600 to-amber-600 py-20 px-4 text-white">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-3xl text-center  md:text-4xl font-bold mb-6 leading-tight">
+            Your Dream Wardrobe Awaits : Custom Designs for Homes Across North India
+
+          </h1>
+          <p className="text-lg text-center max-w-6xl opacity-90">
+           In the bustling urban centers of Gurugram and Delhi NCR, and extending to the serene landscapes of Dehradun, the spiritual hub of Haridwar, the academic town of Roorkee, and the vibrant cities of Muzaffarnagar and Meerut, every home deserves intelligent, beautiful storage. At Adhunik Decodive, we specialize in crafting bespoke wardrobe solutions that perfectly blend functionality, aesthetics, and the unique demands of modern Indian living.
+          </p>
+    
+        </div>
+      </section>
+
+      {/* Value Proposition */}
+      <section className="max-w-7xl mx-auto px-4 py-16">
+        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+          <p className="text-md text-gray-700 text-center italic">
+            "We understand that off-the-shelf wardrobes often fall short, struggling to fit specific spaces or truly reflect your personal style. That's why we transform your vision into reality, designing and building custom wardrobes that maximize every inch of your space, enhance your interiors, and simplify your daily routine. With a deep understanding of local design trends and space considerations across our expanded service areas, including Gurugram, Delhi, Noida, Faridabad, Ghaziabad, Haridwar, Dehradun, Roorkee, Muzaffarnagar, and Meerut, we are your trusted partner for truly personalized storage solutions."
+          </p>
+        </div>
+      </section>
+
+      {/* Wardrobe Solutions */}
+      <section className="max-w-7xl mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Explore Adhunik Decodive's Range of Wardrobe Styles
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            Adhunik Decodive offers a diverse collection of wardrobe designs, each meticulously crafted to meet different spatial needs and aesthetic preferences.
+          </p>
+        </div>
+
+        <div className="space-y-20">
+
+          {wardrobeTypes.map((wardrobe) => (
+            <div key={wardrobe.id} className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-gray-100 rounded-xl aspect-[4/3] overflow-hidden">
+                {/* Image placeholder - replace with actual image */}
+                <div className="w-full h-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                 <img src={wardrobe.img} className=" h-full w-full object-fill  object-center" alt="" />
+                </div>
+              </div>
+              
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-orange-500 text-white p-2 rounded-lg">
+                    {wardrobe.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-800">{wardrobe.title}</h3>
+                    <p className="text-orange-500 text-sm font-medium">{wardrobe.subtitle}</p>
+                  </div>
+                </div>
+                
+                <p className="text-gray-600  text-sm mb-6">{wardrobe.description}</p>
+                
+                <ul className="space-y-3 mb-8">
+                  {wardrobe.features.map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-orange-500 mr-2 ">•</span>
+                      <span className=" text-sm text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <button className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-lg transition-all shadow-md hover:shadow-lg text-sm">
+                  {wardrobe.more}
+                  <FiChevronRight className="ml-2" />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      
+    </div>
+
+     <div className="bg-white">
+     
+
+      {/* Hero Section */}
+      <section className="relative bg-gray-900 text-white py-24 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Why Choose Adhunik Decodive for Your Wardrobe?
+          </h1>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+            Choosing Adhunik Decodive means partnering with experts who are committed to transforming your space with intelligent and beautiful storage solutions, wherever you are in our service region.
+          </p>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="max-w-7xl mx-auto py-20 px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-orange-300 transition-all">
+              <div className="text-orange-500 mb-4">
+                {benefit.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{benefit.title}</h3>
+              <p className="text-gray-600">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="bg-gray-50 py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-16">
+            Your Bespoke Wardrobe Journey with Adhunik Decodive
+          </h2>
+          
+          <div className="space-y-10">
+            {processSteps.map((step, index) => (
+              <div key={index} className="flex flex-col md:flex-row gap-6">
+                <div className="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xl">
+                  {index + 1}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+  <section className="max-w-7xl mx-auto py-16 px-4">
+        <div className="bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl p-8 text-white">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="bg-white/20 p-4 rounded-full">
+              <FaCity className="text-3xl" />
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-2">We Serve Across North India</h3>
+              <p className="opacity-90">
+                Gurugram • Delhi • Noida • Faridabad • Ghaziabad • Haridwar • Dehradun • Roorkee • Muzaffarnagar • Meerut
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* CTA Section */}
+      <section className="bg-orange-600 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Begin Your Wardrobe Transformation?</h2>
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
+            Serving homes across Gurugram, Delhi NCR, Haridwar, Dehradun, Roorkee, Muzaffarnagar, and Meerut with premium wardrobe solutions.
+          </p>
+          
+             <Link className="bg-white text-orange-600 hover:bg-gray-100 font-semibold text-lg px-8 py-3 rounded-lg transition-all shadow-lg" to='/support-form'>
+           Schedule Free Consultation
+        </Link>
+
+        </div>
+      </section>
+    </div>
+
+
+   <div className="bg-white">
+     
+     
+
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-24 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-orange-500/20 px-4 py-2 rounded-full mb-4 border border-orange-500/30">
+            <FiTrendingUp className="text-orange-400" />
+            <span className="text-orange-300 font-medium">Industry Trends</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Staying Ahead with Modern Wardrobe Trends Across North India
+          </h1>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+            At Adhunik Decodive, we keep our finger on the pulse of evolving design aesthetics and functional needs in urban and semi-urban environments across our service areas.
+          </p>
+        </div>
+      </section>
+
+      {/* Trends Section */}
+      <section className="max-w-7xl mx-auto py-20 px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {trends.map((trend, index) => (
+            <div key={index} className="group relative bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all hover:border-orange-200">
+              <div className="absolute -top-5 left-6 bg-orange-500 text-white p-3 rounded-lg group-hover:rotate-6 transition-transform">
+                {trend.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">{trend.title}</h3>
+              <p className="text-gray-600">{trend.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="bg-gray-50 py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Discover Our Latest Wardrobe Projects
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Our portfolio showcases the diversity of our designs, the quality of our craftsmanship, and the functional beauty we've brought to homes across Gurugram, Delhi, Noida, Faridabad, Ghaziabad, Haridwar, Dehradun, Roorkee, Muzaffarnagar, and Meerut.
+            </p>
+          </div>
+          
+          {/* Portfolio Grid (Placeholder - replace with actual images) */}
+     {/* Portfolio Grid with Images */}
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+  {[
+    {
+      id: 1,
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746788450/15_n8tldp_mjxl9v.webp",
+      title: "Modern Shutter Wardrobe",
+      location: "Gurugram Residence"
+    },
+    {
+      id: 2,
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748239637/9_ya6jlf_wyf9ek.webp",
+      title: "Space-Saving Sliding Wardrobe",
+      location: "Delhi Apartment"
+    },
+    {
+      id: 3,
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp",
+      title: "Luxury Walk-in Wardrobe",
+      location: "Noida Penthouse"
+    },
+    {
+      id: 4,
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748241095/13_cg3uyw.webp",
+      title: "Traditional Style Wardrobe",
+      location: "Haridwar Home"
+    },
+    {
+      id: 5,
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748239641/11_jteifh_igjgq6.webp",
+      title: "Smart Modular Wardrobe",
+      location: "Dehradun Villa"
+    },
+    {
+      id: 6,
+      image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748239644/14_uwgozu_ztg7tf.webp",
+      title: "Compact Space Solution",
+      location: "Meerut Apartment"
+    }
+  ].map((project) => (
+    <div key={project.id} className="aspect-square rounded-xl overflow-hidden relative group">
+      {/* Actual Image */}
+      <img 
+        src={project.image} 
+        alt={`${project.title} - ${project.location}`}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      
+      {/* Hover Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+        <div className="text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <h3 className="font-bold text-lg">{project.title}</h3>
+          <div className="flex items-center mt-1 mb-2">
+            <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+            </svg>
+            <p className="text-sm text-gray-200">{project.location}</p>
+          </div>
+         
+             <Link className="mt-3 text-sm bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-md transition-colors" to='/blogs/luxury-modular-kitchen-design-gurugram'>
+         View Project Details
+        </Link>
+
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+          
+        
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-orange-600 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Design Your Perfect Wardrobe?</h2>
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
+            Don't let clutter define your living space. Let Adhunik Decodive craft a wardrobe that truly understands your needs and elevates your home.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+           
+
+        <Link className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all shadow-lg"  to='/support-form'>
+           Request Free Design Consultation
+        </Link>
+
+           <a href="tel:9355588595" className="flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 font-medium py-3 px-6 rounded-lg transition-all" to='/Walk-in-door-wardrobes'>
+             <FiPhone />
+              Call Us Now
+        </a>
+        
+            
+          </div>
+        </div>
+      </section>
+    </div>
         </>
 
     )

@@ -49,7 +49,7 @@ const wardrobeCategories = [
   { name: 'Sliding Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788482/20_ynxzl7_h545mk.webp' },
   { name: 'Sliding Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788478/19_uhtobz_ygevi4.webp' },
   { name: 'Walk-in-Closet Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788474/18_gx25rn_yuzyzi.webp' },
-  { name: 'Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788453/16_y6ttql_kehesh.webp' },
+  { name: 'Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1748241117/20_ohlmrl.webp' },
   { name: '1-Door Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788450/15_n8tldp_mjxl9v.webp' },
   { name: '2-Door Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788443/13_pdrznd_bukmze.webp' },
   { name: 'Sliding Wardrobe', imgSrc: 'https://res.cloudinary.com/dq14b7xie/image/upload/v1746788426/8_hxhlwq_unvxvc.webp' },
@@ -746,13 +746,20 @@ function LandingPage() {
               className="  z-[3] vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden"
             >
 
-              <img
+              {/* <img
              
-              src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746610732/landing_page_zesa55.webp"
+              src=""
                 alt=" High-definition video of a modern kitchen interior captured by a camera "
                 className="   object-cover object-center  w-screen h-screen  "
 
-              />
+              /> */}
+              <video src="https://cdn.pixabay.com/video/2024/05/16/212213_large.mp4 "  autoPlay
+                loop
+                muted
+                poster="https://cdn.pixabay.com/photo/2016/08/26/15/06/home-1622401_1280.jpg"
+                playsInline
+                type="video/mp4"      className="   object-cover object-center  w-screen h-screen  "
+></video>
 
             </div>
 
