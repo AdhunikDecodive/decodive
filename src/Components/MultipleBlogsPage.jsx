@@ -104,7 +104,7 @@ import { Helmet } from "react-helmet-async";
   {
     id: 1,
     slug: "your-furniture-reflects-you",
-    title: "The Ultimate Guide to Luxury Modular Kitchen Design in Gurugram – Crafting Your Bespoke Culinary Oasis",
+    title: "The Ultimate Guide to Luxury Modular Kitchen in Gurugram ...",
     description: "The kitchen is more than just a place to cook; it's the vibrant heart of your home, a space for culinary creativity, family gatherings...",
     image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748841832/1_th2zgt.webp",
     author: "Modular Kitchen Design",
@@ -113,7 +113,23 @@ import { Helmet } from "react-helmet-async";
     tags: ["#furniture", "#interiordesign"],
     readTime: " ",
     href:"/blogs/luxury-modular-kitchen-design-gurugram"
+  },
+
+{
+    id: 2,
+    slug: "luxury-modular-wardrobes-delhi-gurugram",
+    title: "Luxury Modular Wardrobes: Adhunik Decodive Delhi & Gurugram",
+    description: "Elevate your Delhi & Gurugram home with Adhunik Decodive's luxury modular wardrobes. Discover modern designs, smart storage, and custom solutions. Request a consultation!",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp",
+    author: "Modular Wardrobe Design",
+    date: "July 2025",
+    tag: "New",
+    tags: ["#wardrobes", "#interiordesign", "#homedecor"],
+    readTime: "4 min read",
+    href:"/blogs/modular-wardrobes"
   }
+
+
 ];
 
 

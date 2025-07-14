@@ -54,6 +54,7 @@ import NeroChimney from "./Components/NeroChimney";
 import Modularkitchendesign from "./Components/Modularkitchendesign";
 import VastuBasicsTips from "./Components/VastuBasicsTips";
 import FabiaChimney from "./Components/FabiaChimney";
+import ModularWardrobes from "./Components/ModularWardrobes";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -126,9 +127,14 @@ function App() {
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
         <Route path="/nero-chimney" element={<NeroChimney />} />
         <Route path="/fabia-chimney" element={<FabiaChimney />} />
-        <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
+
+
+        <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
         <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
 
+        <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
+        
+        <Route path="/blogs/modular-wardrobes" element={<ModularWardrobes />} />
 
       </Routes>
     </>

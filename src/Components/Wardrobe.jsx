@@ -332,8 +332,6 @@ function Wardrobe() {
     }
   ];
 
-
-
   const benefits = [
     {
       icon: <FiSettings className="text-2xl" />,
@@ -427,10 +425,11 @@ function Wardrobe() {
     <>
 
 
-
-
       <Helmet>
+      
+
         <title>Custom Wardrobes in Gurugram, Delhi NCR & Beyond | Adhunik Decodive</title>
+
         <meta name="description" content="Discover Adhunik Decodive's exquisite range of custom wardrobes. Serving Gurugram, Delhi NCR, Haridwar, Dehradun, Meerut & more, we craft personalized storage solutions for your home. Get a free consultation today!" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
         <link rel="canonical" href="https://adhunikdecodive.com/wardrobes" /> <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -6,8 +6,7 @@ import { Power2, Power4 } from "gsap";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, FreeMode } from "swiper/modules";
-
-import { FaPlay } from "react-icons/fa";
+ 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -134,9 +133,7 @@ const logos = [
 
   ];
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage, AdvancedVideo } from '@cloudinary/react';
+ 
 import PopUp from "./PopUp";
 import { Helmet } from "react-helmet-async";
 
@@ -144,8 +141,7 @@ import { Helmet } from "react-helmet-async";
 
 function LandingPage() {
 
-  const cld = new Cloudinary({ cloud: { cloudName: 'dwhmfz63n' } });
-
+  
   useGSAP(() => {
 
 
@@ -728,8 +724,8 @@ function LandingPage() {
 
 
 
-      <div className="main w-full font-['Rejouice-Headline'] ">
-        <div className="home  section w-full h-screen relative  " >
+      <div className="main w-full font-['Rejouice-Headline']">
+        <div className="home section w-full h-screen relative" >
           <div className="w-full sticky top-0 left-0">
             <div className="btmtext absolute bottom-[7%] z-[4] w-52 left-[3%]">
               <h2>
@@ -746,19 +742,16 @@ function LandingPage() {
               className="  z-[3] vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden"
             >
 
-              {/* <img
              
-              src=""
-                alt=" High-definition video of a modern kitchen interior captured by a camera "
-                className="   object-cover object-center  w-screen h-screen  "
+              
 
-              /> */}
-              <video src="https://cdn.pixabay.com/video/2024/05/16/212213_large.mp4 "  autoPlay
+              <video src="https://cdn.pixabay.com/video/2024/05/16/212213_large.mp4 " 
+               autoPlay
                 loop
                 muted
                 poster="https://cdn.pixabay.com/photo/2016/08/26/15/06/home-1622401_1280.jpg"
                 playsInline
-                type="video/mp4"      className="   object-cover object-center  w-screen h-screen  "
+                type="video/mp4"  className="object-cover object-center  w-screen h-screen"
 ></video>
 
             </div>
@@ -815,16 +808,18 @@ function LandingPage() {
                             <img
                              
                              src={category.imgSrc}
-                                                   
-                           
+
                               loading="lazy"
+
                               className="object-cover h-12 w-12"
+
                               alt={category.name}
-                              
+
                               decoding="async"
                             />
 
                           </div>
+
                         )}
                       </div>
                     ))}
@@ -834,10 +829,14 @@ function LandingPage() {
                     {lightingCategories.map((category, index) => (
                       <div key={index} className="elem flex items-center gap-2 md:gap-4">
                         <h2 className="font-semibold  md:text-4xl">
+
                           {category.name}
+
                         </h2>
+
                         {category.imgSrc && (
                           <div className="imgdiv w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full">
+
                           <img
         src={category.imgSrc}
          loading="lazy"
@@ -875,6 +874,8 @@ function LandingPage() {
                       </div>
                     ))}
                   </div>
+
+
 
                   <div className="row lft -translate-x-1/4 w-full flex items-center gap-3 md:gap-6 mt-2 whitespace-nowrap">
                     {furnitureCategories.map((category, index) => (
