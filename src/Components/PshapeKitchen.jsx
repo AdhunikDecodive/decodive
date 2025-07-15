@@ -546,7 +546,7 @@ const scaleIn = {
                 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
                 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
                 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image"></meta>
-                <link data-n-head="ssr" rel="preconnect" href="https://cdn12.lemnisk.co"></link>
+                
                 <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Adhunik Decodive offers custom parallel kitchen designs in Gurugram, Delhi & NCR. Enjoy efficient layouts, smart storage, and modern aesthetics. Book a free consultation!" />
                 <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/parallel-kitchen-designs"></meta>
                 <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />

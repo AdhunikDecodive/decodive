@@ -498,7 +498,7 @@ const scaleIn = {
                 <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
                 <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
                 <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image"></meta>
-                <link data-n-head="ssr" rel="preconnect" href="https://cdn12.lemnisk.co"></link>
+              
                 <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Maximize space and style with Adhunik Decodive's U-shaped modular kitchen designs in Gurugram, Delhi & NCR. Get expert solutions for efficient, modern kitchens. Book a free consultation!" />
                 <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/u-shaped-kitchen-designs"></meta>
                 <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
