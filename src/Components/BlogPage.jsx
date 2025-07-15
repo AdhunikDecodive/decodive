@@ -1,6 +1,7 @@
 
 
 const cardData = [
+
   {
     id: 1,
     title: "Home Decor Ideas for Compact Living",
@@ -10,6 +11,7 @@ const cardData = [
     date: "Aug 18",
     tag: "Trending",
   },
+  
   {
     id: 2,
     title: "Spice Up Your Kitchen: Trendy Modular Designs to Try in 2024",
@@ -28,6 +30,7 @@ const cardData = [
     date: "Jul 22",
     tag: "Top",
   },
+
   {
     id: 4,
     title: "Your Furniture Reflects You",
@@ -37,6 +40,7 @@ const cardData = [
     date: "Nov 15",
     tag: "Popular",
   },
+
   {
     id: 5,
     title: "Bar Counter Design Ideas To Replicate In Your Home In 2024",
@@ -46,6 +50,7 @@ const cardData = [
     date: "Oct 3",
     tag: "New",
   },
+
   {
     id: 6,
     title: "Minimalist Interior Design Style.",
@@ -55,6 +60,7 @@ const cardData = [
     date: "Dec 27",
     tag: "Trending",
   },
+
   {
     id: 7,
     title: "The Artistic Trend of Sculptural Pendant Lights in Home Décor",
@@ -64,6 +70,7 @@ const cardData = [
     date: "Dec 27",
     tag: "Trending",
   },
+
 ];
 
 

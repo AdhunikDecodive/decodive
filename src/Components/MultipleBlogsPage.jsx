@@ -128,7 +128,21 @@ import { Helmet } from "react-helmet-async";
     readTime: "4 min read",
     href:"/blogs/modular-wardrobes"
   }
+,
 
+{
+    id: 3,
+    slug: "l-shape-modular-kitchen-design-delhi-ncr",
+    title: "Modular L-Shape Kitchen Design Delhi NCR | Adhunik Decodive Guide",
+    description: "Discover the perfect L-shape modular kitchen for your Delhi or Gurugram home. Explore modern designs, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786199/3_z9eejg_rhhask.webp",
+    author: "Modular  L-Shape Kitchen Expert",
+    date: "July 2025",
+    tag: "Popular",
+    tags: ["#modularkitchen", "#lshapekitchen", "#delhincr"],
+    readTime: "5 min read",
+    href: "/blogs/l-shape-modular-kitchen-design-delhi-ncr"
+}
 
 ];
 
@@ -156,7 +170,7 @@ const MultipleBlogsPage = () => {
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {blogs.reverse().map((blog) => (
+          {blogs.map((blog) => (
             <div
               key={blog.id}
               className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"

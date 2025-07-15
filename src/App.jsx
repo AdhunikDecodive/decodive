@@ -55,6 +55,7 @@ import Modularkitchendesign from "./Components/Modularkitchendesign";
 import VastuBasicsTips from "./Components/VastuBasicsTips";
 import FabiaChimney from "./Components/FabiaChimney";
 import ModularWardrobes from "./Components/ModularWardrobes";
+import LshapeDelhiNcrBlog from "./Components/LshapeDelhiNcrBlog";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -135,6 +136,7 @@ function App() {
         <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
         
         <Route path="/blogs/modular-wardrobes" element={<ModularWardrobes />} />
+        <Route path="/blogs/l-shape-modular-kitchen-design-delhi-ncr" element={<LshapeDelhiNcrBlog />} />
 
       </Routes>
     </>
