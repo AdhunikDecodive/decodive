@@ -143,6 +143,21 @@ import { Helmet } from "react-helmet-async";
     readTime: "5 min read",
     href: "/blogs/l-shape-modular-kitchen-design-delhi-ncr"
 }
+,
+
+{
+    id: 4,
+    slug: "best-interior-designer-haridwar",
+    title: "Best Interior Designer in Haridwar | Adhunik Decodive",
+    description: "Discover top-tier interior design in Haridwar with Adhunik Decodive. Specializing in luxury homes, modular kitchens & custom wardrobes.",
+    image: "https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    author: "Interior Design Studio",
+    date: "July 2025", 
+    tag: "Featured",
+    tags: ["#interiordesign", "#haridwar", "#homedecor"],
+    readTime: "4 min read",
+    href: "/blogs/interior-designer-in-haridwar"
+}
 
 ];
 

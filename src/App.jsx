@@ -51,11 +51,12 @@ import BlogDetailPage from "./Components/BlogDetailPage";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import NeroChimney from "./Components/NeroChimney";
-import Modularkitchendesign from "./Components/Modularkitchendesign";
+import Modularkitchendesign from "./Components/Blogs/Modularkitchendesign";
 import VastuBasicsTips from "./Components/VastuBasicsTips";
 import FabiaChimney from "./Components/FabiaChimney";
-import ModularWardrobes from "./Components/ModularWardrobes";
-import LshapeDelhiNcrBlog from "./Components/LshapeDelhiNcrBlog";
+import ModularWardrobes from "./Components/Blogs/ModularWardrobes";
+import LshapeDelhiNcrBlog from "./Components/Blogs/LshapeDelhiNcrBlog";
+import InterirDesignerHaridwar from "./Components/Blogs/InterirDesignerHaridwar";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -137,6 +138,9 @@ function App() {
         
         <Route path="/blogs/modular-wardrobes" element={<ModularWardrobes />} />
         <Route path="/blogs/l-shape-modular-kitchen-design-delhi-ncr" element={<LshapeDelhiNcrBlog />} />
+
+        <Route path="/blogs/interior-designer-in-haridwar" element={<InterirDesignerHaridwar />} />
+
 
       </Routes>
     </>

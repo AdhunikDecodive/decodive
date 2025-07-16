@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Menu, X, ArrowRight, Check, LucidePhone, LucideMail, LucideGlobe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaBoxes, FaBoxOpen, FaChair, FaExpandAlt, FaGem, FaProjectDiagram, FaUsers, FaUtensils } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 // --- Google Fonts Import ---
 const Fonts = () => (
@@ -338,6 +339,62 @@ Proper lighting (task lighting under cabinets, ambient lighting) enhances both f
 // --- Main App Component ---
 export default function LshapeDelhiNcrBlog() {
   return (
+
+    <>
+   
+<Helmet>
+
+   <title>Modular L-Shape Kitchen Design Delhi NCR | Adhunik Decodive Guide</title>
+
+   <meta name="description" content="Discover the perfect L-shape modular kitchen for your Delhi or Gurugram home. Explore modern designs, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
+
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+
+   <link rel="canonical" href="https://adhunikdecodive.com/blog/l-shape-modular-kitchen-design" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   <meta httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+
+ 
+
+   <meta property="og:title" content="Modular L-Shape Kitchen Design Delhi NCR | Adhunik Decodive Guide" />
+
+   <meta property="og:description" content="Discover the perfect L-shape modular kitchen for your Delhi or Gurugram home. Explore modern designs, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
+
+   <meta property="og:url" content="https://adhunikdecodive.com/blog/l-shape-modular-kitchen-design"></meta>
+
+   <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
+
+   <meta property="og:locale" content="en_IN"></meta>
+
+   <meta property="og:type" content="article"></meta>
+
+   <meta property="og:image" content="https://adhunikdecodive.com/images/blog/l-shape-modular-kitchen-social-share.jpg" />
+
+ 
+
+   <meta name="twitter:card" content="summary_large_image"></meta>
+
+   <meta name="twitter:title" content="Modular L-Shape Kitchen Design Delhi NCR | Adhunik Decodive Guide" />
+
+   <meta name="twitter:description" content="Discover the perfect L-shape modular kitchen for your Delhi or Gurugram home. Explore modern designs, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
+
+   <meta name="twitter:image" content="https://adhunikdecodive.com/images/blog/l-shape-modular-kitchen-social-share.jpg" />
+
+   <meta name="twitter:site" content="@AdhunikDecodive"></meta>
+
+   <meta name="twitter:creator" content="@AdhunikDecodive"></meta>
+
+ 
+
+   <meta name="keywords" content="L-shape modular kitchen Delhi, L-shape kitchen design Gurugram, modern L kitchen ideas, small L-shape kitchen designs, modular kitchen cost Delhi, L-shape kitchen Vastu, Adhunik Decodive kitchens, custom L-shape kitchen, kitchen design Delhi NCR, smart storage kitchen" />
+
+ 
+
+ 
+
+</Helmet>
     <div className="bg-[#FDFCFB] font-manrope text-slate-800 overflow-x-hidden">
       <Fonts />
 
@@ -685,5 +742,7 @@ Let Adhunik Decodive be your partner in creating a kitchen that's not just funct
 
       </main>
     </div>
+
+     </>
   );
 }
