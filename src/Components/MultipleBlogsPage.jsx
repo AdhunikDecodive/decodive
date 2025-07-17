@@ -171,6 +171,20 @@ import { Helmet } from "react-helmet-async";
     tags: ["#kitchendesign", "#parallelkitchen", "#delhincr"],
     readTime: "5 min read",
     href: "/blogs/parallel-modular-kitchen-design-in-delhi-ncr"
+},
+
+{
+    id: 6,
+    slug: "straight-kitchen-design-delhi",
+    title: "Straight Kitchen Design Delhi | Adhunik Decodive Space Savers",
+    description: "Discover efficient straight kitchen designs for your Delhi or Gurugram home. Maximize space with sleek layouts, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786448/16_ezwbao_mftant.webp",
+    author: "Modular Kitchen Specialist",
+    date: "July 2025",
+    tag: "Trending",
+    tags: ["#kitchendesign", "#straightkitchen", "#delhincr"],
+    readTime: "4 min read",
+    href: "/blogs/straight-modular-kitchen-in-delhi"
 }
 
 ];
