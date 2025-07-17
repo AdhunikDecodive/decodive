@@ -185,6 +185,20 @@ import { Helmet } from "react-helmet-async";
     tags: ["#kitchendesign", "#straightkitchen", "#delhincr"],
     readTime: "4 min read",
     href: "/blogs/straight-modular-kitchen-in-delhi"
+},
+
+{
+    id: 7,
+    slug: "u-shape-modular-kitchen-design-delhi",
+    title: "U-Shape Modular Kitchen Design Delhi | Adhunik Decodive Guide",
+    description: "Discover the ultimate U-shape modular kitchen for your Delhi or Gurugram home. Explore efficient designs, abundant storage, and transparent costs. Get your free consultation from Adhunik Decodive.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786546/8_avclus_mg44dp.webp",
+    author: "Kitchen Design Specialist", 
+    date: "July 2025",
+    tag: "Popular",
+    tags: ["#modularkitchen", "#ushapekitchen", "#delhincr"],
+    readTime: "5 min read",
+    href: "/blogs/u-shape-modular-kitchen-design-in-delhi"
 }
 
 ];

@@ -59,6 +59,7 @@ import LshapeDelhiNcrBlog from "./Components/Blogs/LshapeDelhiNcrBlog";
 import InterirDesignerHaridwar from "./Components/Blogs/InterirDesignerHaridwar";
 import ParallelKitchenDelhiNCR from "./Components/Blogs/ParallelKitchenDelhiNCR";
 import StraightKitchenDesignDelhi from "./Components/Blogs/StraightKitchenDesignDelhi";
+import UModularKitchenDelhi from "./Components/Blogs/UModularKitchenDelhi";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -146,6 +147,8 @@ function App() {
         <Route path="/blogs/parallel-modular-kitchen-design-in-delhi-ncr" element={<ParallelKitchenDelhiNCR />} />
 
         <Route path="/blogs/straight-modular-kitchen-in-delhi" element={<StraightKitchenDesignDelhi />} />
+
+        <Route path="/blogs/u-shape-modular-kitchen-design-in-delhi" element={<UModularKitchenDelhi />} />
 
 
       </Routes>
