@@ -57,6 +57,7 @@ import FabiaChimney from "./Components/FabiaChimney";
 import ModularWardrobes from "./Components/Blogs/ModularWardrobes";
 import LshapeDelhiNcrBlog from "./Components/Blogs/LshapeDelhiNcrBlog";
 import InterirDesignerHaridwar from "./Components/Blogs/InterirDesignerHaridwar";
+import ParallelKitchenDelhiNCR from "./Components/Blogs/ParallelKitchenDelhiNCR";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -140,6 +141,7 @@ function App() {
         <Route path="/blogs/l-shape-modular-kitchen-design-delhi-ncr" element={<LshapeDelhiNcrBlog />} />
 
         <Route path="/blogs/interior-designer-in-haridwar" element={<InterirDesignerHaridwar />} />
+        <Route path="/blogs/parallel-modular-kitchen-design-in-delhi-ncr" element={<ParallelKitchenDelhiNCR />} />
 
 
       </Routes>

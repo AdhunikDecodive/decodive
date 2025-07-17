@@ -41,7 +41,7 @@ const heroContent = {
     "Are you dreaming of a kitchen that seamlessly blends style, efficiency, and ample space? For homeowners in Delhi and Gurugram, the L-shape modular kitchen design has emerged as the ultimate solution, perfectly marrying modern aesthetics with incredible functionality. At Adhunik Decodive, we understand the pulse of Delhi NCR homes and are dedicated to transforming your culinary space into a masterpiece.",
   ctaText: "Explore Our Philosophy",
   image:
-    "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786227/14_r5k0zx_ngl40s.webp",
+    "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786199/3_z9eejg_rhhask.webp",
 };
 
  

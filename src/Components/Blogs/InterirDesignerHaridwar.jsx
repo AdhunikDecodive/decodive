@@ -59,7 +59,7 @@ const heroContent = {
     "Are you envisioning a living space in Haridwar that truly resonates with your spirit, blending modern elegance with the serene charm of this sacred city? The search for the best interior designer in Haridwar ends here. Adhunik Decodive, driven by a passion for innovative design, exceptional quality, and profound client satisfaction, is your premier partner for transforming homes and commercial spaces across Haridwar. From the tranquil locales by the Ganges to the bustling modern residential areas, we meticulously blend global design trends with local sensibilities to craft interiors that are truly unique, deeply personal, and highly functional.",
   ctaText: "Explore Our Philosophy",
   image:
-    "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786227/14_r5k0zx_ngl40s.webp",
+    "https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 };
 
 const finishes = [
@@ -572,10 +572,10 @@ export default function InterirDesignerHaridwar() {
 
         <main>
           <section className="w-full bg-orange-50/50">
-            <div className="container mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32">
-              <div className="  flex  flex-col-reverse md:flex-row gap-12 items-center">
+            <div className="container mx-auto px-6 pt-16 md:pb-24 pb-7 md:pt-24  ">
+              <div className="  flex  flex-col-reverse md:flex-row md:gap-12 items-center">
                 <motion.div
-                  className="text-center lg:text-left"
+                  className="text-center  w-full md:w-6/12  lg:text-left"
                   initial="hidden"
                   animate="visible"
                   variants={staggerContainer}
@@ -593,8 +593,9 @@ export default function InterirDesignerHaridwar() {
                     {heroContent.subheadline}
                   </motion.p>
                 </motion.div>
+
                 <motion.div
-                  className="relative   rounded-2xl overflow-hidden shadow-2xl"
+                  className="relative  w-full md:w-6/12 h-[90vh]   "
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
@@ -602,7 +603,7 @@ export default function InterirDesignerHaridwar() {
                   <img
                     src={heroContent.image}
                     alt="A luxurious, modern wardrobe in a stylish home"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-contain object-center rounded-2xl "
                     onError={(e) => {
                       e.target.onerror = null;
                       e.target.src =

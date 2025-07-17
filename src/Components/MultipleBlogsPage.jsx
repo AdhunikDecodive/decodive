@@ -158,6 +158,20 @@ import { Helmet } from "react-helmet-async";
     readTime: "4 min read",
     href: "/blogs/interior-designer-in-haridwar"
 }
+,
+{
+    id: 5,
+    slug: "parallel-kitchen-design-delhi-ncr",
+    title: "Parallel Kitchen Design Delhi NCR | Adhunik Decodive Expert Guide",
+    description: "Optimize your Delhi or Gurugram home with a smart parallel kitchen design. Discover efficient layouts, ample storage, and transparent costs. Get your free consultation from Adhunik Decodive.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786327/3_pptriy_tj3c7b.webp",
+    author: "Kitchen Design Expert",
+    date: "July 2025",
+    tag: "Popular",
+    tags: ["#kitchendesign", "#parallelkitchen", "#delhincr"],
+    readTime: "5 min read",
+    href: "/blogs/parallel-modular-kitchen-design-in-delhi-ncr"
+}
 
 ];
 
@@ -207,7 +221,7 @@ const MultipleBlogsPage = () => {
                 <div className="p-5">
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-2">
                     <span>{blog.date}</span>
-                    <span>{blog.readTime}</span>
+                  
                   </div>
 
                   <h2 className="text-xl font-semibold text-gray-900 group-hover:text-yellow-500 transition-colors mb-2">

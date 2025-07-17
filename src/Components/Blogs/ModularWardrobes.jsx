@@ -35,12 +35,12 @@ const staggerContainer = {
 // --- Data for Sections ---
 const heroContent = {
   headline:
-    "Elevate Your Delhi & Gurugram Home : Discover Adhunik Decodive's Luxury Modular Wardrobes",
+    "Elevate Your Delhi & Gurugram Home  Discover Adhunik Decodive's Luxury Modular Wardrobes",
   subheadline:
     "In the bustling metropolises of Delhi and Gurugram, where every square foot counts, your home transcends being merely a shelter; it's a personal sanctuary, a meticulously curated reflection of your sophisticated lifestyle. As the landscape of urban living continues its dynamic evolution, so too does the demand for interiors that are not just visually captivating but also supremely functional. Within this context, the humble wardrobe, once a simple storage unit, has transformed into a pivotal element of modern home design. Traditional closets often fall short of these contemporary expectations, leading to cluttered spaces and aesthetic compromises. This is precisely where Adhunik Decodive enters the picture, transforming chaotic closets into elegant, impeccably organized havens with our exquisite range of luxury modular wardrobes.",
   ctaText: "Explore Our Philosophy",
   image:
-    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+    "https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp",
 };
 
 const trends = [
