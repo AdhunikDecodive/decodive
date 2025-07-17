@@ -54,7 +54,7 @@ const staggerContainer = {
 // --- Data for Sections ---
 const heroContent = {
   headline:
-    "TSmart Simplicity: Straight Kitchen Designs for Modern Delhi & Gurugram Homes",
+    "Smart Simplicity: Straight Kitchen Designs for Modern Delhi & Gurugram Homes",
   subheadline:
     <>
         <div>
