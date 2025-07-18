@@ -1,3 +1,5 @@
+ 
+
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import {
@@ -54,15 +56,18 @@ const staggerContainer = {
 // --- Data for Sections ---
 const heroContent = {
   headline:
-    "The Ultimate Guide to U-Shape Modular Kitchen Designs: Maximize Efficiency and Elegance in Your Delhi NCR Home",
+    "Transform Your Home: The Allure of Island Kitchen Designs in Delhi NCR",
   subheadline:
     <>
         <div>
-           <strong>Dreaming of a kitchen that offers unparalleled efficiency, abundant storage, and a sophisticated aesthetic ?</strong> The U-shape modular kitchen design stands as a powerhouse of functionality and style, creating an immersive and highly practical cooking environment. For discerning homeowners in Delhi and Gurugram, a U-shape kitchen by Adhunik Decodive offers the perfect blend of luxury and utility, transforming your culinary space into the true heart of your home.
+           <strong>
+         Imagine a kitchen that's not just a place to cook, but the vibrant, social heart of your home </strong> . For homeowners in Delhi and Gurugram seeking the ultimate blend of functionality, luxury, and communal living, an island kitchen design is the quintessential choice. At Adhunik Decodive, we specialize in creating stunning island modular kitchens that redefine your culinary space, making it a hub for family gatherings, entertaining, and efficient meal preparation.
+
 
 
            <p>
-     This comprehensive guide will explore the magic of U-shape modular kitchens, helping you understand why they might be the ideal choice for your home.
+   This comprehensive guide will explore the undeniable appeal and practical brilliance of island kitchen designs, helping you envision how this versatile layout can elevate your living experience.
+
 
            </p>
 
@@ -70,37 +75,37 @@ const heroContent = {
     </>,
   ctaText: "Explore Our Philosophy",
   image:
-    "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786546/8_avclus_mg44dp.webp",
+    "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786097/17_ehg08d_ofewr0.webp",
 };
 
  
 const benefits = [
   {
     icon: <FaExpandAlt className="text-3xl text-orange-600" />,
-    title: "Understanding the Investment: U-Shape Modular Kitchen Costs in Delhi & Gurugram",
+    title: "Understanding the Investment: Island Modular Kitchen Costs in Delhi & Gurugram",
     description:
         <>
         <div>
         <p className=" text-sm pb-3">
-     The cost of a U-shape modular kitchen in Delhi and Gurugram is influenced by several factors, allowing for customization across various budgets:
+ The cost of an island modular kitchen in Delhi and Gurugram varies based on several factors, ensuring options for various budgets:
 
 </p>
           <ul>
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-              Size and Scope : {" "}
+       Island Size & Complexity : {" "}
               </strong>{" "}
- Larger kitchens with more modules and intricate designs will naturally cost more.
+ A larger island with more features (sink, hob, power outlets) will naturally cost more.
+
 
 
  </li>
 
-             
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
             Material Selection :{" "}
               </strong>{" "}
- Premium finishes like acrylic or PU are generally more expensive than laminates. The choice of carcass material also plays a role.
+  Premium finishes like acrylic and PU, and higher-grade countertop materials, will influence the price.
 
 
 
@@ -109,7 +114,7 @@ const benefits = [
               <strong className=" font-bold text-orange-500">
             Internal Fittings & Accessories : {" "}
               </strong>{" "}
- High-end drawer systems, specialized pull-outs, and branded hardware add to the overall investment.
+ Specialized pull-outs, soft-close hardware, and unique organizational solutions add to the investment.
 
 
 
@@ -117,9 +122,9 @@ const benefits = [
 
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-            Customization Level :{" "}
+           Appliances :{" "}
               </strong>{" "}
- Bespoke designs with unique requirements will reflect in the pricing.
+ Whether appliances are integrated into the island or purchased separately.
 
 
  </li>
@@ -128,21 +133,16 @@ const benefits = [
 
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-            Appliance Integration : {" "}
+           Overall Kitchen Layout :   {" "}
               </strong>{" "}
- Whether appliances are part of the modular setup or purchased separately.
+The island's cost is part of the larger kitchen design project.
 
 
  </li>
-
-             
-
-            
-
-
+ 
           </ul>
           <div className=" text-sm pt-3">
-        At Adhunik Decodive, we are committed to transparent pricing. Our team will provide a detailed quotation, explaining every component, so you can make informed decisions that align with your vision and budget.
+   Adhunik Decodive is committed to transparent pricing. Our team provides detailed quotations, breaking down every component, so you can make informed decisions that align with your vision and budget.
 
           </div>
         </div>
@@ -151,49 +151,52 @@ const benefits = [
   },
   {
     icon: <FaBoxOpen className="text-3xl text-orange-600" />,
-    title: "Why Adhunik Decodive is Your Partner for U-Shape Modular Kitchens",
+    title: "Why Choose Adhunik Decodive for Your Island Modular Kitchen?",
     description:
 
           <>
         <div>
         <div className=" text-sm pb-3">
-       At Adhunik Decodive, we transform kitchen dreams into tangible realities. Our commitment to design excellence and client satisfaction sets us apart:
+      At Adhunik Decodive, we are passionate about designing kitchens that are not just functional but truly become the vibrant heart of your home. Our expertise in island kitchen designs ensures:
+
 
 
         </div>
+
           <ul>
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-         Expert Craftsmanship :{" "}
+        Inspired Designs :{" "}
               </strong>{" "}
- We bring years of experience and precision to every U-shape kitchen project, ensuring impeccable quality and finish.
+ We combine innovative design principles with a deep understanding of your needs to create a truly bespoke island kitchen.
 
 
  </li>
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-        Tailored Solutions :{" "}
+      Precision Craftsmanship :{" "}
               </strong>{" "}
- Every design is custom-built to your exact specifications, ensuring your kitchen truly reflects your lifestyle and maximizes your space.
+ We bring years of experience and meticulous attention to detail to every project, guaranteeing a flawless finish and lasting quality.
 
-
- </li>
-
-           
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-    Premium Quality Materials :{" "}
-              </strong>{" "}
-  We use only the highest quality materials and state-of-the-art manufacturing processes for durability and a luxurious feel.
 
  </li>
 
            
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-   Seamless Project Execution :{" "}
+  Premium Quality Materials :{" "}
               </strong>{" "}
- From initial consultation and innovative 3D design to professional manufacturing and timely installation, our dedicated team manages every step with efficiency and care.
+ We source only the finest materials and utilize advanced manufacturing techniques, ensuring your kitchen is durable and beautiful for years to come.
+
+ </li>
+
+           
+            <li className=" font-thin">
+              <strong className=" font-bold text-orange-500">
+ Seamless Project Execution :{" "}
+              </strong>{" "}
+ From the initial consultation and detailed 3D design to professional manufacturing and expert installation, our dedicated team manages every step with efficiency and care.
+
 
 
  </li>
@@ -202,9 +205,9 @@ const benefits = [
          
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
- Post-Installation Support :{" "}
+Dedicated Support : {" "}
               </strong>{" "}
- Our dedication extends beyond installation; we're here to ensure your complete satisfaction with your new U-shape kitchen.
+ Our commitment extends beyond installation; we're here to ensure your complete satisfaction.
 
 
  </li>
@@ -225,13 +228,15 @@ const benefits = [
 const signatureDesigns = [
   {
     icon: <FaUtensils className="text-3xl text-orange-600" />,
-    title: "Unrivaled Efficiency (The Perfect Work Triangle)",
+    title: "The Ultimate Social Hub",
     description: (
       
       <>
         <div>
           <p className=" text-sm pb-3">
-     With appliances and work zones positioned along three walls, the U-shape creates the most compact and ergonomic "work triangle" – the path between your sink, hob, and refrigerator. This minimizes steps, making cooking and meal prep incredibly efficient.
+
+     An island transforms your kitchen into a natural gathering spot. It's perfect for casual breakfasts, homework sessions, or guests to mingle while you cook, fostering connection and conversation.
+
 
           </p>
          
@@ -242,12 +247,14 @@ const signatureDesigns = [
 
   {
     icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: "Abundant Counter Space",
+    title: "Enhanced Functionality & Workflow",
     description: (
       <>
         <div>
           <span className=" text-sm">
- The continuous run of countertops along three walls provides an expansive area for meal preparation, multiple cooks, or even a small breakfast bar extension.
+
+Islands can house sinks, cooktops, dishwashers, or simply serve as additional prep space, making the "work triangle" incredibly efficient. They are especially beneficial in larger kitchens, breaking up vast areas.
+
 
 
           </span>
@@ -259,12 +266,12 @@ const signatureDesigns = [
 
   {
     icon: <FaChair className="text-3xl text-orange-600" />,
-    title: " Maximum Storage Capacity",
+    title: " Abundant Counter & Storage Space ",
     description: (
       <>
         <div>
           <p className=" text-sm">
- Three walls of base and wall cabinets, along with dedicated pantry units, mean a U-shape kitchen offers the highest storage potential among all layouts. Say goodbye to clutter!
+Beyond being a prep area, islands offer significant additional countertop real estate. They also provide valuable storage through drawers, cabinets, and open shelving, keeping your kitchen organized and clutter-free.
 
  </p>
       
@@ -275,13 +282,13 @@ const signatureDesigns = [
 
   {
     icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: "Defined Work Zones",
+    title: "Versatility in Design",
     description: (
 
       <span>
         <div>
             <p className=" text-sm">
- The layout naturally allows for distinct zones for prepping, cooking, and washing, ideal for busy households or those who love to entertain.
+ Islands can be tailored to incorporate various features – a breakfast bar, a wine rack, a built-in microwave, or even a bookshelf – making them incredibly adaptable to your specific needs.
 
  </p>
          
@@ -293,13 +300,13 @@ const signatureDesigns = [
 
   {
     icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: " Enclosed & Immersive Feel",
+    title: "Visual Appeal",
     description: (
       <>
         <div>
             <p className=" text-sm">
 
- While often spacious, the U-shape can create a wonderfully immersive cooking environment, perfect for those who enjoy spending time in the kitchen.
+ An island often acts as a visual anchor in an open-concept living space, adding a touch of grandeur and sophisticated design.
 
  </p>
        
@@ -312,13 +319,14 @@ const signatureDesigns = [
 const signatureDesigns2 = [
   {
     icon: <FaUtensils className="text-3xl text-orange-600" />,
-    title: "Space Assessment & Dimensions",
+    title: "Space Requirements",
     description: (
       
       <>
         <div>
           <p className=" text-sm pb-3">
- While highly efficient, U-shape kitchens generally require more width than L-shapes to ensure comfortable passage and opening of cabinet doors. We perform precise measurements and create 3D designs to optimize every dimension.
+Island kitchens generally require ample space to allow for comfortable passage around all sides (ideally at least 3.5 to 4 feet clearance). This ensures ease of movement and opening of cabinets.
+
 
 
  </p>
@@ -329,45 +337,82 @@ const signatureDesigns2 = [
   },
 
   {
+    icon: <FaChair className="text-3xl text-orange-600" />,
+    title: "Lighting",
+    description: (
+      <>
+        <div>
+          <p className=" text-sm">
+ Proper lighting is crucial. Pendant lights above the island add aesthetic appeal and task lighting, while recessed lighting ensures overall illumination.
+
+ </p>
+      
+        </div>
+      </>
+    ),
+  },
+  
+  {
     icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: "Corner Utilization",
+    title: "Island Functionality",
     description: (
       <>
         <div>
           <span className=" text-sm">
 
- With two corners, maximizing storage here is critical. We integrate advanced corner solutions like:
+ Decide the primary purpose of your island:
 
 
 
           </span>
 
               <ul>
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-             LeMans Corner Pull-Outs : {" "}
-              </strong>{" "}
- Ingenious swinging shelves that bring contents out into the open.
-
-
- </li>
+     
 
              
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-        Magic Corners : {" "}
+   Prep Island : {" "}
               </strong>{" "}
- Pull-out units that utilize hidden space efficiently.
+ Primarily for chopping and food preparation, offering uninterrupted counter space.
+
+
+
+ </li>
+
+            <li className=" font-thin">
+              <strong className=" font-bold text-orange-500">
+            Cooking Island : {" "}
+              </strong>{" "}
+ Incorporates a hob/cooktop with an overhead chimney, becoming the central cooking zone.
 
 
 
  </li>
             <li className=" font-thin">
               <strong className=" font-bold text-orange-500">
-             Custom Pantry Units : {" "}
+            Sink Island : {" "}
               </strong>{" "}
- Tall units designed specifically for dry storage, often at the end of a 'U' arm.
+ Features a main or secondary sink, ideal for washing vegetables or dishes.
 
+
+
+ </li>
+
+            
+            <li className=" font-thin">
+              <strong className=" font-bold text-orange-500">
+           Breakfast Bar/Seating Island : {" "}
+              </strong>{" "}
+ Designed with an overhang for stools, creating a casual dining area.
+
+
+ </li>
+            <li className=" font-thin">
+              <strong className=" font-bold text-orange-500">
+          Multi-functional Island : {" "}
+              </strong>{" "}
+ A combination of the above, balancing different uses.
 
 
  </li>
@@ -380,43 +425,12 @@ const signatureDesigns2 = [
     ),
   },
 
-  {
-    icon: <FaChair className="text-3xl text-orange-600" />,
-    title: "Appliance Harmony",
-    description: (
-      <>
-        <div>
-          <p className=" text-sm">
- Thoughtful placement of your refrigerator, hob, oven, microwave, and dishwasher within the U-layout ensures seamless integration and an uninterrupted workflow.
-
- </p>
-      
-        </div>
-      </>
-    ),
-  },
-
-  {
-    icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: "Lighting & Ventilation",
-    description: (
-      <span>
-        <div>
-            <p className=" text-sm">
- Strategic lighting (under-cabinet, recessed, pendant) illuminates work areas. A powerful chimney is essential to manage cooking fumes in a U-shaped space, ensuring comfort and cleanliness.
-
-
- </p>
-         
+  
  
-        </div>
-      </span>
-    ),
-  },
 
   {
     icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: "Material & Finish Excellence for Delhi's Homes",
+    title: "Material & Finish Excellence for Delhi's Ambiance",
     description: (
     <>
         <div>
@@ -426,7 +440,8 @@ const signatureDesigns2 = [
               <strong className=" font-bold text-orange-500">
              Carcass :{" "}
               </strong>{" "}
-      We recommend high-quality BWP (Boiling Water Proof) Plywood for its superior strength and moisture resistance, crucial for longevity in Delhi's climate.
+  We recommend high-grade BWP (Boiling Water Proof) Plywood for its superior strength and moisture resistance, ensuring your island withstands daily use in Delhi's climate.
+
 
 
  </li>
@@ -444,7 +459,7 @@ const signatureDesigns2 = [
 
 {" "}
               </strong>{" "}
-   A highly durable and cost-effective choice with a vast array of colors and textures.
+ A highly durable and cost-effective option with a vast array of colours and textures for the island base
  </li>
 
             <li className=" font-thin">
@@ -453,7 +468,7 @@ const signatureDesigns2 = [
 
 {" "}
               </strong>{" "}
-     For a high-gloss, reflective, and ultra-modern look that brightens the space.
+   For a high-gloss, sleek, and luxurious modern look that makes a statement.
 
  </li>
 
@@ -464,7 +479,7 @@ const signatureDesigns2 = [
 
 {" "}
               </strong>{" "}
-   A premium, uniform, and highly durable finish available in matte or gloss.
+  A premium, uniform finish (matte or gloss) for a seamless, elegant appearance.
 
  </li>
 
@@ -475,7 +490,7 @@ const signatureDesigns2 = [
 
 {" "}
               </strong>{" "}
- For the timeless elegance and warmth of natural wood.
+ For the natural warmth and sophistication of real wood.
 
 
 
@@ -488,7 +503,7 @@ const signatureDesigns2 = [
 
 {" "}
               </strong>{" "}
- Choose from durable Granite, elegant Quartz, or the seamless beauty of Corian, considering both aesthetics and your lifestyle.
+Opt for durable Granite, elegant Quartz, or the seamless beauty of Corian, considering both the island's function and overall kitchen aesthetic.
 
 
  </li>
@@ -506,6 +521,22 @@ const signatureDesigns2 = [
     ),
   },
   
+   {
+    icon: <FaChair className="text-3xl text-orange-600" />,
+    title: "Storage Integration",
+    description: (
+      <>
+        <div>
+          <p className=" text-sm">
+ Maximizing storage within the island itself is key. Think deep drawers for pots, open shelving for cookbooks, or specialized compartments for cutlery.
+
+
+ </p>
+      
+        </div>
+      </>
+    ),
+  },
  
 
 ];
@@ -513,13 +544,13 @@ const signatureDesigns2 = [
 const signatureDesigns3 = [
   {
     icon: <FaUtensils className="text-3xl text-orange-600" />,
-    title: " Contemporary & Minimalist",
+    title: "Modern & Sleek",
     description: (
       
       <>
         <div>
           <p className=" text-sm pb-3">
- Clean lines, integrated appliances, muted tones, and sleek finishes create a sophisticated and uncluttered space.
+ A minimalist island with a waterfall countertop (where the material flows down the sides), handleless cabinets, and integrated lighting.
 
           </p>
          
@@ -535,7 +566,8 @@ const signatureDesigns3 = [
       <>
         <div>
           <span className=" text-sm">
- Incorporating traditional paneling, warm wood tones, and classic hardware for a timeless appeal.
+ An island with traditional paneling, a contrasting countertop, and decorative legs, offering a timeless appeal.
+
 
           </span>
            
@@ -546,12 +578,12 @@ const signatureDesigns3 = [
 
   {
     icon: <FaChair className="text-3xl text-orange-600" />,
-    title: "Transitional",
+    title: "Industrial Chic",
     description: (
       <>
         <div>
           <p className=" text-sm">
- Blending elements of both traditional and modern design for a harmonious and versatile look.
+ Combining raw materials like concrete or reclaimed wood with metal accents for a contemporary, edgy look.
 
  </p>
       
@@ -562,12 +594,13 @@ const signatureDesigns3 = [
 
   {
     icon: <FaBoxes className="text-3xl text-orange-600" />,
-    title: " U-Shape with a Central Island",
+    title: "Multi-Tiered Island",
     description: (
       <span>
         <div>
             <p className=" text-sm">
- For larger kitchens, a central island within the U provides additional prep space, seating, or even a secondary sink, enhancing functionality and social interaction.
+ An island with different height levels for cooking, prep, and seating, adding dynamic visual interest.
+
 
  </p>
          
@@ -579,37 +612,37 @@ const signatureDesigns3 = [
   
 ];
 
-export default function UModularKitchenDelhi() {
+export default function IslandKitchenDelhiNCR() {
   return (
     <>
 
 <Helmet>
-    <title>U-Shape Modular Kitchen Design Delhi | Adhunik Decodive Guide</title>
-    <meta name="description" content="Discover the ultimate U-shape modular kitchen for your Delhi or Gurugram home. Explore efficient designs, abundant storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
+    <title>Island Kitchen Design Delhi NCR | Adhunik Decodive Experts</title>
+    <meta name="description" content="Elevate your Delhi & Gurugram home with a stunning island kitchen design. Discover modern layouts, versatile functionality, and transparent costs. Get your free consultation from Adhunik Decodive." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-    <link rel="canonical" href="https://adhunikdecodive.com/blogs/u-shape-modular-kitchen-design-in-delhi" />
+    <link rel="canonical" href="https://adhunikdecodive.com/blogs/island-kitchen-design-delhi-ncr" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
-    <meta property="og:title" content="U-Shape Modular Kitchen Design Delhi | Adhunik Decodive Guide" />
-    <meta property="og:description" content="Discover the ultimate U-shape modular kitchen for your Delhi or Gurugram home. Explore efficient designs, abundant storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
-    <meta property="og:url" content="https://adhunikdecodive.com/blogs/u-shape-modular-kitchen-design-in-delhi"></meta>
+    <meta property="og:title" content="Island Kitchen Design Delhi NCR | Adhunik Decodive Experts" />
+    <meta property="og:description" content="Elevate your Delhi & Gurugram home with a stunning island kitchen design. Discover modern layouts, versatile functionality, and transparent costs. Get your free consultation from Adhunik Decodive." />
+    <meta property="og:url" content="https://adhunikdecodive.com/blogs/island-kitchen-design-delhi-ncr"></meta>
     <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
     <meta property="og:locale" content="en_IN"></meta>
     <meta property="og:type" content="article"></meta>
-    <meta property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786546/8_avclus_mg44dp.webp" />
+    <meta property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786097/17_ehg08d_ofewr0.webp" />
 
     <meta name="twitter:card" content="summary_large_image"></meta>
-    <meta name="twitter:title" content="U-Shape Modular Kitchen Design Delhi | Adhunik Decodive Guide" />
-    <meta name="twitter:description" content="Discover the ultimate U-shape modular kitchen for your Delhi or Gurugram home. Explore efficient designs, abundant storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
-    <meta name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786546/8_avclus_mg44dp.webp" />
+    <meta name="twitter:title" content="Island Kitchen Design Delhi NCR | Adhunik Decodive Experts" />
+    <meta name="twitter:description" content="Elevate your Delhi & Gurugram home with a stunning island kitchen design. Discover modern layouts, versatile functionality, and transparent costs. Get your free consultation from Adhunik Decodive." />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786097/17_ehg08d_ofewr0.webp" />
     <meta name="twitter:site" content="@AdhunikDecodive"></meta>
     <meta name="twitter:creator" content="@AdhunikDecodive"></meta>
 
-    <meta name="keywords" content="U-shape modular kitchen Delhi, U kitchen design Gurugram, efficient U-shape kitchen, modern U kitchen ideas, U-shape kitchen storage, modular kitchen cost Delhi NCR, Adhunik Decodive U kitchens, custom U kitchen, kitchen design Delhi, ample storage kitchen" />
+    <meta name="keywords" content="island kitchen design Delhi, modern island kitchens Gurugram, kitchen island ideas, versatile kitchen island, modular kitchen cost Delhi, Adhunik Decodive island kitchens, custom kitchen island, kitchen design Delhi NCR, open concept kitchen island, luxury kitchen island" />
 
+ 
    
-    
 </Helmet>
 
 
@@ -676,12 +709,13 @@ export default function UModularKitchenDelhi() {
                 className="text-center mb-16"
               >
                 <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">
-Why the U-Shape is a Masterclass in Kitchen Design
+Why the Island Kitchen is a Modern Home's Centrepiece
 
                 </h2>
                 <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
                 <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
-      The U-shaped kitchen layout, characterized by three walls of cabinetry and countertops, forms a natural 'U' shape. This configuration offers distinct advantages that make it a favorite for those seeking maximum utility:
+    An island kitchen incorporates a freestanding counter space, often centrally located, offering functionality from all sides. This dynamic layout is immensely popular for several compelling reasons :
+
 
 
                 </p>
@@ -724,13 +758,13 @@ Why the U-Shape is a Masterclass in Kitchen Design
               >
                 <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">
 
-Key Design Considerations for Your U-Shape Modular Kitchen
+Key Design Considerations for Your Island Modular Kitchen
 
                 </h2>
                 <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
                 <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
 
-Designing a U-shape kitchen requires careful planning to ensure its full potential is realized. Adhunik Decodive's experts meticulously consider:
+Designing an island kitchen requires careful thought to ensure it functions as beautifully as it looks. Adhunik Decodive's experts meticulously consider:
 
 
                 </p>
@@ -772,12 +806,12 @@ Designing a U-shape kitchen requires careful planning to ensure its full potenti
                 className="text-center mb-16"
               >
                 <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">
-Style Inspirations for Your U-Shape Kitchen by Adhunik Decodive
+Style Inspirations for Your Island Kitchen by Adhunik Decodive
 
                 </h2>
                 <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
                 <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
-       A U-shape kitchen can be designed to embody any aesthetic:
+     An island kitchen is a canvas for style, reflecting your home's personality:
 
 
                 </p>
@@ -820,12 +854,12 @@ Style Inspirations for Your U-Shape Kitchen by Adhunik Decodive
                 className="text-center mb-16"
               >
                 <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6">
-Embracing Vastu in Your U-Shape Modular Kitchen
+The Vastu Connection : Harmonizing Your Island Kitchen
 
                 </h2>
                 <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
                 <p className=" md:text-xl  text-gray-600 max-w-3xl mx-auto">
-    For many in Delhi NCR, adhering to Vastu Shastra principles is important for home harmony. A U-shape kitchen can be designed with Vastu in mind, ensuring proper placement of the cooking range, sink, and refrigerator to promote positive energy flow. Our design experts can guide you in incorporating these elements seamlessly.
+ For homes in Delhi NCR, integrating Vastu Shastra principles is often a key consideration. While islands are a modern concept, their placement and the elements on them can be aligned with Vastu for positive energy flow. Our design experts can guide you in incorporating these aspects seamlessly.
 
 
                 </p>
@@ -880,16 +914,15 @@ Embracing Vastu in Your U-Shape Modular Kitchen
             </div>
             <div className="bg-white border border-orange-200 rounded-3xl shadow-xl p-10">
               <h2 className="text-md font-bold text-orange-800 mb-4">
-   Ready to design your ultimate U-shape modular kitchen?
+Ready to elevate your home with a stunning island kitchen?
 
   </h2>
               <p className="text-sm text-gray-700 mb-4">
-        Let Adhunik Decodive help you create a space that’s not just a kitchen, but a statement of efficiency and elegance in your Delhi or Gurugram home.
+  Let Adhunik Decodive be your trusted partner in crafting a culinary and social space that perfectly suits your Delhi or Gurugram home.
 
               </p>
               <p className="text-sm text-gray-700 mb-4">
-   View Adhunik Decodive's Portfolio of Stunning U-Shape Modular Kitchens!
-              </p>
+Explore Adhunik Decodive's Portfolio of Exquisite Island Kitchens!              </p>
 
               <div className="grid gap-6">
                 <div className="flex items-center gap-3">

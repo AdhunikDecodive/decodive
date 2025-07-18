@@ -569,22 +569,22 @@ export default function ParallelKitchenDelhiNCR() {
     <title>Parallel Kitchen Design Delhi NCR | Adhunik Decodive Expert Guide</title>
     <meta name="description" content="Optimize your Delhi or Gurugram home with a smart parallel kitchen design. Discover efficient layouts, ample storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-    <link rel="canonical" href="https://adhunikdecodive.com/blog/parallel-kitchen-design" />
+    <link rel="canonical" href="https://adhunikdecodive.com/blogs/parallel-modular-kitchen-design-in-delhi-ncr" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
     <meta property="og:title" content="Parallel Kitchen Design Delhi NCR | Adhunik Decodive Expert Guide" />
     <meta property="og:description" content="Optimize your Delhi or Gurugram home with a smart parallel kitchen design. Discover efficient layouts, ample storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
-    <meta property="og:url" content="https://adhunikdecodive.com/blog/parallel-kitchen-design"></meta>
+    <meta property="og:url" content="https://adhunikdecodive.com/blogs/parallel-modular-kitchen-design-in-delhi-ncr"></meta>
     <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
     <meta property="og:locale" content="en_IN"></meta>
     <meta property="og:type" content="article"></meta>
-    <meta property="og:image" content="https://adhunikdecodive.com/images/blog/parallel-kitchen-social-share.jpg" />
+    <meta property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786327/3_pptriy_tj3c7b.webp" />
 
     <meta name="twitter:card" content="summary_large_image"></meta>
     <meta name="twitter:title" content="Parallel Kitchen Design Delhi NCR | Adhunik Decodive Expert Guide" />
     <meta name="twitter:description" content="Optimize your Delhi or Gurugram home with a smart parallel kitchen design. Discover efficient layouts, ample storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
-    <meta name="twitter:image" content="https://adhunikdecodive.com/images/blog/parallel-kitchen-social-share.jpg" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786327/3_pptriy_tj3c7b.webp" />
     <meta name="twitter:site" content="@AdhunikDecodive"></meta>
     <meta name="twitter:creator" content="@AdhunikDecodive"></meta>
 

@@ -286,22 +286,35 @@ const costFactors = [
 
 
 <>
-  <Helmet>
 
-        <title>Luxury Modular Kitchen Design in Gurugram | Adhunik Decodive
-</title>
+<Helmet>
 
-        <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Discover bespoke luxury modular kitchens in Gurugram with Adhunik Decodive. Explore premium designs, quality materials, and expert craftsmanship for your dream culinary space." />
-
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-        
+    <title>Luxury Modular Kitchen Design in Gurugram | Adhunik Decodive</title>
+    
+    <meta data-react-helmet="true" data-n-head="ssr" data-rh="true" data-hid="description" name="description" content="Experience bespoke luxury modular kitchens in Gurugram with Adhunik Decodive. Premium designs, German materials & smart storage solutions. Free consultation." />
+    
+    <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
+    
+    <link data-react-helmet="true" rel="canonical" href="https://adhunikdecodive.com/luxury-modular-kitchen-gurugram" />
+    
+    <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
+    
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Luxury Modular Kitchen Design in Gurugram | Adhunik Decodive" />
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Experience bespoke luxury modular kitchens in Gurugram with premium designs and German materials." />
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://adhunikdecodive.com/blogs/luxury-modular-kitchen-design-gurugram"></meta>
+    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Adhunik Decodive" />
+    <meta data-n-head="ssr" data-hid="og:locale" property="og:locale" content="en_IN"></meta>
+    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"></meta>
+    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1748841833/2_duljpc.webp" />
    
-        <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width, initial-scale=1" />
-        <meta data-n-head="ssr" data-hid="http-equiv" httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
-        
-      
-      </Helmet>
-
+    <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image"></meta>
+    <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="Luxury Modular Kitchen Design in Gurugram | Adhunik Decodive" />
+    <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description" content="Bespoke luxury modular kitchens with premium designs in Gurugram. Free consultation." />
+    <meta data-n-head="ssr" data-hid="twitter:image" name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1748841833/2_duljpc.webp" />
+    
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="luxury modular kitchen Gurugram, premium kitchen design, German kitchen materials, smart kitchen storage, bespoke kitchen solutions, high-end modular kitchen, kitchen designers Gurugram, Adhunik Decodive kitchens" />
+</Helmet>
     <div className="font-sans text-gray-800 bg-gradient-to-br from-orange-50 via-white to-orange-100">
       {/* Hero Section */}
       <header className="relative h-[600px] flex items-center justify-center bg-gradient-to-r from-orange-700 via-white to-orange-700">

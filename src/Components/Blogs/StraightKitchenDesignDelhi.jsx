@@ -547,29 +547,28 @@ export default function StraightKitchenDesignDelhi() {
     <title>Straight Kitchen Design Delhi | Adhunik Decodive Space Savers</title>
     <meta name="description" content="Discover efficient straight kitchen designs for your Delhi or Gurugram home. Maximize space with sleek layouts, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-    <link rel="canonical" href="https://adhunikdecodive.com/blog/straight-kitchen-design" />
+    <link rel="canonical" href="https://adhunikdecodive.com/blogs/straight-modular-kitchen-in-delhi" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
     <meta property="og:title" content="Straight Kitchen Design Delhi | Adhunik Decodive Space Savers" />
     <meta property="og:description" content="Discover efficient straight kitchen designs for your Delhi or Gurugram home. Maximize space with sleek layouts, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
-    <meta property="og:url" content="https://adhunikdecodive.com/blog/straight-kitchen-design"></meta>
+    <meta property="og:url" content="https://adhunikdecodive.com/blogs/straight-modular-kitchen-in-delhi"></meta>
     <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
     <meta property="og:locale" content="en_IN"></meta>
     <meta property="og:type" content="article"></meta>
-    <meta property="og:image" content="https://adhunikdecodive.com/images/blog/straight-kitchen-social-share.jpg" />
+    <meta property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786448/16_ezwbao_mftant.webp" />
 
     <meta name="twitter:card" content="summary_large_image"></meta>
     <meta name="twitter:title" content="Straight Kitchen Design Delhi | Adhunik Decodive Space Savers" />
     <meta name="twitter:description" content="Discover efficient straight kitchen designs for your Delhi or Gurugram home. Maximize space with sleek layouts, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
-    <meta name="twitter:image" content="https://adhunikdecodive.com/images/blog/straight-kitchen-social-share.jpg" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786448/16_ezwbao_mftant.webp" />
     <meta name="twitter:site" content="@AdhunikDecodive"></meta>
     <meta name="twitter:creator" content="@AdhunikDecodive"></meta>
 
     <meta name="keywords" content="straight kitchen design Delhi, single wall kitchen Gurugram, efficient straight kitchen, modern straight kitchen ideas, compact kitchen design, modular kitchen cost Delhi, Adhunik Decodive straight kitchens, custom straight kitchen, kitchen design Delhi NCR, space-saving kitchen" />
 
     
- 
 </Helmet>
 
 

@@ -463,7 +463,7 @@ export default function InterirDesignerHaridwar() {
         ></meta>
         <link
           rel="canonical"
-          href="https://www.adhunikdecodive.com/blogs/interior-designer-in-haridwar"
+          href="https://adhunikdecodive.com/blogs/interior-designer-in-haridwar"
           data-react-helmet="true"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -503,7 +503,7 @@ export default function InterirDesignerHaridwar() {
           data-n-head="ssr"
           data-hid="og:url"
           property="og:url"
-          content="https://www.adhunikdecodive.com/blogs/interior-designer-in-haridwar"
+          content="https://adhunikdecodive.com/blogs/interior-designer-in-haridwar"
         ></meta>
         <meta
           data-n-head="ssr"
@@ -547,7 +547,7 @@ export default function InterirDesignerHaridwar() {
           data-n-head="ssr"
           data-hid="twitter:image"
           name="twitter:image"
-          content="https://www.adhunikdecodive.com/images/your-haridwar-project-twitter-image.jpg"
+          content="https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ></meta>
 
         {/* Keywords */}

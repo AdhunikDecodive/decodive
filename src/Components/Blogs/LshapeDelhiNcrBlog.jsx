@@ -350,7 +350,7 @@ export default function LshapeDelhiNcrBlog() {
 
    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
 
-   <link rel="canonical" href="https://adhunikdecodive.com/blog/l-shape-modular-kitchen-design" />
+   <link rel="canonical" href="https://adhunikdecodive.com/blogs/l-shape-modular-kitchen-design-delhi-ncr" />
 
    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -362,7 +362,7 @@ export default function LshapeDelhiNcrBlog() {
 
    <meta property="og:description" content="Discover the perfect L-shape modular kitchen for your Delhi or Gurugram home. Explore modern designs, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
 
-   <meta property="og:url" content="https://adhunikdecodive.com/blog/l-shape-modular-kitchen-design"></meta>
+   <meta property="og:url" content="https://adhunikdecodive.com/blogs/l-shape-modular-kitchen-design-delhi-ncr"></meta>
 
    <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
 
@@ -370,7 +370,7 @@ export default function LshapeDelhiNcrBlog() {
 
    <meta property="og:type" content="article"></meta>
 
-   <meta property="og:image" content="https://adhunikdecodive.com/images/blog/l-shape-modular-kitchen-social-share.jpg" />
+   <meta property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786199/3_z9eejg_rhhask.webp" />
 
  
 
@@ -380,7 +380,7 @@ export default function LshapeDelhiNcrBlog() {
 
    <meta name="twitter:description" content="Discover the perfect L-shape modular kitchen for your Delhi or Gurugram home. Explore modern designs, smart storage, and transparent costs. Get your free consultation from Adhunik Decodive." />
 
-   <meta name="twitter:image" content="https://adhunikdecodive.com/images/blog/l-shape-modular-kitchen-social-share.jpg" />
+   <meta name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1746786199/3_z9eejg_rhhask.webp" />
 
    <meta name="twitter:site" content="@AdhunikDecodive"></meta>
 
@@ -395,6 +395,7 @@ export default function LshapeDelhiNcrBlog() {
  
 
 </Helmet>
+
     <div className="bg-[#FDFCFB] font-manrope text-slate-800 overflow-x-hidden">
       <Fonts />
 

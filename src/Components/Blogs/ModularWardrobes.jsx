@@ -221,19 +221,24 @@ export default function ModularWardrobes() {
     <title>Luxury Modular Wardrobes: Adhunik Decodive Delhi & Gurugram</title>
     <meta name="description" content="Elevate your Delhi & Gurugram home with Adhunik Decodive's luxury modular wardrobes. Discover modern designs, smart storage, and custom solutions. Request a consultation!" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-    <link rel="canonical" href="https://adhunikdecodive.com/blog/luxury-modular-wardrobes" /> 
+    <link rel="canonical" href="https://adhunikdecodive.com/blogs/modular-wardrobes" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta httpEquiv="Accept-CH" content="DPR, Viewport-Width, Width, Save-Data"></meta>
 
     <meta property="og:title" content="Luxury Modular Wardrobes: Adhunik Decodive Delhi & Gurugram" />
     <meta property="og:description" content="Elevate your Delhi & Gurugram home with Adhunik Decodive's luxury modular wardrobes. Discover modern designs, smart storage, and custom solutions. Request a consultation!" />
-    <meta property="og:url" content="https://adhunikdecodive.com/blog/luxury-modular-wardrobes"></meta>
+    <meta property="og:url" content="https://adhunikdecodive.com/blogs/modular-wardrobes"></meta>
     <meta property="og:site_name" content="Adhunik Decodive - Interior Design Experts" />
     <meta property="og:locale" content="en_IN"></meta>
-    <meta property="og:type" content="article"></meta> <meta property="og:image" content="https://adhunikdecodive.com/images/blog/luxury-modular-wardrobes-social-share.jpg" /> <meta name="twitter:card" content="summary_large_image"></meta>
+    <meta property="og:type" content="article"></meta> 
+    <meta property="og:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp" /> 
+    <meta name="twitter:card" content="summary_large_image"></meta>
     <meta name="twitter:title" content="Luxury Modular Wardrobes: Adhunik Decodive Delhi & Gurugram" />
     <meta name="twitter:description" content="Elevate your Delhi & Gurugram home with Adhunik Decodive's luxury modular wardrobes. Discover modern designs, smart storage, and custom solutions. Request a consultation!" />
-    <meta name="twitter:image" content="https://adhunikdecodive.com/images/blog/luxury-modular-wardrobes-social-share.jpg" /> <meta name="twitter:site" content="@AdhunikDecodive"></meta> <meta name="twitter:creator" content="@AdhunikDecodive"></meta> <meta name="keywords" content="luxury modular wardrobes Delhi, custom wardrobes Gurugram, modern wardrobe designs Delhi, smart storage solutions Gurugram, Adhunik Decodive wardrobes, designer wardrobes Delhi NCR, bespoke closets Gurugram, space-saving wardrobes Delhi, premium wardrobe solutions India" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dq14b7xie/image/upload/v1748241098/14_higzua.webp" /> 
+    <meta name="twitter:site" content="@AdhunikDecodive"></meta>
+     <meta name="twitter:creator" content="@AdhunikDecodive"></meta> 
+     <meta name="keywords" content="luxury modular wardrobes Delhi, custom wardrobes Gurugram, modern wardrobe designs Delhi, smart storage solutions Gurugram, Adhunik Decodive wardrobes, designer wardrobes Delhi NCR, bespoke closets Gurugram, space-saving wardrobes Delhi, premium wardrobe solutions India" />
     
    
  

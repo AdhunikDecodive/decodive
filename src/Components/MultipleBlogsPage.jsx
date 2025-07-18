@@ -199,7 +199,25 @@ import { Helmet } from "react-helmet-async";
     tags: ["#modularkitchen", "#ushapekitchen", "#delhincr"],
     readTime: "5 min read",
     href: "/blogs/u-shape-modular-kitchen-design-in-delhi"
+},
+
+
+{
+    id: 8,
+    slug: "island-kitchen-design-delhi-ncr",
+    title: "Island Kitchen Design Delhi NCR | Adhunik Decodive Guide",
+    description: "Elevate your Delhi & Gurugram home with a stunning island kitchen design. Discover modern layouts, versatile functionality, and transparent costs. Get your free consultation from Adhunik Decodive.",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786097/17_ehg08d_ofewr0.webp",
+    author: "Luxury Kitchen Designer",
+    date: "July 2025",
+    tag: "Premium",
+    tags: ["#kitchendesign", "#islandkitchen", "#delhincr"],
+    readTime: "5 min read",
+    href: "/blogs/island-kitchen-design-delhi-ncr"
 }
+,
+
+
 
 ];
 
