@@ -24,13 +24,20 @@ import {
   ArrowRightIcon
 } from 'lucide-react';
 
+const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+};
+
 import { Layout, Triangle, Box, Move3D, } from 'lucide-react';
 
 import { Lightbulb, Palette, } from 'lucide-react';
 
 
 import { ClipboardList,     } from 'lucide-react';
-import { Phone, MessageSquare, ChevronDown } from 'lucide-react';
+import {  ChevronDown } from 'lucide-react';
+import { FaCalendarAlt, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -1224,30 +1231,7 @@ const scaleIn = {
         <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-orange-600 to-amber-600 rounded-2xl p-8 md:p-12 text-center text-white mb-20 shadow-xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Design Your Dream L-Shaped Kitchen?
-          </h2>
-          <p className="text-xl text-orange-50 max-w-3xl mx-auto mb-8">
-            Whether you're in Gurugram, Delhi, or any nearby locality, our team is ready to bring your vision to life. Let Adhunik Decodive transform your kitchen into a space of comfort, efficiency, and beauty.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <a 
-              href="tel:9355588595" 
-              className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-orange-600 font-bold rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              Call Us Now
-            </a>
-            <a href="/support-form" className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-orange-600 transition-colors">
-              <MessageSquare className="w-5 h-5" />
-              Free Consultation
-            </a>
-          </div>
-          
-        
-        </div>
+  
 
         {/* FAQ Section */}
         <div>
@@ -1273,24 +1257,80 @@ const scaleIn = {
         </div>
 
         {/* Final CTA */}
-        <div className="mt-20 bg-orange-50 rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Still Have Questions About L-Shaped Kitchens?
-          </h3>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-            Our kitchen design experts in Gurugram & Delhi are happy to help you with any queries.
-          </p>
-          <a 
-            href="tel:9355588595" 
-            className="inline-flex items-center px-8 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
-          >
-            <Phone className="mr-2 w-5 h-5" />
-            Call Now
-          </a>
-        </div>
+      
+ 
+
+
       </div>
     </section>
 
+
+
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-orange-700 text-white">
+                    <div className="container mx-auto px-6 lg:px-12 text-center">
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeIn}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                               Ready to Design Your Dream L-Shaped Kitchen?
+                            </h2>
+                            <p className="text-xl mb-10 max-w-3xl mx-auto">
+                         Whether you're in Gurugram, Delhi, or any nearby locality, our team is ready to bring your vision to life. Let Adhunik Decodive transform your kitchen into a space of comfort, efficiency, and beauty.
+              </p>
+
+                            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+                                <motion.a
+                                href="tel:9355588595"
+                                    whilehover={{ y: -5 }}
+                                    className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm"
+                                >
+                                    <div className="flex items-center justify-center gap-3 mb-4">
+                                        <FaPhone className="text-2xl" />
+                                        <h3 className="text-xl font-semibold">Call Us</h3>
+                                    </div>
+                                    <p >9355588595</p>
+                                </motion.a>
+
+                                <Link
+                                  to="/support-form"
+                                    whilehover={{ y: -5 }}
+                                    className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm"
+                                >
+                                    <div className="flex items-center justify-center gap-3 mb-4">
+                                        <FaCalendarAlt className="text-2xl" />
+                                        <h3 className="text-xl font-semibold">Book Consultation</h3>
+                                    </div>
+                                    <p>Schedule a free design session</p>
+                                </Link>
+
+                                <motion.a
+                                href="https://maps.app.goo.gl/eFmHQELEBv2cXdrP8"
+                                    whilehover={{ y: -5 }}
+                                    className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm"
+                                >
+                                    <div className="flex items-center justify-center gap-3 mb-4">
+                                        <FaMapMarkerAlt className="text-2xl" />
+                                        <h3 className="text-xl font-semibold">Visit Showroom</h3>
+                                    </div>
+                                    <p>Gurugram </p>
+                                </motion.a>
+                            </div>
+
+                            <Link 
+                            to="/support-form"
+                                whilehover={{ scale: 1.05 }}
+                                whiletap={{ scale: 0.95 }}
+                                className="bg-white text-orange-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg text-lg transition-all shadow-lg"
+                            >
+                                Contact Us for FREE 3D Design Preview
+                            </Link>
+                        </motion.div>
+                    </div>
+                </section>
 
     </>
   );

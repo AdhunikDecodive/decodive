@@ -1403,7 +1403,7 @@ const scaleIn = {
 
                             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
                                 <motion.a
-                                href="tel:9876543210"
+                                href="tel:9355588595"
                                     whilehover={{ y: -5 }}
                                     className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm"
                                 >
@@ -1411,11 +1411,11 @@ const scaleIn = {
                                         <FaPhone className="text-2xl" />
                                         <h3 className="text-xl font-semibold">Call Us</h3>
                                     </div>
-                                    <p >+91 98765 43210</p>
+                                    <p >9355588595</p>
                                 </motion.a>
 
                                 <Link
-                                  href="/support-form"
+                                  to="/support-form"
                                     whilehover={{ y: -5 }}
                                     className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm"
                                 >

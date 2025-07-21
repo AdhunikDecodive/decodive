@@ -29,6 +29,7 @@ import {
   HeartHandshake
 } from 'lucide-react';
 import { Link } from "react-router-dom";
+import { FiCalendar, FiPhone } from "react-icons/fi";
 
 
 function ShutterDoorWardrobe() {
@@ -641,91 +642,67 @@ const processData = [
       </div>
     </section>
 
-            <section className="min-h-screen bg-white">
-      <div className="grid min-h-screen grid-cols-1 lg:grid-cols-2">
         
-        {/* Left Column: Image */}
-        <motion.div
-          variants={imageVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="relative h-64 w-full lg:h-full"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1614631446501-abcf76949eca?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2FyZHJvYmV8ZW58MHx8MHx8fDA%3D"
-            alt="A beautiful custom shutter wardrobe in a luxury home"
-           
-            className="object-cover"
-          />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent lg:bg-gradient-to-r"></div>
-        </motion.div>
 
-        {/* Right Column: Content */}
-        <motion.div
-          variants={contentVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="flex items-center justify-center bg-slate-50"
-        >
-          <motion.div
-            variants={containerVariants}
-            className="max-w-md p-8 sm:p-12"
-          >
-            {/* --- Portfolio Section --- */}
-            <div className="mb-10">
-              <div className="mb-4 flex items-center gap-3 text-orange-600">
-                <BookImage size={24} />
-                <h2 className="text-sm font-bold uppercase tracking-widest">
-                  Our Portfolio
-                </h2>
-              </div>
-              <h3 className="text-3xl font-bold text-slate-900">
-                Discover Our Shutter Wardrobe Portfolio
-              </h3>
-              <p className="mt-4 text-slate-600">
-                Explore a curated collection of our recently completed shutter wardrobe projects. See how Adhunik Decodive has transformed homes with elegant, functional, and custom-designed hinged wardrobes across Gurugram, Delhi NCR, Haridwar, Dehradun, Roorkee, Muzaffarnagar, and Meerut.
-              </p>
-            </div>
             
-            {/* --- Divider --- */}
-            <hr className="my-10 border-slate-200" />
-            
-            {/* --- CTA Section --- */}
-            <div>
-              <h3 className="text-3xl font-bold text-slate-900">
-                Ready to Design Your Custom Shutter Wardrobe?
-              </h3>
-              <p className="mt-4 text-slate-600">
-                Elevate your home with the classic charm and superior functionality of a custom shutter wardrobe by Adhunik Decodive.
-              </p>
-              
-              <div className="mt-8 space-y-4">
-                <Link to='/support-form' className="flex w-full items-center justify-center gap-3 bg-orange-600 px-8 py-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition-all duration-300 hover:bg-orange-700 hover:shadow-xl hover:shadow-orange-500/30 focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg">
-                  <Wand2 />
-                  Request a Free Design Consultation
-                </Link>
-                 <p className="text-center text-sm text-slate-500">
-                  Let our expert team help you design the ideal shutter wardrobe for your home. Schedule a no-obligation consultation now to begin your journey.
-                </p>
-              </div>
 
-              <div className="mt-8 text-center">
-                <p className="text-slate-500">Prefer to speak with us directly?</p>
-                <a href="tel:9355588595" // <-- Add your phone number here
-                   className="mt-1 inline-flex items-center gap-2 font-semibold text-orange-600 transition-colors hover:text-orange-800">
-                  <PhoneCall size={16} />
-                  Call Us Now
-                </a>
-              </div>
+
+            
+                <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="relative "
+    >
+      <div className="bg-gradient-to-r  m-4 md:m-5 from-orange-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="p-12 lg:p-16">
+            <h3 className="text-2xl text-center md:text-left md:text-3xl font-bold text-white mb-4">Discover Our Shutter Wardrobe Portfolio
+</h3>
+            <p className="text-orange-100   text-sm text-center md:text-left">
+Explore a curated collection of our recently completed shutter wardrobe projects. See how Adhunik Decodive has transformed homes with elegant, functional, and custom-designed hinged wardrobes across Gurugram, Delhi NCR, Haridwar, Dehradun, Roorkee, Muzaffarnagar, and Meerut.
+
+  </p>
+            <p className="text-orange-100 mb-8 text-sm  text-center md:text-left">
+Let our expert team help you design the ideal walk-in closet for your home. Schedule a no-obligation consultation now to begin your journey.
+            </p>
+
+
+            <p className="text-orange-100   text-sm text-center md:text-left">
+Ready to Design Your Custom Shutter Wardrobe?
+
+  </p>
+            <p className="text-orange-100 mb-8 text-sm  text-center md:text-left">
+Elevate your home with the classic charm and superior functionality of a custom shutter wardrobe by Adhunik Decodive.
+
+ </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link to='/support-form' className="flex-1 flex items-center justify-center px-6 py-4 bg-white text-orange-600 font-medium rounded-lg shadow-md hover:bg-gray-50 transition-all group text-sm">
+                <FiCalendar className="mr-2" />
+                Free Design Consultation
+              </Link>
+              <a href="tel:9355588595" className="flex-1 flex items-center justify-center px-6 py-4 bg-transparent border-2 border-orange-300 text-white font-medium rounded-lg hover:bg-amber-500/20  text-sm transition-all group">
+                <FiPhone className="mr-2" />
+                Call Us Directly
+              </a>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+          <div className="hidden lg:block relative h-full min-h-[300px]">
+            <img
+              src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+              alt="Luxury walk-in wardrobe"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-orange-600/70 via-orange-500/30 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 text-white">
+              <p className="text-orange-200 font-medium">Serving Across North India</p>
+              <p className="text-sm text-orange-100">Gurugram | Delhi NCR | Haridwar | Dehradun | Roorkee | Muzaffarnagar | Meerut</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>  
-
-            
+    </motion.div>
+         
         </>
         
     )

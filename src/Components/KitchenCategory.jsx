@@ -25,7 +25,7 @@ import { Helmet } from "react-helmet-async";
 
 
   
-import { Gem, Shield, Droplets,   Heart, Zap, RulerIcon, HammerIcon } from 'lucide-react';
+import { Gem, Shield, Droplets,   Heart, Zap, RulerIcon, HammerIcon, PhoneCall, Wand2, BookImage } from 'lucide-react';
 import {   Settings,  } from 'lucide-react';
 
 import {
@@ -845,6 +845,24 @@ const tabIconVariants = {
       bestFor: 'High-end & classic kitchens'
     }
   ];
+  
+ const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3, duration: 0.5 },
+    },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
+
+  const contentVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
 
   return (
     <>
@@ -1806,39 +1824,89 @@ const tabIconVariants = {
               ))}
             </ul>
 
-            <div className="w-full md:p-6 rounded-xl">
-              <div className="flex items-center justify-center h-full">
-                <div className="w-full flex flex-col justify-start lg:items-start items-center gap-3">
-
-                  {/* Divider with Heading */}
-                  <div className="relative inline-flex py-2 items-center justify-center w-full mx-auto my-7 md:mb-0">
-                    <hr className="w-[90%] h-px my-8 bg-gray-300 border-0" />
-                    <h2 className="absolute px-2 md:px-3 text-gray-700 -translate-x-1/2 bg-white left-1/2 text-center text-[15px] md:text-2xl capitalize font-semibold ">
-                      Ready to Get the Kitchen You've Always Wanted in Gurugram?
-                    </h2>
-                  </div>
-
-                  {/* Paragraphs */}
-                  <p className="  text-justify md:text-center  w-full">
-                    At Adhunik Decodive, we're excited to help you create a kitchen interior in Gurugram that you'll love for years to come, no matter what kind of home you have. Contact us today for a friendly chat, and let's start planning your dream kitchen interior in Gurugram together!
-                  </p>
 
 
-                  {/* Button */}
-                  <div className="w-full flex justify-center">
-                    <a
-                      href="tel:9355588595"
-                      className="rounded relative inline-flex group items-center justify-center px-3.5 py-2 m-1 cursor-pointer border-b-4 border-l-2 active:border-blue-600 active:shadow-none shadow-lg bg-gradient-to-tr from-blue-600 to-blue-500 border-blue-700 text-white"
-                    >
-                      <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-52 group-hover:h-32 opacity-10"></span>
-                      <span className="relative">Talk to our design expert.</span>
-                    </a>
-                  </div>
+          
 
-                </div>
+
+ <section className="min-h-screen py-12 bg-white">
+      <div className=" flex  justify-center  items-center  gap-7 flex-col md:flex-row  min-h-screen">
+        
+        {/* Left Column: Image */}
+        <motion.div
+          variants={imageVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="  relative h-64 md:w-6/12 lg:h-full"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww"
+            alt="A beautiful custom shutter wardrobe in a luxury home"
+           
+            className="object-cover rounded-xl"
+          />
+         </motion.div>
+
+        {/* Right Column: Content */}
+        <motion.div
+          variants={contentVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="flex bg-slate-50  p-8  items-center md:w-6/12 justify-center  "
+        >
+          <motion.div
+            variants={containerVariants}
+            className="max-w-md "
+          >
+            {/* --- Portfolio Section --- */}
+            <div className="mb-10">
+              <div className="mb-4 flex items-center gap-3 text-orange-600">
+                <BookImage size={24} />
+
+                <h2 className="text-sm font-bold uppercase tracking-widest">
+                  Our Portfolio
+                </h2>
+
+              </div>
+
+              <h3 className="text-3xl font-bold text-slate-900">
+              Ready to Get the Kitchen You've Always Wanted in Gurugram?
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                  At Adhunik Decodive, we're excited to help you create a kitchen interior in Gurugram that you'll love for years to come, no matter what kind of home you have. Contact us today for a friendly chat, and let's start planning your dream kitchen interior in Gurugram together!
+                 </p>
+            </div>
+            
+            
+            <div>
+            
+              
+              <div className="mt-8 space-y-4">
+                <Link to='/support-form' className="flex w-full items-center justify-center gap-3 bg-orange-600 px-8 py-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition-all duration-300 hover:bg-orange-700 hover:shadow-xl hover:shadow-orange-500/30 focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg">
+                  <Wand2 />
+                  Request a Free Design Consultation
+                </Link>
+                 <p className="text-center text-sm text-slate-500">
+                  Let our expert team help you design the ideal kitchen interior for your home. Schedule a no-obligation consultation now to begin your journey.
+                </p>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-slate-500">Prefer to speak with us directly?</p>
+                <a href="tel:9355588595" // <-- Add your phone number here
+                   className="mt-1 inline-flex items-center gap-2 font-semibold text-orange-600 transition-colors hover:text-orange-800">
+                  <PhoneCall size={16} />
+                  Call Us Now
+                </a>
               </div>
             </div>
-
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>  
 
 
 

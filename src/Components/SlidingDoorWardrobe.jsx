@@ -12,7 +12,9 @@ import { ArrowRight, Wand2, PhoneCall } from 'lucide-react';
 
 import { motion } from 'framer-motion';
 import {
+    FiCalendar,
     FiCheck,
+    FiPhone,
 
 } from 'react-icons/fi';
 
@@ -697,25 +699,25 @@ function SlidingDoorWardrobe() {
                         </section>
 
                         {/* Section 2: Our Sliding Wardrobe Design Process */}
-                        <section className="bg-gray-800 text-white py-20 px-4 sm:px-6 lg:px-8">
+                        <section className="    py-20 px-4 sm:px-6 lg:px-8">
                             <div className="container mx-auto">
                                 <div className="text-center mb-16">
                                     <h2 className="text-2xl font-extrabold tracking-tight  ">Our Sliding Wardrobe Design Process: From Concept to Creation</h2>
-                                    <p className="mt-4 text-md text-gray-300 max-w-3xl mx-auto">
+                                    <p className="mt-4 text-md   max-w-3xl mx-auto">
                                         Your journey to a perfect sliding wardrobe with Adhunik Decodive is structured for clarity and satisfaction.
                                     </p>
                                 </div>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                     {designProcessData.map((step, index) => (
-                                        <div key={index} className="flex flex-col bg-gray-700/50 p-6 rounded-xl shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                                        <div key={index} className="flex flex-col   p-6 rounded-xl shadow-lg   transition-colors duration-300">
                                             <div className="flex items-center mb-4">
                                                 <div className="bg-orange-500 p-3 rounded-full mr-4">
                                                     {step.icon}
                                                 </div>
-                                                <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                                                <h3 className="text-xl font-bold  ">{step.title}</h3>
                                             </div>
-                                            <p className="text-gray-300">{step.description}</p>
+                                            <p className=" ">{step.description}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -765,37 +767,59 @@ function SlidingDoorWardrobe() {
                     </section>
 
                     {/* === CTA SECTION === */}
-                    <section className="bg-slate-900">
-                        <div className="container mx-auto py-20 lg:py-24 px-4 text-center">
-                            <h2 className="text-4xl lg:text-3xl font-extrabold text-white">
-                                Ready to Design Your Custom Sliding Wardrobe?
-                            </h2>
-                            <p className="mt-4 text-sm text-orange-100/80 max-w-3xl mx-auto">
-                                Optimize your space and elevate your home with the sleek design and smart functionality of a custom sliding wardrobe by Adhunik Decodive.
-                            </p>
+                   
 
-                            <div className="mt-10">
-                                <Link to="/support-form" className="inline-flex text-sm items-center justify-center bg-orange-600 text-white font-bold  py-4 px-10 rounded-lg shadow-xl hover:bg-orange-700 focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 transform hover:scale-105">
-                                    <Wand2 className="mr-3  h-6 w-6" />
-                                    Request a Free Design Consultation Today!
-                                </Link>
-                            </div>
+                       <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.6 }}
+                          className="relative "
+                        >
+                          <div className="bg-gradient-to-r  m-4 md:m-5 from-orange-600 to-amber-600 rounded-3xl shadow-2xl overflow-hidden">
+                            <div className="grid grid-cols-1 lg:grid-cols-2">
+                              <div className="p-12 lg:p-16">
+                                <h3 className="text-2xl text-center md:text-left md:text-3xl font-bold text-white mb-4">
+                               Ready to Design Your Custom Sliding Wardrobe ?
 
-                            <div className="mt-12 text-center flex flex-col items-center">
-                                <p className="text-orange-100/70 text-sm">
-                                    Let our expert team help you design the ideal sliding wardrobe for your home. Schedule a no-obligation consultation now to begin your journey.
-                                </p>
-                                <p className="text-gray-200 mt-4">Prefer to speak with us directly?</p>
-                                <a
-                                    href="tel:9355588595" // <-- IMPORTANT: Add your phone number here
-                                    className="mt-9   w-fit bg-white text-black text-xl  p-3 rounded-full flex justify-center items-center  font-semibold hover:text-orange-400 transition-colors duration-300"
-                                >
-                                    <PhoneCall className="mr-2 h-5 w-5" />
-                                    Call Us Now
-                                </a>
+                    </h3>
+                                <p className="text-orange-100   text-sm text-center md:text-left">
+                 Optimize your space and elevate your home with the sleek design and smart functionality of a custom sliding wardrobe by Adhunik Decodive.
+
+
+                      </p>
+                                <p className="text-orange-100 mb-8 text-sm  text-center md:text-left">
+                    Let our expert team help you design the ideal sliding wardrobe for your home. Schedule a no-obligation consultation now to begin your journey.
+
+         </p>
+                    
+                    
+                            
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                  <Link to='/support-form' className="flex-1 flex items-center justify-center px-6 py-4 bg-white text-orange-600 font-medium rounded-lg shadow-md hover:bg-gray-50 transition-all group text-sm">
+                                    <FiCalendar className="mr-2" />
+                                    Free Design Consultation
+                                  </Link>
+                                  <a href="tel:9355588595" className="flex-1 flex items-center justify-center px-6 py-4 bg-transparent border-2 border-orange-300 text-white font-medium rounded-lg hover:bg-amber-500/20  text-sm transition-all group">
+                                    <FiPhone className="mr-2" />
+                                    Call Us Directly
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="hidden lg:block relative h-full min-h-[300px]">
+                                <img
+                                  src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                                  alt="Luxury walk-in wardrobe"
+                                  className="absolute inset-0 w-full h-full object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-orange-600/70 via-orange-500/30 to-transparent"></div>
+                                <div className="absolute bottom-0 left-0 p-8 text-white">
+                                  <p className="text-orange-200 font-medium">Serving Across North India</p>
+                                  <p className="text-sm text-orange-100">Gurugram | Delhi NCR | Haridwar | Dehradun | Roorkee | Muzaffarnagar | Meerut</p>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                    </section>
+                          </div>
+                        </motion.div>
                 </div>
 
 
