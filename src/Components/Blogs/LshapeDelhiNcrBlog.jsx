@@ -399,7 +399,7 @@ export default function LshapeDelhiNcrBlog() {
     <div className="bg-[#FDFCFB] font-manrope text-slate-800 overflow-x-hidden">
       <Fonts />
 
-      <main>
+      <main className=" px-4 xl:px-24 ">
         <section className="w-full bg-orange-50/50">
           <div className="container mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32">
             <div className="  flex  flex-col-reverse md:flex-row gap-12 items-center">

@@ -229,6 +229,20 @@ import { Helmet } from "react-helmet-async";
     tags: ["#wardrobes", "#luxuryhomes", "#delhi"],
     readTime: "4 min read",
     href: "/blogs/shutter-door-wardrobe-in-delhi"
+},
+
+{
+    id: 9,
+    slug: "walk-in-wardrobes-delhi",
+    title: "Walk-in Wardrobes Delhi: Luxury, Custom Design & Organization | Adhunik Decodive",
+    description: "Adhunik Decodive: Discover bespoke luxury walk-in wardrobes in Delhi NCR. Maximize style & organization with custom closets. FREE consultation!",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748241060/7_ah0nhr.webp",
+    author: "Luxury Wardrobe Specialist",
+    date: "July 2025",
+    tag: "Premium",
+    tags: ["#wardrobes", "#walkinwardrobe", "#delhincr"],
+    readTime: "5 min read",
+    href: "/blogs/Walk-in-door-wardrobes-in-delhi"
 }
 
 ];

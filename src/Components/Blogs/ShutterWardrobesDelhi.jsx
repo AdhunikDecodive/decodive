@@ -71,155 +71,10 @@ const heroContent = {
     </>,
   ctaText: "Explore Our Philosophy",
   image:
-    "https://res.cloudinary.com/dq14b7xie/image/upload/v1746786097/17_ehg08d_ofewr0.webp",
+    "https://res.cloudinary.com/dq14b7xie/image/upload/v1748239644/14_uwgozu_ztg7tf.webp",
 };
 
- 
-const benefits = [
-  {
-    icon: <FaExpandAlt className="text-3xl text-orange-600" />,
-    title: "Understanding the Investment: Island Modular Kitchen Costs in Delhi & Gurugram",
-    description:
-        <>
-        <div>
-        <p className=" text-sm pb-3">
- The cost of an island modular kitchen in Delhi and Gurugram varies based on several factors, ensuring options for various budgets:
-
-</p>
-          <ul>
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-       Island Size & Complexity : {" "}
-              </strong>{" "}
- A larger island with more features (sink, hob, power outlets) will naturally cost more.
-
-
-
- </li>
-
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-            Material Selection :{" "}
-              </strong>{" "}
-  Premium finishes like acrylic and PU, and higher-grade countertop materials, will influence the price.
-
-
-
- </li>
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-            Internal Fittings & Accessories : {" "}
-              </strong>{" "}
- Specialized pull-outs, soft-close hardware, and unique organizational solutions add to the investment.
-
-
-
- </li>
-
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-           Appliances :{" "}
-              </strong>{" "}
- Whether appliances are integrated into the island or purchased separately.
-
-
- </li>
-
-             
-
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-           Overall Kitchen Layout :   {" "}
-              </strong>{" "}
-The island's cost is part of the larger kitchen design project.
-
-
- </li>
- 
-          </ul>
-          <div className=" text-sm pt-3">
-   Adhunik Decodive is committed to transparent pricing. Our team provides detailed quotations, breaking down every component, so you can make informed decisions that align with your vision and budget.
-
-          </div>
-        </div>
-      </>
-
-  },
-  {
-    icon: <FaBoxOpen className="text-3xl text-orange-600" />,
-    title: "Why Choose Adhunik Decodive for Your Island Modular Kitchen?",
-    description:
-
-          <>
-        <div>
-        <div className=" text-sm pb-3">
-      At Adhunik Decodive, we are passionate about designing kitchens that are not just functional but truly become the vibrant heart of your home. Our expertise in island kitchen designs ensures:
-
-
-
-        </div>
-
-          <ul>
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-        Inspired Designs :{" "}
-              </strong>{" "}
- We combine innovative design principles with a deep understanding of your needs to create a truly bespoke island kitchen.
-
-
- </li>
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-      Precision Craftsmanship :{" "}
-              </strong>{" "}
- We bring years of experience and meticulous attention to detail to every project, guaranteeing a flawless finish and lasting quality.
-
-
- </li>
-
-           
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-  Premium Quality Materials :{" "}
-              </strong>{" "}
- We source only the finest materials and utilize advanced manufacturing techniques, ensuring your kitchen is durable and beautiful for years to come.
-
- </li>
-
-           
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
- Seamless Project Execution :{" "}
-              </strong>{" "}
- From the initial consultation and detailed 3D design to professional manufacturing and expert installation, our dedicated team manages every step with efficiency and care.
-
-
-
- </li>
-
-           
-         
-            <li className=" font-thin">
-              <strong className=" font-bold text-orange-500">
-Dedicated Support : {" "}
-              </strong>{" "}
- Our commitment extends beyond installation; we're here to ensure your complete satisfaction.
-
-
- </li>
-
-           
-         
-          </ul>
-           
-        </div>
-      </>
-
-  },
- 
-
- 
-];
+  
 
 const signatureDesigns = [
 
@@ -648,7 +503,7 @@ export default function ShutterWardrobesDelhi() {
       <div className="bg-[#FDFCFB] font-manrope text-slate-800 overflow-x-hidden">
         <Fonts />
 
-        <main>
+        <main className=" px-4 xl:px-24 ">
           <section className="w-full bg-orange-50/50">
             <div className="container mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32">
               <div className="  flex  flex-col-reverse md:flex-row gap-12 items-center">
@@ -681,7 +536,7 @@ export default function ShutterWardrobesDelhi() {
                   <img
                     src={heroContent.image}
                     alt="A luxurious, modern wardrobe in a stylish home"
-                    className="w-full h-full object-fill object-center"
+                    className="w-full h-full object-cover object-center"
                     onError={(e) => {
                       e.target.onerror = null;
                       e.target.src =

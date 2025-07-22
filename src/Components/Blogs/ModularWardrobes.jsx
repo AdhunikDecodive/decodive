@@ -248,12 +248,12 @@ export default function ModularWardrobes() {
       <div className="bg-[#FDFCFB] font-manrope text-slate-800 overflow-x-hidden">
       <Fonts />
 
-      <main>
+      <main className=" xl:px-24">
         <section className="w-full bg-orange-50/50">
           <div className="container mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className=" flex  flex-col-reverse md:flex-row  gap-12 items-center">
               <motion.div
-                className="text-center lg:text-left"
+                className="text-center w-full md:w-6/12 lg:text-left"
                 initial="hidden"
                 animate="visible"
                 variants={staggerContainer}
@@ -271,8 +271,9 @@ export default function ModularWardrobes() {
                   {heroContent.subheadline}
                 </motion.p>
               </motion.div>
+
               <motion.div
-                className="relative   rounded-2xl overflow-hidden shadow-2xl"
+                className="relative w-full md:w-6/12 rounded-2xl overflow-hidden shadow-2xl"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}

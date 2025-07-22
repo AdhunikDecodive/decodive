@@ -62,6 +62,7 @@ import StraightKitchenDesignDelhi from "./Components/Blogs/StraightKitchenDesign
 import UModularKitchenDelhi from "./Components/Blogs/UModularKitchenDelhi";
 import IslandKitchenDelhiNCR from "./Components/Blogs/IslandKitchenDelhiNCR";
 import ShutterWardrobesDelhi from "./Components/Blogs/ShutterWardrobesDelhi";
+import WalkinWardrobesDelhi from "./Components/Blogs/WalkinWardrobesDelhi";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -139,6 +140,7 @@ function App() {
         <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
         <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
 
+
         <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
         
         <Route path="/blogs/modular-wardrobes" element={<ModularWardrobes />} />
@@ -155,6 +157,9 @@ function App() {
         <Route path="/blogs/island-kitchen-design-delhi-ncr" element={<IslandKitchenDelhiNCR />} />
 
         <Route path="/blogs/shutter-door-wardrobe-in-delhi" element={<ShutterWardrobesDelhi />} />
+
+        <Route path="/blogs/Walk-in-door-wardrobes-in-delhi" element={<WalkinWardrobesDelhi />} />
+
 
 
       </Routes>
