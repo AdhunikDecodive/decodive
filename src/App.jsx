@@ -61,6 +61,7 @@ import ParallelKitchenDelhiNCR from "./Components/Blogs/ParallelKitchenDelhiNCR"
 import StraightKitchenDesignDelhi from "./Components/Blogs/StraightKitchenDesignDelhi";
 import UModularKitchenDelhi from "./Components/Blogs/UModularKitchenDelhi";
 import IslandKitchenDelhiNCR from "./Components/Blogs/IslandKitchenDelhiNCR";
+import ShutterWardrobesDelhi from "./Components/Blogs/ShutterWardrobesDelhi";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -152,6 +153,8 @@ function App() {
         <Route path="/blogs/u-shape-modular-kitchen-design-in-delhi" element={<UModularKitchenDelhi />} />
         
         <Route path="/blogs/island-kitchen-design-delhi-ncr" element={<IslandKitchenDelhiNCR />} />
+
+        <Route path="/blogs/shutter-door-wardrobe-in-delhi" element={<ShutterWardrobesDelhi />} />
 
 
       </Routes>

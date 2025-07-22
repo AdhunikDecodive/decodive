@@ -217,7 +217,19 @@ import { Helmet } from "react-helmet-async";
 }
 ,
 
-
+{
+    id: 9,
+    slug: "luxury-wardrobes-delhi",
+    title: "Wardrobes in Delhi : Luxury & Smart Storage by Adhunik Decodive",
+    description: "Adhunik Decodive : Bespoke shutter wardrobes in Delhi. Get luxury designs, smart storage & quality hinged wardrobes. FREE consultation!",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748239644/14_uwgozu_ztg7tf.webp",
+    author: "Wardrobe Design Specialist",
+    date: "July 2025",
+    tag: "Popular",
+    tags: ["#wardrobes", "#luxuryhomes", "#delhi"],
+    readTime: "4 min read",
+    href: "/blogs/shutter-door-wardrobe-in-delhi"
+}
 
 ];
 
@@ -235,7 +247,9 @@ const MultipleBlogsPage = () => {
       </Helmet>
 
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
         {/* Page Header */}
+
         <div className="text-center mb-14">
           <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight">  Blogs</h1>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -244,6 +258,7 @@ const MultipleBlogsPage = () => {
         </div>
 
         {/* Blog Grid */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {blogs.map((blog) => (
             <div
