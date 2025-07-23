@@ -63,6 +63,7 @@ import UModularKitchenDelhi from "./Components/Blogs/UModularKitchenDelhi";
 import IslandKitchenDelhiNCR from "./Components/Blogs/IslandKitchenDelhiNCR";
 import ShutterWardrobesDelhi from "./Components/Blogs/ShutterWardrobesDelhi";
 import WalkinWardrobesDelhi from "./Components/Blogs/WalkinWardrobesDelhi";
+import SlidingWardrobesDelhi from "./Components/Blogs/SlidingWardrobesDelhi";
 
 const TRACKING_ID = "G-49QVDWX9V7";
 
@@ -159,6 +160,8 @@ function App() {
         <Route path="/blogs/shutter-door-wardrobe-in-delhi" element={<ShutterWardrobesDelhi />} />
 
         <Route path="/blogs/Walk-in-door-wardrobes-in-delhi" element={<WalkinWardrobesDelhi />} />
+
+        <Route path="/blogs/sliding-door-wardrobes-in-delhi" element={<SlidingWardrobesDelhi />} />
 
 
 

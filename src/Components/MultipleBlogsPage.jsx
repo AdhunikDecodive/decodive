@@ -232,7 +232,7 @@ import { Helmet } from "react-helmet-async";
 },
 
 {
-    id: 9,
+    id: 10,
     slug: "walk-in-wardrobes-delhi",
     title: "Walk-in Wardrobes Delhi: Luxury, Custom Design & Organization | Adhunik Decodive",
     description: "Adhunik Decodive: Discover bespoke luxury walk-in wardrobes in Delhi NCR. Maximize style & organization with custom closets. FREE consultation!",
@@ -243,6 +243,20 @@ import { Helmet } from "react-helmet-async";
     tags: ["#wardrobes", "#walkinwardrobe", "#delhincr"],
     readTime: "5 min read",
     href: "/blogs/Walk-in-door-wardrobes-in-delhi"
+},
+
+{
+    id: 11,
+    slug: "sliding-wardrobes-delhi",
+    title: "Sliding Wardrobes in Delhi: Space-Saving & Modern Designs by Adhunik Decodive",
+    description: "Adhunik Decodive: Discover bespoke sliding wardrobes in Delhi. Maximize space with modern designs, smart storage & premium quality. FREE consultation!",
+    image: "https://res.cloudinary.com/dq14b7xie/image/upload/v1748239632/5_sxergk_unqhfl.webp",
+    author: "Wardrobe Design Expert",
+    date: "July 2025",
+    tag: "Trending",
+    tags: ["#wardrobes", "#slidingwardrobe", "#delhincr", "#spacesaving"],
+    readTime: "4 min read",
+    href: "/blogs/sliding-door-wardrobes-in-delhi"
 }
 
 ];
