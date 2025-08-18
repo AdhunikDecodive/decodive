@@ -115,7 +115,7 @@ export default function NeroChimney() {
       label: " Special Features", value : "1 LED Lamp"
     },
     {
-      label : "Warranty by Adhunik ", value: "10 years on Motor and 2 years comprehensive"
+      label : "Warranty by Adhunik ", value: "7 years on Motor & 2 years comprehensive"
     }
     ,
     {
@@ -197,20 +197,37 @@ export default function NeroChimney() {
             <h2
               className="font-manrope  text-3xl   font-extrabold  text-[#333333] mb-9 md:mb-0 max-lg:text-center relative p-4">
 
-              Adhunik DecoDive Nero ( 90 cm ) with BLDC motor |
-              Filterless Autoclean Chimney with 10 years Warranty |
-              BLACK | 1400m3/hr Suction Power
+            Nero Model (90cm) / (60cm) With BLDC
+Motor | Filterless Autoclean Chimney
+BLACK | 1400 m3/hr Suction power
 
             </h2>
 
             <div className=" text-center md:text-left  max-w-4xl mx-auto   px-5 md:p-6 bg-white shadow rounded-md">
             
-            <div className="row flex justify-around gap-9 ">
-            <div className="col">
-           <p className="text-lg font-semibold text-gray-600 mb-4 ">BLDC ( 90 cm ) <br /> MRP - ₹<span className=" line-through"> 18000</span> <br /> <strong className=" text-2xl" >₹14,500.00</strong>
+            
+            <div className="row flex flex-col justify-around ">
+            <div className="row flex md:justify-start justify-center  flex-row  gap-9" >
+
+   <div className="col">
+           <p className="text-lg font-semibold text-gray-600 mb-4 ">BLDC ( 90 cm ) <br /> MRP - ₹<span className=" line-through"> 19,000</span> <br /> <strong className=" text-2xl" >
+           ₹14,499
+          
+ 
+           </strong>
 
 </p>
            </div>
+            <div className="col">
+           <p className="text-lg font-semibold text-gray-600 mb-4 ">BLDC ( 60 cm ) <br /> MRP - ₹<span className=" line-through"> 17,000</span> <br /> <strong className=" text-2xl" >₹13,499</strong>
+
+      
+
+</p>
+           </div>
+            </div>
+         
+           <hr />
 
            <div className="col">
            <p className="text-2xl font-bold text-gray-700 pt-3  mb-2">Key Features</p>

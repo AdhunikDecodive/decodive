@@ -115,7 +115,7 @@ export default function FabiaChimney() {
       label: " Special Features", value : "2 LED Lamps"
     },
     {
-      label : "Warranty by Adhunik ", value: "10 years on Motor and 2 years comprehensive"
+      label : "Warranty by Adhunik ", value: "7 years on Motor and 2 years comprehensive"
     }
     ,
     {
@@ -183,10 +183,10 @@ export default function FabiaChimney() {
 
       <div className="row mt-12  ">
         <h1 className=" text-4xl md:text-5xl font-sans py-3 w-full text-center text-cyan-900 capitalize">
-          Fabia Chimney
+          Nadia Chimney
         </h1>
 
-        <div className="row flex flex-row flex-wrap  justify-evenly items-start">
+        <div className="row flex flex-row  flex-wrap  justify-evenly items-start">
 
           <div className=" w-full h-full md:w-5/12 my-5 mx-2  px-6  border-[1px] rounded-3xl  ">
             <ImageGallery items={images3} className=" rounded-lg " alt="pics" />
@@ -197,18 +197,19 @@ export default function FabiaChimney() {
             <h2
               className="font-manrope  text-3xl   font-extrabold  text-[#333333] mb-9 md:mb-0 max-lg:text-center relative p-4">
 
-             Adhunik DecoDive Eco Model ( 60cm ) |
-Filterless autoclean chimney with 10 years warranty |
-BLACK | 1200 m3/hr Suction power
+           Filterless Autoclean Nadia (60cm)
+Chimney
+BLACK 1200 m3/hr Suction power
 
             </h2>
 
             <div className=" text-center md:text-left  max-w-4xl mx-auto   px-5 md:p-6 bg-white shadow rounded-md">
             
-            <div className="row flex justify-around gap-9 ">
+            <div className="row flex flex-col justify-around gap-9 ">
             <div className="col">
-           <p className="text-lg font-semibold text-gray-600 mb-4 ">BLDC ( 60 cm ) <br /> MRP - ₹<span className=" line-through"> 11000</span> <br /> <strong className=" text-2xl" >₹ 8,500.00</strong>
+           <p className="text-lg font-semibold text-gray-600 mb-4 ">BLDC ( 60 cm ) <br /> MRP - ₹<span className=" line-through"> 11999</span> <br /> <strong className=" text-2xl" >₹8,499</strong>
 
+       
 </p>
            </div>
 

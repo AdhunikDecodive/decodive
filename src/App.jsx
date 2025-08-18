@@ -95,7 +95,7 @@ function App() {
       <WatsapButton phoneNumber="9289126052" />
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage  />} />
         <Route path="/support-form" element={<ContactUs />} />
         <Route path="/modular-kitchen-designs" element={<KitchenCategory />} />
         <Route path="/l-shape-modular-kitchen-design" element={<LShapeKitchen />} />
@@ -135,12 +135,10 @@ function App() {
         <Route path="/blogs" element={<MultipleBlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
         <Route path="/nero-chimney" element={<NeroChimney />} />
-        <Route path="/fabia-chimney" element={<FabiaChimney />} />
-
+        <Route path="/nadia-chimney" element={<FabiaChimney />} />
 
         <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
         <Route path="/basic-vastu-tips-for-home" element={<VastuBasicsTips />} />
-
 
         <Route path="/blogs/luxury-modular-kitchen-design-gurugram" element={<Modularkitchendesign />} />
         
