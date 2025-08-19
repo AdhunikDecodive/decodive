@@ -681,6 +681,61 @@ function LandingPage() {
     setShowModal(false);
   };
 
+
+
+
+const Card = ({ title, content, pdfLink, reverse }) => {
+  // Determine the flex-direction based on the 'reverse' prop for the zigzag effect
+  const layoutClasses = reverse ? 'md:flex-row-reverse' : 'md:flex-row';
+  
+  return (
+    <div className={`
+      flex flex-col md:flex-row items-center gap-8 md:gap-16
+      bg-white dark:bg-gray-800
+      rounded-3xl
+      p-8 lg:p-12
+      shadow-lg shadow-slate-200/50 dark:shadow-slate-900/50
+      transform transition-all duration-500
+      hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/20 dark:hover:shadow-indigo-500/20
+    `}>
+      {/* Content Section */}
+      <div className={`flex-1 space-y-4 ${layoutClasses} text-center md:text-left`}>
+        <h2 className="text-2xl lg:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          {title}
+        </h2>
+        <p className="text-sm text-justify text-gray-600 dark:text-gray-300 leading-relaxed">
+          {content}
+        </p>
+      </div>
+
+      {/* Button Section */}
+      <div className="flex-none w-full md:w-auto md:max-w-xs">
+        <a 
+          href={pdfLink}
+          download
+          className={`
+            w-full md:w-auto px-8 py-4
+            text-lg font-bold text-white
+            bg-gradient-to-br from-purple-600 to-indigo-700
+            rounded-2xl
+            shadow-lg shadow-purple-500/50
+            transform transition-all duration-300
+            hover:scale-105 hover:shadow-xl hover:shadow-purple-500/60
+            focus:outline-none focus:ring-4 focus:ring-purple-500/50
+            flex items-center justify-center gap-3
+          `}
+        >
+          {/* New, cleaner SVG for download icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  );
+};
+
   return (
 
     <>
@@ -943,6 +998,9 @@ function LandingPage() {
 
           </div>
         </div>
+
+
+
 
 
         <div className="w-full  h-full ">
@@ -1860,6 +1918,32 @@ src={'https://res.cloudinary.com/dq14b7xie/image/upload/v1746785960/durability_a
 
         </div>
 
+
+
+  <div className=" block lg:hidden min-h-screen bg-slate-50 dark:bg-slate-950 py-16 flex flex-col items-center justify-center font-sans text-gray-900 dark:text-white antialiased overflow-x-hidden">
+      {/* Container for the zigzag layout */}
+      <div className="container mx-auto px-4 md:px-8 space-y-24">
+        
+        {/* First card: content on the left, button on the right */}
+        <Card
+          title="Commercial Interior Design Solutions"
+          content="Transform your workspace with our bespoke commercial design solutions. We create dynamic, functional, and aesthetically pleasing environments that boost productivity and reflect your brand's unique identity."
+          pdfLink="/Commercial DecoDive Catelogue  2025.pdf"
+          reverse={false}
+        />
+        
+        {/* Second card: content on the right, button on the left (zigzag) */}
+        <Card
+          title="Residential Interior Design"
+          content="Craft your dream home with our residential design expertise. Our team specializes in creating personalized, comfortable, and beautiful living spaces tailored to your lifestyle and taste."
+          pdfLink="/Residential DecoDive Catelogue 2025.pdf"
+          reverse={true}
+        />
+
+      
+        
+      </div>
+    </div>
 
 
       </div>

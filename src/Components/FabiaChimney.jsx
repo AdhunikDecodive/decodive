@@ -8,12 +8,50 @@ import { Download } from "lucide-react";
 
 export default function FabiaChimney() {
   const images3 = [
+   
+ 
+   
     {
-      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1749460588/Fabia_Chimney_wcobuy.webp",
-      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1749460588/Fabia_Chimney_wcobuy.webp",
-      originalAlt: "Adhunik DecoDive Nero ( 60 cm ) with BLDC motor | Filterless Autoclean Chimney with 10 year Warranty |BLACK | 1200m3/hr Suction Power",
-      thumbnailAlt: "HVAC System Image",
+      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584880/2_ujctkb.webp",
+      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584880/2_ujctkb.webp",
+      originalAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+      thumbnailAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
     },
+   
+    {
+      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584880/1_rxa0dw.webp",
+      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584880/1_rxa0dw.webp",
+      originalAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+      thumbnailAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+    },
+   
+
+    {
+      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584881/4_xmh4qd.webp",
+      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584881/4_xmh4qd.webp",
+      originalAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+      thumbnailAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+    },
+      {
+      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584881/6_zxvxlp.webp",
+      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584881/6_zxvxlp.webp",
+      originalAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+      thumbnailAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+    },
+    {
+      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584881/7_zkac61.webp",
+      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584881/7_zkac61.webp",
+      originalAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+      thumbnailAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+    },
+     
+    {
+      original: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584880/5_bqmeac.webp",
+      thumbnail: "https://res.cloudinary.com/dq14b7xie/image/upload/v1755584880/5_bqmeac.webp",
+      originalAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+      thumbnailAlt: "Filterless Autoclean Nadia (60cm) Chimney BLACK",
+    },
+ 
    
 
 
