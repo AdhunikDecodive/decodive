@@ -255,41 +255,30 @@ function Furniture() {
             <div className="row flex relative ">
                      
 
-      <img  
-      src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746610731/Furniture_gjnv5g.webp"
-                alt="Furniture for Every Style and Taste
-Dive into Our Curated Collection!" className="   relative   h-[86vh]  md:h-[55vh] w-full object-cover rounded-lg "
-              />
+     
+
+
+               <div className="box w-full h-full">
+
+                               <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1756718329/furniture_jsc20p.webp"
+                  className='hidden md:block  h-full w-full  object-center object-cover'
+                  alt="  Addressable Fire Alarm System"
+                />
+
+                <img
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1756718392/3_j11shk.webp"
+                  className='md:hidden  h-full w-full object-center object-cover'
+                       alt="Addressable Fire Alarm System"
+                />
+                </div>
+
+
 
                         <div className="w-full  h-full p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row  md:text-center  items-center mx-auto  absolute">
                         <p className=" h-full  text-black text-4xl flex-col flex my-auto justify-center items-center">
                        
                             </p>
-                            <div className="w-fit border-cyan-500 border-[1px] rounded-lg text-center p-5 bg-[#fffffb]">
-                                <p className="text-2xl">Furnitures</p>
-                                <p className="bg-black w-fit mx-auto text-white p-1 relative rounded-full  mt-9">
-                                    Starting
-                                </p>
-
-                                <div className="w-full flex justify-around h-10vh mx-auto relative bottom-4">
-                                    <div className="line1 w-3/12 h-[1px] border border-black rounded-full"></div>
-                                    <div className="line1 w-3/12 h-[1px] border border-black rounded-full"></div>
-                                </div>
-
-                                <p className="text-2xl">₹50,000</p>
-                                <p className="text-xl">
-                                    <span className="bg-cyan-200 rounded-sm p-1">FREE</span>{" "}
-                                    Quotation
-                                </p>
-
-                                <button onClick={toggleModal} className=" mt-3 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#8F664E] rounded-full shadow-md group">
-<span className="absolute inset-0 flex items-center justify-center w-full h-full text-[#8F664E] duration-300 -translate-x-full bg-[#eae5e3] group-hover:translate-x-0 ease">
-<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-</span>
-<span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease   font-extrabold bg-[#8F664E]">   Book Free Consultation</span>
-<span className="relative invisible font-extrabold">   Book Free Consultation</span>
-</button>
-                            </div>
+                      
                         </div>
                     </div>
 

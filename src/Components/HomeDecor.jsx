@@ -263,10 +263,25 @@ function HomeDecor() {
 
                     <div className="row flex relative ">
                        
-                        <img
-                            src="https://res.cloudinary.com/dq14b7xie/image/upload/v1746610732/Home_decor_hbjmrl.webp"
-                            alt="Home Decor Ideas Light Up Your Style" className="   relative   h-[86vh]  md:h-[55vh] w-full object-cover object-center  rounded-lg "
-                        />
+
+                         <div className="box w-full h-full">
+               
+                               <img src="https://res.cloudinary.com/dq14b7xie/image/upload/v1756718329/home_decor_cp9oig.webp"
+                  className='hidden md:block  h-full w-full  object-center object-cover'
+                  alt="  Addressable Fire Alarm System"
+                />
+
+                <img
+                src="https://res.cloudinary.com/dq14b7xie/image/upload/v1756718393/5_prbp8k.webp"
+                  className='md:hidden  h-full w-full object-center object-cover'
+                       alt="Addressable Fire Alarm System"
+                />
+                </div>
+
+                        
+
+
+
                         <div className="w-full  h-full p-9 bottom-0 flex-col justify-center md:justify-between  flex md:flex-row  md:text-center  items-center mx-auto  absolute">
 
                             <p className=" h-full  text-white text-4xl flex-col flex my-auto justify-center items-center">
